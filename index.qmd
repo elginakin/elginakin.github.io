@@ -11,10 +11,10 @@ about:
           href: https://github.com/elginakin
         - icon: linkedin
           text: linkedin
-          href: www.linkedin.com/in/elginakin
+          href: https://www.linkedin.com/in/elginakin
         - icon: twitter
           text: twitter
-          href: www.twitter.com/cxclgin
+          href: https://www.twitter.com/cxclgin
 ---
 
 <span style="color:grey;font-weight:700;font-size:30px"> Hello! I'm Elgin </span>
