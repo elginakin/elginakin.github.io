@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A gallery of my publications and software I have contributed to throughout my PhD.">
 
-<title>work</title>
+<title>- posts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,20 +63,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-gallery .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-category','listing-tiles','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-category","listing-tiles","listing-description"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-gallery'] = new List('listing-gallery', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -90,13 +89,18 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+    .quarto-title-block .quarto-title-banner {
+      background: #EDF3F9;
+    }
+    </style>
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title=" " href="index.xml"></head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -105,6 +109,9 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../images/logos/elgin_logo_cropped.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title"></span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -119,10 +126,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../about.html">about</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../work/index.html" aria-current="page">work</a>
+    <a class="nav-link" href="../work/index.html">work</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/index.html">posts</a>
+    <a class="nav-link active" href="../posts/index.html" aria-current="page">posts</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../cv/elginakin_CV_2023_20230828.pdf">cv</a>
@@ -149,194 +156,46 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">posts</h1>
+            <p class="subtitle lead">doing my best to write more…</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<div id="hero-banner" class="column-screen page-columns page-full">
-<div class="grid column-page">
-<div class="headline g-col-lg-6 g-col-12 g-col-md-12">
-<div class="h2">
-<p>Highlighted Work</p>
-</div>
-<ul>
-<li><a href="google.com">google scholar</a></li>
-<li><a href="https://orcid.org/0000-0001-8824-8809">orchid</a></li>
-<li><a href="#">Reseaarch Gate</a></li>
-<li><a href="#">PubMed</a></li>
-</ul>
-</div>
-<div class="cell g-col-lg-6 g-col-12 g-col-md-12">
-<div class="cell-output-display">
-<div id="gallery-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active" data-bs-interval="5000">
-<a href="https://pubmed.ncbi.nlm.nih.gov/36993658/">
-<img src="../images/gallery_images/figure6.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Adverse outcomes in SARS-CoV-2 infected pregnant mice are gestational age-dependent and resolve with antiviral treatment.</p>
-</div>
-</div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8500131/">
-<img src="../images/gallery_images/pub_03.jpg" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Late-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions.</p>
-</div>
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Prevoius</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="listing-gallery" class="column-page quarto-listing quarto-listing-container-custom">
-<h2 class="anchored">📚 Publications</h2>
-<p></p>
-<div class="list grid" style="column-gap: 10px;">
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="0">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10418153/" class="listing-title">The Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures</a>
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10418153/">
-      <img src="../images/gallery_images/pub_01.png" alt="" class="card-img-top">
-    </a>
-  </div>
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="1">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://pubmed.ncbi.nlm.nih.gov/36993658/" class="listing-title">Adverse outcomes in SARS-CoV-2 infected pregnant mice are gestational age-dependent and resolve with antiviral treatment</a>
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://pubmed.ncbi.nlm.nih.gov/36993658/">
-      <img src="../images/gallery_images/figure6.png" alt="" class="card-img-top">
-    </a>
-  </div>
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="2">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8500131/" class="listing-title">Late-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions</a>
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8500131/">
-      <img src="../images/gallery_images/pub_03.jpg" alt="" class="card-img-top">
-    </a>
-  </div>
-</div>
-<h2 class="anchored">💻 Software</h2>
-<p>Useful/less tools I made
-</p>
-<div class="list grid" style="column-gap: 10px;">
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="3">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://github.com/elginakin/pyFLUte" class="listing-title">pyFLUte</a>
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://github.com/elginakin/pyFLUte">
-      <img src="" alt="" class="card-img-top">
-    </a>
-  </div>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-<style>
-
-#hero-banner {
-  padding-top: 35px;
-  background-color: rgb(250, 249, 246);
-}
-
-#quarto-content main { 
-  margin-top: 0;
-  padding-top: 0;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-.headline {
-font-size: 1.25em;
-font-weight: 300;
-padding-bottom: 1em;
-}
-
-.headline p {
-  margin: 0;
-  padding-bottom: 0.2rem;
-}
-
-.headline a {
-  text-decoration: none;
-}
-
-.headline ul li {
-  margin-bottom: 0.3em;
-}
-
-.carousel.card {
-  padding-top: 2em;
-}
-
-.carousel img {
-  width: 400px;
-  height: 300px;
-  object-fit;cover;
-  margin-bottom: 150px;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  margin-bottom: 110px;
-}
-
-.carousel-caption {
-  padding-top: 50em; /* Adjust this value to create more space for the caption */
-  max-width: 70%; /* Limit the width of the caption to avoid excessive stretching */
-  margin: 0 auto; /* Center the caption horizontally */
-  text-align: center; /* Center the caption text */
-  font-size: 0.6em; /* Adjust the font size for better readability */
-  font-weight: 400; /* Adjust the font weight for better readability */
-  line-height: 1.5; /* Adjust the line height for better readability */
-}
-
-.touch {
-  
-}
-</style>
-
-
-
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.elginakin.github.io/posts/index.html</loc>
+    <lastmod>2023-09-02T20:27:42.069Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.elginakin.github.io/index.html</loc>
-    <lastmod>2023-09-02T19:40:29.016Z</lastmod>
+    <lastmod>2023-09-02T20:27:42.408Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/about.html</loc>
-    <lastmod>2023-09-02T19:25:17.554Z</lastmod>
+    <lastmod>2023-09-02T20:27:42.803Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/work/index.html</loc>
-    <lastmod>2023-09-02T19:40:44.167Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.elginakin.github.io/posts/index.html</loc>
-    <lastmod>2023-09-02T19:38:13.251Z</lastmod>
+    <lastmod>2023-09-02T20:27:43.198Z</lastmod>
   </url>
 </urlset>
