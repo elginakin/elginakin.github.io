@@ -1,0 +1,20 @@
+{
+  "work/index.qmd": {
+    "index.html": "c192b824"
+  },
+  "index.qmd": {
+    "index.html": "cfad91ed"
+  },
+  "blog/index.qmd": {
+    "index.html": "a41ddde3"
+  },
+  "about.qmd": {
+    "about.html": "cab854cf"
+  },
+  "posts/index.qmd": {
+    "index.html": "3ae48272"
+  },
+  "test_cv_template/test_cv_template.qmd": {
+    "test_cv_template.tex": "c4dd748f"
+  }
+}

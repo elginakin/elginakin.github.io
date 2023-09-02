@@ -1,0 +1,13 @@
+{
+  "listingMap": {
+    "work/index.qmd": [
+      "gallery.yml"
+    ],
+    "blog/index.qmd": [
+      "posts/*/index.qmd"
+    ],
+    "posts/index.qmd": [
+      "posts/*/index.qmd"
+    ]
+  }
+}

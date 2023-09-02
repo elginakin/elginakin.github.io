@@ -1,0 +1,44 @@
+project:
+  type: website
+
+website:
+  site-url: https://www.elginakin.github.io/
+  title: " "
+  navbar:
+    logo: "/images/logos/elgin_logo_cropped.png"
+    right:
+      - href: index.qmd
+        text: home
+      - text: about
+        href: about.qmd
+      - text: work
+        href: work/index.qmd
+      - text: posts
+        href: posts/index.qmd
+      - text: cv
+        href: cv/elginakin_CV_2023_20230828.pdf
+
+    tools:
+      - icon: github
+        href: https://github.com/elginakin/
+      - icon: twitter
+        href: https://twitter.com/cxclgin
+        text: Twitter
+      - icon: envelope
+        href: eakin1@jhmi.edu
+  
+  page-footer:
+    background: light
+    left: "&copy; Copyright 2022, Elgin Akin"
+    right: "This page is built with ♥ and [Quarto](https://quarto.org/)."
+
+format:
+  html:
+    theme: Litera
+    css: styles.css
+    mainfont: Nunito
+    sidebar: false
+    toc: true
+
+    
+

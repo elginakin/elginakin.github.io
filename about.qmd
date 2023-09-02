@@ -1,0 +1,18 @@
+---
+title: "About Me"
+---
+
+I am a molecular virologist in the [Pekosz Lab](www.pekoszlab.com) at JHSPH. I work within the [Centers of Excellene for Influenza Research and Response](https://www.ceirr-network.org/), with the [Mostafa Lab](https://www.hopkinsmedicine.org/profiles/details/heba-mostafa) at the Johns Hopkins School of Medicine as well as many other collaborators. 
+
+My interests include:
+
+* Genomic surveillance of influenza viruses.
+
+* The Phenotypic consequences of Influenza B non-structural protein evolution. 
+
+* Bioinformatic tool development for assessing influenza genomic evolution.
+
+* The development of primary models to interrogate viral determinants of host disease.
+
+
+
