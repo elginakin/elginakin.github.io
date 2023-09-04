@@ -4,7 +4,7 @@ project:
 
 website:
   site-url: https://www.elginakin.github.io/
-  title: " "
+  favicon: "/images/logos/elgin_logo_cropped.png"
   navbar:
     logo: "/images/logos/elgin_logo_cropped.png"
     right:
