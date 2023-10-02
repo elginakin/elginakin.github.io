@@ -1,10 +1,10 @@
 ---
 title: ""
-image: './images/profile_1.jpg'
+image: './images/logos/hNEC_Simple.jpeg'
 about:
     id: hero-heading
     template: jolla
-    image-shape: round
+    image-shape: rectangle
     links:
         - icon: github
           text: github
@@ -17,12 +17,9 @@ about:
           href: https://www.twitter.com/cxclgin
 ---
 
-<span style="color:grey;font-weight:700;font-size:30px"> Hello! I'm Elgin </span>
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 20vh;">
 
-I am a PhD candidate in the [Pekosz Lab](www.pekoszlab.com) at the [Johns Hopkins Bloomberg School of Public Health](https://publichealth.jhu.edu/) in the department of [Molecular Microbiology and Immunology](https://publichealth.jhu.edu/departments/molecular-microbiology-and-immunology). I study the interface between respiratory viruses and the human nasal epithelial cell barrier.
-
-
-
-
-
+  <span style="color: grey; font-weight: 700; font-size: 30px;">elgin akin</span>
+  <p>Hello! I'm Elgin. I am a 3rd year PhD candidate in the <a href="www.pekoszlab.com">Pekosz Lab</a> at the <a href="https://publichealth.jhu.edu/">Johns Hopkins Bloomberg School of Public Health</a> in <a href="https://publichealth.jhu.edu/departments/molecular-microbiology-and-immunology">Molecular Microbiology and Immunology</a>. I study the evolutionary interface between respiratory viruses and the nasal epithelial barrier.</p>
+</div>
 

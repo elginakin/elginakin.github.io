@@ -36,6 +36,7 @@ website:
 format:
   html:
     theme: Litera
+    monobackgroundcolor: '##D3CABA'
     css: styles.css
     mainfont: Nunito
     sidebar: false
