@@ -16,5 +16,8 @@
   },
   "test_cv_template/test_cv_template.qmd": {
     "test_cv_template.tex": "c4dd748f"
+  },
+  "posts/content/20240227_PhDTools/index.qmd": {
+    "index.html": "0ba5e754"
   }
 }

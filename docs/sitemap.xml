@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.elginakin.github.io/posts/index.html</loc>
-    <lastmod>2023-09-02T20:27:42.069Z</lastmod>
+    <lastmod>2024-02-29T00:56:49.759Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/index.html</loc>
-    <lastmod>2023-10-02T00:16:11.320Z</lastmod>
+    <lastmod>2024-02-27T14:22:14.274Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/about.html</loc>
@@ -14,6 +14,10 @@
   </url>
   <url>
     <loc>https://www.elginakin.github.io/work/index.html</loc>
-    <lastmod>2023-10-01T23:47:06.317Z</lastmod>
+    <lastmod>2024-02-27T14:22:14.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/posts/content/20240227_PhDTools/index.html</loc>
+    <lastmod>2024-02-29T04:22:43.713Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,196 @@
+---
+title: Useful tools for my PhD
+description: | 
+    A collection of Tools I frequently use for my PhD studies in Molecular Virology. Regularly updated.
+Catagories:
+    - Tools
+author: Elgin Akin
+date: "02/27/2024"
+image: 'blog_top_image.jpg'
+---
+
+# Literature - Keeping up and keeping track...
+
+## 🧠 Personal knowledge databases 
+For literature and coursework:  
+
+- [RemNote](https://www.remnote.com/): A markdown editor with many built in features for spaced repetition studying 💭. Simple and effective. Nice app too.
+- [Obsidian](https://obsidian.md/): Obsidian deserves its own post (coming soon...). It's an **extremely** powerful markdown editor suited for integrating individual notes into a network for your * *insert need here* *. Obsidian is maintained by core developers and community supported through the implementation of community plugins.
+  - [Getting Started](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
+  - [Getting Started (another blog)](https://elizabethbutlermd.com/obsidian-notes/)
+  - [Follow the deloper(s)](https://twitter.com/kepano)
+- [Omnivore](https://omnivore.app/home): Think of this as a citation manager but for...everything. It is my favorite "web clipper" application and is flexible across many types of content. Also has integration with 'database managers' like Obsidian and Notion (discussed below).
+
+## ✏️ Citation/Literature managers
+
+Each of these have integration with common web browswers
+
+- [Zotero](https://www.zotero.org/): free and open source
+  - My favorite add ons: [zotero action tags](https://github.com/windingwind/zotero-actions-tags), [Better BibTex](https://retorque.re/zotero-better-bibtex/), [ZotFile](https://zotfile.com/), [Zotero PDF Preview ](https://github.com/windingwind/zotero-pdf-preview)
+- [Mendely](https://www.mendeley.com/): free, not open source
+- [PaperPile](https://paperpile.com/): paid after 30 days
+
+## 📚 Literature Review Resources
+
+- [Research Rabbit](https://researchrabbitapp.com/)
+- [Semantic Scholar](https://www.semanticscholar.org/)
+
+# 🥼 Electronic Laboratory Notebooks 
+
+|Notebook|Paid/Free|Pros ✅ | Cons ❌ | Community Support | Templates|
+|--------|--------|--------|---------|-------------------|----------|
+| [Obsidian](https://obsidian.md/) |Free, open source |Extremely Flexible superior [note backlinking](https://help.obsidian.md/Plugins/Backlinks) capabilities , `.md` file type|Steep learning curve|Yes|[ELN Blog Post](https://forum.obsidian.md/t/laboratory-notebook-integrated-task-management-system-for-bench-scientists/45338)|
+| [Benchling](https://www.benchling.com/bioresearch) | Free + Paid Plans | Developed for Laboratory Scientists|Completely Online |Yes||
+| [Notion](https://www.notion.so/product) | Free to Students | Flexible, huge community, database ready (great for literature reviews) | Requires a stable internet connection, non-local |Yes|[Notion Templates](https://www.notion.so/templates/collections/researchers-toolkit-notion), [Case Study](https://www.nature.com/articles/d41586-023-03323-9)|
+| [Microsoft Office OneNote](https://www.bioinformatics.babraham.ac.uk/training/OneNote%20manual.pdf) | Free with Microsoft Subscription | Simple UI, integrates all Office products, cloud backup, descent search| Clunky UI |Yes||
+|[AnyType](https://anytype.io/)|Free| Encypted, similar to Notion UX/UI and is "offline" (with included web sync service). Integrated backlinking similar to Obsidian |Newer software, "Blackboxy" file types|Some||
+
+## 🖥️ Scripting and Reproducibility
+
+- [Rstudio IDE](https://posit.co/download/rstudio-desktop/) - Of course
+- [Quarto](https://quarto.org/): also developed by posit. Similar to Rmarkdown but supports multiple languages. Extremely powerful. 
+- [Jupyter](https://jupyter.org/) notebooks. Essential for python users. 
+- [VS Code](https://code.visualstudio.com/): A lightweight and accesible text editor. 
+- [Github Co Pilot](https://github.com/features/copilot): Nice AI assistant and can be integrated in VS Code.
+- [Warp](https://www.warp.dev/) (MacOS Only as of Feb 2024): A fancy shansy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI. 
+
+# 🧬 General sequence data type utilities 
+
+- [Seqkit](https://bioinf.shenwei.me/seqkit/): Literal gold. Used on a daily basis. An extremely powerful FASTA/Q toolkit for file manipulation, searching, motif scanning, extraction, statistics, etc. Written in [go](https://go.dev/) for an extremely lightweight experience.
+- [BigSeqKit](https://github.com/citiususc/BigSeqKit): A toolkit designed for processing and analyzing large-scale biological sequence data. It offers efficient algorithms and data structures tailored for handling big sequence datasets, enabling researchers to perform tasks such as sequence alignment, similarity search, and sequence manipulation at scale.
+- [CLipKit](https://github.com/JLSteenwyk/ClipKIT): A package developed for the analysis of Comparative Phylogenomic data, offering various tools and utilities for processing and interpreting genomic sequences across different species. It provides functionalities for sequence alignment, phylogenetic tree inference, and comparative genomics studies.
+- [BioKit](https://github.com/JLSteenwyk/BioKIT): 
+- [vsearch](https://github.com/torognes/vsearch): Essentially an open-source implementation of [USEARCH](https://www.drive5.com/usearch/) offering high-performance sequence analysis tools for tasks such as sequence clustering, chimera detection, and sequence similarity search.
+- [CD-Hit](https://sites.google.com/view/cd-hit): A classic. It is  a widely used software package for clustering and comparing protein or nucleotide sequences. It employs a fast and memory-efficient algorithm to identify clusters of similar sequences, enabling users to reduce redundancy in sequence datasets and identify representative sequences.
+- [Awk](https://www.gnu.org/software/gawk/manual/gawk.html): A powerful text processing tool used for pattern scanning and processing in text files. It provides a simple yet expressive scripting language for manipulating textual data, making it a popular choice for tasks such as data extraction, transformation, and reporting.
+- [Sed](https://www.gnu.org/software/sed/manual/sed.html): Short for Stream Editor. It is a command-line utility for parsing and transforming text streams. It operates by applying user-defined editing commands to input text, making it useful for tasks such as text substitution, filtering, and text manipulation in Unix-like environments.
+- [MultiQC](https://multiqc.info/): Packs [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports into a nice interactive HTML document.
+- [MMSeq2](https://github.com/soedinglab/MMseqs2): Protein sequence searching and clustering. It employs hidden Markov Models (HMM) and efficient sequence searching algorithms to id homologs and group them.
+- [miller](https://miller.readthedocs.io/en/latest/): A flexible JSON (and other format) utility tool for cleaning and transforming structures.
+- [Sublime Text Editor](https://www.sublimetext.com/)
+- BLAST and BLAST+: No introduction needed
+  - A nice [introduction](https://vinuesa.github.io/TIB-filoinfo/sesion3_BLAST/) to using BLAST+ CLI.
+
+## 🧬 Sequence Motif and Similarity Searches 
+
+- [dbPTM](https://awi.cuhk.edu.cn/dbPTM/): Integrtated resource for post translational modifications. Can enter by keywords or by [`.fasta` sequence](https://awi.cuhk.edu.cn/dbPTM/search.php)
+- [EMBL-EBI](https://www.ebi.ac.uk/services/data-resources-and-tools) has an incredible wealth of freely availible tools for molecular data analysis. Some I use often include: 
+  - [HMMER](https://www.ebi.ac.uk/Tools/hmmer/search/hmmscan)
+  - [Kalign](https://www.ebi.ac.uk/jdispatcher/msa/kalign): sequence alignment 
+- [MAFFT](https://mafft.cbrc.jp/): MSA tool. CLI deployable as well. 
+
+## 🧬 Protein Modeling and structure visualization 
+- [PyMol](https://pymol.org/ax.html?) and [ChimeraX](https://www.cgl.ucsf.edu/chimerax/): Powerful tools for visualizing, annotating and analyzing protein structures.
+- [ProteinImager](https://3dproteinimaging.com/protein-imager/): A web-based protein tool visualization tool. Direct PDB connectivity.
+- [Molecular Nodes](https://bradyajohnston.github.io/MolecularNodes/): This is my personal module for visualizing crystal structures (aulthough it is so much more than that)
+- [AlphaFold2](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb)
+  - Tutorials are abundant but here is a good protocol for easing into ColabFold https://protocolexchange.researchsquare.com/article/pex-2490/v1
+- [Evo](https://arc-website-git-foundation-model-tool-arc-institute.vercel.app/news/blog/evo): A long-context biological foundation model for predictive structure generation.
+
+## 🧬 Leaning a Pipeline (and useful tools within them)
+
+### scRNAseq:
+  - [single-cell-tutorial](https://github.com/theislab/single-cell-tutorial): Scripts to complement the book: [Current best-practices in single-cell RNA-seq: a tutorial ](https://www.sc-best-practices.org/preamble.html)
+  - An open source lecture for [Single Cell Datascience](https://www.stephaniehicks.com/singlecelldemo/) from JHU's Dr. Stephanie Hicks.
+### RNAseq (bulk and sc): 
+  - [Caltech BI/BE/CSS 183](https://github.com/pachterlab/BI-BE-CS-183-2023) - Course: Introduction to Computational Biology and Bioinformatics Course at Caltech, 2023
+  - [Introduction to GSEA](https://jokergoo.github.io/GSEAtraining/index.html)
+  - [iDEP](http://bioinformatics.sdstate.edu/idep/): Guided RNAseq analysis built and deployed in Rshiny. 
+  - [TOmicsVIS](https://benben-miao.github.io/TOmicsVis/): An end to end transcripomics analysis resource. Implemented as an Rshiny.
+  - [PCAtools](https://www.bioconductor.org/packages/devel/bioc/vignettes/PCAtools/inst/doc/PCAtools.html): extended PCA toolkit for illuminating eigenvalue meaning.
+  - [ggkegg](https://bioconductor.org/packages/release/bioc/html/ggkegg.html): A nice extension to visualizing kegg pathways.
+  - [enhancedvolcano](https://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html): a tidy volcano plot package so that you dont have to make yours from scratch.
+  - [ggvolcano](https://github.com/BioSenior/ggVolcano): Another one
+  - [ggvolc](https://github.com/loukesio/ggvolc): Another one.
+  
+### Proteomics:
+  - [TidyProteomics](https://github.com/jeffsocal/tidyproteomics)
+
+### Genomics
+
+Genomics really deserves its own post but a nice integration of all the tools I use can be summarized through [GATK](https://gatk.broadinstitute.org/hc/en-us)
+
+  - [IGV-Reports](https://github.com/igvteam/igv-reports)
+  - [Sandbox.bio](https://sandbox.bio/): Learning Genomics in your browser
+  - [ggcoverage](https://github.com/showteeth/ggcoverage)
+  - [Dada2](https://benjjneb.github.io/dada2/)
+  - [SeekDeep](https://seekdeep.brown.edu/#)
+  - [gget](https://github.com/pachterlab/gget)
+
+## 🧬 Phylogenetics
+- [Augur](https://docs.nextstrain.org/projects/augur/en/stable/index.html)
+- [nextclade](https://docs.nextstrain.org/projects/nextclade/en/stable/user/nextclade-cli/index.html): Part of next strain project. Relatively niche to viral genome/gene evolution. However, nextclade v3 makes the list due to its  powerful and fast annotation guided alignment functionality descrived [here](https://docs.nextstrain.org/projects/nextclade/en/stable/changes/CHANGELOG.html). Part of the greater [Nextstrain](https://docs.nextstrain.org/en/latest/) project.
+- [eteToolkit](http://etetoolkit.org/): A python library for phylogenetic and evolutionary hypotehsis testing and visualization.
+- [BEAST2](https://www.beast2.org/): BEAST2 is a software package for Bayesian evolutionary analysis by sampling trees. It is widely used for estimating phylogenies, divergence times, and other evolutionary parameters from molecular sequence data.
+- [clockor2](https://clockor2.github.io/): clockor2 is a software tool for estimating evolutionary rates and divergence times from molecular sequence data. It is particularly useful for studying the molecular clock hypothesis and inferring evolutionary timelines.
+- [PhyKit](https://jlsteenwyk.com/PhyKIT/): a software package designed for phylogenetic analysis and visualization. It provides a suite of tools for processing and analyzing phylogenetic data, including tree manipulation, visualization, and statistical analysis.
+- [IQ-TREE](http://www.iqtree.org/):  IQ-TREE is a software tool for inferring phylogenetic trees from molecular sequence data. It uses maximum likelihood methods to estimate tree topologies and model parameters. Especially useful for determining appropriate models for phylogenetic tree construction.
+- [treetime](https://github.com/neherlab/treetime): A tool for inferring time-resolved phylogenies from molecular sequence data. It incorporates temporal information into phylogenetic analyses to estimate evolutionary timelines and rates more accurately.
+- [IcyTree](https://icytree.org/): a web-based tool for visualizing and annotating phylogenetic trees. It offers interactive visualization features and supports the integration of additional data layers for enhanced analysis.
+- [treeio](https://github.com/YuLab-SMU/treeio): Implemented as an R package, treeio is a software package for reading, writing, and manipulating phylogenetic tree data in various formats. It provides a set of tools for importing and exporting tree data, as well as for performing basic tree manipulations and analyses.
+- [ape](https://emmanuelparadis.github.io/): An R package for analyzing and manipulating phylogenetic trees. It provides a wide range of functions for reading, writing, and manipulating tree data, as well as for conducting comparative phylogenetic analyses.
+- [HyPhy](https://datamonkey.org/): A software package for conducting phylogenetic analysis and hypothesis testing. It offers a suite of tools for estimating evolutionary parameters, testing molecular evolution models, and detecting positive selection from sequence data.
+- [treesort](https://github.com/flu-crew/TreeSort)
+
+## ☁️ Online and cloud-based computational resources 
+ 
+- [UseGalaxy](https://usegalaxy.org/): an online platform for conducting bioinformatics analyses. It provides a user-friendly interface for accessing a wide range of bioinformatics tools and workflows, including those for sequence analysis, genome assembly, and phylogenetics. Users can upload their data, select analysis tools, and visualize results within the platform.
+- [BV-BRC](https://www.bv-brc.org/): A bioinformatics resource center focused on providing tools and data for research in biodefense and public health. It offers a variety of resources, including databases of genomic sequences, analysis tools for studying pathogens, and educational materials for researchers in the field.
+- [MAFFT](https://mafft.cbrc.jp/alignment/server/index.html): a software tool for multiple sequence alignment of biological sequences. It is widely used for aligning DNA, RNA, and protein sequences, and it offers several algorithms optimized for different types of sequences and alignment tasks. MAFFT can handle large datasets efficiently and is available both as a standalone program and through a web server interface.
+
+# 💻 R and Python Libraries for statistical interrogation and visualization
+
+For statistics and visualization, I am more biased to solutions in R. The following are some of my favorites visualization libraries in R and Python. This list is not exhaustive and there is so much out there but these cover my basics. 
+
+- [Eric Fletcher] has an excellent R learning resource list which helped me ease my way into hypotehsis testing and visualization in R with his [awesome-r-learning-resources](https://github.com/iamericfletcher/awesome-r-learning-resources) page.
+
+- Yan Holtz's [data2viz](https://www.data-to-viz.com/) guidlines for appropriate visualization of data. An excellent resouce which explains the pros and caviates for numeric, categoric, Num+Cat, maped, network and time series data.
+
+- Yan Holtz's galleries for [R](https://www.r-graph-gallery.com/), [Python](https://www.python-graph-gallery.com/), [D3](https://www.d3-graph-gallery.com/), and [React.js](https://www.d3-graph-gallery.com/) are am excellent resource for gathering inspiration for virualizing complex (or even simple) data. 
+
+## R
+
+- 🖼️ [ggplot2 extension gallery](https://exts.ggplot2.tidyverse.org/gallery/)
+- 🖼️ [The `R` graph Gallery](https://r-graph-gallery.com/) - A reproducible collection of charts using `R`. This gallery is an incredible resouce for not only expanding the flexability of your plots, but also for choosing the most appropriate visualization for your data.
+- [ggstatsplot](https://indrajeetpatil.github.io/ggstatsplot/index.html)
+- [tidytables](https://vincentarelbundock.github.io/tinytable/)
+- [ggupset](https://github.com/const-ae/ggupset)
+- [ggvenndiagram](https://cran.r-project.org/web/packages/ggVennDiagram/readme/README.html) - if you must...
+- [ggmsa](https://github.com/YuLab-SMU/ggmsa): MSA viewer approrpiate for visualization of short aa or nt alignments. Preloaded with different tracks showing consensus, stacked composition, motif highlighting, etc.
+- [ggpubr](https://rpkgs.datanovia.com/ggpubr/)
+- [ggdist](https://mjskay.github.io/ggdist/)
+
+### Fun packages for ✨aesthetics✨ and publication-quality figures
+- [themepark](https://matthewbjane.com/ThemePark/) - a pop culture ggplot theme library
+- [smplot2](https://github.com/smin95/smplot2)
+- [ggprism](https://csdaw.github.io/ggprism/) - iykyk
+- [patchwork](https://patchwork.data-imaginist.com/)
+- [ggforce](https://ggforce.data-imaginist.com/)
+
+## Python
+
+I primarily use python to build tools that do not exist in `R` or as a standalone release. Outside of [pandas](https://pandas.pydata.org/docs/index.html), [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), and standard system modules, I use very few extras: 
+
+- [Biopython](https://biopython.org/) 
+- [baltic](https://github.com/evogytis/baltic)
+- [scikit-learn](https://scikit-learn.org/stable/) 
+- [statsmodels](https://www.statsmodels.org/stable/index.html)
+- [Treetime API](https://github.com/neherlab/treetime)
+- [polars](https://github.com/abstractqqq/polars_ds_extension) 
+
+## Honorable metions
+
+- The [awesome-datascience](https://github.com/academic/awesome-datascience)
+- An Rshiny for calculating statistical power and sample size: https://pwrss.shinyapps.io/index/
+
+Common Databases I use that have been lifesavers for large-volume data projects:
+
+- [DuckDB](https://duckdb.org/)
+- [SQLiteh](ttps://www.sqlite.org/)
+- [MongoDB](https://www.mongodb.com/)
+
+# 📝 Blogs and Additional Resources
+
+- [TidyTuesday](ttps://github.com/rfordatascience/tidytuesday)
+- [Learning basic statistical Testing in R](https://github.com/cxli233/Online_R_learning)
+- [Dr. Stephaniehicks Blog](https://www.stephaniehicks.com/) 
