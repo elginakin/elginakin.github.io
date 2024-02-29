@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Elgin Akin">
+<meta name="dcterms.date" content="2024-02-27">
+<meta name="description" content="A collection of Tools I frequently use for my PhD studies in Molecular Virology. Regularly updated.">
+
+<title>Useful tools for my PhD</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../..//images/logos/elgin_logo_cropped.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../images/logos/elgin_logo_cropped.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">about</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../work/index.html"> 
+<span class="menu-text">work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../posts/index.html"> 
+<span class="menu-text">posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../cv/elginakin_CV_2023_20230828.pdf"> 
+<span class="menu-text">cv</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/elginakin/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/cxclgin" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="../../../eakin1@jhmi.edu" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#literature---keeping-up-and-keeping-track" id="toc-literature---keeping-up-and-keeping-track" class="nav-link active" data-scroll-target="#literature---keeping-up-and-keeping-track">Literature - Keeping up and keeping track…</a>
+  <ul class="collapse">
+  <li><a href="#personal-knowledge-databases" id="toc-personal-knowledge-databases" class="nav-link" data-scroll-target="#personal-knowledge-databases">🧠 Personal knowledge databases</a></li>
+  <li><a href="#citationliterature-managers" id="toc-citationliterature-managers" class="nav-link" data-scroll-target="#citationliterature-managers">✏️ Citation/Literature managers</a></li>
+  <li><a href="#literature-review-resources" id="toc-literature-review-resources" class="nav-link" data-scroll-target="#literature-review-resources">📚 Literature Review Resources</a></li>
+  </ul></li>
+  <li><a href="#electronic-laboratory-notebooks" id="toc-electronic-laboratory-notebooks" class="nav-link" data-scroll-target="#electronic-laboratory-notebooks">🥼 Electronic Laboratory Notebooks</a>
+  <ul class="collapse">
+  <li><a href="#scripting-and-reproducibility" id="toc-scripting-and-reproducibility" class="nav-link" data-scroll-target="#scripting-and-reproducibility">🖥️ Scripting and Reproducibility</a></li>
+  </ul></li>
+  <li><a href="#general-sequence-data-type-utilities" id="toc-general-sequence-data-type-utilities" class="nav-link" data-scroll-target="#general-sequence-data-type-utilities">🧬 General sequence data type utilities</a>
+  <ul class="collapse">
+  <li><a href="#sequence-motif-and-similarity-searches" id="toc-sequence-motif-and-similarity-searches" class="nav-link" data-scroll-target="#sequence-motif-and-similarity-searches">🧬 Sequence Motif and Similarity Searches</a></li>
+  <li><a href="#protein-modeling-and-structure-visualization" id="toc-protein-modeling-and-structure-visualization" class="nav-link" data-scroll-target="#protein-modeling-and-structure-visualization">🧬 Protein Modeling and structure visualization</a></li>
+  <li><a href="#leaning-a-pipeline-and-useful-tools-within-them" id="toc-leaning-a-pipeline-and-useful-tools-within-them" class="nav-link" data-scroll-target="#leaning-a-pipeline-and-useful-tools-within-them">🧬 Leaning a Pipeline (and useful tools within them)</a>
+  <ul class="collapse">
+  <li><a href="#scrnaseq" id="toc-scrnaseq" class="nav-link" data-scroll-target="#scrnaseq">scRNAseq:</a></li>
+  <li><a href="#proteomics" id="toc-proteomics" class="nav-link" data-scroll-target="#proteomics">Proteomics:</a></li>
+  <li><a href="#genomics" id="toc-genomics" class="nav-link" data-scroll-target="#genomics">Genomics</a></li>
+  </ul></li>
+  <li><a href="#phylogenetics" id="toc-phylogenetics" class="nav-link" data-scroll-target="#phylogenetics">🧬 Phylogenetics</a></li>
+  <li><a href="#online-and-cloud-based-computational-resources" id="toc-online-and-cloud-based-computational-resources" class="nav-link" data-scroll-target="#online-and-cloud-based-computational-resources">☁️ Online and cloud-based computational resources</a></li>
+  </ul></li>
+  <li><a href="#r-and-python-libraries-for-statistical-interrogation-and-visualization" id="toc-r-and-python-libraries-for-statistical-interrogation-and-visualization" class="nav-link" data-scroll-target="#r-and-python-libraries-for-statistical-interrogation-and-visualization">💻 R and Python Libraries for statistical interrogation and visualization</a>
+  <ul class="collapse">
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a>
+  <ul class="collapse">
+  <li><a href="#fun-packages-for-aesthetics-and-publication-quality-figures" id="toc-fun-packages-for-aesthetics-and-publication-quality-figures" class="nav-link" data-scroll-target="#fun-packages-for-aesthetics-and-publication-quality-figures">Fun packages for ✨aesthetics✨ and publication-quality figures</a></li>
+  </ul></li>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
+  <li><a href="#honorable-metions" id="toc-honorable-metions" class="nav-link" data-scroll-target="#honorable-metions">Honorable metions</a></li>
+  </ul></li>
+  <li><a href="#blogs-and-additional-resources" id="toc-blogs-and-additional-resources" class="nav-link" data-scroll-target="#blogs-and-additional-resources">📝 Blogs and Additional Resources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Useful tools for my PhD</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>A collection of Tools I frequently use for my PhD studies in Molecular Virology. Regularly updated.</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Elgin Akin </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 27, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="literature---keeping-up-and-keeping-track" class="level1">
+<h1>Literature - Keeping up and keeping track…</h1>
+<section id="personal-knowledge-databases" class="level2">
+<h2 class="anchored" data-anchor-id="personal-knowledge-databases">🧠 Personal knowledge databases</h2>
+<p>For literature and coursework:</p>
+<ul>
+<li><a href="https://www.remnote.com/">RemNote</a>: A markdown editor with many built in features for spaced repetition studying 💭. Simple and effective. Nice app too.</li>
+<li><a href="https://obsidian.md/">Obsidian</a>: Obsidian deserves its own post (coming soon…). It’s an <strong>extremely</strong> powerful markdown editor suited for integrating individual notes into a network for your * <em>insert need here</em> *. Obsidian is maintained by core developers and community supported through the implementation of community plugins.
+<ul>
+<li><a href="https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/">Getting Started</a></li>
+<li><a href="https://elizabethbutlermd.com/obsidian-notes/">Getting Started (another blog)</a></li>
+<li><a href="https://twitter.com/kepano">Follow the deloper(s)</a></li>
+</ul></li>
+<li><a href="https://omnivore.app/home">Omnivore</a>: Think of this as a citation manager but for…everything. It is my favorite “web clipper” application and is flexible across many types of content. Also has integration with ‘database managers’ like Obsidian and Notion (discussed below).</li>
+</ul>
+</section>
+<section id="citationliterature-managers" class="level2">
+<h2 class="anchored" data-anchor-id="citationliterature-managers">✏️ Citation/Literature managers</h2>
+<p>Each of these have integration with common web browswers</p>
+<ul>
+<li><a href="https://www.zotero.org/">Zotero</a>: free and open source
+<ul>
+<li>My favorite add ons: <a href="https://github.com/windingwind/zotero-actions-tags">zotero action tags</a>, <a href="https://retorque.re/zotero-better-bibtex/">Better BibTex</a>, <a href="https://zotfile.com/">ZotFile</a>, <a href="https://github.com/windingwind/zotero-pdf-preview">Zotero PDF Preview</a></li>
+</ul></li>
+<li><a href="https://www.mendeley.com/">Mendely</a>: free, not open source</li>
+<li><a href="https://paperpile.com/">PaperPile</a>: paid after 30 days</li>
+</ul>
+</section>
+<section id="literature-review-resources" class="level2">
+<h2 class="anchored" data-anchor-id="literature-review-resources">📚 Literature Review Resources</h2>
+<ul>
+<li><a href="https://researchrabbitapp.com/">Research Rabbit</a></li>
+<li><a href="https://www.semanticscholar.org/">Semantic Scholar</a></li>
+</ul>
+</section>
+</section>
+<section id="electronic-laboratory-notebooks" class="level1">
+<h1>🥼 Electronic Laboratory Notebooks</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Notebook</th>
+<th>Paid/Free</th>
+<th>Pros ✅</th>
+<th>Cons ❌</th>
+<th>Community Support</th>
+<th>Templates</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://obsidian.md/">Obsidian</a></td>
+<td>Free, open source</td>
+<td>Extremely Flexible superior <a href="https://help.obsidian.md/Plugins/Backlinks">note backlinking</a> capabilities , <code>.md</code> file type</td>
+<td>Steep learning curve</td>
+<td>Yes</td>
+<td><a href="https://forum.obsidian.md/t/laboratory-notebook-integrated-task-management-system-for-bench-scientists/45338">ELN Blog Post</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.benchling.com/bioresearch">Benchling</a></td>
+<td>Free + Paid Plans</td>
+<td>Developed for Laboratory Scientists</td>
+<td>Completely Online</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.notion.so/product">Notion</a></td>
+<td>Free to Students</td>
+<td>Flexible, huge community, database ready (great for literature reviews)</td>
+<td>Requires a stable internet connection, non-local</td>
+<td>Yes</td>
+<td><a href="https://www.notion.so/templates/collections/researchers-toolkit-notion">Notion Templates</a>, <a href="https://www.nature.com/articles/d41586-023-03323-9">Case Study</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.bioinformatics.babraham.ac.uk/training/OneNote%20manual.pdf">Microsoft Office OneNote</a></td>
+<td>Free with Microsoft Subscription</td>
+<td>Simple UI, integrates all Office products, cloud backup, descent search</td>
+<td>Clunky UI&nbsp;</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://anytype.io/">AnyType</a></td>
+<td>Free</td>
+<td>Encypted, similar to Notion UX/UI and is “offline” (with included web sync service). Integrated backlinking similar to Obsidian</td>
+<td>Newer software, “Blackboxy” file types</td>
+<td>Some</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<section id="scripting-and-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="scripting-and-reproducibility">🖥️ Scripting and Reproducibility</h2>
+<ul>
+<li><a href="https://posit.co/download/rstudio-desktop/">Rstudio IDE</a> - Of course</li>
+<li><a href="https://quarto.org/">Quarto</a>: also developed by posit. Similar to Rmarkdown but supports multiple languages. Extremely powerful.</li>
+<li><a href="https://jupyter.org/">Jupyter</a> notebooks. Essential for python users.</li>
+<li><a href="https://code.visualstudio.com/">VS Code</a>: A lightweight and accesible text editor.</li>
+<li><a href="https://github.com/features/copilot">Github Co Pilot</a>: Nice AI assistant and can be integrated in VS Code.</li>
+<li><a href="https://www.warp.dev/">Warp</a> (MacOS Only as of Feb 2024): A fancy shansy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI.</li>
+</ul>
+</section>
+</section>
+<section id="general-sequence-data-type-utilities" class="level1">
+<h1>🧬 General sequence data type utilities</h1>
+<ul>
+<li><a href="https://bioinf.shenwei.me/seqkit/">Seqkit</a>: Literal gold. Used on a daily basis. An extremely powerful FASTA/Q toolkit for file manipulation, searching, motif scanning, extraction, statistics, etc. Written in <a href="https://go.dev/">go</a> for an extremely lightweight experience.</li>
+<li><a href="https://github.com/citiususc/BigSeqKit">BigSeqKit</a>: A toolkit designed for processing and analyzing large-scale biological sequence data. It offers efficient algorithms and data structures tailored for handling big sequence datasets, enabling researchers to perform tasks such as sequence alignment, similarity search, and sequence manipulation at scale.</li>
+<li><a href="https://github.com/JLSteenwyk/ClipKIT">CLipKit</a>: A package developed for the analysis of Comparative Phylogenomic data, offering various tools and utilities for processing and interpreting genomic sequences across different species. It provides functionalities for sequence alignment, phylogenetic tree inference, and comparative genomics studies.</li>
+<li><a href="https://github.com/JLSteenwyk/BioKIT">BioKit</a>:</li>
+<li><a href="https://github.com/torognes/vsearch">vsearch</a>: Essentially an open-source implementation of <a href="https://www.drive5.com/usearch/">USEARCH</a> offering high-performance sequence analysis tools for tasks such as sequence clustering, chimera detection, and sequence similarity search.</li>
+<li><a href="https://sites.google.com/view/cd-hit">CD-Hit</a>: A classic. It is a widely used software package for clustering and comparing protein or nucleotide sequences. It employs a fast and memory-efficient algorithm to identify clusters of similar sequences, enabling users to reduce redundancy in sequence datasets and identify representative sequences.</li>
+<li><a href="https://www.gnu.org/software/gawk/manual/gawk.html">Awk</a>: A powerful text processing tool used for pattern scanning and processing in text files. It provides a simple yet expressive scripting language for manipulating textual data, making it a popular choice for tasks such as data extraction, transformation, and reporting.</li>
+<li><a href="https://www.gnu.org/software/sed/manual/sed.html">Sed</a>: Short for Stream Editor. It is a command-line utility for parsing and transforming text streams. It operates by applying user-defined editing commands to input text, making it useful for tasks such as text substitution, filtering, and text manipulation in Unix-like environments.</li>
+<li><a href="https://multiqc.info/">MultiQC</a>: Packs <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">fastqc</a> reports into a nice interactive HTML document.</li>
+<li><a href="https://github.com/soedinglab/MMseqs2">MMSeq2</a>: Protein sequence searching and clustering. It employs hidden Markov Models (HMM) and efficient sequence searching algorithms to id homologs and group them.</li>
+<li><a href="https://miller.readthedocs.io/en/latest/">miller</a>: A flexible JSON (and other format) utility tool for cleaning and transforming structures.</li>
+<li><a href="https://www.sublimetext.com/">Sublime Text Editor</a></li>
+<li>BLAST and BLAST+: No introduction needed
+<ul>
+<li>A nice <a href="https://vinuesa.github.io/TIB-filoinfo/sesion3_BLAST/">introduction</a> to using BLAST+ CLI.</li>
+</ul></li>
+</ul>
+<section id="sequence-motif-and-similarity-searches" class="level2">
+<h2 class="anchored" data-anchor-id="sequence-motif-and-similarity-searches">🧬 Sequence Motif and Similarity Searches</h2>
+<ul>
+<li><a href="https://awi.cuhk.edu.cn/dbPTM/">dbPTM</a>: Integrtated resource for post translational modifications. Can enter by keywords or by <a href="https://awi.cuhk.edu.cn/dbPTM/search.php"><code>.fasta</code> sequence</a></li>
+<li><a href="https://www.ebi.ac.uk/services/data-resources-and-tools">EMBL-EBI</a> has an incredible wealth of freely availible tools for molecular data analysis. Some I use often include:
+<ul>
+<li><a href="https://www.ebi.ac.uk/Tools/hmmer/search/hmmscan">HMMER</a></li>
+<li><a href="https://www.ebi.ac.uk/jdispatcher/msa/kalign">Kalign</a>: sequence alignment</li>
+</ul></li>
+<li><a href="https://mafft.cbrc.jp/">MAFFT</a>: MSA tool. CLI deployable as well.</li>
+</ul>
+</section>
+<section id="protein-modeling-and-structure-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="protein-modeling-and-structure-visualization">🧬 Protein Modeling and structure visualization</h2>
+<ul>
+<li><a href="https://pymol.org/ax.html?">PyMol</a> and <a href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a>: Powerful tools for visualizing, annotating and analyzing protein structures.</li>
+<li><a href="https://3dproteinimaging.com/protein-imager/">ProteinImager</a>: A web-based protein tool visualization tool. Direct PDB connectivity.</li>
+<li><a href="https://bradyajohnston.github.io/MolecularNodes/">Molecular Nodes</a>: This is my personal module for visualizing crystal structures (aulthough it is so much more than that)</li>
+<li><a href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">AlphaFold2</a>
+<ul>
+<li>Tutorials are abundant but here is a good protocol for easing into ColabFold https://protocolexchange.researchsquare.com/article/pex-2490/v1</li>
+</ul></li>
+<li><a href="https://arc-website-git-foundation-model-tool-arc-institute.vercel.app/news/blog/evo">Evo</a>: A long-context biological foundation model for predictive structure generation.</li>
+</ul>
+</section>
+<section id="leaning-a-pipeline-and-useful-tools-within-them" class="level2">
+<h2 class="anchored" data-anchor-id="leaning-a-pipeline-and-useful-tools-within-them">🧬 Leaning a Pipeline (and useful tools within them)</h2>
+<section id="scrnaseq" class="level3">
+<h3 class="anchored" data-anchor-id="scrnaseq">scRNAseq:</h3>
+<ul>
+<li><a href="https://github.com/theislab/single-cell-tutorial">single-cell-tutorial</a>: Scripts to complement the book: <a href="https://www.sc-best-practices.org/preamble.html">Current best-practices in single-cell RNA-seq: a tutorial</a></li>
+<li>An open source lecture for <a href="https://www.stephaniehicks.com/singlecelldemo/">Single Cell Datascience</a> from JHU’s Dr.&nbsp;Stephanie Hicks. ### RNAseq (bulk and sc):</li>
+<li><a href="https://github.com/pachterlab/BI-BE-CS-183-2023">Caltech BI/BE/CSS 183</a> - Course: Introduction to Computational Biology and Bioinformatics Course at Caltech, 2023</li>
+<li><a href="https://jokergoo.github.io/GSEAtraining/index.html">Introduction to GSEA</a></li>
+<li><a href="http://bioinformatics.sdstate.edu/idep/">iDEP</a>: Guided RNAseq analysis built and deployed in Rshiny.</li>
+<li><a href="https://benben-miao.github.io/TOmicsVis/">TOmicsVIS</a>: An end to end transcripomics analysis resource. Implemented as an Rshiny.</li>
+<li><a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/PCAtools/inst/doc/PCAtools.html">PCAtools</a>: extended PCA toolkit for illuminating eigenvalue meaning.</li>
+<li><a href="https://bioconductor.org/packages/release/bioc/html/ggkegg.html">ggkegg</a>: A nice extension to visualizing kegg pathways.</li>
+<li><a href="https://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html">enhancedvolcano</a>: a tidy volcano plot package so that you dont have to make yours from scratch.</li>
+<li><a href="https://github.com/BioSenior/ggVolcano">ggvolcano</a>: Another one</li>
+<li><a href="https://github.com/loukesio/ggvolc">ggvolc</a>: Another one.</li>
+</ul>
+</section>
+<section id="proteomics" class="level3">
+<h3 class="anchored" data-anchor-id="proteomics">Proteomics:</h3>
+<ul>
+<li><a href="https://github.com/jeffsocal/tidyproteomics">TidyProteomics</a></li>
+</ul>
+</section>
+<section id="genomics" class="level3">
+<h3 class="anchored" data-anchor-id="genomics">Genomics</h3>
+<p>Genomics really deserves its own post but a nice integration of all the tools I use can be summarized through <a href="https://gatk.broadinstitute.org/hc/en-us">GATK</a></p>
+<ul>
+<li><a href="https://github.com/igvteam/igv-reports">IGV-Reports</a></li>
+<li><a href="https://sandbox.bio/">Sandbox.bio</a>: Learning Genomics in your browser</li>
+<li><a href="https://github.com/showteeth/ggcoverage">ggcoverage</a></li>
+<li><a href="https://benjjneb.github.io/dada2/">Dada2</a></li>
+<li><a href="https://seekdeep.brown.edu/#">SeekDeep</a></li>
+<li><a href="https://github.com/pachterlab/gget">gget</a></li>
+</ul>
+</section>
+</section>
+<section id="phylogenetics" class="level2">
+<h2 class="anchored" data-anchor-id="phylogenetics">🧬 Phylogenetics</h2>
+<ul>
+<li><a href="https://docs.nextstrain.org/projects/augur/en/stable/index.html">Augur</a></li>
+<li><a href="https://docs.nextstrain.org/projects/nextclade/en/stable/user/nextclade-cli/index.html">nextclade</a>: Part of next strain project. Relatively niche to viral genome/gene evolution. However, nextclade v3 makes the list due to its powerful and fast annotation guided alignment functionality descrived <a href="https://docs.nextstrain.org/projects/nextclade/en/stable/changes/CHANGELOG.html">here</a>. Part of the greater <a href="https://docs.nextstrain.org/en/latest/">Nextstrain</a> project.</li>
+<li><a href="http://etetoolkit.org/">eteToolkit</a>: A python library for phylogenetic and evolutionary hypotehsis testing and visualization.</li>
+<li><a href="https://www.beast2.org/">BEAST2</a>: BEAST2 is a software package for Bayesian evolutionary analysis by sampling trees. It is widely used for estimating phylogenies, divergence times, and other evolutionary parameters from molecular sequence data.</li>
+<li><a href="https://clockor2.github.io/">clockor2</a>: clockor2 is a software tool for estimating evolutionary rates and divergence times from molecular sequence data. It is particularly useful for studying the molecular clock hypothesis and inferring evolutionary timelines.</li>
+<li><a href="https://jlsteenwyk.com/PhyKIT/">PhyKit</a>: a software package designed for phylogenetic analysis and visualization. It provides a suite of tools for processing and analyzing phylogenetic data, including tree manipulation, visualization, and statistical analysis.</li>
+<li><a href="http://www.iqtree.org/">IQ-TREE</a>: IQ-TREE is a software tool for inferring phylogenetic trees from molecular sequence data. It uses maximum likelihood methods to estimate tree topologies and model parameters. Especially useful for determining appropriate models for phylogenetic tree construction.</li>
+<li><a href="https://github.com/neherlab/treetime">treetime</a>: A tool for inferring time-resolved phylogenies from molecular sequence data. It incorporates temporal information into phylogenetic analyses to estimate evolutionary timelines and rates more accurately.</li>
+<li><a href="https://icytree.org/">IcyTree</a>: a web-based tool for visualizing and annotating phylogenetic trees. It offers interactive visualization features and supports the integration of additional data layers for enhanced analysis.</li>
+<li><a href="https://github.com/YuLab-SMU/treeio">treeio</a>: Implemented as an R package, treeio is a software package for reading, writing, and manipulating phylogenetic tree data in various formats. It provides a set of tools for importing and exporting tree data, as well as for performing basic tree manipulations and analyses.</li>
+<li><a href="https://emmanuelparadis.github.io/">ape</a>: An R package for analyzing and manipulating phylogenetic trees. It provides a wide range of functions for reading, writing, and manipulating tree data, as well as for conducting comparative phylogenetic analyses.</li>
+<li><a href="https://datamonkey.org/">HyPhy</a>: A software package for conducting phylogenetic analysis and hypothesis testing. It offers a suite of tools for estimating evolutionary parameters, testing molecular evolution models, and detecting positive selection from sequence data.</li>
+<li><a href="https://github.com/flu-crew/TreeSort">treesort</a></li>
+</ul>
+</section>
+<section id="online-and-cloud-based-computational-resources" class="level2">
+<h2 class="anchored" data-anchor-id="online-and-cloud-based-computational-resources">☁️ Online and cloud-based computational resources</h2>
+<ul>
+<li><a href="https://usegalaxy.org/">UseGalaxy</a>: an online platform for conducting bioinformatics analyses. It provides a user-friendly interface for accessing a wide range of bioinformatics tools and workflows, including those for sequence analysis, genome assembly, and phylogenetics. Users can upload their data, select analysis tools, and visualize results within the platform.</li>
+<li><a href="https://www.bv-brc.org/">BV-BRC</a>: A bioinformatics resource center focused on providing tools and data for research in biodefense and public health. It offers a variety of resources, including databases of genomic sequences, analysis tools for studying pathogens, and educational materials for researchers in the field.</li>
+<li><a href="https://mafft.cbrc.jp/alignment/server/index.html">MAFFT</a>: a software tool for multiple sequence alignment of biological sequences. It is widely used for aligning DNA, RNA, and protein sequences, and it offers several algorithms optimized for different types of sequences and alignment tasks. MAFFT can handle large datasets efficiently and is available both as a standalone program and through a web server interface.</li>
+</ul>
+</section>
+</section>
+<section id="r-and-python-libraries-for-statistical-interrogation-and-visualization" class="level1">
+<h1>💻 R and Python Libraries for statistical interrogation and visualization</h1>
+<p>For statistics and visualization, I am more biased to solutions in R. The following are some of my favorites visualization libraries in R and Python. This list is not exhaustive and there is so much out there but these cover my basics.</p>
+<ul>
+<li><p>[Eric Fletcher] has an excellent R learning resource list which helped me ease my way into hypotehsis testing and visualization in R with his <a href="https://github.com/iamericfletcher/awesome-r-learning-resources">awesome-r-learning-resources</a> page.</p></li>
+<li><p>Yan Holtz’s <a href="https://www.data-to-viz.com/">data2viz</a> guidlines for appropriate visualization of data. An excellent resouce which explains the pros and caviates for numeric, categoric, Num+Cat, maped, network and time series data.</p></li>
+<li><p>Yan Holtz’s galleries for <a href="https://www.r-graph-gallery.com/">R</a>, <a href="https://www.python-graph-gallery.com/">Python</a>, <a href="https://www.d3-graph-gallery.com/">D3</a>, and <a href="https://www.d3-graph-gallery.com/">React.js</a> are am excellent resource for gathering inspiration for virualizing complex (or even simple) data.</p></li>
+</ul>
+<section id="r" class="level2">
+<h2 class="anchored" data-anchor-id="r">R</h2>
+<ul>
+<li>🖼️ <a href="https://exts.ggplot2.tidyverse.org/gallery/">ggplot2 extension gallery</a></li>
+<li>🖼️ <a href="https://r-graph-gallery.com/">The <code>R</code> graph Gallery</a> - A reproducible collection of charts using <code>R</code>. This gallery is an incredible resouce for not only expanding the flexability of your plots, but also for choosing the most appropriate visualization for your data.</li>
+<li><a href="https://indrajeetpatil.github.io/ggstatsplot/index.html">ggstatsplot</a></li>
+<li><a href="https://vincentarelbundock.github.io/tinytable/">tidytables</a></li>
+<li><a href="https://github.com/const-ae/ggupset">ggupset</a></li>
+<li><a href="https://cran.r-project.org/web/packages/ggVennDiagram/readme/README.html">ggvenndiagram</a> - if you must…</li>
+<li><a href="https://github.com/YuLab-SMU/ggmsa">ggmsa</a>: MSA viewer approrpiate for visualization of short aa or nt alignments. Preloaded with different tracks showing consensus, stacked composition, motif highlighting, etc.</li>
+<li><a href="https://rpkgs.datanovia.com/ggpubr/">ggpubr</a></li>
+<li><a href="https://mjskay.github.io/ggdist/">ggdist</a></li>
+</ul>
+<section id="fun-packages-for-aesthetics-and-publication-quality-figures" class="level3">
+<h3 class="anchored" data-anchor-id="fun-packages-for-aesthetics-and-publication-quality-figures">Fun packages for ✨aesthetics✨ and publication-quality figures</h3>
+<ul>
+<li><a href="https://matthewbjane.com/ThemePark/">themepark</a> - a pop culture ggplot theme library</li>
+<li><a href="https://github.com/smin95/smplot2">smplot2</a></li>
+<li><a href="https://csdaw.github.io/ggprism/">ggprism</a> - iykyk</li>
+<li><a href="https://patchwork.data-imaginist.com/">patchwork</a></li>
+<li><a href="https://ggforce.data-imaginist.com/">ggforce</a></li>
+</ul>
+</section>
+</section>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
+<p>I primarily use python to build tools that do not exist in <code>R</code> or as a standalone release. Outside of <a href="https://pandas.pydata.org/docs/index.html">pandas</a>, <a href="https://numpy.org/">numpy</a>, <a href="https://matplotlib.org/">matplotlib</a>, and standard system modules, I use very few extras:</p>
+<ul>
+<li><a href="https://biopython.org/">Biopython</a></li>
+<li><a href="https://github.com/evogytis/baltic">baltic</a></li>
+<li><a href="https://scikit-learn.org/stable/">scikit-learn</a></li>
+<li><a href="https://www.statsmodels.org/stable/index.html">statsmodels</a></li>
+<li><a href="https://github.com/neherlab/treetime">Treetime API</a></li>
+<li><a href="https://github.com/abstractqqq/polars_ds_extension">polars</a></li>
+</ul>
+</section>
+<section id="honorable-metions" class="level2">
+<h2 class="anchored" data-anchor-id="honorable-metions">Honorable metions</h2>
+<ul>
+<li>The <a href="https://github.com/academic/awesome-datascience">awesome-datascience</a></li>
+<li>An Rshiny for calculating statistical power and sample size: https://pwrss.shinyapps.io/index/</li>
+</ul>
+<p>Common Databases I use that have been lifesavers for large-volume data projects:</p>
+<ul>
+<li><a href="https://duckdb.org/">DuckDB</a></li>
+<li><a href="ttps://www.sqlite.org/">SQLiteh</a></li>
+<li><a href="https://www.mongodb.com/">MongoDB</a></li>
+</ul>
+</section>
+</section>
+<section id="blogs-and-additional-resources" class="level1">
+<h1>📝 Blogs and Additional Resources</h1>
+<ul>
+<li><a href="ttps://github.com/rfordatascience/tidytuesday">TidyTuesday</a></li>
+<li><a href="https://github.com/cxli233/Online_R_learning">Learning basic statistical Testing in R</a></li>
+<li><a href="https://www.stephaniehicks.com/">Dr.&nbsp;Stephaniehicks Blog</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2022, Elgin Akin</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with ♥ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
