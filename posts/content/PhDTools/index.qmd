@@ -32,8 +32,9 @@ Each of these have integration with common web browswers
 
 ## 📚 Literature Review Resources
 
-- [Research Rabbit](https://researchrabbitapp.com/)
-- [Semantic Scholar](https://www.semanticscholar.org/)
+- [Research Rabbit](https://researchrabbitapp.com/): An AI assisted application which builds networks around public manuscripts (accessible by DOI) by various attributes: author, citations, etc.
+  - Integrates with [Zotero](https://www.zotero.org/). 
+- [Semantic Scholar](https://www.semanticscholar.org/): A powerful search which assists with identifying 'related' articles.
 
 # 🥼 Electronic Laboratory Notebooks 
 
@@ -47,12 +48,12 @@ Each of these have integration with common web browswers
 
 ## 🖥️ Scripting and Reproducibility
 
-- [Rstudio IDE](https://posit.co/download/rstudio-desktop/) - Of course
-- [Quarto](https://quarto.org/): also developed by posit. Similar to Rmarkdown but supports multiple languages. Extremely powerful. 
-- [Jupyter](https://jupyter.org/) notebooks. Essential for python users. 
+- [Rstudio IDE](https://posit.co/download/rstudio-desktop/)
+- [Quarto](https://quarto.org/): also developed by [posit](https://posit.co/). Similar to Rmarkdown and supports multiple languages.
+- [Jupyter](https://jupyter.org/): A locally deployed web-application for scripting. Multilanguage support but works especially well for `python` and `julia` users. 'Chunk'-based approach.
 - [VS Code](https://code.visualstudio.com/): A lightweight and accesible text editor. 
 - [Github Co Pilot](https://github.com/features/copilot): Nice AI assistant and can be integrated in VS Code.
-- [Warp](https://www.warp.dev/) (MacOS Only as of Feb 2024): A fancy shansy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI. 
+- [Warp](https://www.warp.dev/) (MacOS Only as of Feb 2024): A fancy shmancy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI etc. 
 
 # 🧬 General sequence data type utilities 
 
@@ -70,6 +71,7 @@ Each of these have integration with common web browswers
 - [Sublime Text Editor](https://www.sublimetext.com/)
 - BLAST and BLAST+: No introduction needed
   - A nice [introduction](https://vinuesa.github.io/TIB-filoinfo/sesion3_BLAST/) to using BLAST+ CLI.
+- [NCBI C++ Toolkit](https://www.ncbi.nlm.nih.gov/toolkit): Public domain of portable libraries for sequencing-class data (and others).
 
 ## 🧬 Sequence Motif and Similarity Searches 
 
@@ -92,6 +94,7 @@ Each of these have integration with common web browswers
 ### scRNAseq:
   - [single-cell-tutorial](https://github.com/theislab/single-cell-tutorial): Scripts to complement the book: [Current best-practices in single-cell RNA-seq: a tutorial ](https://www.sc-best-practices.org/preamble.html)
   - An open source lecture for [Single Cell Datascience](https://www.stephaniehicks.com/singlecelldemo/) from JHU's Dr. Stephanie Hicks.
+
 ### RNAseq (bulk and sc): 
   - [Caltech BI/BE/CSS 183](https://github.com/pachterlab/BI-BE-CS-183-2023) - Course: Introduction to Computational Biology and Bioinformatics Course at Caltech, 2023
   - [Introduction to GSEA](https://jokergoo.github.io/GSEAtraining/index.html)
@@ -111,14 +114,24 @@ Each of these have integration with common web browswers
 Genomics really deserves its own post but a nice integration of all the tools I use can be summarized through [GATK](https://gatk.broadinstitute.org/hc/en-us)
 
   - [IGV-Reports](https://github.com/igvteam/igv-reports)
+  - [ggcoverage](https://github.com/showteeth/ggcoverage): R package for flexible `BAM` file visualization.
   - [Sandbox.bio](https://sandbox.bio/): Learning Genomics in your browser
-  - [ggcoverage](https://github.com/showteeth/ggcoverage)
   - [Dada2](https://benjjneb.github.io/dada2/)
   - [SeekDeep](https://seekdeep.brown.edu/#)
   - [gget](https://github.com/pachterlab/gget)
 
+### Integrated and Pan-Dimentional Omics
+- [SIMON](https://github.com/genular/pandora): A machine-learning based approach to integrating diverse biological data with transcriptomics and microbiome datasets. 
+  - Read the [manuscript](https://www.sciencedirect.com/science/article/pii/S2666389920302427)
+  - [Read the FluPRINT study](https://fluprint.com/#/about)
+
+### High-dimentional flow cytometry
+
+- [Omiq](https://www.omiq.ai/): (resource) Cloud-based flow cytometry software, a nice flow-jo alternative gear particularly to high-dimentional flow panels with seamless integration with common dimention-reduction approaches and EmbededSOM. 
+
+
 ## 🧬 Phylogenetics
-- [Augur](https://docs.nextstrain.org/projects/augur/en/stable/index.html)
+- [Augur](https://docs.nextstrain.org/projects/augur/en/stable/index.html): A phylogenetics toolkit with a wealth of integrate tools for filtering and aligning sequences, constructing phylogenetics trees as well as options for deploying interactive dashboards for [phylogenetic inference](https://nextstrain.org/)
 - [nextclade](https://docs.nextstrain.org/projects/nextclade/en/stable/user/nextclade-cli/index.html): Part of next strain project. Relatively niche to viral genome/gene evolution. However, nextclade v3 makes the list due to its  powerful and fast annotation guided alignment functionality descrived [here](https://docs.nextstrain.org/projects/nextclade/en/stable/changes/CHANGELOG.html). Part of the greater [Nextstrain](https://docs.nextstrain.org/en/latest/) project.
 - [eteToolkit](http://etetoolkit.org/): A python library for phylogenetic and evolutionary hypotehsis testing and visualization.
 - [BEAST2](https://www.beast2.org/): BEAST2 is a software package for Bayesian evolutionary analysis by sampling trees. It is widely used for estimating phylogenies, divergence times, and other evolutionary parameters from molecular sequence data.
@@ -132,7 +145,7 @@ Genomics really deserves its own post but a nice integration of all the tools I 
 - [HyPhy](https://datamonkey.org/): A software package for conducting phylogenetic analysis and hypothesis testing. It offers a suite of tools for estimating evolutionary parameters, testing molecular evolution models, and detecting positive selection from sequence data.
 - [treesort](https://github.com/flu-crew/TreeSort)
 
-## ☁️ Online and cloud-based computational resources 
+## ☁️ **FREE** Online and cloud-based computational resources 
  
 - [UseGalaxy](https://usegalaxy.org/): an online platform for conducting bioinformatics analyses. It provides a user-friendly interface for accessing a wide range of bioinformatics tools and workflows, including those for sequence analysis, genome assembly, and phylogenetics. Users can upload their data, select analysis tools, and visualize results within the platform.
 - [BV-BRC](https://www.bv-brc.org/): A bioinformatics resource center focused on providing tools and data for research in biodefense and public health. It offers a variety of resources, including databases of genomic sequences, analysis tools for studying pathogens, and educational materials for researchers in the field.
@@ -140,7 +153,7 @@ Genomics really deserves its own post but a nice integration of all the tools I 
 
 # 💻 R and Python Libraries for statistical interrogation and visualization
 
-For statistics and visualization, I am more biased to solutions in R. The following are some of my favorites visualization libraries in R and Python. This list is not exhaustive and there is so much out there but these cover my basics. 
+For statistics and visualization, I am more biased to solutions in R. The following are some of my favorites visualization libraries in R and Python. This list is not even close to exhaustive but these cover my basics. 
 
 - [Eric Fletcher] has an excellent R learning resource list which helped me ease my way into hypotehsis testing and visualization in R with his [awesome-r-learning-resources](https://github.com/iamericfletcher/awesome-r-learning-resources) page.
 
@@ -153,19 +166,22 @@ For statistics and visualization, I am more biased to solutions in R. The follow
 - 🖼️ [ggplot2 extension gallery](https://exts.ggplot2.tidyverse.org/gallery/)
 - 🖼️ [The `R` graph Gallery](https://r-graph-gallery.com/) - A reproducible collection of charts using `R`. This gallery is an incredible resouce for not only expanding the flexability of your plots, but also for choosing the most appropriate visualization for your data.
 - [ggstatsplot](https://indrajeetpatil.github.io/ggstatsplot/index.html)
+- [ggpubr](https://rpkgs.datanovia.com/ggpubr/)
+- [smplot2](https://github.com/smin95/smplot2)
+- [ggforce](https://ggforce.data-imaginist.com/)
+- [ggdist](https://mjskay.github.io/ggdist/)
 - [tidytables](https://vincentarelbundock.github.io/tinytable/)
 - [ggupset](https://github.com/const-ae/ggupset)
 - [ggvenndiagram](https://cran.r-project.org/web/packages/ggVennDiagram/readme/README.html) - if you must...
 - [ggmsa](https://github.com/YuLab-SMU/ggmsa): MSA viewer approrpiate for visualization of short aa or nt alignments. Preloaded with different tracks showing consensus, stacked composition, motif highlighting, etc.
-- [ggpubr](https://rpkgs.datanovia.com/ggpubr/)
-- [ggdist](https://mjskay.github.io/ggdist/)
-
+- [seqvisR](https://github.com/vragh/seqvisr)
+  
 ### Fun packages for ✨aesthetics✨ and publication-quality figures
 - [themepark](https://matthewbjane.com/ThemePark/) - a pop culture ggplot theme library
-- [smplot2](https://github.com/smin95/smplot2)
 - [ggprism](https://csdaw.github.io/ggprism/) - iykyk
 - [patchwork](https://patchwork.data-imaginist.com/)
-- [ggforce](https://ggforce.data-imaginist.com/)
+- [cowplot](https://github.com/wilkelab/cowplot)
+- [gridExtra]()
 
 ## Python
 
@@ -186,11 +202,20 @@ I primarily use python to build tools that do not exist in `R` or as a standalon
 Common Databases I use that have been lifesavers for large-volume data projects:
 
 - [DuckDB](https://duckdb.org/)
-- [SQLiteh](ttps://www.sqlite.org/)
-- [MongoDB](https://www.mongodb.com/)
+  - [R API](https://duckdb.org/docs/api/r.html)👀
+- [SQLite](ttps://www.sqlite.org/): Lightweight RDBMS! Great for smaller sequencing projects.  
+- [MongoDB](https://www.mongodb.com/): Well-supported NoSQL Database. 
+
+High-level Languages which mesh incredibly well with sequencing-based bioinformatics 
+- [RUST](https://www.rust-lang.org/): 🫠
+- [Go](https://go.dev/) 🏃🏻‍♂️💨
+- C++: Of course. 
 
 # 📝 Blogs and Additional Resources
 
 - [TidyTuesday](ttps://github.com/rfordatascience/tidytuesday)
 - [Learning basic statistical Testing in R](https://github.com/cxli233/Online_R_learning)
 - [Dr. Stephaniehicks Blog](https://www.stephaniehicks.com/) 
+
+
+

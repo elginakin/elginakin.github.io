@@ -148,11 +148,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#leaning-a-pipeline-and-useful-tools-within-them" id="toc-leaning-a-pipeline-and-useful-tools-within-them" class="nav-link" data-scroll-target="#leaning-a-pipeline-and-useful-tools-within-them">🧬 Leaning a Pipeline (and useful tools within them)</a>
   <ul class="collapse">
   <li><a href="#scrnaseq" id="toc-scrnaseq" class="nav-link" data-scroll-target="#scrnaseq">scRNAseq:</a></li>
+  <li><a href="#rnaseq-bulk-and-sc" id="toc-rnaseq-bulk-and-sc" class="nav-link" data-scroll-target="#rnaseq-bulk-and-sc">RNAseq (bulk and sc):</a></li>
   <li><a href="#proteomics" id="toc-proteomics" class="nav-link" data-scroll-target="#proteomics">Proteomics:</a></li>
   <li><a href="#genomics" id="toc-genomics" class="nav-link" data-scroll-target="#genomics">Genomics</a></li>
+  <li><a href="#integrated-and-pan-dimentional-omics" id="toc-integrated-and-pan-dimentional-omics" class="nav-link" data-scroll-target="#integrated-and-pan-dimentional-omics">Integrated and Pan-Dimentional Omics</a></li>
+  <li><a href="#high-dimentional-flow-cytometry" id="toc-high-dimentional-flow-cytometry" class="nav-link" data-scroll-target="#high-dimentional-flow-cytometry">High-dimentional flow cytometry</a></li>
   </ul></li>
   <li><a href="#phylogenetics" id="toc-phylogenetics" class="nav-link" data-scroll-target="#phylogenetics">🧬 Phylogenetics</a></li>
-  <li><a href="#online-and-cloud-based-computational-resources" id="toc-online-and-cloud-based-computational-resources" class="nav-link" data-scroll-target="#online-and-cloud-based-computational-resources">☁️ Online and cloud-based computational resources</a></li>
+  <li><a href="#free-online-and-cloud-based-computational-resources" id="toc-free-online-and-cloud-based-computational-resources" class="nav-link" data-scroll-target="#free-online-and-cloud-based-computational-resources">☁️ <strong>FREE</strong> Online and cloud-based computational resources</a></li>
   </ul></li>
   <li><a href="#r-and-python-libraries-for-statistical-interrogation-and-visualization" id="toc-r-and-python-libraries-for-statistical-interrogation-and-visualization" class="nav-link" data-scroll-target="#r-and-python-libraries-for-statistical-interrogation-and-visualization">💻 R and Python Libraries for statistical interrogation and visualization</a>
   <ul class="collapse">
@@ -237,8 +240,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="literature-review-resources" class="level2">
 <h2 class="anchored" data-anchor-id="literature-review-resources">📚 Literature Review Resources</h2>
 <ul>
-<li><a href="https://researchrabbitapp.com/">Research Rabbit</a></li>
-<li><a href="https://www.semanticscholar.org/">Semantic Scholar</a></li>
+<li><a href="https://researchrabbitapp.com/">Research Rabbit</a>: An AI assisted application which builds networks around public manuscripts (accessible by DOI) by various attributes: author, citations, etc.
+<ul>
+<li>Integrates with <a href="https://www.zotero.org/">Zotero</a>.</li>
+</ul></li>
+<li><a href="https://www.semanticscholar.org/">Semantic Scholar</a>: A powerful search which assists with identifying ‘related’ articles.</li>
 </ul>
 </section>
 </section>
@@ -301,9 +307,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="scripting-and-reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="scripting-and-reproducibility">🖥️ Scripting and Reproducibility</h2>
 <ul>
-<li><a href="https://posit.co/download/rstudio-desktop/">Rstudio IDE</a> - Of course</li>
-<li><a href="https://quarto.org/">Quarto</a>: also developed by posit. Similar to Rmarkdown but supports multiple languages. Extremely powerful.</li>
-<li><a href="https://jupyter.org/">Jupyter</a> notebooks. Essential for python users.</li>
+<li><a href="https://posit.co/download/rstudio-desktop/">Rstudio IDE</a></li>
+<li><a href="https://quarto.org/">Quarto</a>: also developed by posit. Similar to Rmarkdown but supports multiple languages. Extremely powerful. for python users.</li>
 <li><a href="https://code.visualstudio.com/">VS Code</a>: A lightweight and accesible text editor.</li>
 <li><a href="https://github.com/features/copilot">Github Co Pilot</a>: Nice AI assistant and can be integrated in VS Code.</li>
 <li><a href="https://www.warp.dev/">Warp</a> (MacOS Only as of Feb 2024): A fancy shansy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI.</li>
@@ -361,7 +366,12 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="scrnaseq">scRNAseq:</h3>
 <ul>
 <li><a href="https://github.com/theislab/single-cell-tutorial">single-cell-tutorial</a>: Scripts to complement the book: <a href="https://www.sc-best-practices.org/preamble.html">Current best-practices in single-cell RNA-seq: a tutorial</a></li>
-<li>An open source lecture for <a href="https://www.stephaniehicks.com/singlecelldemo/">Single Cell Datascience</a> from JHU’s Dr.&nbsp;Stephanie Hicks. ### RNAseq (bulk and sc):</li>
+<li>An open source lecture for <a href="https://www.stephaniehicks.com/singlecelldemo/">Single Cell Datascience</a> from JHU’s Dr.&nbsp;Stephanie Hicks.</li>
+</ul>
+</section>
+<section id="rnaseq-bulk-and-sc" class="level3">
+<h3 class="anchored" data-anchor-id="rnaseq-bulk-and-sc">RNAseq (bulk and sc):</h3>
+<ul>
 <li><a href="https://github.com/pachterlab/BI-BE-CS-183-2023">Caltech BI/BE/CSS 183</a> - Course: Introduction to Computational Biology and Bioinformatics Course at Caltech, 2023</li>
 <li><a href="https://jokergoo.github.io/GSEAtraining/index.html">Introduction to GSEA</a></li>
 <li><a href="http://bioinformatics.sdstate.edu/idep/">iDEP</a>: Guided RNAseq analysis built and deployed in Rshiny.</li>
@@ -384,18 +394,34 @@ ul.task-list li input[type="checkbox"] {
 <p>Genomics really deserves its own post but a nice integration of all the tools I use can be summarized through <a href="https://gatk.broadinstitute.org/hc/en-us">GATK</a></p>
 <ul>
 <li><a href="https://github.com/igvteam/igv-reports">IGV-Reports</a></li>
+<li><a href="https://github.com/showteeth/ggcoverage">ggcoverage</a>: R package for flexible <code>BAM</code> file visualization.</li>
 <li><a href="https://sandbox.bio/">Sandbox.bio</a>: Learning Genomics in your browser</li>
-<li><a href="https://github.com/showteeth/ggcoverage">ggcoverage</a></li>
 <li><a href="https://benjjneb.github.io/dada2/">Dada2</a></li>
 <li><a href="https://seekdeep.brown.edu/#">SeekDeep</a></li>
 <li><a href="https://github.com/pachterlab/gget">gget</a></li>
+</ul>
+</section>
+<section id="integrated-and-pan-dimentional-omics" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-and-pan-dimentional-omics">Integrated and Pan-Dimentional Omics</h3>
+<ul>
+<li><a href="https://github.com/genular/pandora">SIMON</a>: A machine-learning based approach to integrating diverse biological data with transcriptomics and microbiome datasets.
+<ul>
+<li>Read the <a href="https://www.sciencedirect.com/science/article/pii/S2666389920302427">manuscript</a></li>
+<li><a href="https://fluprint.com/#/about">Read the FluPRINT study</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="high-dimentional-flow-cytometry" class="level3">
+<h3 class="anchored" data-anchor-id="high-dimentional-flow-cytometry">High-dimentional flow cytometry</h3>
+<ul>
+<li><a href="https://www.omiq.ai/">Omiq</a>: (resource) Cloud-based flow cytometry software, a nice flow-jo alternative gear particularly to high-dimentional flow panels with seamless integration with common dimention-reduction approaches and EmbededSOM.</li>
 </ul>
 </section>
 </section>
 <section id="phylogenetics" class="level2">
 <h2 class="anchored" data-anchor-id="phylogenetics">🧬 Phylogenetics</h2>
 <ul>
-<li><a href="https://docs.nextstrain.org/projects/augur/en/stable/index.html">Augur</a></li>
+<li><a href="https://docs.nextstrain.org/projects/augur/en/stable/index.html">Augur</a>: A phylogenetics toolkit with a wealth of integrate tools for filtering and aligning sequences, constructing phylogenetics trees as well as options for deploying interactive dashboards for <a href="https://nextstrain.org/">phylogenetic inference</a></li>
 <li><a href="https://docs.nextstrain.org/projects/nextclade/en/stable/user/nextclade-cli/index.html">nextclade</a>: Part of next strain project. Relatively niche to viral genome/gene evolution. However, nextclade v3 makes the list due to its powerful and fast annotation guided alignment functionality descrived <a href="https://docs.nextstrain.org/projects/nextclade/en/stable/changes/CHANGELOG.html">here</a>. Part of the greater <a href="https://docs.nextstrain.org/en/latest/">Nextstrain</a> project.</li>
 <li><a href="http://etetoolkit.org/">eteToolkit</a>: A python library for phylogenetic and evolutionary hypotehsis testing and visualization.</li>
 <li><a href="https://www.beast2.org/">BEAST2</a>: BEAST2 is a software package for Bayesian evolutionary analysis by sampling trees. It is widely used for estimating phylogenies, divergence times, and other evolutionary parameters from molecular sequence data.</li>
@@ -410,8 +436,8 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://github.com/flu-crew/TreeSort">treesort</a></li>
 </ul>
 </section>
-<section id="online-and-cloud-based-computational-resources" class="level2">
-<h2 class="anchored" data-anchor-id="online-and-cloud-based-computational-resources">☁️ Online and cloud-based computational resources</h2>
+<section id="free-online-and-cloud-based-computational-resources" class="level2">
+<h2 class="anchored" data-anchor-id="free-online-and-cloud-based-computational-resources">☁️ <strong>FREE</strong> Online and cloud-based computational resources</h2>
 <ul>
 <li><a href="https://usegalaxy.org/">UseGalaxy</a>: an online platform for conducting bioinformatics analyses. It provides a user-friendly interface for accessing a wide range of bioinformatics tools and workflows, including those for sequence analysis, genome assembly, and phylogenetics. Users can upload their data, select analysis tools, and visualize results within the platform.</li>
 <li><a href="https://www.bv-brc.org/">BV-BRC</a>: A bioinformatics resource center focused on providing tools and data for research in biodefense and public health. It offers a variety of resources, including databases of genomic sequences, analysis tools for studying pathogens, and educational materials for researchers in the field.</li>
@@ -421,7 +447,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="r-and-python-libraries-for-statistical-interrogation-and-visualization" class="level1">
 <h1>💻 R and Python Libraries for statistical interrogation and visualization</h1>
-<p>For statistics and visualization, I am more biased to solutions in R. The following are some of my favorites visualization libraries in R and Python. This list is not exhaustive and there is so much out there but these cover my basics.</p>
+<p>For statistics and visualization, I am more biased to solutions in R. The following are some of my favorites visualization libraries in R and Python. This list is not even close to exhaustive but these cover my basics.</p>
 <ul>
 <li><p>[Eric Fletcher] has an excellent R learning resource list which helped me ease my way into hypotehsis testing and visualization in R with his <a href="https://github.com/iamericfletcher/awesome-r-learning-resources">awesome-r-learning-resources</a> page.</p></li>
 <li><p>Yan Holtz’s <a href="https://www.data-to-viz.com/">data2viz</a> guidlines for appropriate visualization of data. An excellent resouce which explains the pros and caviates for numeric, categoric, Num+Cat, maped, network and time series data.</p></li>
@@ -433,21 +459,24 @@ ul.task-list li input[type="checkbox"] {
 <li>🖼️ <a href="https://exts.ggplot2.tidyverse.org/gallery/">ggplot2 extension gallery</a></li>
 <li>🖼️ <a href="https://r-graph-gallery.com/">The <code>R</code> graph Gallery</a> - A reproducible collection of charts using <code>R</code>. This gallery is an incredible resouce for not only expanding the flexability of your plots, but also for choosing the most appropriate visualization for your data.</li>
 <li><a href="https://indrajeetpatil.github.io/ggstatsplot/index.html">ggstatsplot</a></li>
+<li><a href="https://rpkgs.datanovia.com/ggpubr/">ggpubr</a></li>
+<li><a href="https://github.com/smin95/smplot2">smplot2</a></li>
+<li><a href="https://ggforce.data-imaginist.com/">ggforce</a></li>
+<li><a href="https://mjskay.github.io/ggdist/">ggdist</a></li>
 <li><a href="https://vincentarelbundock.github.io/tinytable/">tidytables</a></li>
 <li><a href="https://github.com/const-ae/ggupset">ggupset</a></li>
 <li><a href="https://cran.r-project.org/web/packages/ggVennDiagram/readme/README.html">ggvenndiagram</a> - if you must…</li>
 <li><a href="https://github.com/YuLab-SMU/ggmsa">ggmsa</a>: MSA viewer approrpiate for visualization of short aa or nt alignments. Preloaded with different tracks showing consensus, stacked composition, motif highlighting, etc.</li>
-<li><a href="https://rpkgs.datanovia.com/ggpubr/">ggpubr</a></li>
-<li><a href="https://mjskay.github.io/ggdist/">ggdist</a></li>
+<li><a href="https://github.com/vragh/seqvisr">seqvisR</a></li>
 </ul>
 <section id="fun-packages-for-aesthetics-and-publication-quality-figures" class="level3">
 <h3 class="anchored" data-anchor-id="fun-packages-for-aesthetics-and-publication-quality-figures">Fun packages for ✨aesthetics✨ and publication-quality figures</h3>
 <ul>
 <li><a href="https://matthewbjane.com/ThemePark/">themepark</a> - a pop culture ggplot theme library</li>
-<li><a href="https://github.com/smin95/smplot2">smplot2</a></li>
 <li><a href="https://csdaw.github.io/ggprism/">ggprism</a> - iykyk</li>
 <li><a href="https://patchwork.data-imaginist.com/">patchwork</a></li>
-<li><a href="https://ggforce.data-imaginist.com/">ggforce</a></li>
+<li><a href="https://github.com/wilkelab/cowplot">cowplot</a></li>
+<li><a href="">gridExtra</a></li>
 </ul>
 </section>
 </section>
@@ -471,9 +500,13 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Common Databases I use that have been lifesavers for large-volume data projects:</p>
 <ul>
-<li><a href="https://duckdb.org/">DuckDB</a></li>
-<li><a href="ttps://www.sqlite.org/">SQLiteh</a></li>
-<li><a href="https://www.mongodb.com/">MongoDB</a></li>
+<li><a href="https://duckdb.org/">DuckDB</a>
+<ul>
+<li><a href="https://duckdb.org/docs/api/r.html">R API</a>👀</li>
+</ul></li>
+<li><a href="ttps://www.sqlite.org/">SQLite</a>: Lightweight RDBMS! Great for smaller sequencing projects.<br>
+</li>
+<li><a href="https://www.mongodb.com/">MongoDB</a>: Well-supported NoSQL Database.</li>
 </ul>
 </section>
 </section>
