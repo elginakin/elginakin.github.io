@@ -1,7 +1,7 @@
 ---
 title: Useful tools for my PhD
 description: | 
-    A collection of Tools I frequently use for my PhD studies in Molecular Virology. Regularly updated.
+    A collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated **2024-04-18**.
 Catagories:
     - Tools
 author: Elgin Akin
