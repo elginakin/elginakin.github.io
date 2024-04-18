@@ -4,7 +4,7 @@
     "href": "posts/index.html",
     "title": "posts",
     "section": "",
-    "text": "Useful tools for my PhD\n\n\n\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Regularly updated. \n\n\n\n\n\nFeb 27, 2024\n\n\nElgin Akin\n\n\n\n\n\n\nNo matching items"
+    "text": "Useful tools for my PhD\n\n\n\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated 2024-04-18. \n\n\n\n\n\nFeb 27, 2024\n\n\nElgin Akin\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -158,7 +158,7 @@
     "href": "posts/content/PhDTools/index.html#scripting-and-reproducibility",
     "title": "Useful tools for my PhD",
     "section": "🖥️ Scripting and Reproducibility",
-    "text": "🖥️ Scripting and Reproducibility\n\nRstudio IDE\nQuarto: also developed by posit. Similar to Rmarkdown but supports multiple languages. Extremely powerful. for python users.\nVS Code: A lightweight and accesible text editor.\nGithub Co Pilot: Nice AI assistant and can be integrated in VS Code.\nWarp (MacOS Only as of Feb 2024): A fancy shansy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI."
+    "text": "🖥️ Scripting and Reproducibility\n\nRstudio IDE\nQuarto: also developed by posit. Similar to Rmarkdown and supports multiple languages.\nJupyter: A locally deployed web-application for scripting. Multilanguage support but works especially well for python and julia users. ‘Chunk’-based approach.\nVS Code: A lightweight and accesible text editor.\nGithub Co Pilot: Nice AI assistant and can be integrated in VS Code.\nWarp (MacOS Only as of Feb 2024): A fancy shmancy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI etc."
   },
   {
     "objectID": "posts/content/PhDTools/index.html#sequence-motif-and-similarity-searches",
@@ -214,7 +214,7 @@
     "href": "posts/content/PhDTools/index.html#honorable-metions",
     "title": "Useful tools for my PhD",
     "section": "Honorable metions",
-    "text": "Honorable metions\n\nThe awesome-datascience\nAn Rshiny for calculating statistical power and sample size: https://pwrss.shinyapps.io/index/\n\nCommon Databases I use that have been lifesavers for large-volume data projects:\n\nDuckDB\n\nR API👀\n\nSQLite: Lightweight RDBMS! Great for smaller sequencing projects.\n\nMongoDB: Well-supported NoSQL Database."
+    "text": "Honorable metions\n\nThe awesome-datascience\nAn Rshiny for calculating statistical power and sample size: https://pwrss.shinyapps.io/index/\n\nCommon Databases I use that have been lifesavers for large-volume data projects:\n\nDuckDB\n\nR API👀\n\nSQLite: Lightweight RDBMS! Great for smaller sequencing projects.\n\nMongoDB: Well-supported NoSQL Database.\n\nHigh-level Languages which mesh incredibly well with sequencing-based bioinformatics - RUST: 🫠 - Go 🏃🏻‍♂️💨 - C++: Of course."
   },
   {
     "objectID": "posts/content/PhDTools/index.html#free-online-and-cloud-based-computational-resources",

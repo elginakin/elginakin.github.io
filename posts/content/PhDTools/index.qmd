@@ -145,7 +145,7 @@ Genomics really deserves its own post but a nice integration of all the tools I 
 - [HyPhy](https://datamonkey.org/): A software package for conducting phylogenetic analysis and hypothesis testing. It offers a suite of tools for estimating evolutionary parameters, testing molecular evolution models, and detecting positive selection from sequence data.
 - [treesort](https://github.com/flu-crew/TreeSort)
 
-## ☁️ **FREE** Online and cloud-based computational resources 
+## ☁️ **FREE** Online and cloud-based computational resources
  
 - [UseGalaxy](https://usegalaxy.org/): an online platform for conducting bioinformatics analyses. It provides a user-friendly interface for accessing a wide range of bioinformatics tools and workflows, including those for sequence analysis, genome assembly, and phylogenetics. Users can upload their data, select analysis tools, and visualize results within the platform.
 - [BV-BRC](https://www.bv-brc.org/): A bioinformatics resource center focused on providing tools and data for research in biodefense and public health. It offers a variety of resources, including databases of genomic sequences, analysis tools for studying pathogens, and educational materials for researchers in the field.
