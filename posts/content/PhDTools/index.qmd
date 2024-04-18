@@ -211,11 +211,12 @@ High-level Languages which mesh incredibly well with sequencing-based bioinforma
 - [Go](https://go.dev/) 🏃🏻‍♂️💨
 - C++: Of course. 
 
-# 📝 Blogs and Additional Resources
+# 📝 Blogs, Repositories and Additional Resources
 
 - [TidyTuesday](ttps://github.com/rfordatascience/tidytuesday)
 - [Learning basic statistical Testing in R](https://github.com/cxli233/Online_R_learning)
 - [Dr. Stephaniehicks Blog](https://www.stephaniehicks.com/) 
+- [Repository - LearnAnything.xyz](https://learn-anything.xyz/) - An interactive collection from the [learn-anything.xyz](https://github.com/learn-anything/learn-anything.xyz) github repository
 
 
 
