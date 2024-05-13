@@ -22,5 +22,11 @@
   },
   "posts/content/PhDTools/index.qmd": {
     "index.html": "fe0819eb"
+  },
+  "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.md": {
+    "CHANGELOG.html": "97c96a7c"
+  },
+  "posts/content/flutree_tutorial/index.qmd": {
+    "index.html": "867d113b"
   }
 }

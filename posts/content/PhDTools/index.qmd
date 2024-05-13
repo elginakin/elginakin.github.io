@@ -6,7 +6,7 @@ Catagories:
     - Tools
 author: Elgin Akin
 date: "02/27/2024"
-image: 'blog_top_image.jpg'
+image: 'blog_top_image.png'
 ---
 
 # Literature - Keeping up and keeping track...

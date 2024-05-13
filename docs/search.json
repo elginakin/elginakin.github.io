@@ -4,7 +4,7 @@
     "href": "posts/index.html",
     "title": "posts",
     "section": "",
-    "text": "Useful tools for my PhD\n\n\n\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated 2024-04-18. \n\n\n\n\n\nFeb 27, 2024\n\n\nElgin Akin\n\n\n\n\n\n\nNo matching items"
+    "text": "Constructing time-resolved phylogenetic trees, A tutorial\n\n\n\n\n\nA basic tutorial for building and visualizing time-resolved phylogenetic trees \n\n\n\n\n\nMay 11, 2024\n\n\nElgin Akin\n\n\n\n\n\n\n\n\n\n\n\n\nUseful tools for my PhD\n\n\n\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated 2024-04-18. \n\n\n\n\n\nFeb 27, 2024\n\n\nElgin Akin\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -222,5 +222,131 @@
     "title": "Useful tools for my PhD",
     "section": "☁️ FREE Online and cloud-based computational resources",
     "text": "☁️ FREE Online and cloud-based computational resources\n\nUseGalaxy: an online platform for conducting bioinformatics analyses. It provides a user-friendly interface for accessing a wide range of bioinformatics tools and workflows, including those for sequence analysis, genome assembly, and phylogenetics. Users can upload their data, select analysis tools, and visualize results within the platform.\nBV-BRC: A bioinformatics resource center focused on providing tools and data for research in biodefense and public health. It offers a variety of resources, including databases of genomic sequences, analysis tools for studying pathogens, and educational materials for researchers in the field.\nMAFFT: a software tool for multiple sequence alignment of biological sequences. It is widely used for aligning DNA, RNA, and protein sequences, and it offers several algorithms optimized for different types of sequences and alignment tasks. MAFFT can handle large datasets efficiently and is available both as a standalone program and through a web server interface."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html",
+    "href": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html",
+    "title": "",
+    "section": "",
+    "text": "Update of the datasets with more recent data. No new clades were added on this occasion."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html#t075039z",
+    "href": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html#t075039z",
+    "title": "",
+    "section": "",
+    "text": "Update of the datasets with more recent data. No new clades were added on this occasion."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html#t161203z",
+    "href": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html#t161203z",
+    "title": "",
+    "section": "2024-02-22T16:12:03Z",
+    "text": "2024-02-22T16:12:03Z\nAfter discussion with various members of the seasonal influenza virus surveillance community, it was decided that subclade names starting with H have the potential to be confused with major influenza hemagglutinin subtypes. These subclades where therefore renamed to start with the alias J.\n\nH –&gt; J\nH.1 –&gt; J.1\nH.2 –&gt; J.2\nH.3 –&gt; J.3\nH.4 –&gt; J.4\n\nThe subclades H and H.* were revoked, and a comment was added to explain the reason. No subclade definitions were changed."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html#t203102z",
+    "href": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html#t203102z",
+    "title": "",
+    "section": "2024-01-16T20:31:02Z",
+    "text": "2024-01-16T20:31:02Z\nInitial release for Nextclade v3!\n\nAddition of subclade H.1, H.2, H.3, and H.4\nAliasing of G.1.3.1.1 as subclade H\n\nRead more about Nextclade datasets in the documentation: https://docs.nextstrain.org/projects/nextclade/en/stable/user/datasets.html"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html",
+    "href": "posts/content/flutree_tutorial/index.html",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "",
+    "text": "Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms. While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams.\nIf you have already constructed your time tree in either BEAST, IQ-Tree, or TreeTime, Navigate here to skip straight to visualization."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#tree-construction",
+    "href": "posts/content/flutree_tutorial/index.html#tree-construction",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Tree Construction",
+    "text": "Tree Construction"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#tree-visualization-r",
+    "href": "posts/content/flutree_tutorial/index.html#tree-visualization-r",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Tree Visualization (R)",
+    "text": "Tree Visualization (R)\n\nWe will use the following packages for tree visualization in R. Be sure to install them if you have not already.\n\nggtree\ntreeio\nape\ntidyverse\n\n\nFull tutorials for more comprehensive phylognetic analysis pipelines with interactives are descrived in great detail with pathogen-specific tutorials by the Nextstrain Team. - Introduction to Nextstrain - Creating a phylogenetic workflow"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#directories",
+    "href": "posts/content/flutree_tutorial/index.html#directories",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Directories",
+    "text": "Directories\nwe already have our data directory, go ahead and make 2 directory for our results and config in your home directory.\n\nmkdir results results/plots config config/nextclade config/nextclade/flu_h3n2_ha"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#curate-meatadata-file-dates",
+    "href": "posts/content/flutree_tutorial/index.html#curate-meatadata-file-dates",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Curate meatadata file dates",
+    "text": "Curate meatadata file dates\n\naugur curate format-dates \\\n    --metadata results/metadata.tsv \\\n    --date-fields date \\\n    --expected-date-formats \"%Y-%m-%d\" \"%Y-%m-\" \\\n    --output-metadata results/dates_metadata.tsv\n\nGreat! Our dates are now in a proper format for time-resolved tree construction. If we manually inspect our results dates_metadata.tsv file, we can see that missing days have been replaced with the XX ambiguity for the day.\n\n\n\nstrain\nstrain_name\ndate\ncountry\nsegment\n\n\n\n\nOQ180101\nA/WA/39360/2022\n2022-11-XX\nUSA\n4\n\n\nOQ180141\nA/WA/08914/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180149\nA/WA/18843/2022\n2022-11-XX\nUSA\n4\n\n\nOQ180165\nA/WA/27812/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180173\nA/WA/31872/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180181\nA/WA/34476/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180189\nA/WA/38451/2022\n2022-11-XX\nUSA\n4\n\n\nOQ180197\nA/WA/44633/2022\n2022-11-XX\nUSA\n4\n\n\nOQ180205\nA/WA/49566/2022\n2022-11-XX\nUSA\n4\n\n\nOQ180213\nA/WA/49996/2022\n2022-11-XX\nUSA\n4\n\n\nOQ180221\nA/WA/52234/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180229\nA/WA/54319/2022\n2022-11-XX\nUSA\n4\n\n\nOQ180245\nA/WA/57577/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180253\nA/WA/66184/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180261\nA/WA/69597/2022\n2022-12-XX\nUSA\n4\n\n\nOQ180269\nA/WA/75885/2022\n2022-12-XX\nUSA\n4\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIf you wish to proceed to constructing phylogenetic trees with amino acid mutations mapped to specific notes, stop here and proceed with the Creating a phylogenetic workflow tutorial. The following steps only provide mutation mapping at the nucleotide level in a time resolved tree."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#join-metadata-and-nextclade-results",
+    "href": "posts/content/flutree_tutorial/index.html#join-metadata-and-nextclade-results",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Join metadata and nextclade results",
+    "text": "Join metadata and nextclade results\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.5.1     ✔ purrr   1.0.2\n✔ tibble  3.2.1     ✔ dplyr   1.1.3\n✔ tidyr   1.3.0     ✔ stringr 1.5.0\n✔ readr   2.1.3     ✔ forcats 1.0.0\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nmetadata = read_tsv('./results/dates_metadata.tsv')\n\nRows: 10191 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \"\\t\"\nchr (4): strain, strain_name, date, country\ndbl (1): segment\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nnextclade = read_tsv('./results/nextclade.tsv')\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 10191 Columns: 73\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \"\\t\"\nchr (17): seqName, clade, subclade, short-clade, glycosylation, qc.overallSt...\ndbl (34): index, RBD, qc.overallScore, totalSubstitutions, totalDeletions, t...\nnum  (1): missing\nlgl (21): isReverseComplement, deletions, frameShifts, aaDeletions, aaInsert...\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nmetadata_join = metadata %&gt;% \n    left_join(nextclade, by = c('strain' = 'seqName'))\n\nLets check to see what metadata we have availible and select accordingly.\n\ncolnames(metadata_join) \n\n [1] \"strain\"                                         \n [2] \"strain_name\"                                    \n [3] \"date\"                                           \n [4] \"country\"                                        \n [5] \"segment\"                                        \n [6] \"index\"                                          \n [7] \"clade\"                                          \n [8] \"subclade\"                                       \n [9] \"short-clade\"                                    \n[10] \"RBD\"                                            \n[11] \"glycosylation\"                                  \n[12] \"qc.overallScore\"                                \n[13] \"qc.overallStatus\"                               \n[14] \"totalSubstitutions\"                             \n[15] \"totalDeletions\"                                 \n[16] \"totalInsertions\"                                \n[17] \"totalFrameShifts\"                               \n[18] \"totalMissing\"                                   \n[19] \"totalNonACGTNs\"                                 \n[20] \"totalAminoacidSubstitutions\"                    \n[21] \"totalAminoacidDeletions\"                        \n[22] \"totalAminoacidInsertions\"                       \n[23] \"totalUnknownAa\"                                 \n[24] \"alignmentScore\"                                 \n[25] \"alignmentStart\"                                 \n[26] \"alignmentEnd\"                                   \n[27] \"coverage\"                                       \n[28] \"isReverseComplement\"                            \n[29] \"substitutions\"                                  \n[30] \"deletions\"                                      \n[31] \"insertions\"                                     \n[32] \"frameShifts\"                                    \n[33] \"aaSubstitutions\"                                \n[34] \"aaDeletions\"                                    \n[35] \"aaInsertions\"                                   \n[36] \"privateNucMutations.reversionSubstitutions\"     \n[37] \"privateNucMutations.labeledSubstitutions\"       \n[38] \"privateNucMutations.unlabeledSubstitutions\"     \n[39] \"privateNucMutations.totalReversionSubstitutions\"\n[40] \"privateNucMutations.totalLabeledSubstitutions\"  \n[41] \"privateNucMutations.totalUnlabeledSubstitutions\"\n[42] \"privateNucMutations.totalPrivateSubstitutions\"  \n[43] \"missing\"                                        \n[44] \"unknownAaRanges\"                                \n[45] \"nonACGTNs\"                                      \n[46] \"qc.missingData.missingDataThreshold\"            \n[47] \"qc.missingData.score\"                           \n[48] \"qc.missingData.status\"                          \n[49] \"qc.missingData.totalMissing\"                    \n[50] \"qc.mixedSites.mixedSitesThreshold\"              \n[51] \"qc.mixedSites.score\"                            \n[52] \"qc.mixedSites.status\"                           \n[53] \"qc.mixedSites.totalMixedSites\"                  \n[54] \"qc.privateMutations.cutoff\"                     \n[55] \"qc.privateMutations.excess\"                     \n[56] \"qc.privateMutations.score\"                      \n[57] \"qc.privateMutations.status\"                     \n[58] \"qc.privateMutations.total\"                      \n[59] \"qc.snpClusters.clusteredSNPs\"                   \n[60] \"qc.snpClusters.score\"                           \n[61] \"qc.snpClusters.status\"                          \n[62] \"qc.snpClusters.totalSNPs\"                       \n[63] \"qc.frameShifts.frameShifts\"                     \n[64] \"qc.frameShifts.totalFrameShifts\"                \n[65] \"qc.frameShifts.frameShiftsIgnored\"              \n[66] \"qc.frameShifts.totalFrameShiftsIgnored\"         \n[67] \"qc.frameShifts.score\"                           \n[68] \"qc.frameShifts.status\"                          \n[69] \"qc.stopCodons.stopCodons\"                       \n[70] \"qc.stopCodons.totalStopCodons\"                  \n[71] \"qc.stopCodons.score\"                            \n[72] \"qc.stopCodons.status\"                           \n[73] \"totalPcrPrimerChanges\"                          \n[74] \"pcrPrimerChanges\"                               \n[75] \"failedCdses\"                                    \n[76] \"warnings\"                                       \n[77] \"errors\"                                         \n\n\nLets select only columns that we would like to include in our tree.\n\nStrain_name\nDate\nCountry\nClade\nSubclade\nShort-clade\nglycosylation\nRBD\n\n\nmetadata_join_filter = metadata_join %&gt;% \n  select(strain,\n    strain_name, \n    date, \n    country, \n    clade, \n    subclade, \n    `short-clade`,\n    glycosylation, \n    RBD) %&gt;% \n    # write out the metadata final metadata  file\n  write_tsv('results/nextclade_metadata.tsv')"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#final-downsampling",
+    "href": "posts/content/flutree_tutorial/index.html#final-downsampling",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Final downsampling",
+    "text": "Final downsampling\nThe file we have downloaded contains too many sequences to be visualized on a single tree. We will downsample to 150 sequences for this tutorial. We can use augur filter to downsample according to attributes such as time of collection sampling to a maximum of 150 sequences.\n\naugur filter \\\n    --sequences results/sequences.fasta \\\n    --metadata results/nextclade_metadata.tsv \\\n    --group-by year month \\\n    --subsample-max-sequences 150 \\\n    --output results/downsampled_sequences.fasta \\\n    --output-metadata results/downsampled_nextclade_metadata.tsv"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#realign-downsampled-sequences",
+    "href": "posts/content/flutree_tutorial/index.html#realign-downsampled-sequences",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Realign downsampled sequences",
+    "text": "Realign downsampled sequences\n\nmafft --auto --thread 8 results/downsampled_sequences.fasta &gt; results/downsampled_sequences.aln\n\n\ntreetime \\\n    --dates results/downsampled_nextclade_metadata.tsv \\\n    --aln results/downsampled_sequences.aln \\\n    --outdir results/treetime"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#import-time-tree",
+    "href": "posts/content/flutree_tutorial/index.html#import-time-tree",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Import time tree",
+    "text": "Import time tree\n\nmetadata = read_tsv('results/downsampled_nextclade_metadata.tsv')\ntree = read.beast('results/treetime/timetree.nexus')\n\n# Convert tree into a dataframe for human readable data joining. \ntree_df = tree %&gt;% as_data_frame() #use treeio\n\n# join the curated metadata with the tree data\ntree_df = left_join(tree_df, metadata, by=c(\"label\"=\"strain\"))\n\n# convert dataframe back into phylo data type.\ntree_ann = tree_df %&gt;% as.treedata() \n\ntree_ann\n\n'treedata' S4 object'.\n\n...@ phylo:\n\nPhylogenetic tree with 150 tips and 111 internal nodes.\n\nTip labels:\n  MW024906, MW024914, MT245881, MT467072, MT803253, OP536201, ...\nNode labels:\n  NODE_0000002, NODE_0000008, NODE_0000006, NODE_0000007, NODE_0000005,\nNODE_0000009, ...\n\nRooted; includes branch lengths.\n\nwith the following features available:\n  'date.x', 'mutations', 'strain_name', 'date.y', 'country', 'clade',\n'subclade', 'short-clade', 'glycosylation', 'RBD'.\n\n# The associated data tibble abstraction: 261 × 13\n# The 'node', 'label' and 'isTip' are from the phylo tree.\n    node label    isTip date.x  mutations  strain_name  date.y     country clade\n   &lt;int&gt; &lt;chr&gt;    &lt;lgl&gt; &lt;chr&gt;   &lt;list&gt;     &lt;chr&gt;        &lt;date&gt;     &lt;chr&gt;   &lt;chr&gt;\n 1     1 MW024906 TRUE  2020.5  &lt;chr [1]&gt;  A/Hawaii/28… 2020-07-01 USA     3C   \n 2     2 MW024914 TRUE  2020.5  &lt;chr [1]&gt;  A/Hawaii/28… 2020-07-01 USA     3C   \n 3     3 MT245881 TRUE  2020.04 &lt;chr [11]&gt; A/Montana/0… 2020-01-15 USA     3C.3…\n 4     4 MT467072 TRUE  2020.09 &lt;chr [16]&gt; A/Louisiana… 2020-02-04 USA     3C.3…\n 5     5 MT803253 TRUE  2020.2  &lt;chr [6]&gt;  A/Thailand/… 2020-03-13 Thaila… 3C.2…\n 6     6 OP536201 TRUE  2020.94 &lt;chr [2]&gt;  A/Saudi Ara… 2020-12-09 Saudi … 3C.2…\n 7     7 OP536171 TRUE  2020.94 &lt;chr [1]&gt;  A/Saudi Ara… 2020-12-09 Saudi … 3C.2…\n 8     8 MT467091 TRUE  2020.19 &lt;chr [6]&gt;  A/Maryland/… 2020-03-09 USA     3C.2…\n 9     9 MT659242 TRUE  2020.12 &lt;chr [2]&gt;  A/Iowa/17/2… 2020-02-12 USA     3C.2…\n10    10 MT342264 TRUE  2020.02 &lt;chr [1]&gt;  A/Idaho/05/… 2020-01-07 USA     3C.2…\n# ℹ 251 more rows\n# ℹ 4 more variables: subclade &lt;chr&gt;, `short-clade` &lt;chr&gt;, glycosylation &lt;chr&gt;,\n#   RBD &lt;dbl&gt;"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#determine-mrsd",
+    "href": "posts/content/flutree_tutorial/index.html#determine-mrsd",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Determine mrsd",
+    "text": "Determine mrsd\nSince we have gnerated a tree where the branch lengths are now time resolved, we need to calibrate the date by a reference time for proper scaling by ggtree. The read beast can accept a most recent sampling date (or mrsd) for this calibration. Let’s grab the range of the sequence dates from the metadata file.\n\nmetadata %&gt;% \n    summarize(min = min(date), max = max(date))\n\n# A tibble: 1 × 2\n  min        max       \n  &lt;date&gt;     &lt;date&gt;    \n1 2020-01-01 2023-04-10\n\n\nThe mrsd for these data is 2023-04-10. lets proceed with simply plotting the tree along with the time axis."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#ploting-a-simple-tree",
+    "href": "posts/content/flutree_tutorial/index.html#ploting-a-simple-tree",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Ploting a simple tree",
+    "text": "Ploting a simple tree\nLets take a look at the tree by plotting the minimal tree structure and time scale using theme_tree2(). If all previous steps were completed successfully, we will have a tree along with a time-scaled axis.\n\ntree_ann_p &lt;- ggtree(tree_ann, mrsd = '2023-04-10') # the tree_ann_p will serve as our \"base tree\" we can add aesthetic elements onto it later to shave down verbose code. \n\ntree_ann_p + theme_tree2() # theme_tree2 will give us our time-scaled axis.\n\n\n\n\n\n\n\n\nAnnotating your tree is the trickiest part of this step. Static trees require the analyst to provide concise information in a way that is simple to interpret. The beauty of ggtree and its spporting packages is that syntax is simple and intuitive making it easy to add information to your tree. Futhermore, its documentation is incrediblely detailed with abundance reproducible examples and explanations for nearly any attribute you would like to add.\nBelow, I show just one example which best fits only 2 dimensions of information here using tip color and size. However, aesthetics for tip shape as well as for branches can be added as well. It is important that we remember that the tree we have constructed is a down sampled version of our original dataset. Thus, I have included a basic example of a streamgraph from the entire dataset of over 10,000 sequences since we are able to better summarize these data with this visualization."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#plotting-an-annotated-tree",
+    "href": "posts/content/flutree_tutorial/index.html#plotting-an-annotated-tree",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Plotting an annotated tree",
+    "text": "Plotting an annotated tree\nSince H3N2 clade nomenclature is so expansive, lets create a color pallet which can accompany our 23 clades within our dataset. There are dozens of packages which accomplish this beutifully. For this instance, we’ll use the colorspace package and specify the “Set3” palette to expand to our clades. 23 is a very high number to represent in a single plot. However, each clade should cluster discretely assisting with visualization. We will be using the short-clade column for this plot to condense the verbose nomenclature."
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#define-color-pallette",
+    "href": "posts/content/flutree_tutorial/index.html#define-color-pallette",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Define Color Pallette",
+    "text": "Define Color Pallette\n\nlibrary(colorspace)\npalette = qualitative_hcl(23, palette = \"Dark2\")\npalette\n\n [1] \"#C87A8A\" \"#C47E79\" \"#BE8368\" \"#B58859\" \"#AA8D4C\" \"#9C9246\" \"#8C9747\"\n [8] \"#799B50\" \"#649E5E\" \"#4BA16E\" \"#2BA37E\" \"#00A38F\" \"#00A29E\" \"#00A0AC\"\n[15] \"#329DB7\" \"#5598C0\" \"#7292C5\" \"#8B8BC7\" \"#A084C5\" \"#B17FBF\" \"#BD7AB5\"\n[22] \"#C478A9\" \"#C8789B\"\n\n\n\ntree_ann_p1 &lt;- tree_ann_p + \n  geom_tippoint(aes(color = `short-clade`, size = RBD), alpha = 0.99) + \n  scale_size(range = c(0.5, 2)) +  \n  xlab(\"Time\") +\n  guides(color = guide_legend(title = \"Clade\", ncol = 2),\n         size = guide_legend(title = \"RBD Mutations\")) +\n  theme_tree2(legend.position = c(0.30, 0.6),\n              axis.text.x = element_text(size = 10), \n              legend.text = element_text(size = 10), \n              legend.spacing.x = unit(0.01, \"cm\"),\n              legend.key.height = unit(0.3, \"cm\"),\n              legend.background = element_rect(fill = \"transparent\")) +\n  scale_x_continuous(breaks = seq(2009, 2023, by = 2), \n  labels = seq(2009, 2023, by = 2)) +\n  geom_vline(xintercept = seq(2009, 2023, by = 1), \n  linetype = \"dotted\", color = \"gray\") +\n  scale_color_manual(values = palette)  # Set to our palette\n\ntree_ann_p1\n\n\n\n\n\n\n\n\nLets save our plots and adjust the resolution and size for a “publication-like” figure.\n\n#! echo: false\nggsave('results/plots/h3_tree.png', \n  tree_ann_p1, \n  height = 5, \n  width = 6, \n  dpi = 300)"
+  },
+  {
+    "objectID": "posts/content/flutree_tutorial/index.html#plotting-clade-frequency-over-time",
+    "href": "posts/content/flutree_tutorial/index.html#plotting-clade-frequency-over-time",
+    "title": "Constructing time-resolved phylogenetic trees, A tutorial",
+    "section": "Plotting Clade Frequency Over Time",
+    "text": "Plotting Clade Frequency Over Time\nSince we have an abundance of metadata for all 10,000 H3N2 isolates, let’s take advantage and plot a [streamgraph] to fully capture the abundance of H3N2 clades over time. We will use the metadata_join dataframe we generated containing nextclade-assigned clades. Again, we face the issue of attempting to visualize 23 clades on one plot. However, the fact that only one or two clades are dominating at any given time will assist with the constraints of many categorical variables. Since we do not have the luxury of discrete clustering as we did with the tree, we can add lines to separate the clades.\n\nknitr::kable(metadata_join %&gt;% \n  select(strain, date, `short-clade`) %&gt;% head(15))\n\n\n\n\nstrain\ndate\nshort-clade\n\n\n\n\nMT056202\n2020-01-02\n3C.3a1\n\n\nMT105434\n2020-01-02\n3C.2a1b.2b\n\n\nMT105458\n2020-01-03\n3C.2a1b.2\n\n\nMT168634\n2020-01-06\n3C.3a1\n\n\nMT168693\n2020-01-01\n3C.2a1b.2\n\n\nMT168702\n2020-01-01\n3C.2a1b.2\n\n\nMT168789\n2020-01-02\n3C.2a1b.2b\n\n\nMT169082\n2020-01-07\n3C.2a1b.2a\n\n\nMT169091\n2020-01-07\n3C.2a1b.2a\n\n\nMT169171\n2020-01-05\n3C.2a1b.1a\n\n\nMT169188\n2020-01-03\n3C.2a1b.1a\n\n\nMT169196\n2020-01-08\n3C.2a1b.1b\n\n\nMT169204\n2020-01-12\n3C.2a1b.1b\n\n\nMT169212\n2020-01-12\n3C.2a1b.1b\n\n\nMT169276\n2020-01-02\n3C.2a1b.2b"
   }
 ]

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.elginakin.github.io/posts/index.html</loc>
-    <lastmod>2024-02-29T00:56:49.759Z</lastmod>
+    <lastmod>2024-05-13T22:34:35.992Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/index.html</loc>
-    <lastmod>2024-03-12T19:35:55.839Z</lastmod>
+    <lastmod>2024-05-13T22:34:35.988Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/about.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.elginakin.github.io/work/index.html</loc>
-    <lastmod>2024-02-27T14:22:14.276Z</lastmod>
+    <lastmod>2024-05-13T22:34:35.993Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/posts/content/20240227_PhDTools/index.html</loc>
@@ -22,6 +22,14 @@
   </url>
   <url>
     <loc>https://www.elginakin.github.io/posts/content/PhDTools/index.html</loc>
-    <lastmod>2024-04-18T19:45:21.088Z</lastmod>
+    <lastmod>2024-05-13T22:35:07.559Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html</loc>
+    <lastmod>2024-05-13T01:58:21.652Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/posts/content/flutree_tutorial/index.html</loc>
+    <lastmod>2024-05-13T22:32:23.201Z</lastmod>
   </url>
 </urlset>
