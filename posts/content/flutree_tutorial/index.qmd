@@ -22,7 +22,7 @@ image: 'results/plots/h3_tree.png'
 Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms.
 While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams. 
 
-If you have already constructed your time tree in either [BEAST](https://www.beast2.org/), [IQ-Tree](http://www.iqtree.org/doc/Dating), or [TreeTime](https://treetime.readthedocs.io/en/latest/), Navigate here to skip straight to visualization.  
+If you have already constructed your time tree in either [BEAST](https://www.beast2.org/), [IQ-Tree](http://www.iqtree.org/doc/Dating), or [TreeTime](https://treetime.readthedocs.io/en/latest/), you can skip straight to the [time tree visualization](#visualizing-our-tree) section  
 
 ::: {.callout-warning}
 This tutorial covers the basics of constructing and visualizing time-resolved phylogenetic trees using the H3N2 Influenza A virus as an example. This tutorial is intended for users with a basic understanding of the UNIX command line and R.
@@ -295,7 +295,7 @@ treetime \
     --outdir results/treetime
 ```
 
-# 5. Visualizing our tree
+# 5. Visualizing our tree {#visualizing-our-tree}
 
 We will be using [ggtree](https://guangchuangyu.github.io/software/ggtree/) [treeio]() packages developed by [Guangchuang Yu](https://github.com/GuangchuangYu).Please be sure it include appropriate citations as requested [here](https://github.com/YuLab-SMU/ggtree).
 

@@ -256,7 +256,7 @@
     "href": "posts/content/flutree_tutorial/index.html",
     "title": "Constructing time-resolved phylogenetic trees, A tutorial",
     "section": "",
-    "text": "Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms. While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams.\nIf you have already constructed your time tree in either BEAST, IQ-Tree, or TreeTime, Navigate here to skip straight to visualization."
+    "text": "Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms. While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams.\nIf you have already constructed your time tree in either BEAST, IQ-Tree, or TreeTime, you can skip straight to the time tree visualization section"
   },
   {
     "objectID": "posts/content/flutree_tutorial/index.html#tree-construction",

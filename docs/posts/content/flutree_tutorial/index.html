@@ -238,7 +238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms. While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams.</p>
-<p>If you have already constructed your time tree in either <a href="https://www.beast2.org/">BEAST</a>, <a href="http://www.iqtree.org/doc/Dating">IQ-Tree</a>, or <a href="https://treetime.readthedocs.io/en/latest/">TreeTime</a>, Navigate here to skip straight to visualization.</p>
+<p>If you have already constructed your time tree in either <a href="https://www.beast2.org/">BEAST</a>, <a href="http://www.iqtree.org/doc/Dating">IQ-Tree</a>, or <a href="https://treetime.readthedocs.io/en/latest/">TreeTime</a>, you can skip straight to the <a href="#visualizing-our-tree">time tree visualization</a> section</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1566,7 +1566,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb43-22"><a href="#cb43-22"></a>Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms.</span>
 <span id="cb43-23"><a href="#cb43-23"></a>While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams. </span>
 <span id="cb43-24"><a href="#cb43-24"></a></span>
-<span id="cb43-25"><a href="#cb43-25"></a>If you have already constructed your time tree in either <span class="co">[</span><span class="ot">BEAST</span><span class="co">](https://www.beast2.org/)</span>, <span class="co">[</span><span class="ot">IQ-Tree</span><span class="co">](http://www.iqtree.org/doc/Dating)</span>, or <span class="co">[</span><span class="ot">TreeTime</span><span class="co">](https://treetime.readthedocs.io/en/latest/)</span>, Navigate here to skip straight to visualization.  </span>
+<span id="cb43-25"><a href="#cb43-25"></a>If you have already constructed your time tree in either <span class="co">[</span><span class="ot">BEAST</span><span class="co">](https://www.beast2.org/)</span>, <span class="co">[</span><span class="ot">IQ-Tree</span><span class="co">](http://www.iqtree.org/doc/Dating)</span>, or <span class="co">[</span><span class="ot">TreeTime</span><span class="co">](https://treetime.readthedocs.io/en/latest/)</span>, you can skip straight to the <span class="co">[</span><span class="ot">time tree visualization</span><span class="co">](#visualizing-our-tree)</span> section  </span>
 <span id="cb43-26"><a href="#cb43-26"></a></span>
 <span id="cb43-27"><a href="#cb43-27"></a>::: {.callout-warning}</span>
 <span id="cb43-28"><a href="#cb43-28"></a>This tutorial covers the basics of constructing and visualizing time-resolved phylogenetic trees using the H3N2 Influenza A virus as an example. This tutorial is intended for users with a basic understanding of the UNIX command line and R.</span>
@@ -1839,7 +1839,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb43-323"><a href="#cb43-323"></a>    <span class="at">--outdir</span> results/treetime</span>
 <span id="cb43-324"><a href="#cb43-324"></a><span class="in">```</span></span>
 <span id="cb43-325"><a href="#cb43-325"></a></span>
-<span id="cb43-326"><a href="#cb43-326"></a><span class="fu"># 5. Visualizing our tree</span></span>
+<span id="cb43-326"><a href="#cb43-326"></a><span class="fu"># 5. Visualizing our tree {#visualizing-our-tree}</span></span>
 <span id="cb43-327"><a href="#cb43-327"></a></span>
 <span id="cb43-328"><a href="#cb43-328"></a>We will be using <span class="co">[</span><span class="ot">ggtree</span><span class="co">](https://guangchuangyu.github.io/software/ggtree/)</span> <span class="co">[</span><span class="ot">treeio</span><span class="co">]()</span> packages developed by <span class="co">[</span><span class="ot">Guangchuang Yu</span><span class="co">](https://github.com/GuangchuangYu)</span>.Please be sure it include appropriate citations as requested <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/YuLab-SMU/ggtree)</span>.</span>
 <span id="cb43-329"><a href="#cb43-329"></a></span>
