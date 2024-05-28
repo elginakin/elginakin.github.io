@@ -4,9 +4,9 @@ project:
 
 website:
   site-url: https://www.elginakin.github.io/
-  favicon: "/images/logos/elgin_logo_cropped.png"
+  favicon: "images/logos/IMG_0926.PNG"
   navbar:
-    logo: "/images/logos/elgin_logo_cropped.png"
+    logo: "images/logos/IMG_0926.PNG"
     right:
       - href: index.qmd
         text: home
