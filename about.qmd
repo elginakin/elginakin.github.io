@@ -3,7 +3,7 @@ title: "About Me"
 image: "images/logos/IMG_0926.PNG"
 ---
 
-I am a molecular virologist in the [Pekosz Lab](https://www.pekoszlab.com) at JHSPH. I work within the [Centers of Excellence for Influenza Research and Response](https://www.ceirr-network.org/), with the [Mostafa Lab](https://www.hopkinsmedicine.org/profiles/details/heba-mostafa) at the Johns Hopkins School of Medicine as well as many other collaborators. 
+I am a molecular virologist in the [Pekosz Lab](https://www.pekoszlab.com) at JHSPH. I work within the [Centers of Excellence for Influenza Research and Response](https://www.ceirr-network.org/), with the [Mostafa Lab](https://www.hopkinsmedicine.org/profiles/details/heba-mostafa) at the Johns Hopkins School of Medicine as well as other collaborators. 
 
 My interests include:
 

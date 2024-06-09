@@ -5,7 +5,7 @@ description: |
 Catagories:
     - tutorial
 author: Elgin Akin
-date: "05/11/2024"
+date: "06/09/2024"
 format: 
   html:
     highlight-style: pygments
@@ -17,7 +17,9 @@ format:
 image: 'results/plots/h3_tree.png'
 ---
 
+> If you would prefer to follow along with the tutorial data and scripts, a clone of this notebook, data and all supporting information is available [here](https://github.com/elginakin/flutreetutorial). You can make a copy using `git` but navigating to your desired folder and executing: `git clone https://github.com/elginakin/flutreetutorial`.
 
+# Introduction 
 
 Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms.
 While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams. 
@@ -79,12 +81,18 @@ mkdir results results/plots config config/nextclade config/nextclade/flu_h3n2_ha
 
 # 2. Accessing and exploring our data from NCBI
 
-For simplicity in this tutorial, we will be accessing sequencing data deposited on NCBI by various groups. At the time of publishing this tutorial, the sequences were acecssed from the [NCBI Virus Database](https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database). In fall of 2024 NCBI will likely redirect the Influenza Virus Resources to [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=taxid:197911&VirusLineage_ss=taxid:197912&VirusLineage_ss=taxid:197913&VirusLineage_ss=taxid:1511083) so this step will likely need to be updated for clarity in the near future.
+For simplicity in this tutorial, we will be accessing sequencing data deposited on NCBI by various groups. At the time of publishing this tutorial, the sequences were accessed from the [NCBI Virus Database](https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database). In fall of 2024 NCBI will likely redirect the Influenza Virus Resources to [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=taxid:197911&VirusLineage_ss=taxid:197912&VirusLineage_ss=taxid:197913&VirusLineage_ss=taxid:1511083) so this step will likely need to be updated for clarity in the near future.
 
 Because these sequences are truly open source they are available in this tutorial and can be downloaded directly from this page: 
 
 ::: {.callout-note}
-Right click [here](data/influenza_virus_database.fa) and click `save link as` to access the data.
+If you did not clone the tutorial repository, right click the button below to download the data.
+
+<a href="https://raw.githubusercontent.com/elginakin/elginakin.github.io/main/posts/content/flutree_tutorial/data/Influenza_virus_database.fa" download>
+  <button style="padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Right Click and "Save As"
+  </button>
+</a>
 :::
 
 This data set include human H3N2 sequences uploaded to NCBI between 2020 and 2024. 
@@ -96,9 +104,7 @@ We changed the default fasta header template to the following definition for smo
 
 :::
 
-
-
-Lets take a quick peek at some information about our fasta. We alredy know from NCBI that there should be **10191** sequences availible to us but lets just check. An increibly powerful linux tool we can use is `grep` which you can learn more about [here](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-3grep.html#gsc.tab=0)
+Lets take a quick peek at some information about our fasta. We already know from NCBI that there should be **10191** sequences available to us but lets just check. An incredibly powerful linux tool we can use is `grep` which you can learn more about [here](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-3grep.html#gsc.tab=0)
 
 ```{bash}
 #| eval: true
@@ -150,7 +156,7 @@ augur parse \
     --fields strain strain_name date country segment
 ```
 
-We now have 2 new files, a fasta containing a reduced name representing the strain dennotation from augur parse as well as metadata file containing the fields we specified. 
+We now have 2 new files, a fasta containing a reduced name representing the strain denotation from augur parse as well as metadata file containing the fields we specified. 
 
 It is not uncommon for sequences to uploaded with incomplete date date. In this case, we have 21 sequences which have year-month but not day. Luckily, the nextstrain team is on top of this prviding us with an augur subcommand called [curate](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/index.html) which we can use to [format dates](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/format-dates.html) to make them compliant with ISO 8601 dates (YYYY-MM-DD) where missing data are represented with "XX" (e.g. `2021-07-` will be converted to `2021-07-XX` )
 
@@ -288,7 +294,6 @@ mafft --auto --thread 8 results/downsampled_sequences.fasta > results/downsample
 
 ```{bash}
 #| eval: false
-
 treetime \
     --dates results/downsampled_nextclade_metadata.tsv \
     --aln results/downsampled_sequences.aln \
@@ -346,7 +351,10 @@ The mrsd for these data is **2023-04-10.** lets proceed with simply plotting the
 Lets take a look at the tree by plotting the minimal tree structure and time scale using theme_tree2(). If all previous steps were completed successfully, we will have a tree along with a time-scaled axis.
 
 ```{r}
-tree_ann_p <- ggtree(tree_ann, mrsd = '2023-04-10') # the tree_ann_p will serve as our "base tree" we can add aesthetic elements onto it later to shave down verbose code. 
+# the tree_ann_p will serve as our "base tree" we can add aesthetic elements onto it later to shave down verbose code. 
+tree_ann_p <- ggtree(tree_ann,
+                      mrsd = '2023-04-10', 
+                      right = TRUE) # this "ladderizes" our nodes to be in descending order.
 
 tree_ann_p + theme_tree2() # theme_tree2 will give us our time-scaled axis.
 ```
@@ -359,7 +367,7 @@ Below, I show just one example which best fits only 2 dimensions of information 
 
 Since H3N2 clade nomenclature is so expansive, lets create a color pallet which can accompany our 23 clades within our dataset. There are dozens of packages which accomplish this beutifully. For this instance, we'll use the [colorspace](https://colorspace.r-forge.r-project.org/reference/hcl_palettes.html) package and specify the "Set3" palette to expand to our clades. 23 is a very high number to represent in a single plot. However, each clade should cluster discretely assisting with visualization. We will be using the `short-clade` column for this plot to condense the verbose nomenclature. 
 
-## Define Color Pallette
+## Define Color Palette
 ```{r}
 library(colorspace)
 palette = qualitative_hcl(23, palette = "Dark2")
@@ -367,26 +375,55 @@ palette
 ```
 
 
-```{r} 
+```{r}
+# Load required libraries
+library(ggplot2)
+library(ggtree)
+library(grid)
+
+# Define the base plot
 tree_ann_p1 <- tree_ann_p + 
-  geom_tippoint(aes(color = `short-clade`, size = RBD), alpha = 0.99) + 
-  scale_size(range = c(0.5, 2)) +  
+  geom_tippoint(aes(fill = factor(`short-clade`), # assigning fill instead of color allows a border
+                    size = RBD), # reflect RBD mutations called by nextclade
+                alpha = 0.9, # transparency of points
+                shape = 21, # empty circle
+                stroke = 0.5) + # point border thickness
+  scale_size(range = c(0.5, 2)) + 
   xlab("Time") +
-  guides(color = guide_legend(title = "Clade", ncol = 2),
-         size = guide_legend(title = "RBD Mutations")) +
-  theme_tree2(legend.position = c(0.30, 0.6),
-              axis.text.x = element_text(size = 10), 
-              legend.text = element_text(size = 10), 
-              legend.spacing.x = unit(0.01, "cm"),
-              legend.key.height = unit(0.3, "cm"),
-              legend.background = element_rect(fill = "transparent")) +
-  scale_x_continuous(breaks = seq(2009, 2023, by = 2), 
-  labels = seq(2009, 2023, by = 2)) +
-  geom_vline(xintercept = seq(2009, 2023, by = 1), 
-  linetype = "dotted", color = "gray") +
-  scale_color_manual(values = palette)  # Set to our palette
+  guides(
+    fill = guide_legend(title = "Clade", ncol = 2), # customize our legend
+    size = guide_legend(title = "RBD Mutations")
+  ) +
+  theme_tree2( # justify legend 
+    legend.position = c(0.40, 0.45),
+    axis.text.x = element_text(size = 10), 
+    legend.text = element_text(size = 10), 
+    legend.spacing.x = unit(0.01, "cm"),
+    legend.key.height = unit(0.3, "cm"),
+    legend.background = element_rect(fill = "transparent"),
+    legend.key = element_rect(fill = "transparent", colour = "transparent") # Make legend key backgrounds transparent
+  ) +
+  scale_x_continuous( # define x axis labels and breaks
+    breaks = seq(2009, 2023, by = 2), 
+    labels = seq(2009, 2023, by = 2)
+  ) + # define the date increment shown
+  scale_fill_manual(values = palette) # Set to our palette for points
+
+# Adding alternating grey and white background for each year
+for (year in seq(2008, 2023, by = 1)) {
+  tree_ann_p1 <- tree_ann_p1 +
+    annotation_custom(
+      grob = rectGrob(gp = gpar(fill = ifelse(year %% 2 == 0, 
+                                                "grey80", 
+                                                "white"), 
+                                                col = NA, 
+                                                alpha = 0.3)),
+      xmin = year, xmax = year + 1, ymin = -Inf, ymax = Inf
+    )
+}
 
 tree_ann_p1
+
 ```
 
 Lets save our plots and adjust the resolution and size for a "publication-like" figure.
@@ -395,7 +432,7 @@ Lets save our plots and adjust the resolution and size for a "publication-like" 
 ggsave('results/plots/h3_tree.png', 
   tree_ann_p1, 
   height = 5, 
-  width = 6, 
+  width = 4, 
   dpi = 300)
 ```
 

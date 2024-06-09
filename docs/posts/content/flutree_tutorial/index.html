@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Elgin Akin">
-<meta name="dcterms.date" content="2024-05-11">
+<meta name="dcterms.date" content="2024-06-09">
 <meta name="description" content="A basic tutorial for building and visualizing time-resolved phylogenetic trees">
 
 <title>Constructing time-resolved phylogenetic trees, A tutorial</title>
@@ -67,7 +67,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../..//images/logos/elgin_logo_cropped.png" rel="icon" type="image/png">
+<link href="../../../images/logos/IMG_0926.PNG" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../images/logos/elgin_logo_cropped.png" alt="" class="navbar-logo">
+    <img src="../../../images/logos/IMG_0926.PNG" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -165,7 +165,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#setting-up-your-environment-and-directories" id="toc-setting-up-your-environment-and-directories" class="nav-link active" data-scroll-target="#setting-up-your-environment-and-directories">1. Setting up your environment and directories</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#setting-up-your-environment-and-directories" id="toc-setting-up-your-environment-and-directories" class="nav-link" data-scroll-target="#setting-up-your-environment-and-directories">1. Setting up your environment and directories</a>
   <ul class="collapse">
   <li><a href="#tree-construction" id="toc-tree-construction" class="nav-link" data-scroll-target="#tree-construction">Tree Construction</a></li>
   <li><a href="#tree-visualization-r" id="toc-tree-visualization-r" class="nav-link" data-scroll-target="#tree-visualization-r">Tree Visualization (R)</a></li>
@@ -191,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#determine-mrsd" id="toc-determine-mrsd" class="nav-link" data-scroll-target="#determine-mrsd">Determine mrsd</a></li>
   <li><a href="#ploting-a-simple-tree" id="toc-ploting-a-simple-tree" class="nav-link" data-scroll-target="#ploting-a-simple-tree">Ploting a simple tree</a></li>
   <li><a href="#plotting-an-annotated-tree" id="toc-plotting-an-annotated-tree" class="nav-link" data-scroll-target="#plotting-an-annotated-tree">Plotting an annotated tree</a></li>
-  <li><a href="#define-color-pallette" id="toc-define-color-pallette" class="nav-link" data-scroll-target="#define-color-pallette">Define Color Pallette</a></li>
+  <li><a href="#define-color-palette" id="toc-define-color-palette" class="nav-link" data-scroll-target="#define-color-palette">Define Color Palette</a></li>
   <li><a href="#plotting-clade-frequency-over-time" id="toc-plotting-clade-frequency-over-time" class="nav-link" data-scroll-target="#plotting-clade-frequency-over-time">Plotting Clade Frequency Over Time</a></li>
   </ul></li>
   <li><a href="#example-of-a-stacked-area-plot-with-our-abbreviated-clade-names" id="toc-example-of-a-stacked-area-plot-with-our-abbreviated-clade-names" class="nav-link" data-scroll-target="#example-of-a-stacked-area-plot-with-our-abbreviated-clade-names">6. Example of a stacked area plot with our abbreviated clade names</a></li>
@@ -225,7 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 11, 2024</p>
+      <p class="date">June 9, 2024</p>
     </div>
   </div>
   
@@ -237,6 +238,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<blockquote class="blockquote">
+<p>If you would prefer to follow along with the tutorial data and scripts, a clone of this notebook, data and all supporting information is available <a href="https://github.com/elginakin/flutreetutorial">here</a>. You can make a copy using <code>git</code> but navigating to your desired folder and executing: <code>git clone https://github.com/elginakin/flutreetutorial</code>.</p>
+</blockquote>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
 <p>Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms. While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams.</p>
 <p>If you have already constructed your time tree in either <a href="https://www.beast2.org/">BEAST</a>, <a href="http://www.iqtree.org/doc/Dating">IQ-Tree</a>, or <a href="https://treetime.readthedocs.io/en/latest/">TreeTime</a>, you can skip straight to the <a href="#visualizing-our-tree">time tree visualization</a> section</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -266,6 +272,7 @@ Warning
 </figure>
 </div>
 </div>
+</section>
 <section id="setting-up-your-environment-and-directories" class="level1">
 <h1>1. Setting up your environment and directories</h1>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -307,7 +314,7 @@ Warning
 </section>
 <section id="accessing-and-exploring-our-data-from-ncbi" class="level1">
 <h1>2. Accessing and exploring our data from NCBI</h1>
-<p>For simplicity in this tutorial, we will be accessing sequencing data deposited on NCBI by various groups. At the time of publishing this tutorial, the sequences were acecssed from the <a href="https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database">NCBI Virus Database</a>. In fall of 2024 NCBI will likely redirect the Influenza Virus Resources to <a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&amp;VirusLineage_ss=taxid:197911&amp;VirusLineage_ss=taxid:197912&amp;VirusLineage_ss=taxid:197913&amp;VirusLineage_ss=taxid:1511083">NCBI Virus</a> so this step will likely need to be updated for clarity in the near future.</p>
+<p>For simplicity in this tutorial, we will be accessing sequencing data deposited on NCBI by various groups. At the time of publishing this tutorial, the sequences were accessed from the <a href="https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database">NCBI Virus Database</a>. In fall of 2024 NCBI will likely redirect the Influenza Virus Resources to <a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&amp;VirusLineage_ss=taxid:197911&amp;VirusLineage_ss=taxid:197912&amp;VirusLineage_ss=taxid:197913&amp;VirusLineage_ss=taxid:1511083">NCBI Virus</a> so this step will likely need to be updated for clarity in the near future.</p>
 <p>Because these sequences are truly open source they are available in this tutorial and can be downloaded directly from this page:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -319,7 +326,8 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Right click <a href="data/influenza_virus_database.fa">here</a> and click <code>save link as</code> to access the data.</p>
+<p>If you did not clone the tutorial repository, right click the button below to download the data.</p>
+<p><a href="https://raw.githubusercontent.com/elginakin/elginakin.github.io/main/posts/content/flutree_tutorial/data/Influenza_virus_database.fa" download=""> <button style="padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;"> Right Click and “Save As” </button> </a></p>
 </div>
 </div>
 <p>This data set include human H3N2 sequences uploaded to NCBI between 2020 and 2024.</p>
@@ -339,7 +347,7 @@ Note
 </blockquote>
 </div>
 </div>
-<p>Lets take a quick peek at some information about our fasta. We alredy know from NCBI that there should be <strong>10191</strong> sequences availible to us but lets just check. An increibly powerful linux tool we can use is <code>grep</code> which you can learn more about <a href="https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-3grep.html#gsc.tab=0">here</a></p>
+<p>Lets take a quick peek at some information about our fasta. We already know from NCBI that there should be <strong>10191</strong> sequences available to us but lets just check. An incredibly powerful linux tool we can use is <code>grep</code> which you can learn more about <a href="https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-3grep.html#gsc.tab=0">here</a></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">grep</span> <span class="at">-c</span>  <span class="st">"^&gt;"</span> data/Influenza_virus_database.fa </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -369,7 +377,7 @@ Note
 <span id="cb5-5"><a href="#cb5-5"></a>    <span class="at">--prettify-fields</span> date <span class="dt">\</span></span>
 <span id="cb5-6"><a href="#cb5-6"></a>    <span class="at">--fields</span> strain strain_name date country segment</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>We now have 2 new files, a fasta containing a reduced name representing the strain dennotation from augur parse as well as metadata file containing the fields we specified.</p>
+<p>We now have 2 new files, a fasta containing a reduced name representing the strain denotation from augur parse as well as metadata file containing the fields we specified.</p>
 <p>It is not uncommon for sequences to uploaded with incomplete date date. In this case, we have 21 sequences which have year-month but not day. Luckily, the nextstrain team is on top of this prviding us with an augur subcommand called <a href="https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/index.html">curate</a> which we can use to <a href="https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/format-dates.html">format dates</a> to make them compliant with ISO 8601 dates (YYYY-MM-DD) where missing data are represented with “XX” (e.g.&nbsp;<code>2021-07-</code> will be converted to <code>2021-07-XX</code> )</p>
 <section id="curate-meatadata-file-dates" class="level2">
 <h2 class="anchored" data-anchor-id="curate-meatadata-file-dates">Curate meatadata file dates</h2>
@@ -807,9 +815,12 @@ with the following features available:
 <h2 class="anchored" data-anchor-id="ploting-a-simple-tree">Ploting a simple tree</h2>
 <p>Lets take a look at the tree by plotting the minimal tree structure and time scale using theme_tree2(). If all previous steps were completed successfully, we will have a tree along with a time-scaled axis.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>tree_ann_p <span class="ot">&lt;-</span> <span class="fu">ggtree</span>(tree_ann, <span class="at">mrsd =</span> <span class="st">'2023-04-10'</span>) <span class="co"># the tree_ann_p will serve as our "base tree" we can add aesthetic elements onto it later to shave down verbose code. </span></span>
-<span id="cb28-2"><a href="#cb28-2"></a></span>
-<span id="cb28-3"><a href="#cb28-3"></a>tree_ann_p <span class="sc">+</span> <span class="fu">theme_tree2</span>() <span class="co"># theme_tree2 will give us our time-scaled axis.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="co"># the tree_ann_p will serve as our "base tree" we can add aesthetic elements onto it later to shave down verbose code. </span></span>
+<span id="cb28-2"><a href="#cb28-2"></a>tree_ann_p <span class="ot">&lt;-</span> <span class="fu">ggtree</span>(tree_ann,</span>
+<span id="cb28-3"><a href="#cb28-3"></a>                      <span class="at">mrsd =</span> <span class="st">'2023-04-10'</span>, </span>
+<span id="cb28-4"><a href="#cb28-4"></a>                      <span class="at">right =</span> <span class="cn">TRUE</span>) <span class="co"># this "ladderizes" our nodes to be in descending order.</span></span>
+<span id="cb28-5"><a href="#cb28-5"></a></span>
+<span id="cb28-6"><a href="#cb28-6"></a>tree_ann_p <span class="sc">+</span> <span class="fu">theme_tree2</span>() <span class="co"># theme_tree2 will give us our time-scaled axis.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -825,8 +836,8 @@ with the following features available:
 <h2 class="anchored" data-anchor-id="plotting-an-annotated-tree">Plotting an annotated tree</h2>
 <p>Since H3N2 clade nomenclature is so expansive, lets create a color pallet which can accompany our 23 clades within our dataset. There are dozens of packages which accomplish this beutifully. For this instance, we’ll use the <a href="https://colorspace.r-forge.r-project.org/reference/hcl_palettes.html">colorspace</a> package and specify the “Set3” palette to expand to our clades. 23 is a very high number to represent in a single plot. However, each clade should cluster discretely assisting with visualization. We will be using the <code>short-clade</code> column for this plot to condense the verbose nomenclature.</p>
 </section>
-<section id="define-color-pallette" class="level2">
-<h2 class="anchored" data-anchor-id="define-color-pallette">Define Color Pallette</h2>
+<section id="define-color-palette" class="level2">
+<h2 class="anchored" data-anchor-id="define-color-palette">Define Color Palette</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">library</span>(colorspace)</span>
 <span id="cb29-2"><a href="#cb29-2"></a>palette <span class="ot">=</span> <span class="fu">qualitative_hcl</span>(<span class="dv">23</span>, <span class="at">palette =</span> <span class="st">"Dark2"</span>)</span>
@@ -839,25 +850,53 @@ with the following features available:
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>tree_ann_p1 <span class="ot">&lt;-</span> tree_ann_p <span class="sc">+</span> </span>
-<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">geom_tippoint</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>, <span class="at">size =</span> RBD), <span class="at">alpha =</span> <span class="fl">0.99</span>) <span class="sc">+</span> </span>
-<span id="cb31-3"><a href="#cb31-3"></a>  <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">2</span>)) <span class="sc">+</span>  </span>
-<span id="cb31-4"><a href="#cb31-4"></a>  <span class="fu">xlab</span>(<span class="st">"Time"</span>) <span class="sc">+</span></span>
-<span id="cb31-5"><a href="#cb31-5"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Clade"</span>, <span class="at">ncol =</span> <span class="dv">2</span>),</span>
-<span id="cb31-6"><a href="#cb31-6"></a>         <span class="at">size =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"RBD Mutations"</span>)) <span class="sc">+</span></span>
-<span id="cb31-7"><a href="#cb31-7"></a>  <span class="fu">theme_tree2</span>(<span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.30</span>, <span class="fl">0.6</span>),</span>
-<span id="cb31-8"><a href="#cb31-8"></a>              <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
-<span id="cb31-9"><a href="#cb31-9"></a>              <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
-<span id="cb31-10"><a href="#cb31-10"></a>              <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.01</span>, <span class="st">"cm"</span>),</span>
-<span id="cb31-11"><a href="#cb31-11"></a>              <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.3</span>, <span class="st">"cm"</span>),</span>
-<span id="cb31-12"><a href="#cb31-12"></a>              <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>)) <span class="sc">+</span></span>
-<span id="cb31-13"><a href="#cb31-13"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>), </span>
-<span id="cb31-14"><a href="#cb31-14"></a>  <span class="at">labels =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>)) <span class="sc">+</span></span>
-<span id="cb31-15"><a href="#cb31-15"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">1</span>), </span>
-<span id="cb31-16"><a href="#cb31-16"></a>  <span class="at">linetype =</span> <span class="st">"dotted"</span>, <span class="at">color =</span> <span class="st">"gray"</span>) <span class="sc">+</span></span>
-<span id="cb31-17"><a href="#cb31-17"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> palette)  <span class="co"># Set to our palette</span></span>
-<span id="cb31-18"><a href="#cb31-18"></a></span>
-<span id="cb31-19"><a href="#cb31-19"></a>tree_ann_p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="co"># Load required libraries</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb31-3"><a href="#cb31-3"></a><span class="fu">library</span>(ggtree)</span>
+<span id="cb31-4"><a href="#cb31-4"></a><span class="fu">library</span>(grid)</span>
+<span id="cb31-5"><a href="#cb31-5"></a></span>
+<span id="cb31-6"><a href="#cb31-6"></a><span class="co"># Define the base plot</span></span>
+<span id="cb31-7"><a href="#cb31-7"></a>tree_ann_p1 <span class="ot">&lt;-</span> tree_ann_p <span class="sc">+</span> </span>
+<span id="cb31-8"><a href="#cb31-8"></a>  <span class="fu">geom_tippoint</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(<span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>), <span class="co"># assigning fill instead of color allows a border</span></span>
+<span id="cb31-9"><a href="#cb31-9"></a>                    <span class="at">size =</span> RBD), <span class="co"># reflect RBD mutations called by nextclade</span></span>
+<span id="cb31-10"><a href="#cb31-10"></a>                <span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="co"># transparency of points</span></span>
+<span id="cb31-11"><a href="#cb31-11"></a>                <span class="at">shape =</span> <span class="dv">21</span>, <span class="co"># empty circle</span></span>
+<span id="cb31-12"><a href="#cb31-12"></a>                <span class="at">stroke =</span> <span class="fl">0.5</span>) <span class="sc">+</span> <span class="co"># point border thickness</span></span>
+<span id="cb31-13"><a href="#cb31-13"></a>  <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">2</span>)) <span class="sc">+</span> </span>
+<span id="cb31-14"><a href="#cb31-14"></a>  <span class="fu">xlab</span>(<span class="st">"Time"</span>) <span class="sc">+</span></span>
+<span id="cb31-15"><a href="#cb31-15"></a>  <span class="fu">guides</span>(</span>
+<span id="cb31-16"><a href="#cb31-16"></a>    <span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Clade"</span>, <span class="at">ncol =</span> <span class="dv">2</span>), <span class="co"># customize our legend</span></span>
+<span id="cb31-17"><a href="#cb31-17"></a>    <span class="at">size =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"RBD Mutations"</span>)</span>
+<span id="cb31-18"><a href="#cb31-18"></a>  ) <span class="sc">+</span></span>
+<span id="cb31-19"><a href="#cb31-19"></a>  <span class="fu">theme_tree2</span>( <span class="co"># justify legend </span></span>
+<span id="cb31-20"><a href="#cb31-20"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.40</span>, <span class="fl">0.45</span>),</span>
+<span id="cb31-21"><a href="#cb31-21"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
+<span id="cb31-22"><a href="#cb31-22"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
+<span id="cb31-23"><a href="#cb31-23"></a>    <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.01</span>, <span class="st">"cm"</span>),</span>
+<span id="cb31-24"><a href="#cb31-24"></a>    <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.3</span>, <span class="st">"cm"</span>),</span>
+<span id="cb31-25"><a href="#cb31-25"></a>    <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>),</span>
+<span id="cb31-26"><a href="#cb31-26"></a>    <span class="at">legend.key =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>, <span class="at">colour =</span> <span class="st">"transparent"</span>) <span class="co"># Make legend key backgrounds transparent</span></span>
+<span id="cb31-27"><a href="#cb31-27"></a>  ) <span class="sc">+</span></span>
+<span id="cb31-28"><a href="#cb31-28"></a>  <span class="fu">scale_x_continuous</span>( <span class="co"># define x axis labels and breaks</span></span>
+<span id="cb31-29"><a href="#cb31-29"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>), </span>
+<span id="cb31-30"><a href="#cb31-30"></a>    <span class="at">labels =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>)</span>
+<span id="cb31-31"><a href="#cb31-31"></a>  ) <span class="sc">+</span> <span class="co"># define the date increment shown</span></span>
+<span id="cb31-32"><a href="#cb31-32"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette) <span class="co"># Set to our palette for points</span></span>
+<span id="cb31-33"><a href="#cb31-33"></a></span>
+<span id="cb31-34"><a href="#cb31-34"></a><span class="co"># Adding alternating grey and white background for each year</span></span>
+<span id="cb31-35"><a href="#cb31-35"></a><span class="cf">for</span> (year <span class="cf">in</span> <span class="fu">seq</span>(<span class="dv">2008</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">1</span>)) {</span>
+<span id="cb31-36"><a href="#cb31-36"></a>  tree_ann_p1 <span class="ot">&lt;-</span> tree_ann_p1 <span class="sc">+</span></span>
+<span id="cb31-37"><a href="#cb31-37"></a>    <span class="fu">annotation_custom</span>(</span>
+<span id="cb31-38"><a href="#cb31-38"></a>      <span class="at">grob =</span> <span class="fu">rectGrob</span>(<span class="at">gp =</span> <span class="fu">gpar</span>(<span class="at">fill =</span> <span class="fu">ifelse</span>(year <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>, </span>
+<span id="cb31-39"><a href="#cb31-39"></a>                                                <span class="st">"grey80"</span>, </span>
+<span id="cb31-40"><a href="#cb31-40"></a>                                                <span class="st">"white"</span>), </span>
+<span id="cb31-41"><a href="#cb31-41"></a>                                                <span class="at">col =</span> <span class="cn">NA</span>, </span>
+<span id="cb31-42"><a href="#cb31-42"></a>                                                <span class="at">alpha =</span> <span class="fl">0.3</span>)),</span>
+<span id="cb31-43"><a href="#cb31-43"></a>      <span class="at">xmin =</span> year, <span class="at">xmax =</span> year <span class="sc">+</span> <span class="dv">1</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">ymax =</span> <span class="cn">Inf</span></span>
+<span id="cb31-44"><a href="#cb31-44"></a>    )</span>
+<span id="cb31-45"><a href="#cb31-45"></a>}</span>
+<span id="cb31-46"><a href="#cb31-46"></a></span>
+<span id="cb31-47"><a href="#cb31-47"></a>tree_ann_p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -872,7 +911,7 @@ with the following features available:
 <span id="cb32-2"><a href="#cb32-2"></a><span class="fu">ggsave</span>(<span class="st">'results/plots/h3_tree.png'</span>, </span>
 <span id="cb32-3"><a href="#cb32-3"></a>  tree_ann_p1, </span>
 <span id="cb32-4"><a href="#cb32-4"></a>  <span class="at">height =</span> <span class="dv">5</span>, </span>
-<span id="cb32-5"><a href="#cb32-5"></a>  <span class="at">width =</span> <span class="dv">6</span>, </span>
+<span id="cb32-5"><a href="#cb32-5"></a>  <span class="at">width =</span> <span class="dv">4</span>, </span>
 <span id="cb32-6"><a href="#cb32-6"></a>  <span class="at">dpi =</span> <span class="dv">300</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -1058,10 +1097,11 @@ BLAS:   /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRblas.0.dy
 LAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib
 
 locale:
-[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+[1] en_US.UTF-8/UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 
 attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
+[1] grid      stats     graphics  grDevices utils     datasets  methods  
+[8] base     
 
 other attached packages:
  [1] colorspace_2.1-0 ape_5.7-1        ggtree_3.2.1     treeio_1.18.1   
@@ -1088,13 +1128,13 @@ loaded via a namespace (and not attached):
 [46] gargle_1.2.1        lifecycle_1.0.3     aplot_0.1.9        
 [49] munsell_0.5.0       reprex_2.0.2        compiler_4.1.3     
 [52] systemfonts_1.0.4   gridGraphics_0.5-1  rlang_1.1.1        
-[55] grid_4.1.3          htmlwidgets_1.6.2   labeling_0.4.2     
-[58] rmarkdown_2.20      gtable_0.3.1        DBI_1.1.3          
-[61] R6_2.5.1            lubridate_1.9.1     knitr_1.42         
-[64] fastmap_1.1.1       bit_4.0.5           utf8_1.2.3         
-[67] ragg_1.2.5          stringi_1.7.12      parallel_4.1.3     
-[70] Rcpp_1.0.10         vctrs_0.6.4         dbplyr_2.3.0       
-[73] tidyselect_1.2.0    xfun_0.36          </code></pre>
+[55] htmlwidgets_1.6.2   labeling_0.4.2      rmarkdown_2.20     
+[58] gtable_0.3.1        DBI_1.1.3           R6_2.5.1           
+[61] lubridate_1.9.1     knitr_1.42          fastmap_1.1.1      
+[64] bit_4.0.5           utf8_1.2.3          ragg_1.2.5         
+[67] stringi_1.7.12      parallel_4.1.3      Rcpp_1.0.10        
+[70] vctrs_0.6.4         dbplyr_2.3.0        tidyselect_1.2.0   
+[73] xfun_0.36          </code></pre>
 </div>
 </div>
 
@@ -1549,7 +1589,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb43-5"><a href="#cb43-5"></a><span class="an">Catagories:</span></span>
 <span id="cb43-6"><a href="#cb43-6"></a><span class="co">    - tutorial</span></span>
 <span id="cb43-7"><a href="#cb43-7"></a><span class="an">author:</span><span class="co"> Elgin Akin</span></span>
-<span id="cb43-8"><a href="#cb43-8"></a><span class="an">date:</span><span class="co"> "05/11/2024"</span></span>
+<span id="cb43-8"><a href="#cb43-8"></a><span class="an">date:</span><span class="co"> "06/09/2024"</span></span>
 <span id="cb43-9"><a href="#cb43-9"></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb43-10"><a href="#cb43-10"></a><span class="co">  html:</span></span>
 <span id="cb43-11"><a href="#cb43-11"></a><span class="co">    highlight-style: pygments</span></span>
@@ -1561,453 +1601,490 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb43-17"><a href="#cb43-17"></a><span class="an">image:</span><span class="co"> 'results/plots/h3_tree.png'</span></span>
 <span id="cb43-18"><a href="#cb43-18"></a><span class="co">---</span></span>
 <span id="cb43-19"><a href="#cb43-19"></a></span>
-<span id="cb43-20"><a href="#cb43-20"></a></span>
+<span id="cb43-20"><a href="#cb43-20"></a><span class="at">&gt; If you would prefer to follow along with the tutorial data and scripts, a clone of this notebook, data and all supporting information is available </span><span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/elginakin/flutreetutorial)</span><span class="at">. You can make a copy using </span><span class="in">`git`</span><span class="at"> but navigating to your desired folder and executing: </span><span class="in">`git clone https://github.com/elginakin/flutreetutorial`</span><span class="at">.</span></span>
 <span id="cb43-21"><a href="#cb43-21"></a></span>
-<span id="cb43-22"><a href="#cb43-22"></a>Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms.</span>
-<span id="cb43-23"><a href="#cb43-23"></a>While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams. </span>
-<span id="cb43-24"><a href="#cb43-24"></a></span>
-<span id="cb43-25"><a href="#cb43-25"></a>If you have already constructed your time tree in either <span class="co">[</span><span class="ot">BEAST</span><span class="co">](https://www.beast2.org/)</span>, <span class="co">[</span><span class="ot">IQ-Tree</span><span class="co">](http://www.iqtree.org/doc/Dating)</span>, or <span class="co">[</span><span class="ot">TreeTime</span><span class="co">](https://treetime.readthedocs.io/en/latest/)</span>, you can skip straight to the <span class="co">[</span><span class="ot">time tree visualization</span><span class="co">](#visualizing-our-tree)</span> section  </span>
+<span id="cb43-22"><a href="#cb43-22"></a><span class="fu"># Introduction </span></span>
+<span id="cb43-23"><a href="#cb43-23"></a></span>
+<span id="cb43-24"><a href="#cb43-24"></a>Phylogenetic trees are a powerful tool to assess evolutionary relationships between organisms.</span>
+<span id="cb43-25"><a href="#cb43-25"></a>While this tutorial does not cover the basic principles of viral evolution and ecology, it does provide a quick start guide to constructing, visualizing and annotating static phylogenetic trees using established tools developed and utilized by viral surveillance teams. </span>
 <span id="cb43-26"><a href="#cb43-26"></a></span>
-<span id="cb43-27"><a href="#cb43-27"></a>::: {.callout-warning}</span>
-<span id="cb43-28"><a href="#cb43-28"></a>This tutorial covers the basics of constructing and visualizing time-resolved phylogenetic trees using the H3N2 Influenza A virus as an example. This tutorial is intended for users with a basic understanding of the UNIX command line and R.</span>
-<span id="cb43-29"><a href="#cb43-29"></a>:::</span>
-<span id="cb43-30"><a href="#cb43-30"></a></span>
-<span id="cb43-31"><a href="#cb43-31"></a>:::{.row-page=1}</span>
-<span id="cb43-32"><a href="#cb43-32"></a><span class="al">![H3N2 Tree](results/plots/h3_tree.png)</span></span>
-<span id="cb43-33"><a href="#cb43-33"></a></span>
-<span id="cb43-34"><a href="#cb43-34"></a><span class="al">![Clade Frequency](results/plots/h3_frequency.png)</span></span>
-<span id="cb43-35"><a href="#cb43-35"></a>:::</span>
-<span id="cb43-36"><a href="#cb43-36"></a></span>
-<span id="cb43-37"><a href="#cb43-37"></a></span>
-<span id="cb43-38"><a href="#cb43-38"></a><span class="fu"># 1. Setting up your environment and directories</span></span>
+<span id="cb43-27"><a href="#cb43-27"></a>If you have already constructed your time tree in either <span class="co">[</span><span class="ot">BEAST</span><span class="co">](https://www.beast2.org/)</span>, <span class="co">[</span><span class="ot">IQ-Tree</span><span class="co">](http://www.iqtree.org/doc/Dating)</span>, or <span class="co">[</span><span class="ot">TreeTime</span><span class="co">](https://treetime.readthedocs.io/en/latest/)</span>, you can skip straight to the <span class="co">[</span><span class="ot">time tree visualization</span><span class="co">](#visualizing-our-tree)</span> section  </span>
+<span id="cb43-28"><a href="#cb43-28"></a></span>
+<span id="cb43-29"><a href="#cb43-29"></a>::: {.callout-warning}</span>
+<span id="cb43-30"><a href="#cb43-30"></a>This tutorial covers the basics of constructing and visualizing time-resolved phylogenetic trees using the H3N2 Influenza A virus as an example. This tutorial is intended for users with a basic understanding of the UNIX command line and R.</span>
+<span id="cb43-31"><a href="#cb43-31"></a>:::</span>
+<span id="cb43-32"><a href="#cb43-32"></a></span>
+<span id="cb43-33"><a href="#cb43-33"></a>:::{.row-page=1}</span>
+<span id="cb43-34"><a href="#cb43-34"></a><span class="al">![H3N2 Tree](results/plots/h3_tree.png)</span></span>
+<span id="cb43-35"><a href="#cb43-35"></a></span>
+<span id="cb43-36"><a href="#cb43-36"></a><span class="al">![Clade Frequency](results/plots/h3_frequency.png)</span></span>
+<span id="cb43-37"><a href="#cb43-37"></a>:::</span>
+<span id="cb43-38"><a href="#cb43-38"></a></span>
 <span id="cb43-39"><a href="#cb43-39"></a></span>
-<span id="cb43-40"><a href="#cb43-40"></a>::: {.callout-warning}</span>
-<span id="cb43-41"><a href="#cb43-41"></a>This tutorial assumes you are operating on a machine with a UNIX-based terminal accessible (i.e. macOS, linux or WSL) some of the tools we use are not easily accessible on Windows machines.</span>
-<span id="cb43-42"><a href="#cb43-42"></a>:::</span>
-<span id="cb43-43"><a href="#cb43-43"></a></span>
-<span id="cb43-44"><a href="#cb43-44"></a><span class="fu">## Tree Construction </span></span>
+<span id="cb43-40"><a href="#cb43-40"></a><span class="fu"># 1. Setting up your environment and directories</span></span>
+<span id="cb43-41"><a href="#cb43-41"></a></span>
+<span id="cb43-42"><a href="#cb43-42"></a>::: {.callout-warning}</span>
+<span id="cb43-43"><a href="#cb43-43"></a>This tutorial assumes you are operating on a machine with a UNIX-based terminal accessible (i.e. macOS, linux or WSL) some of the tools we use are not easily accessible on Windows machines.</span>
+<span id="cb43-44"><a href="#cb43-44"></a>:::</span>
 <span id="cb43-45"><a href="#cb43-45"></a></span>
-<span id="cb43-46"><a href="#cb43-46"></a><span class="fu">## Tree Visualization (R)</span></span>
+<span id="cb43-46"><a href="#cb43-46"></a><span class="fu">## Tree Construction </span></span>
 <span id="cb43-47"><a href="#cb43-47"></a></span>
-<span id="cb43-48"><a href="#cb43-48"></a><span class="ss">1. </span>We will use the following packages for tree visualization in R. Be sure to install them if you have not already.</span>
-<span id="cb43-49"><a href="#cb43-49"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">ggtree</span><span class="co">](https://guangchuangyu.github.io/software/ggtree/)</span></span>
-<span id="cb43-50"><a href="#cb43-50"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">treeio</span><span class="co">](https://bioconductor.org/packages/release/bioc/html/treeio.html)</span></span>
-<span id="cb43-51"><a href="#cb43-51"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">ape</span><span class="co">](https://cran.r-project.org/web/packages/ape/index.html)</span></span>
-<span id="cb43-52"><a href="#cb43-52"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">tidyverse</span><span class="co">](https://www.tidyverse.org/)</span></span>
-<span id="cb43-53"><a href="#cb43-53"></a></span>
-<span id="cb43-56"><a href="#cb43-56"></a><span class="in">```{r}</span></span>
-<span id="cb43-57"><a href="#cb43-57"></a><span class="co">#| echo: false</span></span>
-<span id="cb43-58"><a href="#cb43-58"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-59"><a href="#cb43-59"></a><span class="co"># install if you need them: </span></span>
-<span id="cb43-60"><a href="#cb43-60"></a></span>
-<span id="cb43-61"><a href="#cb43-61"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)   </span>
-<span id="cb43-62"><a href="#cb43-62"></a><span class="fu">install.packages</span>(<span class="st">"ggtree"</span>)</span>
-<span id="cb43-63"><a href="#cb43-63"></a><span class="fu">install.packages</span>(<span class="st">"treeio"</span>)</span>
-<span id="cb43-64"><a href="#cb43-64"></a><span class="fu">nstall.packages</span>(<span class="st">"ape"</span>)</span>
-<span id="cb43-65"><a href="#cb43-65"></a><span class="fu">install.packages</span>(<span class="st">"colorspace"</span>)</span>
-<span id="cb43-66"><a href="#cb43-66"></a><span class="in">```</span></span>
-<span id="cb43-67"><a href="#cb43-67"></a></span>
-<span id="cb43-68"><a href="#cb43-68"></a>Full tutorials for more comprehensive phylognetic analysis pipelines with interactives are descrived in great detail with pathogen-specific tutorials by the <span class="co">[</span><span class="ot">Nextstrain Team</span><span class="co">](https://nextstrain.org/team)</span>.</span>
-<span id="cb43-69"><a href="#cb43-69"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Introduction to Nextstrain</span><span class="co">](https://docs.nextstrain.org/en/latest/index.html)</span></span>
-<span id="cb43-70"><a href="#cb43-70"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Creating a phylogenetic workflow</span><span class="co">](https://docs.nextstrain.org/en/latest/tutorials/creating-a-phylogenetic-workflow.html)</span></span>
-<span id="cb43-71"><a href="#cb43-71"></a></span>
-<span id="cb43-72"><a href="#cb43-72"></a><span class="fu">## Directories</span></span>
+<span id="cb43-48"><a href="#cb43-48"></a><span class="fu">## Tree Visualization (R)</span></span>
+<span id="cb43-49"><a href="#cb43-49"></a></span>
+<span id="cb43-50"><a href="#cb43-50"></a><span class="ss">1. </span>We will use the following packages for tree visualization in R. Be sure to install them if you have not already.</span>
+<span id="cb43-51"><a href="#cb43-51"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">ggtree</span><span class="co">](https://guangchuangyu.github.io/software/ggtree/)</span></span>
+<span id="cb43-52"><a href="#cb43-52"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">treeio</span><span class="co">](https://bioconductor.org/packages/release/bioc/html/treeio.html)</span></span>
+<span id="cb43-53"><a href="#cb43-53"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">ape</span><span class="co">](https://cran.r-project.org/web/packages/ape/index.html)</span></span>
+<span id="cb43-54"><a href="#cb43-54"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">tidyverse</span><span class="co">](https://www.tidyverse.org/)</span></span>
+<span id="cb43-55"><a href="#cb43-55"></a></span>
+<span id="cb43-58"><a href="#cb43-58"></a><span class="in">```{r}</span></span>
+<span id="cb43-59"><a href="#cb43-59"></a><span class="co">#| echo: false</span></span>
+<span id="cb43-60"><a href="#cb43-60"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-61"><a href="#cb43-61"></a><span class="co"># install if you need them: </span></span>
+<span id="cb43-62"><a href="#cb43-62"></a></span>
+<span id="cb43-63"><a href="#cb43-63"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)   </span>
+<span id="cb43-64"><a href="#cb43-64"></a><span class="fu">install.packages</span>(<span class="st">"ggtree"</span>)</span>
+<span id="cb43-65"><a href="#cb43-65"></a><span class="fu">install.packages</span>(<span class="st">"treeio"</span>)</span>
+<span id="cb43-66"><a href="#cb43-66"></a><span class="fu">nstall.packages</span>(<span class="st">"ape"</span>)</span>
+<span id="cb43-67"><a href="#cb43-67"></a><span class="fu">install.packages</span>(<span class="st">"colorspace"</span>)</span>
+<span id="cb43-68"><a href="#cb43-68"></a><span class="in">```</span></span>
+<span id="cb43-69"><a href="#cb43-69"></a></span>
+<span id="cb43-70"><a href="#cb43-70"></a>Full tutorials for more comprehensive phylognetic analysis pipelines with interactives are descrived in great detail with pathogen-specific tutorials by the <span class="co">[</span><span class="ot">Nextstrain Team</span><span class="co">](https://nextstrain.org/team)</span>.</span>
+<span id="cb43-71"><a href="#cb43-71"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Introduction to Nextstrain</span><span class="co">](https://docs.nextstrain.org/en/latest/index.html)</span></span>
+<span id="cb43-72"><a href="#cb43-72"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Creating a phylogenetic workflow</span><span class="co">](https://docs.nextstrain.org/en/latest/tutorials/creating-a-phylogenetic-workflow.html)</span></span>
 <span id="cb43-73"><a href="#cb43-73"></a></span>
-<span id="cb43-74"><a href="#cb43-74"></a>we already have our data directory, go ahead and make 2 directory for our results and config in your home directory. </span>
-<span id="cb43-77"><a href="#cb43-77"></a><span class="in">```{bash}</span></span>
-<span id="cb43-78"><a href="#cb43-78"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-79"><a href="#cb43-79"></a><span class="fu">mkdir</span> results results/plots config config/nextclade config/nextclade/flu_h3n2_ha</span>
-<span id="cb43-80"><a href="#cb43-80"></a></span>
-<span id="cb43-81"><a href="#cb43-81"></a><span class="in">```</span></span>
+<span id="cb43-74"><a href="#cb43-74"></a><span class="fu">## Directories</span></span>
+<span id="cb43-75"><a href="#cb43-75"></a></span>
+<span id="cb43-76"><a href="#cb43-76"></a>we already have our data directory, go ahead and make 2 directory for our results and config in your home directory. </span>
+<span id="cb43-79"><a href="#cb43-79"></a><span class="in">```{bash}</span></span>
+<span id="cb43-80"><a href="#cb43-80"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-81"><a href="#cb43-81"></a><span class="fu">mkdir</span> results results/plots config config/nextclade config/nextclade/flu_h3n2_ha</span>
 <span id="cb43-82"><a href="#cb43-82"></a></span>
-<span id="cb43-83"><a href="#cb43-83"></a></span>
-<span id="cb43-84"><a href="#cb43-84"></a><span class="fu"># 2. Accessing and exploring our data from NCBI</span></span>
+<span id="cb43-83"><a href="#cb43-83"></a><span class="in">```</span></span>
+<span id="cb43-84"><a href="#cb43-84"></a></span>
 <span id="cb43-85"><a href="#cb43-85"></a></span>
-<span id="cb43-86"><a href="#cb43-86"></a>For simplicity in this tutorial, we will be accessing sequencing data deposited on NCBI by various groups. At the time of publishing this tutorial, the sequences were acecssed from the <span class="co">[</span><span class="ot">NCBI Virus Database</span><span class="co">](https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database)</span>. In fall of 2024 NCBI will likely redirect the Influenza Virus Resources to <span class="co">[</span><span class="ot">NCBI Virus</span><span class="co">](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&amp;VirusLineage_ss=taxid:197911&amp;VirusLineage_ss=taxid:197912&amp;VirusLineage_ss=taxid:197913&amp;VirusLineage_ss=taxid:1511083)</span> so this step will likely need to be updated for clarity in the near future.</span>
+<span id="cb43-86"><a href="#cb43-86"></a><span class="fu"># 2. Accessing and exploring our data from NCBI</span></span>
 <span id="cb43-87"><a href="#cb43-87"></a></span>
-<span id="cb43-88"><a href="#cb43-88"></a>Because these sequences are truly open source they are available in this tutorial and can be downloaded directly from this page: </span>
+<span id="cb43-88"><a href="#cb43-88"></a>For simplicity in this tutorial, we will be accessing sequencing data deposited on NCBI by various groups. At the time of publishing this tutorial, the sequences were accessed from the <span class="co">[</span><span class="ot">NCBI Virus Database</span><span class="co">](https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database)</span>. In fall of 2024 NCBI will likely redirect the Influenza Virus Resources to <span class="co">[</span><span class="ot">NCBI Virus</span><span class="co">](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&amp;VirusLineage_ss=taxid:197911&amp;VirusLineage_ss=taxid:197912&amp;VirusLineage_ss=taxid:197913&amp;VirusLineage_ss=taxid:1511083)</span> so this step will likely need to be updated for clarity in the near future.</span>
 <span id="cb43-89"><a href="#cb43-89"></a></span>
-<span id="cb43-90"><a href="#cb43-90"></a>::: {.callout-note}</span>
-<span id="cb43-91"><a href="#cb43-91"></a>Right click <span class="co">[</span><span class="ot">here</span><span class="co">](data/influenza_virus_database.fa)</span> and click <span class="in">`save link as`</span> to access the data.</span>
-<span id="cb43-92"><a href="#cb43-92"></a>:::</span>
-<span id="cb43-93"><a href="#cb43-93"></a></span>
-<span id="cb43-94"><a href="#cb43-94"></a>This data set include human H3N2 sequences uploaded to NCBI between 2020 and 2024. </span>
-<span id="cb43-95"><a href="#cb43-95"></a></span>
-<span id="cb43-96"><a href="#cb43-96"></a>::: {.callout-note}</span>
-<span id="cb43-97"><a href="#cb43-97"></a>We changed the default fasta header template to the following definition for smooth analysis in augur: </span>
-<span id="cb43-98"><a href="#cb43-98"></a></span>
-<span id="cb43-99"><a href="#cb43-99"></a><span class="at">&gt;{accession}|{strain}|{year}-{month}-{day}|{country}|{segment}</span></span>
-<span id="cb43-100"><a href="#cb43-100"></a></span>
-<span id="cb43-101"><a href="#cb43-101"></a>:::</span>
-<span id="cb43-102"><a href="#cb43-102"></a></span>
+<span id="cb43-90"><a href="#cb43-90"></a>Because these sequences are truly open source they are available in this tutorial and can be downloaded directly from this page: </span>
+<span id="cb43-91"><a href="#cb43-91"></a></span>
+<span id="cb43-92"><a href="#cb43-92"></a>::: {.callout-note}</span>
+<span id="cb43-93"><a href="#cb43-93"></a>If you did not clone the tutorial repository, right click the button below to download the data.</span>
+<span id="cb43-94"><a href="#cb43-94"></a></span>
+<span id="cb43-95"><a href="#cb43-95"></a>&lt;a href="https://raw.githubusercontent.com/elginakin/elginakin.github.io/main/posts/content/flutree_tutorial/data/Influenza_virus_database.fa" download&gt;</span>
+<span id="cb43-96"><a href="#cb43-96"></a>  &lt;button style="padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;"&gt;</span>
+<span id="cb43-97"><a href="#cb43-97"></a>    Right Click and "Save As"</span>
+<span id="cb43-98"><a href="#cb43-98"></a>  &lt;/button&gt;</span>
+<span id="cb43-99"><a href="#cb43-99"></a>&lt;/a&gt;</span>
+<span id="cb43-100"><a href="#cb43-100"></a>:::</span>
+<span id="cb43-101"><a href="#cb43-101"></a></span>
+<span id="cb43-102"><a href="#cb43-102"></a>This data set include human H3N2 sequences uploaded to NCBI between 2020 and 2024. </span>
 <span id="cb43-103"><a href="#cb43-103"></a></span>
-<span id="cb43-104"><a href="#cb43-104"></a></span>
-<span id="cb43-105"><a href="#cb43-105"></a>Lets take a quick peek at some information about our fasta. We alredy know from NCBI that there should be **10191** sequences availible to us but lets just check. An increibly powerful linux tool we can use is <span class="in">`grep`</span> which you can learn more about <span class="co">[</span><span class="ot">here</span><span class="co">](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-3grep.html#gsc.tab=0)</span></span>
+<span id="cb43-104"><a href="#cb43-104"></a>::: {.callout-note}</span>
+<span id="cb43-105"><a href="#cb43-105"></a>We changed the default fasta header template to the following definition for smooth analysis in augur: </span>
 <span id="cb43-106"><a href="#cb43-106"></a></span>
-<span id="cb43-109"><a href="#cb43-109"></a><span class="in">```{bash}</span></span>
-<span id="cb43-110"><a href="#cb43-110"></a><span class="co">#| eval: true</span></span>
-<span id="cb43-111"><a href="#cb43-111"></a><span class="fu">grep</span> <span class="at">-c</span>  <span class="st">"^&gt;"</span> data/Influenza_virus_database.fa </span>
-<span id="cb43-112"><a href="#cb43-112"></a><span class="in">```</span></span>
-<span id="cb43-113"><a href="#cb43-113"></a></span>
-<span id="cb43-114"><a href="#cb43-114"></a><span class="in">`10191`</span> Great looks like we have all 10191 sequences. </span>
-<span id="cb43-115"><a href="#cb43-115"></a></span>
-<span id="cb43-116"><a href="#cb43-116"></a>Next, lets take a peek at our fasta headers. These headers are dennoted as information about our sequence precceed by a "&gt;" and followed by a second line containing our sequencing data. Fasta headers can (theoretically) contain as much information as one pleases as long as it containing in the same line. In common databases such as <span class="co">[</span><span class="ot">NCBI Virus</span><span class="co">](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/)</span>, <span class="co">[</span><span class="ot">GISAID</span><span class="co">](https://gisaid.org/)</span>, the <span class="co">[</span><span class="ot">BV-BRC</span><span class="co">](https://www.bv-brc.org/)</span>, etc, a lot of information can be included in these headers. Why would one want to do this? Convenience is once answer as metadata complementing sequences can be 1:1 since we do not have to worry about joining these sequences with external metadata (covered at the end of this tutorial). </span>
-<span id="cb43-117"><a href="#cb43-117"></a></span>
-<span id="cb43-118"><a href="#cb43-118"></a>(If you downloaded data youself, you have likely specified what is included in the header but lets look anyway). By default, NCBI deliminates header information using spaces which is a problem when parsing. </span>
+<span id="cb43-107"><a href="#cb43-107"></a><span class="at">&gt;{accession}|{strain}|{year}-{month}-{day}|{country}|{segment}</span></span>
+<span id="cb43-108"><a href="#cb43-108"></a></span>
+<span id="cb43-109"><a href="#cb43-109"></a>:::</span>
+<span id="cb43-110"><a href="#cb43-110"></a></span>
+<span id="cb43-111"><a href="#cb43-111"></a>Lets take a quick peek at some information about our fasta. We already know from NCBI that there should be **10191** sequences available to us but lets just check. An incredibly powerful linux tool we can use is <span class="in">`grep`</span> which you can learn more about <span class="co">[</span><span class="ot">here</span><span class="co">](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-3grep.html#gsc.tab=0)</span></span>
+<span id="cb43-112"><a href="#cb43-112"></a></span>
+<span id="cb43-115"><a href="#cb43-115"></a><span class="in">```{bash}</span></span>
+<span id="cb43-116"><a href="#cb43-116"></a><span class="co">#| eval: true</span></span>
+<span id="cb43-117"><a href="#cb43-117"></a><span class="fu">grep</span> <span class="at">-c</span>  <span class="st">"^&gt;"</span> data/Influenza_virus_database.fa </span>
+<span id="cb43-118"><a href="#cb43-118"></a><span class="in">```</span></span>
 <span id="cb43-119"><a href="#cb43-119"></a></span>
-<span id="cb43-122"><a href="#cb43-122"></a><span class="in">```{bash}</span></span>
-<span id="cb43-123"><a href="#cb43-123"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-124"><a href="#cb43-124"></a><span class="fu">head</span> <span class="at">-10</span> posts/content/flutree_tutorial/data/Influenza_virus_database.fasta</span>
-<span id="cb43-125"><a href="#cb43-125"></a><span class="in">```</span></span>
-<span id="cb43-126"><a href="#cb43-126"></a></span>
-<span id="cb43-127"><a href="#cb43-127"></a><span class="at">&gt;MT056202|A/California/01/2020|2020-01-02|USA|4</span></span>
-<span id="cb43-128"><a href="#cb43-128"></a><span class="at">&gt;GGATAATTCTATTAACCATGAAGACTATCATTGCTTTGAGCTGCATTCTATGTCTGGTTTTCGCTCAAAA</span></span>
-<span id="cb43-129"><a href="#cb43-129"></a><span class="at">&gt;AATTCCTGGAAATGACAATAGCACGGCAACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATA</span></span>
-<span id="cb43-130"><a href="#cb43-130"></a><span class="at">&gt;GTGAAAACAATCACGAATGACCGAATTGAAGTTACTAATGCTACTGAGCTGGTTCAGAACTCCTCAATAG</span></span>
-<span id="cb43-131"><a href="#cb43-131"></a><span class="at">&gt;GTGAAATATGCGACAGTCCTCATCAGATCCTTGATGGAGAAAACTGCACACTAATAGATGCTCTATTGGG</span></span>
-<span id="cb43-132"><a href="#cb43-132"></a><span class="at">&gt;AGACCCTCAGTGTGATGGCTTTCAAAATAAGAAATGGGACCTTTTCGTTGAACGGAACAAAGCCTACAGC</span></span>
-<span id="cb43-133"><a href="#cb43-133"></a><span class="at">&gt;AACTGTTACCCTTATGATGTGCCGGATTATGCATCCCTTAGATCACTAGTTGCCTCATCCGGCACACTGG</span></span>
-<span id="cb43-134"><a href="#cb43-134"></a><span class="at">&gt;AGTTTAACAATGAAAGCTTCAATTGGGCTGGAGTCACTCAAAACGGAACAAGTTCTTCTTGCACAAGGGG</span></span>
-<span id="cb43-135"><a href="#cb43-135"></a><span class="at">&gt;ATCTAAAAGTAGTTTCTTTAGTAGATTAAATTGGTTGACCCACTTAAACTCCAAATACCCAGCATTAAAC</span></span>
-<span id="cb43-136"><a href="#cb43-136"></a><span class="at">&gt;GTGACTATGCCAAACAATGAACAATTTGACAAATTGTACATTTGGGGTGTTCACCACCCGGGTACGGACA`</span></span>
-<span id="cb43-137"><a href="#cb43-137"></a></span>
-<span id="cb43-138"><a href="#cb43-138"></a>These sequences have information for 5 attributes (from left to right) seperated by a <span class="in">`|`</span>. </span>
-<span id="cb43-139"><a href="#cb43-139"></a><span class="ss">* </span>Accession</span>
-<span id="cb43-140"><a href="#cb43-140"></a><span class="ss">* </span>Strain Name</span>
-<span id="cb43-141"><a href="#cb43-141"></a><span class="ss">* </span>Collection Date</span>
-<span id="cb43-142"><a href="#cb43-142"></a><span class="ss">* </span>Country</span>
-<span id="cb43-143"><a href="#cb43-143"></a><span class="ss">* </span>Segment </span>
-<span id="cb43-144"><a href="#cb43-144"></a></span>
-<span id="cb43-145"><a href="#cb43-145"></a><span class="fu"># Generating Metadata from fasta headers.</span></span>
-<span id="cb43-146"><a href="#cb43-146"></a></span>
-<span id="cb43-147"><a href="#cb43-147"></a>Let generate a metadata table using the information in the <span class="in">`.fasta`</span> headers using <span class="co">[</span><span class="ot">'augur parse'</span><span class="co">](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/parse.html)</span>. </span>
-<span id="cb43-148"><a href="#cb43-148"></a></span>
-<span id="cb43-149"><a href="#cb43-149"></a>Download and test augur parse if you gave not already. Augur parse REQUIRES that one attribute in your metadata is named "strain". Let rename our accession number as "strain" as defined in the fields flag. This will take a second to run since we have so many sequences. We will downsample later in this tutorial. </span>
+<span id="cb43-120"><a href="#cb43-120"></a><span class="in">`10191`</span> Great looks like we have all 10191 sequences. </span>
+<span id="cb43-121"><a href="#cb43-121"></a></span>
+<span id="cb43-122"><a href="#cb43-122"></a>Next, lets take a peek at our fasta headers. These headers are dennoted as information about our sequence precceed by a "&gt;" and followed by a second line containing our sequencing data. Fasta headers can (theoretically) contain as much information as one pleases as long as it containing in the same line. In common databases such as <span class="co">[</span><span class="ot">NCBI Virus</span><span class="co">](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/)</span>, <span class="co">[</span><span class="ot">GISAID</span><span class="co">](https://gisaid.org/)</span>, the <span class="co">[</span><span class="ot">BV-BRC</span><span class="co">](https://www.bv-brc.org/)</span>, etc, a lot of information can be included in these headers. Why would one want to do this? Convenience is once answer as metadata complementing sequences can be 1:1 since we do not have to worry about joining these sequences with external metadata (covered at the end of this tutorial). </span>
+<span id="cb43-123"><a href="#cb43-123"></a></span>
+<span id="cb43-124"><a href="#cb43-124"></a>(If you downloaded data youself, you have likely specified what is included in the header but lets look anyway). By default, NCBI deliminates header information using spaces which is a problem when parsing. </span>
+<span id="cb43-125"><a href="#cb43-125"></a></span>
+<span id="cb43-128"><a href="#cb43-128"></a><span class="in">```{bash}</span></span>
+<span id="cb43-129"><a href="#cb43-129"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-130"><a href="#cb43-130"></a><span class="fu">head</span> <span class="at">-10</span> posts/content/flutree_tutorial/data/Influenza_virus_database.fasta</span>
+<span id="cb43-131"><a href="#cb43-131"></a><span class="in">```</span></span>
+<span id="cb43-132"><a href="#cb43-132"></a></span>
+<span id="cb43-133"><a href="#cb43-133"></a><span class="at">&gt;MT056202|A/California/01/2020|2020-01-02|USA|4</span></span>
+<span id="cb43-134"><a href="#cb43-134"></a><span class="at">&gt;GGATAATTCTATTAACCATGAAGACTATCATTGCTTTGAGCTGCATTCTATGTCTGGTTTTCGCTCAAAA</span></span>
+<span id="cb43-135"><a href="#cb43-135"></a><span class="at">&gt;AATTCCTGGAAATGACAATAGCACGGCAACGCTGTGCCTTGGGCACCATGCAGTACCAAACGGAACGATA</span></span>
+<span id="cb43-136"><a href="#cb43-136"></a><span class="at">&gt;GTGAAAACAATCACGAATGACCGAATTGAAGTTACTAATGCTACTGAGCTGGTTCAGAACTCCTCAATAG</span></span>
+<span id="cb43-137"><a href="#cb43-137"></a><span class="at">&gt;GTGAAATATGCGACAGTCCTCATCAGATCCTTGATGGAGAAAACTGCACACTAATAGATGCTCTATTGGG</span></span>
+<span id="cb43-138"><a href="#cb43-138"></a><span class="at">&gt;AGACCCTCAGTGTGATGGCTTTCAAAATAAGAAATGGGACCTTTTCGTTGAACGGAACAAAGCCTACAGC</span></span>
+<span id="cb43-139"><a href="#cb43-139"></a><span class="at">&gt;AACTGTTACCCTTATGATGTGCCGGATTATGCATCCCTTAGATCACTAGTTGCCTCATCCGGCACACTGG</span></span>
+<span id="cb43-140"><a href="#cb43-140"></a><span class="at">&gt;AGTTTAACAATGAAAGCTTCAATTGGGCTGGAGTCACTCAAAACGGAACAAGTTCTTCTTGCACAAGGGG</span></span>
+<span id="cb43-141"><a href="#cb43-141"></a><span class="at">&gt;ATCTAAAAGTAGTTTCTTTAGTAGATTAAATTGGTTGACCCACTTAAACTCCAAATACCCAGCATTAAAC</span></span>
+<span id="cb43-142"><a href="#cb43-142"></a><span class="at">&gt;GTGACTATGCCAAACAATGAACAATTTGACAAATTGTACATTTGGGGTGTTCACCACCCGGGTACGGACA`</span></span>
+<span id="cb43-143"><a href="#cb43-143"></a></span>
+<span id="cb43-144"><a href="#cb43-144"></a>These sequences have information for 5 attributes (from left to right) seperated by a <span class="in">`|`</span>. </span>
+<span id="cb43-145"><a href="#cb43-145"></a><span class="ss">* </span>Accession</span>
+<span id="cb43-146"><a href="#cb43-146"></a><span class="ss">* </span>Strain Name</span>
+<span id="cb43-147"><a href="#cb43-147"></a><span class="ss">* </span>Collection Date</span>
+<span id="cb43-148"><a href="#cb43-148"></a><span class="ss">* </span>Country</span>
+<span id="cb43-149"><a href="#cb43-149"></a><span class="ss">* </span>Segment </span>
 <span id="cb43-150"><a href="#cb43-150"></a></span>
-<span id="cb43-153"><a href="#cb43-153"></a><span class="in">```{bash}</span></span>
-<span id="cb43-154"><a href="#cb43-154"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-155"><a href="#cb43-155"></a><span class="ex">augur</span> parse <span class="dt">\</span></span>
-<span id="cb43-156"><a href="#cb43-156"></a>    <span class="at">--sequences</span> data/Influenza_virus_database.fa <span class="dt">\</span></span>
-<span id="cb43-157"><a href="#cb43-157"></a>    <span class="at">--output-sequences</span> results/sequences.fasta <span class="dt">\</span></span>
-<span id="cb43-158"><a href="#cb43-158"></a>    <span class="at">--output-metadata</span> results/metadata.tsv <span class="dt">\</span></span>
-<span id="cb43-159"><a href="#cb43-159"></a>    <span class="at">--prettify-fields</span> date <span class="dt">\</span></span>
-<span id="cb43-160"><a href="#cb43-160"></a>    <span class="at">--fields</span> strain strain_name date country segment</span>
-<span id="cb43-161"><a href="#cb43-161"></a><span class="in">```</span></span>
-<span id="cb43-162"><a href="#cb43-162"></a></span>
-<span id="cb43-163"><a href="#cb43-163"></a>We now have 2 new files, a fasta containing a reduced name representing the strain dennotation from augur parse as well as metadata file containing the fields we specified. </span>
-<span id="cb43-164"><a href="#cb43-164"></a></span>
-<span id="cb43-165"><a href="#cb43-165"></a>It is not uncommon for sequences to uploaded with incomplete date date. In this case, we have 21 sequences which have year-month but not day. Luckily, the nextstrain team is on top of this prviding us with an augur subcommand called <span class="co">[</span><span class="ot">curate</span><span class="co">](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/index.html)</span> which we can use to <span class="co">[</span><span class="ot">format dates</span><span class="co">](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/format-dates.html)</span> to make them compliant with ISO 8601 dates (YYYY-MM-DD) where missing data are represented with "XX" (e.g. <span class="in">`2021-07-`</span> will be converted to <span class="in">`2021-07-XX`</span> )</span>
-<span id="cb43-166"><a href="#cb43-166"></a></span>
-<span id="cb43-167"><a href="#cb43-167"></a></span>
-<span id="cb43-168"><a href="#cb43-168"></a><span class="fu">## Curate meatadata file dates</span></span>
-<span id="cb43-169"><a href="#cb43-169"></a></span>
-<span id="cb43-172"><a href="#cb43-172"></a><span class="in">```{bash}</span></span>
-<span id="cb43-173"><a href="#cb43-173"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-174"><a href="#cb43-174"></a></span>
-<span id="cb43-175"><a href="#cb43-175"></a><span class="ex">augur</span> curate format-dates <span class="dt">\</span></span>
-<span id="cb43-176"><a href="#cb43-176"></a>    <span class="at">--metadata</span> results/metadata.tsv <span class="dt">\</span></span>
-<span id="cb43-177"><a href="#cb43-177"></a>    <span class="at">--date-fields</span> date <span class="dt">\</span></span>
-<span id="cb43-178"><a href="#cb43-178"></a>    <span class="at">--expected-date-formats</span> <span class="st">"%Y-%m-%d"</span> <span class="st">"%Y-%m-"</span> <span class="dt">\</span></span>
-<span id="cb43-179"><a href="#cb43-179"></a>    <span class="at">--output-metadata</span> results/dates_metadata.tsv</span>
-<span id="cb43-180"><a href="#cb43-180"></a><span class="in">```</span></span>
-<span id="cb43-181"><a href="#cb43-181"></a></span>
-<span id="cb43-182"><a href="#cb43-182"></a>Great! Our dates are now in a proper format for time-resolved tree construction. </span>
-<span id="cb43-183"><a href="#cb43-183"></a>If we manually inspect our results <span class="in">`dates_metadata.tsv`</span> file, we can see that missing days have been replaced with the <span class="in">`XX`</span> ambiguity for the day.</span>
-<span id="cb43-184"><a href="#cb43-184"></a></span>
-<span id="cb43-185"><a href="#cb43-185"></a>|strain|strain_name|date|country|segment|</span>
-<span id="cb43-186"><a href="#cb43-186"></a>|---|---|---|---|---|</span>
-<span id="cb43-187"><a href="#cb43-187"></a>|OQ180101|A/WA/39360/2022|**2022-11-XX**|USA|4|</span>
-<span id="cb43-188"><a href="#cb43-188"></a>|OQ180141|A/WA/08914/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-189"><a href="#cb43-189"></a>|OQ180149|A/WA/18843/2022|**2022-11-XX**|USA|4|</span>
-<span id="cb43-190"><a href="#cb43-190"></a>|OQ180165|A/WA/27812/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-191"><a href="#cb43-191"></a>|OQ180173|A/WA/31872/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-192"><a href="#cb43-192"></a>|OQ180181|A/WA/34476/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-193"><a href="#cb43-193"></a>|OQ180189|A/WA/38451/2022|**2022-11-XX**|USA|4|</span>
-<span id="cb43-194"><a href="#cb43-194"></a>|OQ180197|A/WA/44633/2022|**2022-11-XX**|USA|4|</span>
-<span id="cb43-195"><a href="#cb43-195"></a>|OQ180205|A/WA/49566/2022|**2022-11-XX**|USA|4|</span>
-<span id="cb43-196"><a href="#cb43-196"></a>|OQ180213|A/WA/49996/2022|**2022-11-XX**|USA|4|</span>
-<span id="cb43-197"><a href="#cb43-197"></a>|OQ180221|A/WA/52234/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-198"><a href="#cb43-198"></a>|OQ180229|A/WA/54319/2022|**2022-11-XX**|USA|4|</span>
-<span id="cb43-199"><a href="#cb43-199"></a>|OQ180245|A/WA/57577/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-200"><a href="#cb43-200"></a>|OQ180253|A/WA/66184/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-201"><a href="#cb43-201"></a>|OQ180261|A/WA/69597/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-202"><a href="#cb43-202"></a>|OQ180269|A/WA/75885/2022|**2022-12-XX**|USA|4|</span>
-<span id="cb43-203"><a href="#cb43-203"></a></span>
-<span id="cb43-204"><a href="#cb43-204"></a>:::{.callout-important}</span>
-<span id="cb43-205"><a href="#cb43-205"></a>If you wish to proceed to constructing phylogenetic trees with amino acid mutations mapped to specific notes, stop here and proceed with the <span class="co">[</span><span class="ot">Creating a phylogenetic workflow</span><span class="co">](https://docs.nextstrain.org/en/latest/tutorials/creating-a-phylogenetic-workflow.html)</span> tutorial. The following steps only provide mutation mapping at the nucleotide level in a time resolved tree.</span>
-<span id="cb43-206"><a href="#cb43-206"></a>:::</span>
-<span id="cb43-207"><a href="#cb43-207"></a></span>
-<span id="cb43-208"><a href="#cb43-208"></a><span class="fu"># 3. Sequence alignment, feature annotation and clade assignment</span></span>
+<span id="cb43-151"><a href="#cb43-151"></a><span class="fu"># Generating Metadata from fasta headers.</span></span>
+<span id="cb43-152"><a href="#cb43-152"></a></span>
+<span id="cb43-153"><a href="#cb43-153"></a>Let generate a metadata table using the information in the <span class="in">`.fasta`</span> headers using <span class="co">[</span><span class="ot">'augur parse'</span><span class="co">](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/parse.html)</span>. </span>
+<span id="cb43-154"><a href="#cb43-154"></a></span>
+<span id="cb43-155"><a href="#cb43-155"></a>Download and test augur parse if you gave not already. Augur parse REQUIRES that one attribute in your metadata is named "strain". Let rename our accession number as "strain" as defined in the fields flag. This will take a second to run since we have so many sequences. We will downsample later in this tutorial. </span>
+<span id="cb43-156"><a href="#cb43-156"></a></span>
+<span id="cb43-159"><a href="#cb43-159"></a><span class="in">```{bash}</span></span>
+<span id="cb43-160"><a href="#cb43-160"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-161"><a href="#cb43-161"></a><span class="ex">augur</span> parse <span class="dt">\</span></span>
+<span id="cb43-162"><a href="#cb43-162"></a>    <span class="at">--sequences</span> data/Influenza_virus_database.fa <span class="dt">\</span></span>
+<span id="cb43-163"><a href="#cb43-163"></a>    <span class="at">--output-sequences</span> results/sequences.fasta <span class="dt">\</span></span>
+<span id="cb43-164"><a href="#cb43-164"></a>    <span class="at">--output-metadata</span> results/metadata.tsv <span class="dt">\</span></span>
+<span id="cb43-165"><a href="#cb43-165"></a>    <span class="at">--prettify-fields</span> date <span class="dt">\</span></span>
+<span id="cb43-166"><a href="#cb43-166"></a>    <span class="at">--fields</span> strain strain_name date country segment</span>
+<span id="cb43-167"><a href="#cb43-167"></a><span class="in">```</span></span>
+<span id="cb43-168"><a href="#cb43-168"></a></span>
+<span id="cb43-169"><a href="#cb43-169"></a>We now have 2 new files, a fasta containing a reduced name representing the strain denotation from augur parse as well as metadata file containing the fields we specified. </span>
+<span id="cb43-170"><a href="#cb43-170"></a></span>
+<span id="cb43-171"><a href="#cb43-171"></a>It is not uncommon for sequences to uploaded with incomplete date date. In this case, we have 21 sequences which have year-month but not day. Luckily, the nextstrain team is on top of this prviding us with an augur subcommand called <span class="co">[</span><span class="ot">curate</span><span class="co">](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/index.html)</span> which we can use to <span class="co">[</span><span class="ot">format dates</span><span class="co">](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/curate/format-dates.html)</span> to make them compliant with ISO 8601 dates (YYYY-MM-DD) where missing data are represented with "XX" (e.g. <span class="in">`2021-07-`</span> will be converted to <span class="in">`2021-07-XX`</span> )</span>
+<span id="cb43-172"><a href="#cb43-172"></a></span>
+<span id="cb43-173"><a href="#cb43-173"></a></span>
+<span id="cb43-174"><a href="#cb43-174"></a><span class="fu">## Curate meatadata file dates</span></span>
+<span id="cb43-175"><a href="#cb43-175"></a></span>
+<span id="cb43-178"><a href="#cb43-178"></a><span class="in">```{bash}</span></span>
+<span id="cb43-179"><a href="#cb43-179"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-180"><a href="#cb43-180"></a></span>
+<span id="cb43-181"><a href="#cb43-181"></a><span class="ex">augur</span> curate format-dates <span class="dt">\</span></span>
+<span id="cb43-182"><a href="#cb43-182"></a>    <span class="at">--metadata</span> results/metadata.tsv <span class="dt">\</span></span>
+<span id="cb43-183"><a href="#cb43-183"></a>    <span class="at">--date-fields</span> date <span class="dt">\</span></span>
+<span id="cb43-184"><a href="#cb43-184"></a>    <span class="at">--expected-date-formats</span> <span class="st">"%Y-%m-%d"</span> <span class="st">"%Y-%m-"</span> <span class="dt">\</span></span>
+<span id="cb43-185"><a href="#cb43-185"></a>    <span class="at">--output-metadata</span> results/dates_metadata.tsv</span>
+<span id="cb43-186"><a href="#cb43-186"></a><span class="in">```</span></span>
+<span id="cb43-187"><a href="#cb43-187"></a></span>
+<span id="cb43-188"><a href="#cb43-188"></a>Great! Our dates are now in a proper format for time-resolved tree construction. </span>
+<span id="cb43-189"><a href="#cb43-189"></a>If we manually inspect our results <span class="in">`dates_metadata.tsv`</span> file, we can see that missing days have been replaced with the <span class="in">`XX`</span> ambiguity for the day.</span>
+<span id="cb43-190"><a href="#cb43-190"></a></span>
+<span id="cb43-191"><a href="#cb43-191"></a>|strain|strain_name|date|country|segment|</span>
+<span id="cb43-192"><a href="#cb43-192"></a>|---|---|---|---|---|</span>
+<span id="cb43-193"><a href="#cb43-193"></a>|OQ180101|A/WA/39360/2022|**2022-11-XX**|USA|4|</span>
+<span id="cb43-194"><a href="#cb43-194"></a>|OQ180141|A/WA/08914/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-195"><a href="#cb43-195"></a>|OQ180149|A/WA/18843/2022|**2022-11-XX**|USA|4|</span>
+<span id="cb43-196"><a href="#cb43-196"></a>|OQ180165|A/WA/27812/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-197"><a href="#cb43-197"></a>|OQ180173|A/WA/31872/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-198"><a href="#cb43-198"></a>|OQ180181|A/WA/34476/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-199"><a href="#cb43-199"></a>|OQ180189|A/WA/38451/2022|**2022-11-XX**|USA|4|</span>
+<span id="cb43-200"><a href="#cb43-200"></a>|OQ180197|A/WA/44633/2022|**2022-11-XX**|USA|4|</span>
+<span id="cb43-201"><a href="#cb43-201"></a>|OQ180205|A/WA/49566/2022|**2022-11-XX**|USA|4|</span>
+<span id="cb43-202"><a href="#cb43-202"></a>|OQ180213|A/WA/49996/2022|**2022-11-XX**|USA|4|</span>
+<span id="cb43-203"><a href="#cb43-203"></a>|OQ180221|A/WA/52234/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-204"><a href="#cb43-204"></a>|OQ180229|A/WA/54319/2022|**2022-11-XX**|USA|4|</span>
+<span id="cb43-205"><a href="#cb43-205"></a>|OQ180245|A/WA/57577/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-206"><a href="#cb43-206"></a>|OQ180253|A/WA/66184/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-207"><a href="#cb43-207"></a>|OQ180261|A/WA/69597/2022|**2022-12-XX**|USA|4|</span>
+<span id="cb43-208"><a href="#cb43-208"></a>|OQ180269|A/WA/75885/2022|**2022-12-XX**|USA|4|</span>
 <span id="cb43-209"><a href="#cb43-209"></a></span>
-<span id="cb43-210"><a href="#cb43-210"></a>This tutorial uses <span class="co">[</span><span class="ot">nextclade 3.3.0</span><span class="co">](https://docs.nextstrain.org/projects/nextclade/en/stable/changes/CHANGELOG.html#nextclade-3-3-0)</span>. Nextclade requires an H3N2 input dataset. We can download a maintained dataset natively through nextclade cli.</span>
-<span id="cb43-211"><a href="#cb43-211"></a></span>
-<span id="cb43-214"><a href="#cb43-214"></a><span class="in">```{bash}</span></span>
-<span id="cb43-215"><a href="#cb43-215"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-216"><a href="#cb43-216"></a><span class="ex">nextclade</span> dataset get <span class="dt">\</span></span>
-<span id="cb43-217"><a href="#cb43-217"></a>  <span class="at">-n</span> flu_h3n2_ha <span class="dt">\</span></span>
-<span id="cb43-218"><a href="#cb43-218"></a>  <span class="at">-o</span> config/nextclade/flu_h3n2_ha</span>
-<span id="cb43-219"><a href="#cb43-219"></a><span class="in">```</span></span>
-<span id="cb43-220"><a href="#cb43-220"></a></span>
-<span id="cb43-221"><a href="#cb43-221"></a></span>
-<span id="cb43-224"><a href="#cb43-224"></a><span class="in">```{bash}</span></span>
-<span id="cb43-225"><a href="#cb43-225"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-210"><a href="#cb43-210"></a>:::{.callout-important}</span>
+<span id="cb43-211"><a href="#cb43-211"></a>If you wish to proceed to constructing phylogenetic trees with amino acid mutations mapped to specific notes, stop here and proceed with the <span class="co">[</span><span class="ot">Creating a phylogenetic workflow</span><span class="co">](https://docs.nextstrain.org/en/latest/tutorials/creating-a-phylogenetic-workflow.html)</span> tutorial. The following steps only provide mutation mapping at the nucleotide level in a time resolved tree.</span>
+<span id="cb43-212"><a href="#cb43-212"></a>:::</span>
+<span id="cb43-213"><a href="#cb43-213"></a></span>
+<span id="cb43-214"><a href="#cb43-214"></a><span class="fu"># 3. Sequence alignment, feature annotation and clade assignment</span></span>
+<span id="cb43-215"><a href="#cb43-215"></a></span>
+<span id="cb43-216"><a href="#cb43-216"></a>This tutorial uses <span class="co">[</span><span class="ot">nextclade 3.3.0</span><span class="co">](https://docs.nextstrain.org/projects/nextclade/en/stable/changes/CHANGELOG.html#nextclade-3-3-0)</span>. Nextclade requires an H3N2 input dataset. We can download a maintained dataset natively through nextclade cli.</span>
+<span id="cb43-217"><a href="#cb43-217"></a></span>
+<span id="cb43-220"><a href="#cb43-220"></a><span class="in">```{bash}</span></span>
+<span id="cb43-221"><a href="#cb43-221"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-222"><a href="#cb43-222"></a><span class="ex">nextclade</span> dataset get <span class="dt">\</span></span>
+<span id="cb43-223"><a href="#cb43-223"></a>  <span class="at">-n</span> flu_h3n2_ha <span class="dt">\</span></span>
+<span id="cb43-224"><a href="#cb43-224"></a>  <span class="at">-o</span> config/nextclade/flu_h3n2_ha</span>
+<span id="cb43-225"><a href="#cb43-225"></a><span class="in">```</span></span>
 <span id="cb43-226"><a href="#cb43-226"></a></span>
-<span id="cb43-227"><a href="#cb43-227"></a><span class="ex">nextclade</span> run <span class="dt">\</span></span>
-<span id="cb43-228"><a href="#cb43-228"></a>    <span class="at">--input-dataset</span><span class="op">=</span>config/nextclade/flu_h3n2_ha/ <span class="dt">\</span></span>
-<span id="cb43-229"><a href="#cb43-229"></a>    <span class="at">--output-all</span><span class="op">=</span>results/ <span class="dt">\</span></span>
-<span id="cb43-230"><a href="#cb43-230"></a>    results/sequences.fasta</span>
-<span id="cb43-231"><a href="#cb43-231"></a><span class="in">```</span></span>
+<span id="cb43-227"><a href="#cb43-227"></a></span>
+<span id="cb43-230"><a href="#cb43-230"></a><span class="in">```{bash}</span></span>
+<span id="cb43-231"><a href="#cb43-231"></a><span class="co">#| eval: false</span></span>
 <span id="cb43-232"><a href="#cb43-232"></a></span>
-<span id="cb43-233"><a href="#cb43-233"></a><span class="fu">## Join metadata and nextclade results</span></span>
-<span id="cb43-234"><a href="#cb43-234"></a></span>
-<span id="cb43-237"><a href="#cb43-237"></a><span class="in">```{r}</span></span>
-<span id="cb43-238"><a href="#cb43-238"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb43-239"><a href="#cb43-239"></a></span>
-<span id="cb43-240"><a href="#cb43-240"></a>metadata <span class="ot">=</span> <span class="fu">read_tsv</span>(<span class="st">'./results/dates_metadata.tsv'</span>)</span>
-<span id="cb43-241"><a href="#cb43-241"></a>nextclade <span class="ot">=</span> <span class="fu">read_tsv</span>(<span class="st">'./results/nextclade.tsv'</span>)</span>
-<span id="cb43-242"><a href="#cb43-242"></a></span>
-<span id="cb43-243"><a href="#cb43-243"></a>metadata_join <span class="ot">=</span> metadata <span class="sc">%&gt;%</span> </span>
-<span id="cb43-244"><a href="#cb43-244"></a>    <span class="fu">left_join</span>(nextclade, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'strain'</span> <span class="ot">=</span> <span class="st">'seqName'</span>))</span>
-<span id="cb43-245"><a href="#cb43-245"></a><span class="in">```</span></span>
-<span id="cb43-246"><a href="#cb43-246"></a></span>
-<span id="cb43-247"><a href="#cb43-247"></a>Lets check to see what metadata we have availible and select accordingly. </span>
+<span id="cb43-233"><a href="#cb43-233"></a><span class="ex">nextclade</span> run <span class="dt">\</span></span>
+<span id="cb43-234"><a href="#cb43-234"></a>    <span class="at">--input-dataset</span><span class="op">=</span>config/nextclade/flu_h3n2_ha/ <span class="dt">\</span></span>
+<span id="cb43-235"><a href="#cb43-235"></a>    <span class="at">--output-all</span><span class="op">=</span>results/ <span class="dt">\</span></span>
+<span id="cb43-236"><a href="#cb43-236"></a>    results/sequences.fasta</span>
+<span id="cb43-237"><a href="#cb43-237"></a><span class="in">```</span></span>
+<span id="cb43-238"><a href="#cb43-238"></a></span>
+<span id="cb43-239"><a href="#cb43-239"></a><span class="fu">## Join metadata and nextclade results</span></span>
+<span id="cb43-240"><a href="#cb43-240"></a></span>
+<span id="cb43-243"><a href="#cb43-243"></a><span class="in">```{r}</span></span>
+<span id="cb43-244"><a href="#cb43-244"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb43-245"><a href="#cb43-245"></a></span>
+<span id="cb43-246"><a href="#cb43-246"></a>metadata <span class="ot">=</span> <span class="fu">read_tsv</span>(<span class="st">'./results/dates_metadata.tsv'</span>)</span>
+<span id="cb43-247"><a href="#cb43-247"></a>nextclade <span class="ot">=</span> <span class="fu">read_tsv</span>(<span class="st">'./results/nextclade.tsv'</span>)</span>
 <span id="cb43-248"><a href="#cb43-248"></a></span>
-<span id="cb43-251"><a href="#cb43-251"></a><span class="in">```{r}</span></span>
-<span id="cb43-252"><a href="#cb43-252"></a><span class="fu">colnames</span>(metadata_join) </span>
-<span id="cb43-253"><a href="#cb43-253"></a><span class="in">```</span></span>
+<span id="cb43-249"><a href="#cb43-249"></a>metadata_join <span class="ot">=</span> metadata <span class="sc">%&gt;%</span> </span>
+<span id="cb43-250"><a href="#cb43-250"></a>    <span class="fu">left_join</span>(nextclade, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'strain'</span> <span class="ot">=</span> <span class="st">'seqName'</span>))</span>
+<span id="cb43-251"><a href="#cb43-251"></a><span class="in">```</span></span>
+<span id="cb43-252"><a href="#cb43-252"></a></span>
+<span id="cb43-253"><a href="#cb43-253"></a>Lets check to see what metadata we have availible and select accordingly. </span>
 <span id="cb43-254"><a href="#cb43-254"></a></span>
-<span id="cb43-255"><a href="#cb43-255"></a>Lets select only columns that we would like to include in our tree. </span>
-<span id="cb43-256"><a href="#cb43-256"></a></span>
-<span id="cb43-257"><a href="#cb43-257"></a><span class="ss">* </span>Strain_name</span>
-<span id="cb43-258"><a href="#cb43-258"></a><span class="ss">* </span>Date</span>
-<span id="cb43-259"><a href="#cb43-259"></a><span class="ss">* </span>Country</span>
-<span id="cb43-260"><a href="#cb43-260"></a><span class="ss">* </span>Clade</span>
-<span id="cb43-261"><a href="#cb43-261"></a><span class="ss">* </span>Subclade</span>
-<span id="cb43-262"><a href="#cb43-262"></a><span class="ss">* </span>Short-clade </span>
-<span id="cb43-263"><a href="#cb43-263"></a><span class="ss">* </span>glycosylation</span>
-<span id="cb43-264"><a href="#cb43-264"></a><span class="ss">* </span>RBD</span>
-<span id="cb43-265"><a href="#cb43-265"></a></span>
-<span id="cb43-268"><a href="#cb43-268"></a><span class="in">```{r}</span></span>
-<span id="cb43-269"><a href="#cb43-269"></a>metadata_join_filter <span class="ot">=</span> metadata_join <span class="sc">%&gt;%</span> </span>
-<span id="cb43-270"><a href="#cb43-270"></a>  <span class="fu">select</span>(strain,</span>
-<span id="cb43-271"><a href="#cb43-271"></a>    strain_name, </span>
-<span id="cb43-272"><a href="#cb43-272"></a>    date, </span>
-<span id="cb43-273"><a href="#cb43-273"></a>    country, </span>
-<span id="cb43-274"><a href="#cb43-274"></a>    clade, </span>
-<span id="cb43-275"><a href="#cb43-275"></a>    subclade, </span>
-<span id="cb43-276"><a href="#cb43-276"></a>    <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>,</span>
-<span id="cb43-277"><a href="#cb43-277"></a>    glycosylation, </span>
-<span id="cb43-278"><a href="#cb43-278"></a>    RBD) <span class="sc">%&gt;%</span> </span>
-<span id="cb43-279"><a href="#cb43-279"></a>    <span class="co"># write out the metadata final metadata  file</span></span>
-<span id="cb43-280"><a href="#cb43-280"></a>  <span class="fu">write_tsv</span>(<span class="st">'results/nextclade_metadata.tsv'</span>) </span>
-<span id="cb43-281"><a href="#cb43-281"></a><span class="in">```</span></span>
-<span id="cb43-282"><a href="#cb43-282"></a></span>
-<span id="cb43-283"><a href="#cb43-283"></a><span class="fu">## Final downsampling</span></span>
-<span id="cb43-284"><a href="#cb43-284"></a></span>
-<span id="cb43-285"><a href="#cb43-285"></a>The file we have downloaded contains too many sequences to be visualized on a single tree. We will downsample to 150 sequences for this tutorial. We can use augur filter to downsample according to attributes such as time of collection sampling to a maximum of 150 sequences. </span>
-<span id="cb43-286"><a href="#cb43-286"></a></span>
-<span id="cb43-287"><a href="#cb43-287"></a></span>
-<span id="cb43-290"><a href="#cb43-290"></a><span class="in">```{bash}</span></span>
-<span id="cb43-291"><a href="#cb43-291"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-292"><a href="#cb43-292"></a><span class="ex">augur</span> filter <span class="dt">\</span></span>
-<span id="cb43-293"><a href="#cb43-293"></a>    <span class="at">--sequences</span> results/sequences.fasta <span class="dt">\</span></span>
-<span id="cb43-294"><a href="#cb43-294"></a>    <span class="at">--metadata</span> results/nextclade_metadata.tsv <span class="dt">\</span></span>
-<span id="cb43-295"><a href="#cb43-295"></a>    <span class="at">--group-by</span> year month <span class="dt">\</span></span>
-<span id="cb43-296"><a href="#cb43-296"></a>    <span class="at">--subsample-max-sequences</span> 150 <span class="dt">\</span></span>
-<span id="cb43-297"><a href="#cb43-297"></a>    <span class="at">--output</span> results/downsampled_sequences.fasta <span class="dt">\</span></span>
-<span id="cb43-298"><a href="#cb43-298"></a>    <span class="at">--output-metadata</span> results/downsampled_nextclade_metadata.tsv</span>
-<span id="cb43-299"><a href="#cb43-299"></a><span class="in">```</span></span>
-<span id="cb43-300"><a href="#cb43-300"></a></span>
-<span id="cb43-301"><a href="#cb43-301"></a></span>
-<span id="cb43-302"><a href="#cb43-302"></a><span class="fu"># 4. Generating a time tree</span></span>
-<span id="cb43-303"><a href="#cb43-303"></a></span>
-<span id="cb43-304"><a href="#cb43-304"></a>We have generated quite a few files at the point in order to filter down our samples.</span>
-<span id="cb43-305"><a href="#cb43-305"></a></span>
-<span id="cb43-306"><a href="#cb43-306"></a><span class="fu">## Realign downsampled sequences</span></span>
+<span id="cb43-257"><a href="#cb43-257"></a><span class="in">```{r}</span></span>
+<span id="cb43-258"><a href="#cb43-258"></a><span class="fu">colnames</span>(metadata_join) </span>
+<span id="cb43-259"><a href="#cb43-259"></a><span class="in">```</span></span>
+<span id="cb43-260"><a href="#cb43-260"></a></span>
+<span id="cb43-261"><a href="#cb43-261"></a>Lets select only columns that we would like to include in our tree. </span>
+<span id="cb43-262"><a href="#cb43-262"></a></span>
+<span id="cb43-263"><a href="#cb43-263"></a><span class="ss">* </span>Strain_name</span>
+<span id="cb43-264"><a href="#cb43-264"></a><span class="ss">* </span>Date</span>
+<span id="cb43-265"><a href="#cb43-265"></a><span class="ss">* </span>Country</span>
+<span id="cb43-266"><a href="#cb43-266"></a><span class="ss">* </span>Clade</span>
+<span id="cb43-267"><a href="#cb43-267"></a><span class="ss">* </span>Subclade</span>
+<span id="cb43-268"><a href="#cb43-268"></a><span class="ss">* </span>Short-clade </span>
+<span id="cb43-269"><a href="#cb43-269"></a><span class="ss">* </span>glycosylation</span>
+<span id="cb43-270"><a href="#cb43-270"></a><span class="ss">* </span>RBD</span>
+<span id="cb43-271"><a href="#cb43-271"></a></span>
+<span id="cb43-274"><a href="#cb43-274"></a><span class="in">```{r}</span></span>
+<span id="cb43-275"><a href="#cb43-275"></a>metadata_join_filter <span class="ot">=</span> metadata_join <span class="sc">%&gt;%</span> </span>
+<span id="cb43-276"><a href="#cb43-276"></a>  <span class="fu">select</span>(strain,</span>
+<span id="cb43-277"><a href="#cb43-277"></a>    strain_name, </span>
+<span id="cb43-278"><a href="#cb43-278"></a>    date, </span>
+<span id="cb43-279"><a href="#cb43-279"></a>    country, </span>
+<span id="cb43-280"><a href="#cb43-280"></a>    clade, </span>
+<span id="cb43-281"><a href="#cb43-281"></a>    subclade, </span>
+<span id="cb43-282"><a href="#cb43-282"></a>    <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>,</span>
+<span id="cb43-283"><a href="#cb43-283"></a>    glycosylation, </span>
+<span id="cb43-284"><a href="#cb43-284"></a>    RBD) <span class="sc">%&gt;%</span> </span>
+<span id="cb43-285"><a href="#cb43-285"></a>    <span class="co"># write out the metadata final metadata  file</span></span>
+<span id="cb43-286"><a href="#cb43-286"></a>  <span class="fu">write_tsv</span>(<span class="st">'results/nextclade_metadata.tsv'</span>) </span>
+<span id="cb43-287"><a href="#cb43-287"></a><span class="in">```</span></span>
+<span id="cb43-288"><a href="#cb43-288"></a></span>
+<span id="cb43-289"><a href="#cb43-289"></a><span class="fu">## Final downsampling</span></span>
+<span id="cb43-290"><a href="#cb43-290"></a></span>
+<span id="cb43-291"><a href="#cb43-291"></a>The file we have downloaded contains too many sequences to be visualized on a single tree. We will downsample to 150 sequences for this tutorial. We can use augur filter to downsample according to attributes such as time of collection sampling to a maximum of 150 sequences. </span>
+<span id="cb43-292"><a href="#cb43-292"></a></span>
+<span id="cb43-293"><a href="#cb43-293"></a></span>
+<span id="cb43-296"><a href="#cb43-296"></a><span class="in">```{bash}</span></span>
+<span id="cb43-297"><a href="#cb43-297"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-298"><a href="#cb43-298"></a><span class="ex">augur</span> filter <span class="dt">\</span></span>
+<span id="cb43-299"><a href="#cb43-299"></a>    <span class="at">--sequences</span> results/sequences.fasta <span class="dt">\</span></span>
+<span id="cb43-300"><a href="#cb43-300"></a>    <span class="at">--metadata</span> results/nextclade_metadata.tsv <span class="dt">\</span></span>
+<span id="cb43-301"><a href="#cb43-301"></a>    <span class="at">--group-by</span> year month <span class="dt">\</span></span>
+<span id="cb43-302"><a href="#cb43-302"></a>    <span class="at">--subsample-max-sequences</span> 150 <span class="dt">\</span></span>
+<span id="cb43-303"><a href="#cb43-303"></a>    <span class="at">--output</span> results/downsampled_sequences.fasta <span class="dt">\</span></span>
+<span id="cb43-304"><a href="#cb43-304"></a>    <span class="at">--output-metadata</span> results/downsampled_nextclade_metadata.tsv</span>
+<span id="cb43-305"><a href="#cb43-305"></a><span class="in">```</span></span>
+<span id="cb43-306"><a href="#cb43-306"></a></span>
 <span id="cb43-307"><a href="#cb43-307"></a></span>
-<span id="cb43-310"><a href="#cb43-310"></a><span class="in">```{bash}</span></span>
-<span id="cb43-311"><a href="#cb43-311"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-312"><a href="#cb43-312"></a><span class="ex">mafft</span> <span class="at">--auto</span> <span class="at">--thread</span> 8 results/downsampled_sequences.fasta <span class="op">&gt;</span> results/downsampled_sequences.aln</span>
-<span id="cb43-313"><a href="#cb43-313"></a><span class="in">```</span></span>
-<span id="cb43-314"><a href="#cb43-314"></a></span>
-<span id="cb43-317"><a href="#cb43-317"></a><span class="in">```{bash}</span></span>
-<span id="cb43-318"><a href="#cb43-318"></a><span class="co">#| eval: false</span></span>
-<span id="cb43-319"><a href="#cb43-319"></a></span>
-<span id="cb43-320"><a href="#cb43-320"></a><span class="ex">treetime</span> <span class="dt">\</span></span>
-<span id="cb43-321"><a href="#cb43-321"></a>    <span class="at">--dates</span> results/downsampled_nextclade_metadata.tsv <span class="dt">\</span></span>
-<span id="cb43-322"><a href="#cb43-322"></a>    <span class="at">--aln</span> results/downsampled_sequences.aln <span class="dt">\</span></span>
-<span id="cb43-323"><a href="#cb43-323"></a>    <span class="at">--outdir</span> results/treetime</span>
-<span id="cb43-324"><a href="#cb43-324"></a><span class="in">```</span></span>
-<span id="cb43-325"><a href="#cb43-325"></a></span>
-<span id="cb43-326"><a href="#cb43-326"></a><span class="fu"># 5. Visualizing our tree {#visualizing-our-tree}</span></span>
-<span id="cb43-327"><a href="#cb43-327"></a></span>
-<span id="cb43-328"><a href="#cb43-328"></a>We will be using <span class="co">[</span><span class="ot">ggtree</span><span class="co">](https://guangchuangyu.github.io/software/ggtree/)</span> <span class="co">[</span><span class="ot">treeio</span><span class="co">]()</span> packages developed by <span class="co">[</span><span class="ot">Guangchuang Yu</span><span class="co">](https://github.com/GuangchuangYu)</span>.Please be sure it include appropriate citations as requested <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/YuLab-SMU/ggtree)</span>.</span>
-<span id="cb43-329"><a href="#cb43-329"></a></span>
-<span id="cb43-330"><a href="#cb43-330"></a>This tutorial will be using tidyverse packages along with treeio, ggtree and ape</span>
-<span id="cb43-331"><a href="#cb43-331"></a></span>
-<span id="cb43-332"><a href="#cb43-332"></a>There are many ways to add information to newick and nexus formatted trees. For simplicity, we will be converting our tree into a dataframe for easy data joining before converting back into a tree object.</span>
-<span id="cb43-333"><a href="#cb43-333"></a></span>
-<span id="cb43-334"><a href="#cb43-334"></a>Required packages</span>
-<span id="cb43-337"><a href="#cb43-337"></a><span class="in">```{r}</span></span>
-<span id="cb43-338"><a href="#cb43-338"></a><span class="co">#| warning: false</span></span>
-<span id="cb43-339"><a href="#cb43-339"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb43-340"><a href="#cb43-340"></a><span class="fu">library</span>(treeio)</span>
-<span id="cb43-341"><a href="#cb43-341"></a><span class="fu">library</span>(ggtree)</span>
-<span id="cb43-342"><a href="#cb43-342"></a><span class="fu">library</span>(ape)</span>
-<span id="cb43-343"><a href="#cb43-343"></a><span class="in">```</span></span>
-<span id="cb43-344"><a href="#cb43-344"></a></span>
-<span id="cb43-345"><a href="#cb43-345"></a><span class="fu">## Import time tree </span></span>
-<span id="cb43-346"><a href="#cb43-346"></a></span>
-<span id="cb43-349"><a href="#cb43-349"></a><span class="in">```{r}</span></span>
-<span id="cb43-350"><a href="#cb43-350"></a><span class="co">#| warning: false</span></span>
-<span id="cb43-351"><a href="#cb43-351"></a>metadata <span class="ot">=</span> <span class="fu">read_tsv</span>(<span class="st">'results/downsampled_nextclade_metadata.tsv'</span>)</span>
-<span id="cb43-352"><a href="#cb43-352"></a>tree <span class="ot">=</span> <span class="fu">read.beast</span>(<span class="st">'results/treetime/timetree.nexus'</span>)</span>
-<span id="cb43-353"><a href="#cb43-353"></a></span>
-<span id="cb43-354"><a href="#cb43-354"></a><span class="co"># Convert tree into a dataframe for human readable data joining. </span></span>
-<span id="cb43-355"><a href="#cb43-355"></a>tree_df <span class="ot">=</span> tree <span class="sc">%&gt;%</span> <span class="fu">as_data_frame</span>() <span class="co">#use treeio</span></span>
-<span id="cb43-356"><a href="#cb43-356"></a></span>
-<span id="cb43-357"><a href="#cb43-357"></a><span class="co"># join the curated metadata with the tree data</span></span>
-<span id="cb43-358"><a href="#cb43-358"></a>tree_df <span class="ot">=</span> <span class="fu">left_join</span>(tree_df, metadata, <span class="at">by=</span><span class="fu">c</span>(<span class="st">"label"</span><span class="ot">=</span><span class="st">"strain"</span>))</span>
-<span id="cb43-359"><a href="#cb43-359"></a></span>
-<span id="cb43-360"><a href="#cb43-360"></a><span class="co"># convert dataframe back into phylo data type.</span></span>
-<span id="cb43-361"><a href="#cb43-361"></a>tree_ann <span class="ot">=</span> tree_df <span class="sc">%&gt;%</span> <span class="fu">as.treedata</span>() </span>
-<span id="cb43-362"><a href="#cb43-362"></a></span>
-<span id="cb43-363"><a href="#cb43-363"></a>tree_ann</span>
-<span id="cb43-364"><a href="#cb43-364"></a><span class="in">```</span></span>
-<span id="cb43-365"><a href="#cb43-365"></a><span class="fu">## Determine mrsd</span></span>
-<span id="cb43-366"><a href="#cb43-366"></a></span>
-<span id="cb43-367"><a href="#cb43-367"></a>Since we have gnerated a tree where the branch lengths are now time resolved, we need to calibrate the date by a reference time for <span class="co">[</span><span class="ot">proper scaling</span><span class="co">](https://yulab-smu.top/treedata-book/chapter4.html#rescale-tree)</span> by ggtree. The <span class="in">`read beast`</span> can accept a *m*ost *r*ecent *s*ampling *d*ate (or mrsd) for this calibration. Let's grab the range of the sequence dates from the metadata file. </span>
-<span id="cb43-368"><a href="#cb43-368"></a></span>
-<span id="cb43-371"><a href="#cb43-371"></a><span class="in">```{r}</span></span>
-<span id="cb43-372"><a href="#cb43-372"></a>metadata <span class="sc">%&gt;%</span> </span>
-<span id="cb43-373"><a href="#cb43-373"></a>    <span class="fu">summarize</span>(<span class="at">min =</span> <span class="fu">min</span>(date), <span class="at">max =</span> <span class="fu">max</span>(date))</span>
-<span id="cb43-374"><a href="#cb43-374"></a><span class="in">```</span></span>
-<span id="cb43-375"><a href="#cb43-375"></a></span>
-<span id="cb43-376"><a href="#cb43-376"></a>The mrsd for these data is **2023-04-10.** lets proceed with simply plotting the tree along with the time axis. </span>
-<span id="cb43-377"><a href="#cb43-377"></a></span>
-<span id="cb43-378"><a href="#cb43-378"></a><span class="fu">## Ploting a simple tree</span></span>
-<span id="cb43-379"><a href="#cb43-379"></a></span>
-<span id="cb43-380"><a href="#cb43-380"></a>Lets take a look at the tree by plotting the minimal tree structure and time scale using theme_tree2(). If all previous steps were completed successfully, we will have a tree along with a time-scaled axis.</span>
-<span id="cb43-381"><a href="#cb43-381"></a></span>
-<span id="cb43-384"><a href="#cb43-384"></a><span class="in">```{r}</span></span>
-<span id="cb43-385"><a href="#cb43-385"></a>tree_ann_p <span class="ot">&lt;-</span> <span class="fu">ggtree</span>(tree_ann, <span class="at">mrsd =</span> <span class="st">'2023-04-10'</span>) <span class="co"># the tree_ann_p will serve as our "base tree" we can add aesthetic elements onto it later to shave down verbose code. </span></span>
+<span id="cb43-308"><a href="#cb43-308"></a><span class="fu"># 4. Generating a time tree</span></span>
+<span id="cb43-309"><a href="#cb43-309"></a></span>
+<span id="cb43-310"><a href="#cb43-310"></a>We have generated quite a few files at the point in order to filter down our samples.</span>
+<span id="cb43-311"><a href="#cb43-311"></a></span>
+<span id="cb43-312"><a href="#cb43-312"></a><span class="fu">## Realign downsampled sequences</span></span>
+<span id="cb43-313"><a href="#cb43-313"></a></span>
+<span id="cb43-316"><a href="#cb43-316"></a><span class="in">```{bash}</span></span>
+<span id="cb43-317"><a href="#cb43-317"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-318"><a href="#cb43-318"></a><span class="ex">mafft</span> <span class="at">--auto</span> <span class="at">--thread</span> 8 results/downsampled_sequences.fasta <span class="op">&gt;</span> results/downsampled_sequences.aln</span>
+<span id="cb43-319"><a href="#cb43-319"></a><span class="in">```</span></span>
+<span id="cb43-320"><a href="#cb43-320"></a></span>
+<span id="cb43-323"><a href="#cb43-323"></a><span class="in">```{bash}</span></span>
+<span id="cb43-324"><a href="#cb43-324"></a><span class="co">#| eval: false</span></span>
+<span id="cb43-325"><a href="#cb43-325"></a><span class="ex">treetime</span> <span class="dt">\</span></span>
+<span id="cb43-326"><a href="#cb43-326"></a>    <span class="at">--dates</span> results/downsampled_nextclade_metadata.tsv <span class="dt">\</span></span>
+<span id="cb43-327"><a href="#cb43-327"></a>    <span class="at">--aln</span> results/downsampled_sequences.aln <span class="dt">\</span></span>
+<span id="cb43-328"><a href="#cb43-328"></a>    <span class="at">--outdir</span> results/treetime</span>
+<span id="cb43-329"><a href="#cb43-329"></a><span class="in">```</span></span>
+<span id="cb43-330"><a href="#cb43-330"></a></span>
+<span id="cb43-331"><a href="#cb43-331"></a><span class="fu"># 5. Visualizing our tree {#visualizing-our-tree}</span></span>
+<span id="cb43-332"><a href="#cb43-332"></a></span>
+<span id="cb43-333"><a href="#cb43-333"></a>We will be using <span class="co">[</span><span class="ot">ggtree</span><span class="co">](https://guangchuangyu.github.io/software/ggtree/)</span> <span class="co">[</span><span class="ot">treeio</span><span class="co">]()</span> packages developed by <span class="co">[</span><span class="ot">Guangchuang Yu</span><span class="co">](https://github.com/GuangchuangYu)</span>.Please be sure it include appropriate citations as requested <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/YuLab-SMU/ggtree)</span>.</span>
+<span id="cb43-334"><a href="#cb43-334"></a></span>
+<span id="cb43-335"><a href="#cb43-335"></a>This tutorial will be using tidyverse packages along with treeio, ggtree and ape</span>
+<span id="cb43-336"><a href="#cb43-336"></a></span>
+<span id="cb43-337"><a href="#cb43-337"></a>There are many ways to add information to newick and nexus formatted trees. For simplicity, we will be converting our tree into a dataframe for easy data joining before converting back into a tree object.</span>
+<span id="cb43-338"><a href="#cb43-338"></a></span>
+<span id="cb43-339"><a href="#cb43-339"></a>Required packages</span>
+<span id="cb43-342"><a href="#cb43-342"></a><span class="in">```{r}</span></span>
+<span id="cb43-343"><a href="#cb43-343"></a><span class="co">#| warning: false</span></span>
+<span id="cb43-344"><a href="#cb43-344"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb43-345"><a href="#cb43-345"></a><span class="fu">library</span>(treeio)</span>
+<span id="cb43-346"><a href="#cb43-346"></a><span class="fu">library</span>(ggtree)</span>
+<span id="cb43-347"><a href="#cb43-347"></a><span class="fu">library</span>(ape)</span>
+<span id="cb43-348"><a href="#cb43-348"></a><span class="in">```</span></span>
+<span id="cb43-349"><a href="#cb43-349"></a></span>
+<span id="cb43-350"><a href="#cb43-350"></a><span class="fu">## Import time tree </span></span>
+<span id="cb43-351"><a href="#cb43-351"></a></span>
+<span id="cb43-354"><a href="#cb43-354"></a><span class="in">```{r}</span></span>
+<span id="cb43-355"><a href="#cb43-355"></a><span class="co">#| warning: false</span></span>
+<span id="cb43-356"><a href="#cb43-356"></a>metadata <span class="ot">=</span> <span class="fu">read_tsv</span>(<span class="st">'results/downsampled_nextclade_metadata.tsv'</span>)</span>
+<span id="cb43-357"><a href="#cb43-357"></a>tree <span class="ot">=</span> <span class="fu">read.beast</span>(<span class="st">'results/treetime/timetree.nexus'</span>)</span>
+<span id="cb43-358"><a href="#cb43-358"></a></span>
+<span id="cb43-359"><a href="#cb43-359"></a><span class="co"># Convert tree into a dataframe for human readable data joining. </span></span>
+<span id="cb43-360"><a href="#cb43-360"></a>tree_df <span class="ot">=</span> tree <span class="sc">%&gt;%</span> <span class="fu">as_data_frame</span>() <span class="co">#use treeio</span></span>
+<span id="cb43-361"><a href="#cb43-361"></a></span>
+<span id="cb43-362"><a href="#cb43-362"></a><span class="co"># join the curated metadata with the tree data</span></span>
+<span id="cb43-363"><a href="#cb43-363"></a>tree_df <span class="ot">=</span> <span class="fu">left_join</span>(tree_df, metadata, <span class="at">by=</span><span class="fu">c</span>(<span class="st">"label"</span><span class="ot">=</span><span class="st">"strain"</span>))</span>
+<span id="cb43-364"><a href="#cb43-364"></a></span>
+<span id="cb43-365"><a href="#cb43-365"></a><span class="co"># convert dataframe back into phylo data type.</span></span>
+<span id="cb43-366"><a href="#cb43-366"></a>tree_ann <span class="ot">=</span> tree_df <span class="sc">%&gt;%</span> <span class="fu">as.treedata</span>() </span>
+<span id="cb43-367"><a href="#cb43-367"></a></span>
+<span id="cb43-368"><a href="#cb43-368"></a>tree_ann</span>
+<span id="cb43-369"><a href="#cb43-369"></a><span class="in">```</span></span>
+<span id="cb43-370"><a href="#cb43-370"></a><span class="fu">## Determine mrsd</span></span>
+<span id="cb43-371"><a href="#cb43-371"></a></span>
+<span id="cb43-372"><a href="#cb43-372"></a>Since we have gnerated a tree where the branch lengths are now time resolved, we need to calibrate the date by a reference time for <span class="co">[</span><span class="ot">proper scaling</span><span class="co">](https://yulab-smu.top/treedata-book/chapter4.html#rescale-tree)</span> by ggtree. The <span class="in">`read beast`</span> can accept a *m*ost *r*ecent *s*ampling *d*ate (or mrsd) for this calibration. Let's grab the range of the sequence dates from the metadata file. </span>
+<span id="cb43-373"><a href="#cb43-373"></a></span>
+<span id="cb43-376"><a href="#cb43-376"></a><span class="in">```{r}</span></span>
+<span id="cb43-377"><a href="#cb43-377"></a>metadata <span class="sc">%&gt;%</span> </span>
+<span id="cb43-378"><a href="#cb43-378"></a>    <span class="fu">summarize</span>(<span class="at">min =</span> <span class="fu">min</span>(date), <span class="at">max =</span> <span class="fu">max</span>(date))</span>
+<span id="cb43-379"><a href="#cb43-379"></a><span class="in">```</span></span>
+<span id="cb43-380"><a href="#cb43-380"></a></span>
+<span id="cb43-381"><a href="#cb43-381"></a>The mrsd for these data is **2023-04-10.** lets proceed with simply plotting the tree along with the time axis. </span>
+<span id="cb43-382"><a href="#cb43-382"></a></span>
+<span id="cb43-383"><a href="#cb43-383"></a><span class="fu">## Ploting a simple tree</span></span>
+<span id="cb43-384"><a href="#cb43-384"></a></span>
+<span id="cb43-385"><a href="#cb43-385"></a>Lets take a look at the tree by plotting the minimal tree structure and time scale using theme_tree2(). If all previous steps were completed successfully, we will have a tree along with a time-scaled axis.</span>
 <span id="cb43-386"><a href="#cb43-386"></a></span>
-<span id="cb43-387"><a href="#cb43-387"></a>tree_ann_p <span class="sc">+</span> <span class="fu">theme_tree2</span>() <span class="co"># theme_tree2 will give us our time-scaled axis.</span></span>
-<span id="cb43-388"><a href="#cb43-388"></a><span class="in">```</span></span>
-<span id="cb43-389"><a href="#cb43-389"></a></span>
-<span id="cb43-390"><a href="#cb43-390"></a>Annotating your tree is the trickiest part of this step. Static trees require the analyst to provide concise information in a way that is simple to interpret. The beauty of ggtree and its spporting packages is that  syntax is simple and intuitive making it easy to add information to your tree. Futhermore, its documentation is incrediblely detailed with abundance reproducible examples and explanations for nearly any attribute you would like to add.</span>
-<span id="cb43-391"><a href="#cb43-391"></a></span>
-<span id="cb43-392"><a href="#cb43-392"></a>Below, I show just one example which best fits only 2 dimensions of information here using tip color and size. However, aesthetics for tip shape as well as for branches can be added as well. It is important that we remember that the tree we have constructed is a down sampled version of our original dataset. Thus, I have included a basic example of a streamgraph from the entire dataset of over 10,000 sequences since we are able to better summarize these data with this visualization.</span>
-<span id="cb43-393"><a href="#cb43-393"></a></span>
-<span id="cb43-394"><a href="#cb43-394"></a><span class="fu">## Plotting an annotated tree</span></span>
-<span id="cb43-395"><a href="#cb43-395"></a></span>
-<span id="cb43-396"><a href="#cb43-396"></a>Since H3N2 clade nomenclature is so expansive, lets create a color pallet which can accompany our 23 clades within our dataset. There are dozens of packages which accomplish this beutifully. For this instance, we'll use the <span class="co">[</span><span class="ot">colorspace</span><span class="co">](https://colorspace.r-forge.r-project.org/reference/hcl_palettes.html)</span> package and specify the "Set3" palette to expand to our clades. 23 is a very high number to represent in a single plot. However, each clade should cluster discretely assisting with visualization. We will be using the <span class="in">`short-clade`</span> column for this plot to condense the verbose nomenclature. </span>
+<span id="cb43-389"><a href="#cb43-389"></a><span class="in">```{r}</span></span>
+<span id="cb43-390"><a href="#cb43-390"></a><span class="co"># the tree_ann_p will serve as our "base tree" we can add aesthetic elements onto it later to shave down verbose code. </span></span>
+<span id="cb43-391"><a href="#cb43-391"></a>tree_ann_p <span class="ot">&lt;-</span> <span class="fu">ggtree</span>(tree_ann,</span>
+<span id="cb43-392"><a href="#cb43-392"></a>                      <span class="at">mrsd =</span> <span class="st">'2023-04-10'</span>, </span>
+<span id="cb43-393"><a href="#cb43-393"></a>                      <span class="at">right =</span> <span class="cn">TRUE</span>) <span class="co"># this "ladderizes" our nodes to be in descending order.</span></span>
+<span id="cb43-394"><a href="#cb43-394"></a></span>
+<span id="cb43-395"><a href="#cb43-395"></a>tree_ann_p <span class="sc">+</span> <span class="fu">theme_tree2</span>() <span class="co"># theme_tree2 will give us our time-scaled axis.</span></span>
+<span id="cb43-396"><a href="#cb43-396"></a><span class="in">```</span></span>
 <span id="cb43-397"><a href="#cb43-397"></a></span>
-<span id="cb43-398"><a href="#cb43-398"></a><span class="fu">## Define Color Pallette</span></span>
-<span id="cb43-401"><a href="#cb43-401"></a><span class="in">```{r}</span></span>
-<span id="cb43-402"><a href="#cb43-402"></a><span class="fu">library</span>(colorspace)</span>
-<span id="cb43-403"><a href="#cb43-403"></a>palette <span class="ot">=</span> <span class="fu">qualitative_hcl</span>(<span class="dv">23</span>, <span class="at">palette =</span> <span class="st">"Dark2"</span>)</span>
-<span id="cb43-404"><a href="#cb43-404"></a>palette</span>
-<span id="cb43-405"><a href="#cb43-405"></a><span class="in">```</span></span>
-<span id="cb43-406"><a href="#cb43-406"></a></span>
-<span id="cb43-407"><a href="#cb43-407"></a></span>
-<span id="cb43-410"><a href="#cb43-410"></a><span class="in">```{r}</span></span>
-<span id="cb43-411"><a href="#cb43-411"></a>tree_ann_p1 <span class="ot">&lt;-</span> tree_ann_p <span class="sc">+</span> </span>
-<span id="cb43-412"><a href="#cb43-412"></a>  <span class="fu">geom_tippoint</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>, <span class="at">size =</span> RBD), <span class="at">alpha =</span> <span class="fl">0.99</span>) <span class="sc">+</span> </span>
-<span id="cb43-413"><a href="#cb43-413"></a>  <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">2</span>)) <span class="sc">+</span>  </span>
-<span id="cb43-414"><a href="#cb43-414"></a>  <span class="fu">xlab</span>(<span class="st">"Time"</span>) <span class="sc">+</span></span>
-<span id="cb43-415"><a href="#cb43-415"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Clade"</span>, <span class="at">ncol =</span> <span class="dv">2</span>),</span>
-<span id="cb43-416"><a href="#cb43-416"></a>         <span class="at">size =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"RBD Mutations"</span>)) <span class="sc">+</span></span>
-<span id="cb43-417"><a href="#cb43-417"></a>  <span class="fu">theme_tree2</span>(<span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.30</span>, <span class="fl">0.6</span>),</span>
-<span id="cb43-418"><a href="#cb43-418"></a>              <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
-<span id="cb43-419"><a href="#cb43-419"></a>              <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
-<span id="cb43-420"><a href="#cb43-420"></a>              <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.01</span>, <span class="st">"cm"</span>),</span>
-<span id="cb43-421"><a href="#cb43-421"></a>              <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.3</span>, <span class="st">"cm"</span>),</span>
-<span id="cb43-422"><a href="#cb43-422"></a>              <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>)) <span class="sc">+</span></span>
-<span id="cb43-423"><a href="#cb43-423"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>), </span>
-<span id="cb43-424"><a href="#cb43-424"></a>  <span class="at">labels =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>)) <span class="sc">+</span></span>
-<span id="cb43-425"><a href="#cb43-425"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">1</span>), </span>
-<span id="cb43-426"><a href="#cb43-426"></a>  <span class="at">linetype =</span> <span class="st">"dotted"</span>, <span class="at">color =</span> <span class="st">"gray"</span>) <span class="sc">+</span></span>
-<span id="cb43-427"><a href="#cb43-427"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> palette)  <span class="co"># Set to our palette</span></span>
-<span id="cb43-428"><a href="#cb43-428"></a></span>
-<span id="cb43-429"><a href="#cb43-429"></a>tree_ann_p1</span>
-<span id="cb43-430"><a href="#cb43-430"></a><span class="in">```</span></span>
-<span id="cb43-431"><a href="#cb43-431"></a></span>
-<span id="cb43-432"><a href="#cb43-432"></a>Lets save our plots and adjust the resolution and size for a "publication-like" figure.</span>
-<span id="cb43-435"><a href="#cb43-435"></a><span class="in">```{r}</span></span>
-<span id="cb43-436"><a href="#cb43-436"></a><span class="co">#! echo: false</span></span>
-<span id="cb43-437"><a href="#cb43-437"></a><span class="fu">ggsave</span>(<span class="st">'results/plots/h3_tree.png'</span>, </span>
-<span id="cb43-438"><a href="#cb43-438"></a>  tree_ann_p1, </span>
-<span id="cb43-439"><a href="#cb43-439"></a>  <span class="at">height =</span> <span class="dv">5</span>, </span>
-<span id="cb43-440"><a href="#cb43-440"></a>  <span class="at">width =</span> <span class="dv">6</span>, </span>
-<span id="cb43-441"><a href="#cb43-441"></a>  <span class="at">dpi =</span> <span class="dv">300</span>)</span>
-<span id="cb43-442"><a href="#cb43-442"></a><span class="in">```</span></span>
-<span id="cb43-443"><a href="#cb43-443"></a></span>
-<span id="cb43-444"><a href="#cb43-444"></a><span class="fu">## Plotting Clade Frequency Over Time</span></span>
-<span id="cb43-445"><a href="#cb43-445"></a></span>
-<span id="cb43-446"><a href="#cb43-446"></a>Since we have an abundance of metadata for all 10,000 H3N2 isolates, let's take advantage and plot a <span class="co">[</span><span class="ot">streamgraph</span><span class="co">]</span> to fully capture the abundance of H3N2 clades over time. We will use the <span class="in">`metadata_join`</span> dataframe we generated containing nextclade-assigned clades. Again, we face the issue of attempting to visualize 23 clades on one plot. However, the fact that only one or two clades are dominating at any given time will assist with the  constraints of many categorical variables. Since we do not have the luxury of discrete clustering as we did with the tree, we can add lines to separate the clades.</span>
-<span id="cb43-447"><a href="#cb43-447"></a></span>
-<span id="cb43-448"><a href="#cb43-448"></a></span>
-<span id="cb43-451"><a href="#cb43-451"></a><span class="in">```{r}</span></span>
-<span id="cb43-452"><a href="#cb43-452"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(metadata_join <span class="sc">%&gt;%</span> </span>
-<span id="cb43-453"><a href="#cb43-453"></a>  <span class="fu">select</span>(strain, date, <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>) <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">15</span>))</span>
-<span id="cb43-454"><a href="#cb43-454"></a><span class="in">```</span></span>
-<span id="cb43-455"><a href="#cb43-455"></a></span>
-<span id="cb43-456"><a href="#cb43-456"></a><span class="fu"># 6. Example of a stacked area plot with our abbreviated clade names</span></span>
-<span id="cb43-457"><a href="#cb43-457"></a></span>
-<span id="cb43-460"><a href="#cb43-460"></a><span class="in">```{r}</span></span>
-<span id="cb43-461"><a href="#cb43-461"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb43-462"><a href="#cb43-462"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb43-463"><a href="#cb43-463"></a></span>
-<span id="cb43-464"><a href="#cb43-464"></a><span class="co"># Make sure to replace "metadata_join" with the actual name of your dataframe</span></span>
-<span id="cb43-465"><a href="#cb43-465"></a>metadata_join<span class="sc">$</span>date <span class="ot">=</span> <span class="fu">as.Date</span>(metadata_join<span class="sc">$</span>date)</span>
+<span id="cb43-398"><a href="#cb43-398"></a>Annotating your tree is the trickiest part of this step. Static trees require the analyst to provide concise information in a way that is simple to interpret. The beauty of ggtree and its spporting packages is that  syntax is simple and intuitive making it easy to add information to your tree. Futhermore, its documentation is incrediblely detailed with abundance reproducible examples and explanations for nearly any attribute you would like to add.</span>
+<span id="cb43-399"><a href="#cb43-399"></a></span>
+<span id="cb43-400"><a href="#cb43-400"></a>Below, I show just one example which best fits only 2 dimensions of information here using tip color and size. However, aesthetics for tip shape as well as for branches can be added as well. It is important that we remember that the tree we have constructed is a down sampled version of our original dataset. Thus, I have included a basic example of a streamgraph from the entire dataset of over 10,000 sequences since we are able to better summarize these data with this visualization.</span>
+<span id="cb43-401"><a href="#cb43-401"></a></span>
+<span id="cb43-402"><a href="#cb43-402"></a><span class="fu">## Plotting an annotated tree</span></span>
+<span id="cb43-403"><a href="#cb43-403"></a></span>
+<span id="cb43-404"><a href="#cb43-404"></a>Since H3N2 clade nomenclature is so expansive, lets create a color pallet which can accompany our 23 clades within our dataset. There are dozens of packages which accomplish this beutifully. For this instance, we'll use the <span class="co">[</span><span class="ot">colorspace</span><span class="co">](https://colorspace.r-forge.r-project.org/reference/hcl_palettes.html)</span> package and specify the "Set3" palette to expand to our clades. 23 is a very high number to represent in a single plot. However, each clade should cluster discretely assisting with visualization. We will be using the <span class="in">`short-clade`</span> column for this plot to condense the verbose nomenclature. </span>
+<span id="cb43-405"><a href="#cb43-405"></a></span>
+<span id="cb43-406"><a href="#cb43-406"></a><span class="fu">## Define Color Palette</span></span>
+<span id="cb43-409"><a href="#cb43-409"></a><span class="in">```{r}</span></span>
+<span id="cb43-410"><a href="#cb43-410"></a><span class="fu">library</span>(colorspace)</span>
+<span id="cb43-411"><a href="#cb43-411"></a>palette <span class="ot">=</span> <span class="fu">qualitative_hcl</span>(<span class="dv">23</span>, <span class="at">palette =</span> <span class="st">"Dark2"</span>)</span>
+<span id="cb43-412"><a href="#cb43-412"></a>palette</span>
+<span id="cb43-413"><a href="#cb43-413"></a><span class="in">```</span></span>
+<span id="cb43-414"><a href="#cb43-414"></a></span>
+<span id="cb43-415"><a href="#cb43-415"></a></span>
+<span id="cb43-418"><a href="#cb43-418"></a><span class="in">```{r}</span></span>
+<span id="cb43-419"><a href="#cb43-419"></a><span class="co"># Load required libraries</span></span>
+<span id="cb43-420"><a href="#cb43-420"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb43-421"><a href="#cb43-421"></a><span class="fu">library</span>(ggtree)</span>
+<span id="cb43-422"><a href="#cb43-422"></a><span class="fu">library</span>(grid)</span>
+<span id="cb43-423"><a href="#cb43-423"></a></span>
+<span id="cb43-424"><a href="#cb43-424"></a><span class="co"># Define the base plot</span></span>
+<span id="cb43-425"><a href="#cb43-425"></a>tree_ann_p1 <span class="ot">&lt;-</span> tree_ann_p <span class="sc">+</span> </span>
+<span id="cb43-426"><a href="#cb43-426"></a>  <span class="fu">geom_tippoint</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(<span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>), <span class="co"># assigning fill instead of color allows a border</span></span>
+<span id="cb43-427"><a href="#cb43-427"></a>                    <span class="at">size =</span> RBD), <span class="co"># reflect RBD mutations called by nextclade</span></span>
+<span id="cb43-428"><a href="#cb43-428"></a>                <span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="co"># transparency of points</span></span>
+<span id="cb43-429"><a href="#cb43-429"></a>                <span class="at">shape =</span> <span class="dv">21</span>, <span class="co"># empty circle</span></span>
+<span id="cb43-430"><a href="#cb43-430"></a>                <span class="at">stroke =</span> <span class="fl">0.5</span>) <span class="sc">+</span> <span class="co"># point border thickness</span></span>
+<span id="cb43-431"><a href="#cb43-431"></a>  <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">2</span>)) <span class="sc">+</span> </span>
+<span id="cb43-432"><a href="#cb43-432"></a>  <span class="fu">xlab</span>(<span class="st">"Time"</span>) <span class="sc">+</span></span>
+<span id="cb43-433"><a href="#cb43-433"></a>  <span class="fu">guides</span>(</span>
+<span id="cb43-434"><a href="#cb43-434"></a>    <span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Clade"</span>, <span class="at">ncol =</span> <span class="dv">2</span>), <span class="co"># customize our legend</span></span>
+<span id="cb43-435"><a href="#cb43-435"></a>    <span class="at">size =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"RBD Mutations"</span>)</span>
+<span id="cb43-436"><a href="#cb43-436"></a>  ) <span class="sc">+</span></span>
+<span id="cb43-437"><a href="#cb43-437"></a>  <span class="fu">theme_tree2</span>( <span class="co"># justify legend </span></span>
+<span id="cb43-438"><a href="#cb43-438"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.40</span>, <span class="fl">0.45</span>),</span>
+<span id="cb43-439"><a href="#cb43-439"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
+<span id="cb43-440"><a href="#cb43-440"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
+<span id="cb43-441"><a href="#cb43-441"></a>    <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.01</span>, <span class="st">"cm"</span>),</span>
+<span id="cb43-442"><a href="#cb43-442"></a>    <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.3</span>, <span class="st">"cm"</span>),</span>
+<span id="cb43-443"><a href="#cb43-443"></a>    <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>),</span>
+<span id="cb43-444"><a href="#cb43-444"></a>    <span class="at">legend.key =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>, <span class="at">colour =</span> <span class="st">"transparent"</span>) <span class="co"># Make legend key backgrounds transparent</span></span>
+<span id="cb43-445"><a href="#cb43-445"></a>  ) <span class="sc">+</span></span>
+<span id="cb43-446"><a href="#cb43-446"></a>  <span class="fu">scale_x_continuous</span>( <span class="co"># define x axis labels and breaks</span></span>
+<span id="cb43-447"><a href="#cb43-447"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>), </span>
+<span id="cb43-448"><a href="#cb43-448"></a>    <span class="at">labels =</span> <span class="fu">seq</span>(<span class="dv">2009</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">2</span>)</span>
+<span id="cb43-449"><a href="#cb43-449"></a>  ) <span class="sc">+</span> <span class="co"># define the date increment shown</span></span>
+<span id="cb43-450"><a href="#cb43-450"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette) <span class="co"># Set to our palette for points</span></span>
+<span id="cb43-451"><a href="#cb43-451"></a></span>
+<span id="cb43-452"><a href="#cb43-452"></a><span class="co"># Adding alternating grey and white background for each year</span></span>
+<span id="cb43-453"><a href="#cb43-453"></a><span class="cf">for</span> (year <span class="cf">in</span> <span class="fu">seq</span>(<span class="dv">2008</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">1</span>)) {</span>
+<span id="cb43-454"><a href="#cb43-454"></a>  tree_ann_p1 <span class="ot">&lt;-</span> tree_ann_p1 <span class="sc">+</span></span>
+<span id="cb43-455"><a href="#cb43-455"></a>    <span class="fu">annotation_custom</span>(</span>
+<span id="cb43-456"><a href="#cb43-456"></a>      <span class="at">grob =</span> <span class="fu">rectGrob</span>(<span class="at">gp =</span> <span class="fu">gpar</span>(<span class="at">fill =</span> <span class="fu">ifelse</span>(year <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>, </span>
+<span id="cb43-457"><a href="#cb43-457"></a>                                                <span class="st">"grey80"</span>, </span>
+<span id="cb43-458"><a href="#cb43-458"></a>                                                <span class="st">"white"</span>), </span>
+<span id="cb43-459"><a href="#cb43-459"></a>                                                <span class="at">col =</span> <span class="cn">NA</span>, </span>
+<span id="cb43-460"><a href="#cb43-460"></a>                                                <span class="at">alpha =</span> <span class="fl">0.3</span>)),</span>
+<span id="cb43-461"><a href="#cb43-461"></a>      <span class="at">xmin =</span> year, <span class="at">xmax =</span> year <span class="sc">+</span> <span class="dv">1</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">ymax =</span> <span class="cn">Inf</span></span>
+<span id="cb43-462"><a href="#cb43-462"></a>    )</span>
+<span id="cb43-463"><a href="#cb43-463"></a>}</span>
+<span id="cb43-464"><a href="#cb43-464"></a></span>
+<span id="cb43-465"><a href="#cb43-465"></a>tree_ann_p1</span>
 <span id="cb43-466"><a href="#cb43-466"></a></span>
-<span id="cb43-467"><a href="#cb43-467"></a>clade_count <span class="ot">=</span> metadata_join <span class="sc">%&gt;%</span> </span>
-<span id="cb43-468"><a href="#cb43-468"></a>  <span class="fu">mutate</span>(<span class="at">month =</span> <span class="fu">format</span>(date, <span class="st">"%Y-%m"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb43-469"><a href="#cb43-469"></a>  <span class="fu">count</span>(month, <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb43-470"><a href="#cb43-470"></a>  <span class="fu">spread</span>(<span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>, n, <span class="at">fill =</span> <span class="dv">0</span>)</span>
-<span id="cb43-471"><a href="#cb43-471"></a></span>
-<span id="cb43-472"><a href="#cb43-472"></a>clade_count_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(clade_count, <span class="at">cols =</span> <span class="sc">-</span>month, <span class="at">names_to =</span> <span class="st">"short-clade"</span>, <span class="at">values_to =</span> <span class="st">"count"</span>)</span>
-<span id="cb43-473"><a href="#cb43-473"></a></span>
-<span id="cb43-474"><a href="#cb43-474"></a>max_dates <span class="ot">&lt;-</span> clade_count_long <span class="sc">%&gt;%</span></span>
-<span id="cb43-475"><a href="#cb43-475"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb43-476"><a href="#cb43-476"></a>  <span class="fu">summarize</span>(<span class="at">max_date =</span> <span class="fu">max</span>(<span class="fu">as.Date</span>(<span class="fu">paste0</span>(month, <span class="st">"-01"</span>))))</span>
-<span id="cb43-477"><a href="#cb43-477"></a></span>
-<span id="cb43-478"><a href="#cb43-478"></a>clade_freq_p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(clade_count_long, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(month, <span class="st">"-01"</span>)), <span class="at">y =</span> count, <span class="at">fill =</span> <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>)) <span class="sc">+</span></span>
-<span id="cb43-479"><a href="#cb43-479"></a>  <span class="fu">geom_area</span>(<span class="at">position=</span><span class="st">'stack'</span>, <span class="at">linetype=</span><span class="dv">1</span>, <span class="at">size=</span><span class="fl">0.3</span>, <span class="at">color=</span><span class="st">'black'</span>) <span class="sc">+</span></span>
-<span id="cb43-480"><a href="#cb43-480"></a>  <span class="fu">geom_vline</span>(<span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">year =</span> <span class="dv">2015</span><span class="sc">:</span><span class="dv">2023</span>), </span>
-<span id="cb43-481"><a href="#cb43-481"></a>             <span class="fu">aes</span>(<span class="at">xintercept =</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(year, <span class="st">"-01-01"</span>))), </span>
-<span id="cb43-482"><a href="#cb43-482"></a>             <span class="at">color =</span> <span class="st">"grey"</span>, </span>
-<span id="cb43-483"><a href="#cb43-483"></a>             <span class="at">linetype =</span> <span class="st">"dotted"</span>, </span>
-<span id="cb43-484"><a href="#cb43-484"></a>             <span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb43-485"><a href="#cb43-485"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">y =</span> <span class="st">"Total Sequences </span><span class="sc">\n</span><span class="st"> uploaded to GISAID"</span>) <span class="sc">+</span></span>
-<span id="cb43-486"><a href="#cb43-486"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
-<span id="cb43-487"><a href="#cb43-487"></a>  <span class="fu">theme</span>(</span>
-<span id="cb43-488"><a href="#cb43-488"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.30</span>, <span class="fl">0.6</span>),</span>
-<span id="cb43-489"><a href="#cb43-489"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">15</span>), </span>
-<span id="cb43-490"><a href="#cb43-490"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>), </span>
-<span id="cb43-491"><a href="#cb43-491"></a>    <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.01</span>, <span class="st">"cm"</span>),</span>
-<span id="cb43-492"><a href="#cb43-492"></a>    <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.3</span>, <span class="st">"cm"</span>),</span>
-<span id="cb43-493"><a href="#cb43-493"></a>    <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>),</span>
-<span id="cb43-494"><a href="#cb43-494"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb43-495"><a href="#cb43-495"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb43-496"><a href="#cb43-496"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>),</span>
-<span id="cb43-497"><a href="#cb43-497"></a>    <span class="at">panel.border =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb43-498"><a href="#cb43-498"></a>    <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Clade"</span>, <span class="at">ncol =</span> <span class="dv">2</span>))</span>
-<span id="cb43-499"><a href="#cb43-499"></a>  ) <span class="sc">+</span></span>
-<span id="cb43-500"><a href="#cb43-500"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y"</span>) <span class="sc">+</span></span>
-<span id="cb43-501"><a href="#cb43-501"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette)  <span class="co"># Set our pre-defined color palette</span></span>
-<span id="cb43-502"><a href="#cb43-502"></a>  </span>
-<span id="cb43-503"><a href="#cb43-503"></a>clade_freq_p</span>
-<span id="cb43-504"><a href="#cb43-504"></a><span class="in">```</span></span>
-<span id="cb43-505"><a href="#cb43-505"></a></span>
-<span id="cb43-508"><a href="#cb43-508"></a><span class="in">```{r}</span></span>
-<span id="cb43-509"><a href="#cb43-509"></a><span class="fu">ggsave</span>(<span class="st">'results/plots/h3_frequency.png'</span>, clade_freq_p, <span class="at">height =</span> <span class="dv">3</span>, <span class="at">width =</span> <span class="dv">6</span>, <span class="at">dpi =</span> <span class="dv">300</span>)</span>
-<span id="cb43-510"><a href="#cb43-510"></a><span class="in">```</span></span>
-<span id="cb43-511"><a href="#cb43-511"></a></span>
-<span id="cb43-514"><a href="#cb43-514"></a><span class="in">```{r}</span></span>
-<span id="cb43-515"><a href="#cb43-515"></a><span class="fu">sessionInfo</span>()</span>
-<span id="cb43-516"><a href="#cb43-516"></a><span class="in">```</span></span>
+<span id="cb43-467"><a href="#cb43-467"></a><span class="in">```</span></span>
+<span id="cb43-468"><a href="#cb43-468"></a></span>
+<span id="cb43-469"><a href="#cb43-469"></a>Lets save our plots and adjust the resolution and size for a "publication-like" figure.</span>
+<span id="cb43-472"><a href="#cb43-472"></a><span class="in">```{r}</span></span>
+<span id="cb43-473"><a href="#cb43-473"></a><span class="co">#! echo: false</span></span>
+<span id="cb43-474"><a href="#cb43-474"></a><span class="fu">ggsave</span>(<span class="st">'results/plots/h3_tree.png'</span>, </span>
+<span id="cb43-475"><a href="#cb43-475"></a>  tree_ann_p1, </span>
+<span id="cb43-476"><a href="#cb43-476"></a>  <span class="at">height =</span> <span class="dv">5</span>, </span>
+<span id="cb43-477"><a href="#cb43-477"></a>  <span class="at">width =</span> <span class="dv">4</span>, </span>
+<span id="cb43-478"><a href="#cb43-478"></a>  <span class="at">dpi =</span> <span class="dv">300</span>)</span>
+<span id="cb43-479"><a href="#cb43-479"></a><span class="in">```</span></span>
+<span id="cb43-480"><a href="#cb43-480"></a></span>
+<span id="cb43-481"><a href="#cb43-481"></a><span class="fu">## Plotting Clade Frequency Over Time</span></span>
+<span id="cb43-482"><a href="#cb43-482"></a></span>
+<span id="cb43-483"><a href="#cb43-483"></a>Since we have an abundance of metadata for all 10,000 H3N2 isolates, let's take advantage and plot a <span class="co">[</span><span class="ot">streamgraph</span><span class="co">]</span> to fully capture the abundance of H3N2 clades over time. We will use the <span class="in">`metadata_join`</span> dataframe we generated containing nextclade-assigned clades. Again, we face the issue of attempting to visualize 23 clades on one plot. However, the fact that only one or two clades are dominating at any given time will assist with the  constraints of many categorical variables. Since we do not have the luxury of discrete clustering as we did with the tree, we can add lines to separate the clades.</span>
+<span id="cb43-484"><a href="#cb43-484"></a></span>
+<span id="cb43-485"><a href="#cb43-485"></a></span>
+<span id="cb43-488"><a href="#cb43-488"></a><span class="in">```{r}</span></span>
+<span id="cb43-489"><a href="#cb43-489"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(metadata_join <span class="sc">%&gt;%</span> </span>
+<span id="cb43-490"><a href="#cb43-490"></a>  <span class="fu">select</span>(strain, date, <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>) <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">15</span>))</span>
+<span id="cb43-491"><a href="#cb43-491"></a><span class="in">```</span></span>
+<span id="cb43-492"><a href="#cb43-492"></a></span>
+<span id="cb43-493"><a href="#cb43-493"></a><span class="fu"># 6. Example of a stacked area plot with our abbreviated clade names</span></span>
+<span id="cb43-494"><a href="#cb43-494"></a></span>
+<span id="cb43-497"><a href="#cb43-497"></a><span class="in">```{r}</span></span>
+<span id="cb43-498"><a href="#cb43-498"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb43-499"><a href="#cb43-499"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb43-500"><a href="#cb43-500"></a></span>
+<span id="cb43-501"><a href="#cb43-501"></a><span class="co"># Make sure to replace "metadata_join" with the actual name of your dataframe</span></span>
+<span id="cb43-502"><a href="#cb43-502"></a>metadata_join<span class="sc">$</span>date <span class="ot">=</span> <span class="fu">as.Date</span>(metadata_join<span class="sc">$</span>date)</span>
+<span id="cb43-503"><a href="#cb43-503"></a></span>
+<span id="cb43-504"><a href="#cb43-504"></a>clade_count <span class="ot">=</span> metadata_join <span class="sc">%&gt;%</span> </span>
+<span id="cb43-505"><a href="#cb43-505"></a>  <span class="fu">mutate</span>(<span class="at">month =</span> <span class="fu">format</span>(date, <span class="st">"%Y-%m"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb43-506"><a href="#cb43-506"></a>  <span class="fu">count</span>(month, <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb43-507"><a href="#cb43-507"></a>  <span class="fu">spread</span>(<span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>, n, <span class="at">fill =</span> <span class="dv">0</span>)</span>
+<span id="cb43-508"><a href="#cb43-508"></a></span>
+<span id="cb43-509"><a href="#cb43-509"></a>clade_count_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(clade_count, <span class="at">cols =</span> <span class="sc">-</span>month, <span class="at">names_to =</span> <span class="st">"short-clade"</span>, <span class="at">values_to =</span> <span class="st">"count"</span>)</span>
+<span id="cb43-510"><a href="#cb43-510"></a></span>
+<span id="cb43-511"><a href="#cb43-511"></a>max_dates <span class="ot">&lt;-</span> clade_count_long <span class="sc">%&gt;%</span></span>
+<span id="cb43-512"><a href="#cb43-512"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb43-513"><a href="#cb43-513"></a>  <span class="fu">summarize</span>(<span class="at">max_date =</span> <span class="fu">max</span>(<span class="fu">as.Date</span>(<span class="fu">paste0</span>(month, <span class="st">"-01"</span>))))</span>
+<span id="cb43-514"><a href="#cb43-514"></a></span>
+<span id="cb43-515"><a href="#cb43-515"></a>clade_freq_p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(clade_count_long, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(month, <span class="st">"-01"</span>)), <span class="at">y =</span> count, <span class="at">fill =</span> <span class="st">`</span><span class="at">short-clade</span><span class="st">`</span>)) <span class="sc">+</span></span>
+<span id="cb43-516"><a href="#cb43-516"></a>  <span class="fu">geom_area</span>(<span class="at">position=</span><span class="st">'stack'</span>, <span class="at">linetype=</span><span class="dv">1</span>, <span class="at">size=</span><span class="fl">0.3</span>, <span class="at">color=</span><span class="st">'black'</span>) <span class="sc">+</span></span>
+<span id="cb43-517"><a href="#cb43-517"></a>  <span class="fu">geom_vline</span>(<span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">year =</span> <span class="dv">2015</span><span class="sc">:</span><span class="dv">2023</span>), </span>
+<span id="cb43-518"><a href="#cb43-518"></a>             <span class="fu">aes</span>(<span class="at">xintercept =</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(year, <span class="st">"-01-01"</span>))), </span>
+<span id="cb43-519"><a href="#cb43-519"></a>             <span class="at">color =</span> <span class="st">"grey"</span>, </span>
+<span id="cb43-520"><a href="#cb43-520"></a>             <span class="at">linetype =</span> <span class="st">"dotted"</span>, </span>
+<span id="cb43-521"><a href="#cb43-521"></a>             <span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb43-522"><a href="#cb43-522"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">y =</span> <span class="st">"Total Sequences </span><span class="sc">\n</span><span class="st"> uploaded to GISAID"</span>) <span class="sc">+</span></span>
+<span id="cb43-523"><a href="#cb43-523"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
+<span id="cb43-524"><a href="#cb43-524"></a>  <span class="fu">theme</span>(</span>
+<span id="cb43-525"><a href="#cb43-525"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.30</span>, <span class="fl">0.6</span>),</span>
+<span id="cb43-526"><a href="#cb43-526"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">15</span>), </span>
+<span id="cb43-527"><a href="#cb43-527"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>), </span>
+<span id="cb43-528"><a href="#cb43-528"></a>    <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.01</span>, <span class="st">"cm"</span>),</span>
+<span id="cb43-529"><a href="#cb43-529"></a>    <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.3</span>, <span class="st">"cm"</span>),</span>
+<span id="cb43-530"><a href="#cb43-530"></a>    <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>),</span>
+<span id="cb43-531"><a href="#cb43-531"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb43-532"><a href="#cb43-532"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb43-533"><a href="#cb43-533"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>),</span>
+<span id="cb43-534"><a href="#cb43-534"></a>    <span class="at">panel.border =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb43-535"><a href="#cb43-535"></a>    <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Clade"</span>, <span class="at">ncol =</span> <span class="dv">2</span>))</span>
+<span id="cb43-536"><a href="#cb43-536"></a>  ) <span class="sc">+</span></span>
+<span id="cb43-537"><a href="#cb43-537"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y"</span>) <span class="sc">+</span></span>
+<span id="cb43-538"><a href="#cb43-538"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette)  <span class="co"># Set our pre-defined color palette</span></span>
+<span id="cb43-539"><a href="#cb43-539"></a>  </span>
+<span id="cb43-540"><a href="#cb43-540"></a>clade_freq_p</span>
+<span id="cb43-541"><a href="#cb43-541"></a><span class="in">```</span></span>
+<span id="cb43-542"><a href="#cb43-542"></a></span>
+<span id="cb43-545"><a href="#cb43-545"></a><span class="in">```{r}</span></span>
+<span id="cb43-546"><a href="#cb43-546"></a><span class="fu">ggsave</span>(<span class="st">'results/plots/h3_frequency.png'</span>, clade_freq_p, <span class="at">height =</span> <span class="dv">3</span>, <span class="at">width =</span> <span class="dv">6</span>, <span class="at">dpi =</span> <span class="dv">300</span>)</span>
+<span id="cb43-547"><a href="#cb43-547"></a><span class="in">```</span></span>
+<span id="cb43-548"><a href="#cb43-548"></a></span>
+<span id="cb43-551"><a href="#cb43-551"></a><span class="in">```{r}</span></span>
+<span id="cb43-552"><a href="#cb43-552"></a><span class="fu">sessionInfo</span>()</span>
+<span id="cb43-553"><a href="#cb43-553"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
