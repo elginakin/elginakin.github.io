@@ -1,0 +1,16 @@
+---
+title: publications
+listing:
+  sort: "date desc"
+  contents: "../papers/content/*/index.qmd"
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: true
+page-layout: full
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+search: true
+description: |
+  [PubMed](#) | [orchid](https://orcid.org/0000-0001-8824-8809)
+---

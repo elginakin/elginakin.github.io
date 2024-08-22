@@ -1,35 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.elginakin.github.io/posts/index.html</loc>
-    <lastmod>2024-05-13T22:34:35.992Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.elginakin.github.io/index.html</loc>
-    <lastmod>2024-05-28T20:34:58.081Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.elginakin.github.io/about.html</loc>
-    <lastmod>2024-06-09T15:41:24.106Z</lastmod>
+    <loc>https://www.elginakin.github.io/work/content/late-presenting-pf/index.html</loc>
+    <lastmod>2024-08-22T01:46:04.791Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/work/index.html</loc>
-    <lastmod>2024-05-13T22:34:35.993Z</lastmod>
+    <lastmod>2024-08-22T01:17:05.344Z</lastmod>
   </url>
   <url>
-    <loc>https://www.elginakin.github.io/posts/content/20240227_PhDTools/index.html</loc>
-    <lastmod>2024-02-29T04:22:43.713Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.elginakin.github.io/posts/content/PhDTools/index.html</loc>
-    <lastmod>2024-05-13T22:35:07.559Z</lastmod>
+    <loc>https://www.elginakin.github.io/posts/index.html</loc>
+    <lastmod>2024-08-22T00:50:08.335Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html</loc>
-    <lastmod>2024-05-13T01:58:21.652Z</lastmod>
+    <lastmod>2024-08-22T00:50:08.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/posts/content/PhDTools/index.html</loc>
+    <lastmod>2024-08-22T00:50:08.237Z</lastmod>
   </url>
   <url>
     <loc>https://www.elginakin.github.io/posts/content/flutree_tutorial/index.html</loc>
-    <lastmod>2024-06-09T16:36:50.244Z</lastmod>
+    <lastmod>2024-08-22T00:50:08.265Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/about.html</loc>
+    <lastmod>2024-08-22T15:00:47.051Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/work/content/scv2_pregnant_mice/index.html</loc>
+    <lastmod>2024-08-22T01:51:11.152Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/papers/index.html</loc>
+    <lastmod>2024-08-22T02:07:44.515Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/papers/content/scv2_pregnant_mice/index.html</loc>
+    <lastmod>2024-08-22T02:17:25.872Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/papers/content/late-presenting-pf/index.html</loc>
+    <lastmod>2024-08-22T02:18:15.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/index.html</loc>
+    <lastmod>2024-08-22T15:02:54.436Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/papers/content/vicyam_characterization/index.html</loc>
+    <lastmod>2024-08-22T15:07:03.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.elginakin.github.io/papers/content/scv2_immunocompromised/index.html</loc>
+    <lastmod>2024-08-22T02:25:24.474Z</lastmod>
   </url>
 </urlset>

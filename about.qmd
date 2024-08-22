@@ -7,10 +7,7 @@ I am a molecular virologist in the [Pekosz Lab](https://www.pekoszlab.com) at JH
 
 My interests include:
 
-* Genomic surveillance of influenza viruses.
-
-* The phenotypic consequences of Influenza B non-structural protein evolution. 
-
-* Bioinformatic tool development for assessing influenza genomic evolution.
-
+* The phenotypic consequences of Influenza B evolution in epithelial cells. 
 * The development of primary cell line models to interrogate viral determinants of host disease.
+* Bioinformatic tool development for assessing influenza genomic evolution.
+* * Genomic surveillance of influenza viruses.

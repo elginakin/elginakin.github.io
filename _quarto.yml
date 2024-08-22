@@ -12,8 +12,8 @@ website:
         text: home
       - text: about
         href: about.qmd
-      - text: work
-        href: work/index.qmd
+      - text: papers
+        href: papers/index.qmd
       - text: posts
         href: posts/index.qmd
       - text: cv

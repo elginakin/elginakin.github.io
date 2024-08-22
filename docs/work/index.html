@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.52">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A gallery of my publications and software I have contributed to throughout my PhD.">
+<meta name="description" content="Publications and software I have contributed to throughout my PhD.">
 
-<title>work</title>
+<title>publications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,20 +73,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-gallery .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-category','listing-tiles','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-category","listing-tiles","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-gallery'] = new List('listing-gallery', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -99,8 +99,14 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      .quarto-title-block .quarto-title-banner {
+        background: #EDF3F9;
+      }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -133,10 +139,10 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -145,7 +151,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -172,7 +178,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools tools-wide">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://github.com/elginakin/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://twitter.com/cxclgin" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
     <a href="../eakin1@jhmi.edu" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
@@ -181,224 +187,107 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">publications</h1>
+                  <div>
+        <div class="description">
+          <p>Publications and software I have contributed to throughout my PhD.</p>
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
-<div id="hero-banner" class="column-screen page-columns page-full">
-<div class="grid column-page">
-<div class="headline g-col-lg-6 g-col-12 g-col-md-12">
-<div class="h2">
-<p>Highlighted Work</p>
-</div>
+
 <ul>
 <li><a href="google.com">google scholar</a></li>
 <li><a href="https://orcid.org/0000-0001-8824-8809">orchid</a></li>
 <li><a href="#">Reseaarch Gate</a></li>
 <li><a href="#">PubMed</a></li>
 </ul>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1692072000000" data-listing-file-modified-sort="1724291471152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="204">
+<div class="thumbnail">
+<p><a href="../work/content/scv2_pregnant_mice/index.html" class="no-external"></a></p><a href="../work/content/scv2_pregnant_mice/index.html" class="no-external">
+<p><img loading="lazy" src="../work/content/scv2_pregnant_mice/figure6.png" class="thumbnail-image"></p>
+</a><p><a href="../work/content/scv2_pregnant_mice/index.html" class="no-external"></a></p>
 </div>
-<div class="cell g-col-lg-6 g-col-12 g-col-md-12">
-<div class="cell-output-display">
-<div id="gallery-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../work/content/scv2_pregnant_mice/index.html" class="no-external">Adverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../work/content/scv2_pregnant_mice/index.html" class="no-external"></a>
 </div>
-<div class="carousel-inner">
-<div class="carousel-item active" data-bs-interval="5000">
-<a href="https://pubmed.ncbi.nlm.nih.gov/36993658/">
-<img src="../images/gallery_images/figure6.png" class="d-block  mx-auto border">
+<div class="listing-description">
+<a href="../work/content/scv2_pregnant_mice/index.html" class="no-external">Patrick S. Creisher, Jamie L. Perry, Weizhi Zhong, Jun Lei, Kathleen R. Mulka, W. Hurley Ryan III, Ruifeng Zhou, Elgin H. Akin, Anguo Liu, Wayne Mitzner, Irina Burd, Andrew Pekosz and Sabra L. Klein | JCI <strong>PDF 🗂️:</strong> <span>JCI_Adverse_Outcomes_Pregnant_Mice.pdf</span> <strong>DOI ℹ:</strong> <span>10.1172/JCI170687</span> </a>
+</div>
+</div>
+<div class="metadata">
+<a href="../work/content/scv2_pregnant_mice/index.html" class="no-external">
+<div class="listing-date">
+Aug 15, 2023
+</div>
 </a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Adverse outcomes in SARS-CoV-2 infected pregnant mice are gestational age-dependent and resolve with antiviral treatment.</p>
 </div>
 </div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8500131/">
-<img src="../images/gallery_images/pub_03.jpg" class="d-block  mx-auto border">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1632456000000" data-listing-file-modified-sort="1724291164791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="thumbnail">
+<p><a href="../work/content/late-presenting-pf/index.html" class="no-external"></a></p><a href="../work/content/late-presenting-pf/index.html" class="no-external">
+<p><img loading="lazy" src="../work/content/late-presenting-pf/thumbnail.jpg" class="thumbnail-image"></p>
+</a><p><a href="../work/content/late-presenting-pf/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../work/content/late-presenting-pf/index.html" class="no-external">Late-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../work/content/late-presenting-pf/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../work/content/late-presenting-pf/index.html" class="no-external">LTC Paul Robben, MAJ Christopher r Dunbar, <strong>Elgin h Akin</strong>, Alexander Pichugin, COL Jason a Regules | Millitary Medicine <strong>PDF 🗂️:</strong> <span>USAB393.pdf</span> <strong>DOI ℹ:</strong> <span>10.1093/milmed/usab393</span> </a>
+</div>
+</div>
+<div class="metadata">
+<a href="../work/content/late-presenting-pf/index.html" class="no-external">
+<div class="listing-date">
+Sep 24, 2021
+</div>
 </a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Late-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions.</p>
 </div>
 </div>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Prevoius</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="listing-gallery" class="column-page quarto-listing quarto-listing-container-custom">
-
-<h2 class="anchored">📚 Publications</h2>
-
-<p></p>
-
-<div class="list grid" style="column-gap: 10px;">
-
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="0">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10418153/" class="listing-title">The Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures</a>
-        
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10418153/">
-      <img src="../images/gallery_images/pub_01.png" alt="" class="card-img-top">
-    </a>
-    
-    
-    
-  </div>
-
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="1">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://pubmed.ncbi.nlm.nih.gov/36993658/" class="listing-title">Adverse outcomes in SARS-CoV-2 infected pregnant mice are gestational age-dependent and resolve with antiviral treatment</a>
-        
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://pubmed.ncbi.nlm.nih.gov/36993658/">
-      <img src="../images/gallery_images/figure6.png" alt="" class="card-img-top">
-    </a>
-    
-    
-    
-  </div>
-
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="2">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8500131/" class="listing-title">Late-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions</a>
-        
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8500131/">
-      <img src="../images/gallery_images/pub_03.jpg" alt="" class="card-img-top">
-    </a>
-    
-    
-    
-  </div>
-
-</div>
-
-<h2 class="anchored">💻 Software</h2>
-
-<p>Useful/less tools I made
-</p>
-
-<div class="list grid" style="column-gap: 10px;">
-
-  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="3">
-    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
-      <small class="card-text inline-block">
-        <a href="https://github.com/elginakin/pyFLUte" class="listing-title">pyFLUte</a>
-        
-        <span class="text-muted listing-subtitle"></span>
-      </small>
-    </div>
-    <a href="https://github.com/elginakin/pyFLUte">
-      <img src="" alt="" class="card-img-top">
-    </a>
-    
-    
-    
-  </div>
-
-</div>
-
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-<style>
-
-#hero-banner {
-  padding-top: 35px;
-  background-color: rgb(250, 249, 246);
-}
-
-#quarto-content main { 
-  margin-top: 0;
-  padding-top: 0;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-.headline {
-font-size: 1.25em;
-font-weight: 300;
-padding-bottom: 1em;
-}
-
-.headline p {
-  margin: 0;
-  padding-bottom: 0.2rem;
-}
-
-.headline a {
-  text-decoration: none;
-}
-
-.headline ul li {
-  margin-bottom: 0.3em;
-}
-
-.carousel.card {
-  padding-top: 2em;
-}
-
-.carousel img {
-  width: 400px;
-  height: 300px;
-  object-fit;cover;
-  margin-bottom: 150px;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  margin-bottom: 110px;
-}
-
-.carousel-caption {
-  padding-top: 50em; /* Adjust this value to create more space for the caption */
-  max-width: 70%; /* Limit the width of the caption to avoid excessive stretching */
-  margin: 0 auto; /* Center the caption horizontally */
-  text-align: center; /* Center the caption text */
-  font-size: 0.6em; /* Adjust the font size for better readability */
-  font-weight: 400; /* Adjust the font weight for better readability */
-  line-height: 1.5; /* Adjust the line height for better readability */
-}
-
-.touch {
-  
-}
-</style>
-
-
-
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -434,18 +323,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -477,7 +355,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/www\.elginakin\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -512,7 +430,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

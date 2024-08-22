@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/work/index.html",
+    "items": [
+      "/work/content/scv2_pregnant_mice/index.html",
+      "/work/content/late-presenting-pf/index.html"
+    ]
+  },
+  {
     "listing": "/posts/index.html",
     "items": [
       "/posts/content/flutree_tutorial/index.html",
@@ -7,7 +14,12 @@
     ]
   },
   {
-    "listing": "/work/index.html",
-    "items": []
+    "listing": "/papers/index.html",
+    "items": [
+      "/papers/content/scv2_immunocompromised/index.html",
+      "/papers/content/vicyam_characterization/index.html",
+      "/papers/content/scv2_pregnant_mice/index.html",
+      "/papers/content/late-presenting-pf/index.html"
+    ]
   }
 ]
