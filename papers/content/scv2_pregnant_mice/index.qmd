@@ -10,23 +10,17 @@ format:
     highlight-style: pygments
     code-overflow: wrap
     code-line-numbers: true
-    code-tools:
-      source: true
-      toggle: false
 image: 'figure6.png'
 ---
 
 Patrick S. Creisher, Jamie L. Perry, Weizhi Zhong, Jun Lei, Kathleen R. Mulka, W. Hurley Ryan III, Ruifeng Zhou, **Elgin H. Akin**, Anguo Liu, Wayne Mitzner, Irina Burd, Andrew Pekosz and Sabra L. Klein | JCI
 
-PDF 🗂️: [JCI_Adverse_Outcomes_Pregnant_Mice.pdf](JCI_Adverse_Outcomes_Pregnant_Mice.pdf) 
-DOI ℹ: [10.1172/JCI170687](https://doi.org/10.1172/JCI170687)
+PDF {{< fa file-pdf size=1x >}}: [JCI_Adverse_Outcomes_Pregnant_Mice.pdf](JCI_Adverse_Outcomes_Pregnant_Mice.pdf) 
+
+DOI {{< fa link size=1x >}}: [10.1172/JCI170687](https://doi.org/10.1172/JCI170687)
 
 # Abstract 
 SARS-CoV-2 infection during pregnancy is associated with severe COVID-19 and adverse fetal outcomes, but the underlying mechanisms remain poorly understood. Moreover, clinical studies assessing therapeutics against SARS-CoV-2 in pregnancy are limited. To address these gaps, we developed a mouse model of SARS-CoV-2 infection during pregnancy. Outbred CD1 mice were infected at E6, E10, or E16 with a mouse-adapted SARS-CoV-2 (maSCV2) virus. Outcomes were gestational age–dependent, with greater morbidity, reduced antiviral immunity, greater viral titers, and impaired fetal growth and neurodevelopment occurring with infection at E16 (third trimester equivalent) than with infection at either E6 (first trimester equivalent) or E10 (second trimester equivalent). To assess the efficacy of ritonavir-boosted nirmatrelvir, which is recommended for individuals who are pregnant with COVID-19, we treated E16-infected dams with mouse-equivalent doses of nirmatrelvir and ritonavir. Treatment reduced pulmonary viral titers, decreased maternal morbidity, and prevented offspring growth restriction and neurodevelopmental impairments. Our results highlight that severe COVID-19 during pregnancy and fetal growth restriction is associated with heightened virus replication in maternal lungs. Ritonavir-boosted nirmatrelvir mitigated maternal morbidity along with fetal growth and neurodevelopment restriction after SARS-CoV-2 infection. These findings prompt the need for further consideration of pregnancy in preclinical and clinical studies of therapeutics against viral infections.
 
 ### Supplemental Material
 [https://doi.org/10.1172/JCI170687DS1](https://doi.org/10.1172/JCI170687DS1)
-
-
-
-

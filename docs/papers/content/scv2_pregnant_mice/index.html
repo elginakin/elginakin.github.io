@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,6 +42,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -176,7 +144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Adverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Adverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment</h1>
 </div>
 
 <div>
@@ -205,7 +173,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Patrick S. Creisher, Jamie L. Perry, Weizhi Zhong, Jun Lei, Kathleen R. Mulka, W. Hurley Ryan III, Ruifeng Zhou, <strong>Elgin H. Akin</strong>, Anguo Liu, Wayne Mitzner, Irina Burd, Andrew Pekosz and Sabra L. Klein | JCI</p>
-<p>PDF 🗂️: <a href="JCI_Adverse_Outcomes_Pregnant_Mice.pdf">JCI_Adverse_Outcomes_Pregnant_Mice.pdf</a> DOI ℹ: <a href="https://doi.org/10.1172/JCI170687">10.1172/JCI170687</a></p>
+<p>PDF <i class="fa-solid fa-file-pdf fa-1x" aria-label="file-pdf"></i>: <a href="JCI_Adverse_Outcomes_Pregnant_Mice.pdf">JCI_Adverse_Outcomes_Pregnant_Mice.pdf</a></p>
+<p>DOI <i class="fa-solid fa-link fa-1x" aria-label="link"></i>: <a href="https://doi.org/10.1172/JCI170687">10.1172/JCI170687</a></p>
 <section id="abstract" class="level1">
 <h1>Abstract</h1>
 <p>SARS-CoV-2 infection during pregnancy is associated with severe COVID-19 and adverse fetal outcomes, but the underlying mechanisms remain poorly understood. Moreover, clinical studies assessing therapeutics against SARS-CoV-2 in pregnancy are limited. To address these gaps, we developed a mouse model of SARS-CoV-2 infection during pregnancy. Outbred CD1 mice were infected at E6, E10, or E16 with a mouse-adapted SARS-CoV-2 (maSCV2) virus. Outcomes were gestational age–dependent, with greater morbidity, reduced antiviral immunity, greater viral titers, and impaired fetal growth and neurodevelopment occurring with infection at E16 (third trimester equivalent) than with infection at either E6 (first trimester equivalent) or E10 (second trimester equivalent). To assess the efficacy of ritonavir-boosted nirmatrelvir, which is recommended for individuals who are pregnant with COVID-19, we treated E16-infected dams with mouse-equivalent doses of nirmatrelvir and ritonavir. Treatment reduced pulmonary viral titers, decreased maternal morbidity, and prevented offspring growth restriction and neurodevelopmental impairments. Our results highlight that severe COVID-19 during pregnancy and fetal growth restriction is associated with heightened virus replication in maternal lungs. Ritonavir-boosted nirmatrelvir mitigated maternal morbidity along with fetal growth and neurodevelopment restriction after SARS-CoV-2 infection. These findings prompt the need for further consideration of pregnancy in preclinical and clinical studies of therapeutics against viral infections.</p>
@@ -213,8 +182,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="supplemental-material">Supplemental Material</h3>
 <p><a href="https://doi.org/10.1172/JCI170687DS1">https://doi.org/10.1172/JCI170687DS1</a></p>
 
-
-<!-- -->
 
 </section>
 </section>
@@ -309,57 +276,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -690,39 +606,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> Adverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">description:</span><span class="co"> |</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="co">  Creisher et al. 2023. JCI</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="an">Catagories:</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co">    - SARS-CoV-2 </span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="an">date:</span><span class="co"> "08/15/2023"</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co">  html:</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">    highlight-style: pygments</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co">    code-overflow: wrap</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="co">    code-line-numbers: true</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="co">    code-tools:</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="co">      source: true</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a><span class="co">      toggle: false</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="an">image:</span><span class="co"> 'figure6.png'</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a><span class="co">---</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a></span>
-<span id="cb1-19"><a href="#cb1-19"></a>Patrick S. Creisher, Jamie L. Perry, Weizhi Zhong, Jun Lei, Kathleen R. Mulka, W. Hurley Ryan III, Ruifeng Zhou, **Elgin H. Akin**, Anguo Liu, Wayne Mitzner, Irina Burd, Andrew Pekosz and Sabra L. Klein | JCI</span>
-<span id="cb1-20"><a href="#cb1-20"></a></span>
-<span id="cb1-21"><a href="#cb1-21"></a>PDF 🗂️: <span class="co">[</span><span class="ot">JCI_Adverse_Outcomes_Pregnant_Mice.pdf</span><span class="co">](JCI_Adverse_Outcomes_Pregnant_Mice.pdf)</span> </span>
-<span id="cb1-22"><a href="#cb1-22"></a>DOI ℹ: <span class="co">[</span><span class="ot">10.1172/JCI170687</span><span class="co">](https://doi.org/10.1172/JCI170687)</span></span>
-<span id="cb1-23"><a href="#cb1-23"></a></span>
-<span id="cb1-24"><a href="#cb1-24"></a><span class="fu"># Abstract </span></span>
-<span id="cb1-25"><a href="#cb1-25"></a>SARS-CoV-2 infection during pregnancy is associated with severe COVID-19 and adverse fetal outcomes, but the underlying mechanisms remain poorly understood. Moreover, clinical studies assessing therapeutics against SARS-CoV-2 in pregnancy are limited. To address these gaps, we developed a mouse model of SARS-CoV-2 infection during pregnancy. Outbred CD1 mice were infected at E6, E10, or E16 with a mouse-adapted SARS-CoV-2 (maSCV2) virus. Outcomes were gestational age–dependent, with greater morbidity, reduced antiviral immunity, greater viral titers, and impaired fetal growth and neurodevelopment occurring with infection at E16 (third trimester equivalent) than with infection at either E6 (first trimester equivalent) or E10 (second trimester equivalent). To assess the efficacy of ritonavir-boosted nirmatrelvir, which is recommended for individuals who are pregnant with COVID-19, we treated E16-infected dams with mouse-equivalent doses of nirmatrelvir and ritonavir. Treatment reduced pulmonary viral titers, decreased maternal morbidity, and prevented offspring growth restriction and neurodevelopmental impairments. Our results highlight that severe COVID-19 during pregnancy and fetal growth restriction is associated with heightened virus replication in maternal lungs. Ritonavir-boosted nirmatrelvir mitigated maternal morbidity along with fetal growth and neurodevelopment restriction after SARS-CoV-2 infection. These findings prompt the need for further consideration of pregnancy in preclinical and clinical studies of therapeutics against viral infections.</span>
-<span id="cb1-26"><a href="#cb1-26"></a></span>
-<span id="cb1-27"><a href="#cb1-27"></a><span class="fu">### Supplemental Material</span></span>
-<span id="cb1-28"><a href="#cb1-28"></a><span class="co">[</span><span class="ot">https://doi.org/10.1172/JCI170687DS1</span><span class="co">](https://doi.org/10.1172/JCI170687DS1)</span></span>
-<span id="cb1-29"><a href="#cb1-29"></a></span>
-<span id="cb1-30"><a href="#cb1-30"></a></span>
-<span id="cb1-31"><a href="#cb1-31"></a></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

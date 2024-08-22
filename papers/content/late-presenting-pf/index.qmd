@@ -11,16 +11,14 @@ format:
     highlight-style: pygments
     code-overflow: wrap
     code-line-numbers: true
-    code-tools:
-      source: true
-      toggle: false
 image: 'thumbnail.jpg'
 ---
 
 LTC Paul Robben, MAJ Christopher r Dunbar, **Elgin h Akin**, Alexander Pichugin, COL Jason a Regules
 
-PDF 🗂️: [USAB393.pdf](USAB393.pdf) 
-DOI ℹ: [10.1093/milmed/usab393](https://doi.org/10.1093/milmed/usab393)
+PDF {{< fa file-pdf size=1x >}}: [USAB393.pdf](USAB393.pdf) 
+
+DOI {{< fa link size=1x >}}: [10.1093/milmed/usab393](https://doi.org/10.1093/milmed/usab393)
 
 # Abstract 
   We report a case of febrile Plasmodium falciparum malaria in a 36-year-old male patient occurring 14 years after immigration from and more than 12 months since a return visit to the endemic area. The critical need for awareness regarding late presentations of <i>P. falciparum</i> is discussed.

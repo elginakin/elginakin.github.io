@@ -4,17 +4,20 @@ image: "images/logos/IMG_0927.PNG"
 about:
     id: hero-heading
     template: jolla
-    image-shape: rectangle
+    image-shape: rounded
     links:
+        - icon: box-fill
+          text: projects
+          href: projects.qmd
+        - icon: book
+          text: papers
+          href: papers/index.qmd
         - icon: github
           text: github
           href: https://github.com/elginakin
         - icon: linkedin
           text: linkedin
           href: https://www.linkedin.com/in/elginakin
-        - icon: twitter
-          text: twitter
-          href: https://www.twitter.com/cxclgin
 ---
 
 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 10vh;">

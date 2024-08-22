@@ -1,0 +1,13 @@
+---
+title: "Projects"
+image: "images/logos/IMG_0926.PNG"
+---
+
+My current work in the [Pekosz Lab](https://www.pekoszlab.com) are based in molecular virology. I work within the [Centers of Excellence for Influenza Research and Response](https://www.ceirr-network.org/), with the [Mostafa Lab](https://www.hopkinsmedicine.org/profiles/details/heba-mostafa) at the Johns Hopkins School of Medicine as well as other collaborators. 
+
+My interests include:
+
+* The phenotypic consequences of Influenza B evolution in epithelial cells. 
+* The development of primary cell line models to interrogate viral determinants of host disease.
+* Bioinformatic tool development for assessing influenza genomic evolution.
+* Genomic surveillance of influenza viruses.

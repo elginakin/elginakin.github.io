@@ -10,9 +10,6 @@ format:
     highlight-style: pygments
     code-overflow: wrap
     code-line-numbers: true
-    code-tools:
-      source: true
-      toggle: false
 image: 'thumbnail.png'
 ---
 
@@ -20,9 +17,9 @@ Camille Wouters, Jaiprasath Sachithanandham, **Elgin Akin**, Lisa Pieterse, Amar
 
 Github: [Pekosz-Lab/Wouters_2024_CHLA](https://github.com/Pekosz-Lab/Wouters_2024_CHLA)
 
-PDF 🗂️: [PREPRINT](May_18_2024_full.pdf) 
+PDF {{< fa file-pdf size=1x >}}: [PREPRINT](May_18_2024_full.pdf) 
 
-DOI ℹ: [10.1101/2024.05.18.594818](https://doi.org/10.1101/2024.05.18.594818)
+DOI {{< fa link size=1x >}}: [10.1101/2024.05.18.594818](https://doi.org/10.1101/2024.05.18.594818)
 
 
 # Abstract 
