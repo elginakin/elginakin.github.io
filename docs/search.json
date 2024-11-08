@@ -254,9 +254,9 @@
   {
     "objectID": "papers/index.html",
     "href": "papers/index.html",
-    "title": "papers",
+    "title": "Research",
     "section": "",
-    "text": "orcid: 0000-0001-8824-8809\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPREPRINT SARS-CoV-2 variants from long-term, persistently infected immunocompromised patients have altered syncytia formation, temperature-dependent replication, and serum neutralizing antibody escape\n\n\n\n\n\nWouters et al. 2023. BioRvix \n\n\n\n\n\nApr 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures\n\n\n\n\n\nWilson & Akin et al. 2023. Viruses \n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nAdverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment\n\n\n\n\n\nCreisher et al. 2023. JCI \n\n\n\n\n\nAug 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nLate-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions\n\n\n\n\n\nRobben et al. 2021. Millitary Medicine \n\n\n\n\n\nSep 24, 2021\n\n\n\n\n\n\nNo matching items"
+    "text": "orcid: 0000-0001-8824-8809\nMy current work in the Pekosz Lab are based in molecular virology. I work within the Centers of Excellence for Influenza Research and Response, with the Mostafa Lab at the Johns Hopkins School of Medicine as well as other collaborators.\nMy interests include:\n\nThe phenotypic consequences of Influenza B evolution in epithelial cells.\nThe development of primary cell line models to interrogate viral determinants of host disease.\nBioinformatic tool development for assessing influenza genomic evolution.\nGenomic surveillance of influenza viruses.\n\n\nPublications\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nPREPRINT SARS-CoV-2 variants from long-term, persistently infected immunocompromised patients have altered syncytia formation, temperature-dependent replication, and serum neutralizing antibody escape\n\n\n\n\n\nWouters et al. 2023. BioRvix \n\n\n\n\n\nApr 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures\n\n\n\n\n\nWilson & Akin et al. 2023. Viruses \n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nAdverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment\n\n\n\n\n\nCreisher et al. 2023. JCI \n\n\n\n\n\nAug 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nLate-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions\n\n\n\n\n\nRobben et al. 2021. Millitary Medicine \n\n\n\n\n\nSep 24, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "papers/content/scv2_pregnant_mice/index.html",
@@ -277,7 +277,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "elgin akin\n\nHi, I’m Elgin. I am a 3rd year PhD candidate in the Pekosz Lab at the Johns Hopkins Bloomberg School of Public Health in Molecular Microbiology and Immunology. I study the evolutionary interface between respiratory viruses and the nasal epithelial barrier."
+    "text": "elgin akin\n\nHi, I’m Elgin. I am a 4th year PhD candidate in the Pekosz Lab at the Johns Hopkins Bloomberg School of Public Health in Molecular Microbiology and Immunology. I study the evolutionary interface between Influenza B Viruses and the nasal epithelial barrier. Additionally, I maintain 24 Nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating isolated from patients in the Johns Hopkins Hospital Network."
   },
   {
     "objectID": "papers/content/vicyam_characterization/index.html",
@@ -305,6 +305,48 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "My current work in the Pekosz Lab are based in molecular virology. I work within the Centers of Excellence for Influenza Research and Response, with the Mostafa Lab at the Johns Hopkins School of Medicine as well as other collaborators.\nMy interests include:\n\nThe phenotypic consequences of Influenza B evolution in epithelial cells.\nThe development of primary cell line models to interrogate viral determinants of host disease.\nBioinformatic tool development for assessing influenza genomic evolution.\nGenomic surveillance of influenza viruses."
+    "text": "My current work in the Pekosz Lab are based in molecular virology. I work within the Centers of Excellence for Influenza Research and Response, with the Mostafa Lab at the Johns Hopkins School of Medicine as well as other collaborators.\nMy interests include:"
+  },
+  {
+    "objectID": "projects.html#baltimore-influenza-nextstrain",
+    "href": "projects.html#baltimore-influenza-nextstrain",
+    "title": "Projects",
+    "section": "Baltimore Influenza Nextstrain",
+    "text": "Baltimore Influenza Nextstrain"
+  },
+  {
+    "objectID": "projects.html#influenza-b-evolution",
+    "href": "projects.html#influenza-b-evolution",
+    "title": "Projects",
+    "section": "Influenza B Evolution",
+    "text": "Influenza B Evolution\n\n\n\n\n\n\ndata curation and downsapling methods can be found here"
+  },
+  {
+    "objectID": "projects.html#phenotypic-consequences-of-influenza-b-evolution",
+    "href": "projects.html#phenotypic-consequences-of-influenza-b-evolution",
+    "title": "Projects",
+    "section": "Phenotypic Consequences of Influenza B Evolution",
+    "text": "Phenotypic Consequences of Influenza B Evolution\n\n\n\n\n\n\ndata curation and downsapling methods can be found here"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "research",
+    "section": "",
+    "text": "My work in the Pekosz Lab leverages molecular virology to study Influenza B fitness and host response at the nasal epithelium. I work within the Centers of Excellence for Influenza Research and Response, with the Mostafa Lab at the Johns Hopkins School of Medicine as well as other collaborators to further the understanding of Influenza B virus Evolution and host immune responses. Additionally, I currently maintain 24 unofficial Nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating within the Johns Hopkins Hospital Network.\n\n\n\n\n\n\ndata curation and downsapling methods can be found here \n\nPublications\norcid: 0000-0001-8824-8809\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nSARS-CoV-2 Variants from Long-Term, Persistently Infected Immunocompromised Patients Have Altered Syncytia Formation, Temperature-Dependent Replication, and Serum Neutralizing Antibody Escape\n\n\nWouters et al. Viruses 2024, 16(9), 1436\n\n\n\n\n\n\nMay 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures\n\n\nWilson & Akin et al. 2023. Viruses\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment\n\n\nCreisher et al. 2023. JCI\n\n\n\n\n\n\nAug 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLate-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions\n\n\nRobben et al. 2021. Millitary Medicine\n\n\n\n\n\n\nSep 24, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/content/scv2_immunocompromised/index.html",
+    "href": "research/content/scv2_immunocompromised/index.html",
+    "title": "SARS-CoV-2 Variants from Long-Term, Persistently Infected Immunocompromised Patients Have Altered Syncytia Formation, Temperature-Dependent Replication, and Serum Neutralizing Antibody Escape",
+    "section": "",
+    "text": "Camille Wouters, Jaiprasath Sachithanandham, Elgin Akin, Lisa Pieterse, Amary Fall, Thao T. Truong, Jennifer Dien Bard, Rebecca Yee, David J. Sullivan, Heba H. Mostafa, ProfileAndrew Pekosz\nGithub: Pekosz-Lab/Wouters_2024_CHLA\nData Availability: Raw Data\nPreprint PDF : PREPRINT\nFinal PDF : Final Publication\nDOI : 10.3390/v16091436\n\nAbstract\nSARS-CoV-2 infection of immunocompromised individuals often leads to prolonged detection of viral RNA and infectious virus in nasal specimens, presumably due to the lack of induction of an appropriate adaptive immune response. Mutations identified in virus sequences obtained from persistently infected patients bear signatures of immune evasion and have some overlap with sequences present in variants of concern. We characterized virus isolates obtained greater than 100 days after the initial COVID-19 diagnosis from two COVID-19 patients undergoing immunosuppressive cancer therapy, wand compared them to an isolate from the start of the infection. Isolates from an individual who never mounted an antibody response specific to SARS-CoV-2 despite the administration of convalescent plasma showed slight reductions in plaque size and some showed temperature-dependent replication attenuation on human nasal epithelial cell culture compared to the virus that initiated infection. An isolate from another patient—who did mount a SARS-CoV-2 IgM response—showed temperature-dependent changes in plaque size as well as increased syncytia formation and escape from serum-neutralizing antibodies. Our results indicate that not all virus isolates from immunocompromised COVID-19 patients display clear signs of phenotypic change, but increased attention should be paid to monitoring virus evolution in this patient population."
+  },
+  {
+    "objectID": "research/content/vicyam_characterization/index.html",
+    "href": "research/content/vicyam_characterization/index.html",
+    "title": "The Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures",
+    "section": "",
+    "text": "Jo L. Wilson, Elgin Akin, Ruifeng Zhou, Anne Jedlicka, Amanda Dziedzic, Hsuan Liu, Katherine Z. J. Fenstermacher, Richard E. Rothman, Andrew Pekosz\nPDF : Influenza_B_Virus_Lineages.pdf\nDOI : 10.3390/v15091956\nGithub : Pekosz-Lab/IBV_transcriptomics_2023\n\nAbstract\nUnderstanding Influenza B virus infections is of critical importance in our efforts to control severe influenza and influenza-related diseases. Until 2020, two genetic lineages of influenza B virus—Yamagata and Victoria—circulated in the population. These lineages are antigenically distinct, but the differences in virus replication or the induction of host cell responses after infection have not been carefully studied. Recent IBV clinical isolates of both lineages were obtained from influenza surveillance efforts of the Johns Hopkins Center of Excellence in Influenza Research and Response and characterized in vitro. B/Victoria and B/Yamagata clinical isolates were recognized less efficiently by serum from influenza-vaccinated individuals in comparison to the vaccine strains. B/Victoria lineages formed smaller plaques on MDCK cells compared to B/Yamagata, but infectious virus production in primary human nasal epithelial cell (hNEC) cultures showed no differences. While ciliated epithelial cells were the dominant cell type infected by both lineages, B/Victoria lineages had a slight preference for MUC5AC-positive cells, and B/Yamagata lineages infected more basal cells. Finally, while both lineages induced a strong interferon response 48 h after infection of hNEC cultures, the B/Victoria lineages showed a much stronger induction of interferon-related signaling pathways compared to B/Yamagata. This demonstrates that the two influenza B virus lineages differ not only in their antigenic structure but also in their ability to induce host innate immune responses.\n\nSupplemental Material\nhttps://www.mdpi.com/article/10.3390/v15091956/s1"
   }
 ]

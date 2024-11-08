@@ -4,3 +4,5 @@
 .DS_Store >> ~/.gitignore_global
 /.quarto/
 .Rproj.user
+.RData
+.Rhistory

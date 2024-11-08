@@ -1,0 +1,8 @@
+---
+title: contact
+page-layout: full
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+---
+
+{{< fa brands email size=1x >}}

@@ -1,0 +1,103 @@
+---
+title: research
+listing:
+  sort: "date desc"
+  contents: "../research/content/*/index.qmd"
+  sort-ui: true
+  filter-ui: false
+  categories: false
+  feed: true
+  type: grid
+page-layout: full
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+search: true
+---
+
+My work in the [Pekosz Lab](https://www.pekoszlab.com) leverages molecular virology to study Influenza B fitness and host response at the nasal epithelium. I work within the [Centers of Excellence for Influenza Research and Response](https://www.ceirr-network.org/), with the [Mostafa Lab](https://www.hopkinsmedicine.org/profiles/details/heba-mostafa) at the Johns Hopkins School of Medicine as well as other collaborators to further the understanding of Influenza B virus Evolution and host immune responses. Additionally, I currently maintain 24 unofficial [Nextstrain](https://nextstrain.org/groups/PekoszLab-Public) builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating within the Johns Hopkins Hospital Network. 
+
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(readr)
+library(dplyr)
+library(tidyr)
+library(highcharter)
+
+# Read the data from the TSV file
+data <- read_tsv('ibv/summarized.tsv')
+# Convert 'date' column to Date format
+data$date <- as.Date(data$date)
+
+# Filter the data to include only dates between 2015 and 2023
+data <- data[data$date >= as.Date("2015-01-01") & data$date <= as.Date("2023-12-31"), ]
+
+# Summarize counts by month and lineage
+lineage_counts <- data %>% 
+  mutate(month = format(date, "%Y-%m")) %>%  # Keep only month and year in YYYY-MM format
+  count(month, lineage) %>% 
+  spread(lineage, n, fill = 0)
+
+# Convert 'month' back to Date format as the first day of each month
+lineage_counts$month <- as.Date(paste0(lineage_counts$month, "-01"))
+
+# Prepare data for highcharter
+lineage_counts_long <- lineage_counts %>%
+  pivot_longer(-month, names_to = "lineage", values_to = "count")
+
+# Define custom colors for each lineage
+lineage_colors <- c("victoria"="#54bebe", "yamagata"="#c80064")
+
+# Generate the highstock plot with navigator and animation
+hc <- highchart(type = "stock") %>%  # Use highstock for the navigator/zoom feature
+  hc_chart(type = "area") %>%  # Create an area chart
+  hc_xAxis(type = "datetime", dateTimeLabelFormats = list(month = "%b %Y", year = "%Y")) %>%
+  hc_yAxis(title = list(text = "Total Sequences")) %>%
+  hc_title(text = htmltools::HTML(
+    paste0(
+      '<span style="color:', lineage_colors["victoria"], ';">Victoria</span> and ',
+      '<span style="color:', lineage_colors["yamagata"], ';">Yamagata</span> Sequences deposited on GISAID'
+    )
+  )) %>%
+  hc_legend(enabled = TRUE, layout = "horizontal", align = "left", verticalAlign = "top", x = 10, y = 10, itemStyle = list(fontSize = "14px")) %>%  # Position legend in top left corner
+  hc_navigator(enabled = TRUE) %>%  # Add the navigator for zooming
+  hc_rangeSelector(enabled = TRUE) %>%  # Add range selector for zoom control
+  hc_plotOptions(area = list(
+    stacking = "normal",  # Ensure areas are stacked on top of each other
+    stacking = "normal"  # Vertical stacking for visibility
+  )) %>%
+  hc_plotOptions(series = list(
+    animation = list(
+      duration = 5000,  # Duration of animation in milliseconds
+      easing = "easeOutExpo"  # Easing effect for smoother animation
+    )
+  ))
+
+# Add data for each lineage to the plot with custom colors
+lineage_list <- unique(lineage_counts_long$lineage)
+
+for (lineage in lineage_list) {
+  lineage_data <- lineage_counts_long %>%
+    filter(lineage == !!lineage) %>%
+    mutate(month_numeric = as.numeric(as.POSIXct(month)) * 1000)  # Ensure UNIX timestamp with correct month precision
+  
+  hc <- hc %>%
+    hc_add_series(
+      name = lineage, 
+      data = list_parse2(lineage_data %>% select(month_numeric, count)),
+      color = lineage_colors[[lineage]]  # Apply custom color
+    )
+}
+
+# Render the chart
+hc
+
+```
+
+_data curation and downsapling methods can be found [here](https://github.com/Pekosz-Lab/influenzabwolters) {{< fa brands github size=1x >}}_
+
+# Publications
+
+orcid{{< fa brands fa-orcid >}}: [0000-0001-8824-8809](https://orcid.org/0000-0001-8824-8809)

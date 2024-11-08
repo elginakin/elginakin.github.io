@@ -21,5 +21,14 @@
       "/papers/content/scv2_pregnant_mice/index.html",
       "/papers/content/late-presenting-pf/index.html"
     ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/content/scv2_immunocompromised/index.html",
+      "/research/content/vicyam_characterization/index.html",
+      "/research/content/scv2_pregnant_mice/index.html",
+      "/research/content/late-presenting-pf/index.html"
+    ]
   }
 ]
