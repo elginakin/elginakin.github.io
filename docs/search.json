@@ -331,9 +331,9 @@
   {
     "objectID": "research/index.html",
     "href": "research/index.html",
-    "title": "research",
+    "title": "research & publications",
     "section": "",
-    "text": "My work in the Pekosz Lab leverages molecular virology to study Influenza B fitness and host response at the nasal epithelium. I work within the Centers of Excellence for Influenza Research and Response, with the Mostafa Lab at the Johns Hopkins School of Medicine as well as other collaborators to further the understanding of Influenza B virus Evolution and host immune responses. Additionally, I currently maintain 24 unofficial Nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating within the Johns Hopkins Hospital Network.\n\n\n\n\n\n\ndata curation and downsapling methods can be found here \n\nPublications\norcid: 0000-0001-8824-8809\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nSARS-CoV-2 Variants from Long-Term, Persistently Infected Immunocompromised Patients Have Altered Syncytia Formation, Temperature-Dependent Replication, and Serum Neutralizing Antibody Escape\n\n\nWouters et al. Viruses 2024, 16(9), 1436\n\n\n\n\n\n\nMay 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures\n\n\nWilson & Akin et al. 2023. Viruses\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment\n\n\nCreisher et al. 2023. JCI\n\n\n\n\n\n\nAug 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLate-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions\n\n\nRobben et al. 2021. Millitary Medicine\n\n\n\n\n\n\nSep 24, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "My work in the Pekosz Lab leverages molecular virology to study Influenza B fitness and host response at the nasal epithelium. I work within the Centers of Excellence for Influenza Research and Response, with the Mostafa Lab at the Johns Hopkins School of Medicine as well as other collaborators to further the understanding of Influenza B virus Evolution and host immune responses. Additionally, I currently maintain 24 Nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating within the Johns Hopkins Hospital Network."
   },
   {
     "objectID": "research/content/scv2_immunocompromised/index.html",
@@ -348,5 +348,19 @@
     "title": "The Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures",
     "section": "",
     "text": "Jo L. Wilson, Elgin Akin, Ruifeng Zhou, Anne Jedlicka, Amanda Dziedzic, Hsuan Liu, Katherine Z. J. Fenstermacher, Richard E. Rothman, Andrew Pekosz\nPDF : Influenza_B_Virus_Lineages.pdf\nDOI : 10.3390/v15091956\nGithub : Pekosz-Lab/IBV_transcriptomics_2023\n\nAbstract\nUnderstanding Influenza B virus infections is of critical importance in our efforts to control severe influenza and influenza-related diseases. Until 2020, two genetic lineages of influenza B virus—Yamagata and Victoria—circulated in the population. These lineages are antigenically distinct, but the differences in virus replication or the induction of host cell responses after infection have not been carefully studied. Recent IBV clinical isolates of both lineages were obtained from influenza surveillance efforts of the Johns Hopkins Center of Excellence in Influenza Research and Response and characterized in vitro. B/Victoria and B/Yamagata clinical isolates were recognized less efficiently by serum from influenza-vaccinated individuals in comparison to the vaccine strains. B/Victoria lineages formed smaller plaques on MDCK cells compared to B/Yamagata, but infectious virus production in primary human nasal epithelial cell (hNEC) cultures showed no differences. While ciliated epithelial cells were the dominant cell type infected by both lineages, B/Victoria lineages had a slight preference for MUC5AC-positive cells, and B/Yamagata lineages infected more basal cells. Finally, while both lineages induced a strong interferon response 48 h after infection of hNEC cultures, the B/Victoria lineages showed a much stronger induction of interferon-related signaling pathways compared to B/Yamagata. This demonstrates that the two influenza B virus lineages differ not only in their antigenic structure but also in their ability to induce host innate immune responses.\n\nSupplemental Material\nhttps://www.mdpi.com/article/10.3390/v15091956/s1"
+  },
+  {
+    "objectID": "research/index.html#genomic-surveillance-of-influenza-b-viruses",
+    "href": "research/index.html#genomic-surveillance-of-influenza-b-viruses",
+    "title": "research & publications",
+    "section": "Genomic surveillance of Influenza B Viruses",
+    "text": "Genomic surveillance of Influenza B Viruses\n\n\n\n\n\n\ndata curation and downsapling methods can be found here"
+  },
+  {
+    "objectID": "research/index.html#phenotypic-outcomes-in-ibv-ha-and-ns1-evolution",
+    "href": "research/index.html#phenotypic-outcomes-in-ibv-ha-and-ns1-evolution",
+    "title": "research & publications",
+    "section": "Phenotypic outcomes in IBV HA and NS1 evolution",
+    "text": "Phenotypic outcomes in IBV HA and NS1 evolution\n\n\n\n\n\n\n\n\n\n\n\n\nNS1-B N-terminal domain (pdb:)\n\n\n\n\n\n\n\nNS1-B C-terminal domain (pdb:)"
   }
 ]

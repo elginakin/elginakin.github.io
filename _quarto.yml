@@ -15,7 +15,6 @@ website:
       - text: posts
         href: posts/index.qmd
       - text: cv
-        href: cv/elginakin_CV_2023_20230828.pdf
 
     tools:
       - icon: github

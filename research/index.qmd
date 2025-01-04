@@ -1,5 +1,5 @@
 ---
-title: research
+title: research & publications
 listing:
   sort: "date desc"
   contents: "../research/content/*/index.qmd"
@@ -14,8 +14,9 @@ title-block-banner-color: body
 search: true
 ---
 
-My work in the [Pekosz Lab](https://www.pekoszlab.com) leverages molecular virology to study Influenza B fitness and host response at the nasal epithelium. I work within the [Centers of Excellence for Influenza Research and Response](https://www.ceirr-network.org/), with the [Mostafa Lab](https://www.hopkinsmedicine.org/profiles/details/heba-mostafa) at the Johns Hopkins School of Medicine as well as other collaborators to further the understanding of Influenza B virus Evolution and host immune responses. Additionally, I currently maintain 24 unofficial [Nextstrain](https://nextstrain.org/groups/PekoszLab-Public) builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating within the Johns Hopkins Hospital Network. 
+My work in the [Pekosz Lab](https://www.pekoszlab.com) leverages molecular virology to study Influenza B fitness and host response at the nasal epithelium. I work within the [Centers of Excellence for Influenza Research and Response](https://www.ceirr-network.org/), with the [Mostafa Lab](https://www.hopkinsmedicine.org/profiles/details/heba-mostafa) at the Johns Hopkins School of Medicine as well as other collaborators to further the understanding of Influenza B virus Evolution and host immune responses. Additionally, I currently maintain 24 [Nextstrain](https://nextstrain.org/groups/PekoszLab-Public) builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating within the Johns Hopkins Hospital Network. 
 
+## Genomic surveillance of Influenza B Viruses
 
 ```{r}
 #| echo: false
@@ -97,6 +98,18 @@ hc
 ```
 
 _data curation and downsapling methods can be found [here](https://github.com/Pekosz-Lab/influenzabwolters) {{< fa brands github size=1x >}}_
+
+## Phenotypic outcomes in IBV HA and NS1 evolution
+
+::: {layout="[[1, 1,1] ]"}
+
+![](ibv/4fmq.gif){width=300}
+
+![NS1-B N-terminal domain (pdb:)](ibv/ntd.gif){width=300}
+
+![NS1-B C-terminal domain (pdb:)](ibv/ctd.gif){width=300}
+
+:::
 
 # Publications
 
