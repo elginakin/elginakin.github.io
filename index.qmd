@@ -21,6 +21,6 @@ about:
 
   <span style="color: grey; font-weight: 700; font-size: 40px;">elgin akin</span>
   
-  <p>Hi, I'm Elgin. I am a 4th year PhD candidate in the <a href="https://pekoszlab.com">Pekosz Lab</a> at the <a href="https://publichealth.jhu.edu/">Johns Hopkins Bloomberg School of Public Health</a> in <a href="https://publichealth.jhu.edu/departments/molecular-microbiology-and-immunology">Molecular Microbiology and Immunology</a>. I study the evolutionary interface between Influenza B Viruses and the nasal epithelial barrier. Additionally, I maintain <a href="https://nextstrain.org/groups/PekoszLab-Public">24 Nextstrain builds</a> for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating isolated from patients in the Johns Hopkins Hospital Network. </p>
+  <p>Hi, I'm Elgin. I am a 4th year PhD candidate in the <a href="https://pekoszlab.com">Pekosz Lab</a> at the <a href="https://publichealth.jhu.edu/">Johns Hopkins Bloomberg School of Public Health</a> in <a href="https://publichealth.jhu.edu/departments/molecular-microbiology-and-immunology">Molecular Microbiology and Immunology</a>. I study the evolutionary interface between Influenza B Viruses and the host reponse at nasal epithelial barrier.  Additionally, I maintain <a href="https://nextstrain.org/groups/PekoszLab-Public">27 Nextstrain builds</a> for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria viruses from patients in the Johns Hopkins Hospital Network. </p>
 
 </div>

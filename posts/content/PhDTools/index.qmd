@@ -5,7 +5,7 @@ description: |
 Catagories:
     - Tools
 author: Elgin Akin
-date: "02/27/2024"
+date: "02/08/2025"
 image: 'blog_top_image.png'
 ---
 
@@ -160,6 +160,16 @@ For statistics and visualization, I am more biased to solutions in R. The follow
 - Yan Holtz's [data2viz](https://www.data-to-viz.com/) guidlines for appropriate visualization of data. An excellent resouce which explains the pros and caviates for numeric, categoric, Num+Cat, maped, network and time series data.
 
 - Yan Holtz's galleries for [R](https://www.r-graph-gallery.com/), [Python](https://www.python-graph-gallery.com/), [D3](https://www.d3-graph-gallery.com/), and [React.js](https://www.d3-graph-gallery.com/) are am excellent resource for gathering inspiration for virualizing complex (or even simple) data. 
+
+## Data and color 
+
+It is especially critical to consider color when generating figures for your audience. Here are a couple of great tools I have referenced which can assess common and custom pallets across major color populations including Deuteranomaly, Protanomaly, Protanopia, and Deuteranopia: 
+
+- [Viz Pallette](https://projects.susielu.com/viz-palette?colors=%5B%22#ffd700%22,%22%23ffb14e%22,%22%23fa8775%22,%22%23ea5f94%22,%22%23cd34b5%22,%22%239d02d7%22,%22%230000ff%22%5D&backgroundColor=%22white%22&fontColor=%22black%22&mode=%22normal%22)by Elijah Meeks and Susie Lu. 
+
+- The Color Palette Finder by Yan Holtz: Comes in Python and R-ready panels: 
+  - [Python Color Palette Finder]https://python-graph-gallery.com/color-palette-finder/
+  - [R Color Palette Finder](https://r-graph-gallery.com/color-palette-finder)
 
 ## R
 
