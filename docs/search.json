@@ -277,7 +277,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "elgin akin\n\nHi, I’m Elgin. I am a 4th year PhD candidate in the Pekosz Lab at the Johns Hopkins Bloomberg School of Public Health in Molecular Microbiology and Immunology. I study the evolutionary interface between Influenza B Viruses and the nasal epithelial barrier. Additionally, I maintain 24 Nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating isolated from patients in the Johns Hopkins Hospital Network."
+    "text": "elgin akin\n\nHi, I’m Elgin. I am a 4th year PhD candidate in the Pekosz Lab at the Johns Hopkins Bloomberg School of Public Health in Molecular Microbiology and Immunology. I study the evolutionary interface between Influenza B Viruses and the host reponse at nasal epithelial barrier. Additionally, I maintain 27 Nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria viruses from patients in the Johns Hopkins Hospital Network."
   },
   {
     "objectID": "papers/content/vicyam_characterization/index.html",
@@ -362,5 +362,12 @@
     "title": "research & publications",
     "section": "Phenotypic outcomes in IBV HA and NS1 evolution",
     "text": "Phenotypic outcomes in IBV HA and NS1 evolution\n\n\n\n\n\n\n\n\n\n\n\n\nNS1-B N-terminal domain (pdb:)\n\n\n\n\n\n\n\nNS1-B C-terminal domain (pdb:)"
+  },
+  {
+    "objectID": "posts/content/PhDTools/index.html#data-and-color",
+    "href": "posts/content/PhDTools/index.html#data-and-color",
+    "title": "Useful tools for my PhD",
+    "section": "Data and color",
+    "text": "Data and color\nIt is especially critical to consider color when generating figures for your audience. Here are a couple of great tools I have referenced which can assess common and custom pallets across major color populations including Deuteranomaly, Protanomaly, Protanopia, and Deuteranopia:\n\nViz Palletteby Elijah Meeks and Susie Lu.\nThe Color Palette Finder by Yan Holtz: Comes in Python and R-ready panels:\n\n[Python Color Palette Finder]https://python-graph-gallery.com/color-palette-finder/\nR Color Palette Finder"
   }
 ]
