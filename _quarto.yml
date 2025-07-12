@@ -15,7 +15,12 @@ website:
       - text: posts
         href: posts/index.qmd
       - text: cv
-
+  announcement: 
+    icon: virus
+    dismissable: true
+    content: "**Here at [ASV 2025](https://asv.org/asv2025/)?** - Let's get a coffee! Reach out via Whova, email or BlueSky."
+    type: danger
+    position: below-navbar
     tools:
       - icon: github
         href: https://github.com/elginakin/
