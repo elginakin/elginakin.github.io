@@ -1,0 +1,37 @@
+---
+title: Emergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season
+description: |
+  Preprint Akin et al., 2025
+Catagories:
+  - influenzab
+date: "07/24/2025"
+format: 
+  html:
+    highlight-style: pygments
+    code-overflow: wrap
+    code-line-numbers: true
+image: 'thumbnail.png'
+---
+
+**Elgin Akin**, David A. Villafuerte, Anne P. Werner, Matthew Pinsley, Amary Fall, Omar Abdullah, Julie M. Norton, Richard E. Rothman, Katherine Z.J. Fenstermacher, Yu-Nong Gong, Eili Klein, Heba H. Mostafa,  View ORCID ProfileAndrew Pekosz
+
+Preprint Link {{< fa external-link-alt size=1x >}}: [biorxiv](https://www.biorxiv.org/content/10.1101/2025.07.24.666632v1.full)
+
+Preprint PDF {{< fa file-pdf size=1x >}}: [Influenza_B_Virus_Lineages.pdf](2025.07.24.666632v1.full.pdf)  
+
+Github: [influenzabc3](https://github.com/elginakin/influenzab_c.3)
+
+## BACKGROUND
+Influenza B virus is a significant contributor to annual total and severe cases of influenza, particularly in the young and elderly. Coupling whole virus genome sequencing with the monitoring of influenza cases allows for the identification of increased disease burden and the emergence of novel virus variants.
+
+## METHODS 
+Influenza B virus infected individuals were identified in the Johns Hopkins Health Systems network and whole IBV genome sequencing was performed. Phylogenetic analysis and sequence alignments were used to identify the IBV clades and novel virus mutations. The amount of neutralizing antibody activity specific to different IBV clades was measured.
+
+## RESULTS 
+Late in the 2024-25 Northern Hemisphere influenza season, a surge of IBV cases were identified. The IBV responsible for the surge, C.3re, was a clade C.3 virus that had reassorted with clade C.5.1 viruses and acquired a mutation predicted to mask a key neutralizing antibody epitope on the hemagglutinin protein. The neuramindase gene contained mutations predicted to reduce neutralizing antibody binding and potentially alter oseltamivir sensitivity. The C.3re viruses preferentially infected children but showed no significant increase in disease severity. The C.3re viruses were poorly neutralized by pre and post influenza vaccination serum.
+
+## CONCLUSIONS 
+The C.3re IBV genotype that emerged in late in the 2024-25 influenza season is antigenically mismatched with current circulating IBVs and the IBV vaccine strains chosen for the 2025 Southern Hemisphere and 2024-25 Northern Hemisphere season. This may result in lower vaccine efficacy increases in IBV cases in upcoming influenza seasons.
+
+
+

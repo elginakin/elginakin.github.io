@@ -21,7 +21,6 @@ Preprint Link {{< fa external-link-alt size=1x >}}: [biorxiv](https://www.biorxi
 
 Preprint PDF {{< fa file-pdf size=1x >}}: [Influenza_B_Virus_Lineages.pdf](2025.07.13.664638v1.full.pdf)  
 
-
 # Abstract 
 An increase in the number of human cases of influenza A/H5N1 infection in the US has raised 
 concerns about the pandemic potential of the virus. Preexisting population immunity is a key 

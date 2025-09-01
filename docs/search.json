@@ -277,7 +277,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "elgin akin\n\nHi, I’m Elgin. I am a 4th year PhD candidate in the Pekosz Lab at the Johns Hopkins Bloomberg School of Public Health in Molecular Microbiology and Immunology. I study the evolutionary interface between Influenza B Viruses and the host reponse at nasal epithelial barrier. Additionally, I maintain  several nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria viruses from patients in the Johns Hopkins Hospital Network."
+    "text": "elgin akin\n\nHi, I’m Elgin. I am a 5th year PhD candidate in the Pekosz Lab at the Johns Hopkins Bloomberg School of Public Health in Molecular Microbiology and Immunology. I study the evolutionary interface between Influenza B Viruses and the host reponse at nasal epithelial barrier. Additionally, I maintain  several nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria viruses from patients in the Johns Hopkins Hospital Network."
   },
   {
     "objectID": "papers/content/vicyam_characterization/index.html",
@@ -376,5 +376,40 @@
     "title": "Low levels of H5N1 HA and NA antibodies in the human population are boosted by seasonal A/H1N1 infection but not by A/H3N2 infection or influenza vaccination",
     "section": "",
     "text": "Anne P. Werner, Cosette G. Schneider, Elgin H. Akin, Juliahna Hayes, Katherine Z. J. Fenstermacher, Richard E. Rothman, Lynda Coughlan, Andrew Pekosz\nPreprint Link : biorxiv\nPreprint PDF : Influenza_B_Virus_Lineages.pdf\n\nAbstract\nAn increase in the number of human cases of influenza A/H5N1 infection in the US has raised concerns about the pandemic potential of the virus. Preexisting population immunity is a key determinant for risk assessment and pandemic potential for any virus. Antibody responses against the bovine A/H5N1 hemagglutinin (HA) and neuraminidase (NA) proteins were measured among a population of influenza-vaccinated or influenza-infected individuals. Modest titers of bovine A/H5N1 HA-binding antibodies and low to undetectable neutralizing antibody responses were detected in a cohort of 73 individuals. Conversely, bovine A/H5N1 NA binding and neuraminidase-inhibiting antibody responses were comparable to those against a human A/H1N1 NA at baseline. Seasonal influenza vaccination failed to significantly increase antibody titers against both HA and NA glycoproteins of bovine A/H5N1. Recent infection with human A/H1N1 but not A/H3N2 viruses induced significant increases in bovine A/H5N1 neutralizing antibody, as well as increases in NA- binding and NA-inhibiting antibodies to bovine A/H5N1 NA. While the degree of protection afforded by these A/H5N1 cross-reactive antibodies is not known, incorporating NA or enhancing current seasonal vaccine formulations to increase NA-specific antibody responses may increase antibody breadth and protection against both seasonal and pandemic influenza viruses."
+  },
+  {
+    "objectID": "research/content/ibvc3/index.html",
+    "href": "research/content/ibvc3/index.html",
+    "title": "Emergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season",
+    "section": "",
+    "text": "Elgin Akin, David A. Villafuerte, Anne P. Werner, Matthew Pinsley, Amary Fall, Omar Abdullah, Julie M. Norton, Richard E. Rothman, Katherine Z.J. Fenstermacher, Yu-Nong Gong, Eili Klein, Heba H. Mostafa, View ORCID ProfileAndrew Pekosz\nPreprint Link : biorxiv\nPreprint PDF : Influenza_B_Virus_Lineages.pdf\nGithub: influenzabc3"
+  },
+  {
+    "objectID": "research/content/ibvc3/index.html#background",
+    "href": "research/content/ibvc3/index.html#background",
+    "title": "Emergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season",
+    "section": "BACKGROUND",
+    "text": "BACKGROUND\nInfluenza B virus is a significant contributor to annual total and severe cases of influenza, particularly in the young and elderly. Coupling whole virus genome sequencing with the monitoring of influenza cases allows for the identification of increased disease burden and the emergence of novel virus variants."
+  },
+  {
+    "objectID": "research/content/ibvc3/index.html#methods",
+    "href": "research/content/ibvc3/index.html#methods",
+    "title": "Emergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season",
+    "section": "METHODS",
+    "text": "METHODS\nInfluenza B virus infected individuals were identified in the Johns Hopkins Health Systems network and whole IBV genome sequencing was performed. Phylogenetic analysis and sequence alignments were used to identify the IBV clades and novel virus mutations. The amount of neutralizing antibody activity specific to different IBV clades was measured."
+  },
+  {
+    "objectID": "research/content/ibvc3/index.html#results",
+    "href": "research/content/ibvc3/index.html#results",
+    "title": "Emergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season",
+    "section": "RESULTS",
+    "text": "RESULTS\nLate in the 2024-25 Northern Hemisphere influenza season, a surge of IBV cases were identified. The IBV responsible for the surge, C.3re, was a clade C.3 virus that had reassorted with clade C.5.1 viruses and acquired a mutation predicted to mask a key neutralizing antibody epitope on the hemagglutinin protein. The neuramindase gene contained mutations predicted to reduce neutralizing antibody binding and potentially alter oseltamivir sensitivity. The C.3re viruses preferentially infected children but showed no significant increase in disease severity. The C.3re viruses were poorly neutralized by pre and post influenza vaccination serum."
+  },
+  {
+    "objectID": "research/content/ibvc3/index.html#conclusions",
+    "href": "research/content/ibvc3/index.html#conclusions",
+    "title": "Emergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season",
+    "section": "CONCLUSIONS",
+    "text": "CONCLUSIONS\nThe C.3re IBV genotype that emerged in late in the 2024-25 influenza season is antigenically mismatched with current circulating IBVs and the IBV vaccine strains chosen for the 2025 Southern Hemisphere and 2024-25 Northern Hemisphere season. This may result in lower vaccine efficacy increases in IBV cases in upcoming influenza seasons."
   }
 ]
