@@ -1,0 +1,28 @@
+---
+title: In-vitro characterization of 2019-24 Influenza B Viruses reveals increased temperature-dependent fitness in later timepoints independent of antigenic drift
+description: |
+  Preprint Akin...Pekosz, 2025
+Catagories:
+  - influenzab
+date: "10/31/2025"
+format: 
+  html:
+    highlight-style: pygments
+    code-overflow: wrap
+    code-line-numbers: true
+image: 'thumbnail.png'
+---
+
+**Elgin Akin**, Juanyu Zhang, David Villafuerte, Madeline Yunker, Anne Werner, Nicholas J Swanson, Richard Eric Rothman, Katherine Fenstermacher,  Heba H Mostafa, Andrew Pekosz
+
+Preprint DOI{{< fa external-link-alt size=1x >}}: [10.1101/2025.10.27.25338757](https://doi.org/10.1101/2025.10.27.25338757)
+
+Preprint PDF {{< fa file-pdf size=1x >}}: [Influenza_B_Virus_Lineages.pdf](2025.07.24.666632v1.full.pdf)  
+
+Github {{< fa brands github size=1x >}}: [/Pekosz-Lab/NH20-24_influenzab](https://github.com/Pekosz-Lab/NH20-24_influenzab)
+
+## Abstract
+Seasonal influenza viruses continually acquire mutations that can alter both their replication efficiency and antigenic properties. While recent seasonal Influenza B viruses (IBV) are characterized as a single clade, V1A.3a.2, defined by mutations in the hemagglutinin or HA protein, they have diversified globally into different subclades showing geographic restrictions. When the C.5 clade first emerged, it showed faster replication kinetics in human nasal epithelial cell (hNEC) cultures compared to clade A and C viruses from 2019-2021. The subsequent emergence of the C.5.1 subclade, predominantly observed in North and South America, resulted in no significant antigenic drift when compared to the 2023–2024 Northern Hemisphere vaccine strain, B/Austria/1359417/2021, using a vaccinated human serum set despite a number of mutations fixing in the HA protein. However, the C.5.1 subclade separated into several additional genotypes, some of which exhibit prolonged infectious virus production compared to the ancestral C.5 clade in hNEC cultures. C.5.1 viruses do not exhibit altered cell tropism hNEC cultures, indicating that differences in replication kinetics alone likely account for the observed increase in infectious virus production. The results demonstrate that IBV evolution can lead to changes in infectious virus production in the absence of antigenic drift.
+
+
+
