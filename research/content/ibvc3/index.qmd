@@ -19,7 +19,7 @@ Preprint Link {{< fa external-link-alt size=1x >}}: [biorxiv](https://www.biorxi
 
 Preprint PDF {{< fa file-pdf size=1x >}}: [Influenza_B_Virus_Lineages.pdf](2025.07.24.666632v1.full.pdf)  
 
-Github {{< fa brands github size=5x >}}: [influenzabc3](https://github.com/elginakin/influenzab_c.3)
+Github {{< fa brands github size=1x >}}: [influenzabc3](https://github.com/elginakin/influenzab_c.3)
 
 ## BACKGROUND
 Influenza B virus is a significant contributor to annual total and severe cases of influenza, particularly in the young and elderly. Coupling whole virus genome sequencing with the monitoring of influenza cases allows for the identification of increased disease burden and the emergence of novel virus variants.

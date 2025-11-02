@@ -1,7 +1,7 @@
 ---
 title: Low levels of H5N1 HA and NA antibodies in the human population are boosted by seasonal A/H1N1 infection but not by A/H3N2 infection or influenza vaccination
 description: |
-  Preprint Werner et al., 2025
+  Werner et al., 2025. mBio
 Catagories:
     - co-author
     - Bovine H5N1
@@ -17,9 +17,9 @@ image: 'thumbnail.png'
 Anne P. Werner, Cosette G. Schneider, **Elgin H. Akin**, Juliahna Hayes, Katherine Z. J. 
 Fenstermacher, Richard E. Rothman, Lynda Coughlan, Andrew Pekosz
 
-Preprint Link {{< fa external-link-alt size=1x >}}: [biorxiv](https://www.biorxiv.org/content/10.1101/2025.07.13.664638v1)
-
-Preprint PDF {{< fa file-pdf size=1x >}}: [Influenza_B_Virus_Lineages.pdf](2025.07.13.664638v1.full.pdf)  
+DOI: [Werner et al](https://journals.asm.org/doi/10.1128/mbio.02145-25)
+Preprint DOI {{< fa external-link-alt size=1x >}}: [biorxiv](https://www.biorxiv.org/content/10.1101/2025.07.13.664638v1)
+Preprint PDF {{< fa file-pdf size=1x >}}: [2025.07.13.664638v1.full](2025.07.13.664638v1.full.pdf)  
 
 # Abstract 
 An increase in the number of human cases of influenza A/H5N1 infection in the US has raised 
