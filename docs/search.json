@@ -18,7 +18,7 @@
     "href": "posts/index.html",
     "title": "posts",
     "section": "",
-    "text": "Useful tools for my PhD\n\n\n\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated 2024-04-18. \n\n\n\n\n\nFeb 8, 2025\n\n\nElgin Akin\n\n\n\n\n\n\n\n\n\n\n\n\nConstructing time-resolved phylogenetic trees, A tutorial\n\n\n\n\n\nA basic tutorial for building and visualizing time-resolved phylogenetic trees \n\n\n\n\n\nJun 9, 2024\n\n\nElgin Akin\n\n\n\n\n\n\nNo matching items"
+    "text": "Constructing time-resolved phylogenetic trees, A tutorial\n\n\n\n\n\nA basic tutorial for building and visualizing time-resolved phylogenetic trees \n\n\n\n\n\nJun 9, 2024\n\n\nElgin Akin\n\n\n\n\n\n\n\n\n\n\n\n\nUseful tools for my PhD\n\n\n\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated 2025-10-14. \n\n\n\n\n\nApr 18, 2024\n\n\nElgin Akin\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html",
@@ -331,7 +331,7 @@
   {
     "objectID": "research/index.html",
     "href": "research/index.html",
-    "title": "research & publications",
+    "title": "research",
     "section": "",
     "text": "My work in the Pekosz Lab leverages molecular virology to study Influenza B fitness and host response at the nasal epithelium. I work within the Centers of Excellence for Influenza Research and Response, with the Mostafa Lab at the Johns Hopkins School of Medicine as well as other collaborators to further the understanding of Influenza B virus Evolution and host immune responses. Additionally, I currently maintain 24 Nextstrain builds for seasonal genomic surveillance of H1N1, H3N2 and B/Victoria Viruses originiating within the Johns Hopkins Hospital Network."
   },
@@ -352,14 +352,14 @@
   {
     "objectID": "research/index.html#genomic-surveillance-of-influenza-b-viruses",
     "href": "research/index.html#genomic-surveillance-of-influenza-b-viruses",
-    "title": "research & publications",
+    "title": "research",
     "section": "Genomic surveillance of Influenza B Viruses",
     "text": "Genomic surveillance of Influenza B Viruses\n\n\n\n\n\n\ndown sampling methods can be found here"
   },
   {
     "objectID": "research/index.html#phenotypic-outcomes-in-ibv-ha-and-ns1-evolution",
     "href": "research/index.html#phenotypic-outcomes-in-ibv-ha-and-ns1-evolution",
-    "title": "research & publications",
+    "title": "research",
     "section": "Phenotypic outcomes in IBV HA and NS1 evolution",
     "text": "Phenotypic outcomes in IBV HA and NS1 evolution\n\n\n\n\n\n\n\n\n\n\n\n\nNS1-B N-terminal domain (pdb:3SDL)\n\n\n\n\n\n\n\nNS1-B C-terminal domain (pdb:3EE9)"
   },
@@ -436,6 +436,27 @@
   {
     "objectID": "research/content/ibv20to24_fitness/index.html#abstract",
     "href": "research/content/ibv20to24_fitness/index.html#abstract",
+    "title": "In-vitro characterization of 2019-24 Influenza B Viruses reveals increased temperature-dependent fitness in later timepoints independent of antigenic drift",
+    "section": "Abstract",
+    "text": "Abstract\nSeasonal influenza viruses continually acquire mutations that can alter both their replication efficiency and antigenic properties. While recent seasonal Influenza B viruses (IBV) are characterized as a single clade, V1A.3a.2, defined by mutations in the hemagglutinin or HA protein, they have diversified globally into different subclades showing geographic restrictions. When the C.5 clade first emerged, it showed faster replication kinetics in human nasal epithelial cell (hNEC) cultures compared to clade A and C viruses from 2019-2021. The subsequent emergence of the C.5.1 subclade, predominantly observed in North and South America, resulted in no significant antigenic drift when compared to the 2023–2024 Northern Hemisphere vaccine strain, B/Austria/1359417/2021, using a vaccinated human serum set despite a number of mutations fixing in the HA protein. However, the C.5.1 subclade separated into several additional genotypes, some of which exhibit prolonged infectious virus production compared to the ancestral C.5 clade in hNEC cultures. C.5.1 viruses do not exhibit altered cell tropism hNEC cultures, indicating that differences in replication kinetics alone likely account for the observed increase in infectious virus production. The results demonstrate that IBV evolution can lead to changes in infectious virus production in the absence of antigenic drift."
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "publications",
+    "section": "",
+    "text": "orcid: 0000-0001-8824-8809\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nIn-vitro characterization of 2019-24 Influenza B Viruses reveals increased temperature-dependent fitness in later timepoints independent of antigenic drift\n\n\n\n\n\nPreprint Akin…Pekosz, 2025 \n\n\n\n\n\nOct 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEmergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season\n\n\n\n\n\nPreprint Akin et al., 2025 \n\n\n\n\n\nJul 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLow levels of H5N1 HA and NA antibodies in the human population are boosted by seasonal A/H1N1 infection but not by A/H3N2 infection or influenza vaccination\n\n\n\n\n\nWerner et al., 2025. mBio \n\n\n\n\n\nJul 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSARS-CoV-2 Variants from Long-Term, Persistently Infected Immunocompromised Patients Have Altered Syncytia Formation, Temperature-Dependent Replication, and Serum Neutralizing Antibody Escape\n\n\n\n\n\nWouters et al. Viruses 2024, 16(9), 1436 \n\n\n\n\n\nMay 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures\n\n\n\n\n\nWilson & Akin et al. 2023. Viruses \n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nAdverse outcomes in SARS-CoV-2–infected pregnant mice are gestational age–dependent and resolve with antiviral treatment\n\n\n\n\n\nCreisher et al. 2023. JCI \n\n\n\n\n\nAug 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nLate-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions\n\n\n\n\n\nRobben et al. 2021. Millitary Medicine \n\n\n\n\n\nSep 24, 2021\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/content/ibv20to24_fitness/index.html",
+    "href": "publications/content/ibv20to24_fitness/index.html",
+    "title": "In-vitro characterization of 2019-24 Influenza B Viruses reveals increased temperature-dependent fitness in later timepoints independent of antigenic drift",
+    "section": "",
+    "text": "Elgin Akin, Juanyu Zhang, David Villafuerte, Madeline Yunker, Anne Werner, Nicholas J Swanson, Richard Eric Rothman, Katherine Fenstermacher, Heba H Mostafa, Andrew Pekosz\nPreprint DOI: 10.1101/2025.10.27.25338757\nPreprint PDF : Influenza_B_Virus_Lineages.pdf\nGithub : /Pekosz-Lab/NH20-24_influenzab"
+  },
+  {
+    "objectID": "publications/content/ibv20to24_fitness/index.html#abstract",
+    "href": "publications/content/ibv20to24_fitness/index.html#abstract",
     "title": "In-vitro characterization of 2019-24 Influenza B Viruses reveals increased temperature-dependent fitness in later timepoints independent of antigenic drift",
     "section": "Abstract",
     "text": "Abstract\nSeasonal influenza viruses continually acquire mutations that can alter both their replication efficiency and antigenic properties. While recent seasonal Influenza B viruses (IBV) are characterized as a single clade, V1A.3a.2, defined by mutations in the hemagglutinin or HA protein, they have diversified globally into different subclades showing geographic restrictions. When the C.5 clade first emerged, it showed faster replication kinetics in human nasal epithelial cell (hNEC) cultures compared to clade A and C viruses from 2019-2021. The subsequent emergence of the C.5.1 subclade, predominantly observed in North and South America, resulted in no significant antigenic drift when compared to the 2023–2024 Northern Hemisphere vaccine strain, B/Austria/1359417/2021, using a vaccinated human serum set despite a number of mutations fixing in the HA protein. However, the C.5.1 subclade separated into several additional genotypes, some of which exhibit prolonged infectious virus production compared to the ancestral C.5 clade in hNEC cultures. C.5.1 viruses do not exhibit altered cell tropism hNEC cultures, indicating that differences in replication kinetics alone likely account for the observed increase in infectious virus production. The results demonstrate that IBV evolution can lead to changes in infectious virus production in the absence of antigenic drift."

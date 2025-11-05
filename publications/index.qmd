@@ -1,0 +1,18 @@
+---
+title: publications
+listing:
+  sort: "date desc"
+  contents: "../publications/content/*/index.qmd"
+  sort-ui: true
+  filter-ui: false
+  categories: false
+  feed: true
+  type: default
+  image-align: left
+page-layout: full
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+search: true
+---
+
+orcid{{< fa brands fa-orcid >}}: [0000-0001-8824-8809](https://orcid.org/0000-0001-8824-8809)

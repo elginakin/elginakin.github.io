@@ -1,8 +1,8 @@
 ---
-title: research & publications
+title: research
 listing:
   sort: "date desc"
-  contents: "../research/content/*/index.qmd"
+  contents: "../research/index.qmd"
   sort-ui: true
   filter-ui: false
   categories: false
@@ -110,7 +110,3 @@ _down sampling methods can be found [here](https://github.com/Pekosz-Lab/influen
 ![NS1-B C-terminal domain (pdb:3EE9)](ibv/ctd.gif){width=300}
 
 :::
-
-# Publications
-
-orcid{{< fa brands fa-orcid >}}: [0000-0001-8824-8809](https://orcid.org/0000-0001-8824-8809)

@@ -9,8 +9,8 @@
   {
     "listing": "/posts/index.html",
     "items": [
-      "/posts/content/PhDTools/index.html",
-      "/posts/content/flutree_tutorial/index.html"
+      "/posts/content/flutree_tutorial/index.html",
+      "/posts/content/PhDTools/index.html"
     ]
   },
   {
@@ -24,14 +24,18 @@
   },
   {
     "listing": "/research/index.html",
+    "items": []
+  },
+  {
+    "listing": "/publications/index.html",
     "items": [
-      "/research/content/ibv20to24_fitness/index.html",
-      "/research/content/ibvc3/index.html",
-      "/research/content/werner-et-al/index.html",
-      "/research/content/scv2_immunocompromised/index.html",
-      "/research/content/vicyam_characterization/index.html",
-      "/research/content/scv2_pregnant_mice/index.html",
-      "/research/content/late-presenting-pf/index.html"
+      "/publications/content/ibv20to24_fitness/index.html",
+      "/publications/content/ibvc3/index.html",
+      "/publications/content/werner-et-al/index.html",
+      "/publications/content/scv2_immunocompromised/index.html",
+      "/publications/content/vicyam_characterization/index.html",
+      "/publications/content/scv2_pregnant_mice/index.html",
+      "/publications/content/late-presenting-pf/index.html"
     ]
   }
 ]

@@ -1,0 +1,42 @@
+---
+title: Low levels of H5N1 HA and NA antibodies in the human population are boosted by seasonal A/H1N1 infection but not by A/H3N2 infection or influenza vaccination
+description: |
+  Werner et al., 2025. mBio
+Catagories:
+    - co-author
+    - Bovine H5N1
+date: "07/17/2025"
+format: 
+  html:
+    highlight-style: pygments
+    code-overflow: wrap
+    code-line-numbers: true
+image: 'thumbnail.png'
+---
+
+Anne P. Werner, Cosette G. Schneider, **Elgin H. Akin**, Juliahna Hayes, Katherine Z. J. 
+Fenstermacher, Richard E. Rothman, Lynda Coughlan, Andrew Pekosz
+
+DOI: [Werner et al](https://journals.asm.org/doi/10.1128/mbio.02145-25)
+Preprint DOI {{< fa external-link-alt size=1x >}}: [biorxiv](https://www.biorxiv.org/content/10.1101/2025.07.13.664638v1)
+Preprint PDF {{< fa file-pdf size=1x >}}: [2025.07.13.664638v1.full](2025.07.13.664638v1.full.pdf)  
+
+# Abstract 
+An increase in the number of human cases of influenza A/H5N1 infection in the US has raised 
+concerns about the pandemic potential of the virus. Preexisting population immunity is a key 
+determinant for risk assessment and pandemic potential for any virus. Antibody responses against the 
+bovine A/H5N1 hemagglutinin (HA) and neuraminidase (NA) proteins were measured among a 
+population of influenza-vaccinated or influenza-infected individuals. Modest titers of bovine A/H5N1 
+HA-binding antibodies and low to undetectable neutralizing antibody responses were detected in a 
+cohort of 73 individuals. Conversely, bovine A/H5N1 NA binding and neuraminidase-inhibiting 
+antibody responses were comparable to those against a human A/H1N1 NA at baseline. Seasonal 
+influenza vaccination failed to significantly increase antibody titers against both HA and NA 
+glycoproteins of bovine A/H5N1. Recent infection with human A/H1N1 but not A/H3N2 viruses 
+induced significant increases in bovine A/H5N1 neutralizing antibody, as well as increases in NA-
+binding and NA-inhibiting antibodies to bovine A/H5N1 NA. While the degree of protection afforded by 
+these A/H5N1 cross-reactive antibodies is not known, incorporating NA or enhancing current 
+seasonal vaccine formulations to increase NA-specific antibody responses may increase antibody 
+breadth and protection against both seasonal and pandemic influenza viruses. 
+
+
+

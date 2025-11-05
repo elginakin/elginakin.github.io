@@ -6,9 +6,12 @@ about:
     template: jolla
     image-shape: rounded
     links:
-        - icon: box-fill
-          text: research & publications
+        - icon: patch-question
+          text: research
           href: research/index.qmd
+        - icon: book
+          text: publications
+          href: publications/index.qmd
         - icon: github
           text: github
           href: https://github.com/elginakin
