@@ -1,10 +1,14 @@
 ---
-title: Constructing time-resolved phylogenetic trees, A tutorial
+title: Consutrction and assembly of time-resolved phylogenetic trees, A tutorial
 description: | 
     A basic tutorial for building and visualizing time-resolved phylogenetic trees 
-Catagories:
+catagories:
     - tutorial
-author: Elgin Akin
+author:
+    - name: "Elgin Akin"
+      orcid: "0000-0001-8824-8809"
+      affiliations: 
+        - name: Johns Hopkins University
 date: "06/09/2024"
 format: 
   html:
@@ -56,13 +60,22 @@ This tutorial assumes you are operating on a machine with a UNIX-based terminal 
 ```{r}
 #| echo: false
 #| eval: false
+
+
 # install if you need them: 
 
 install.packages("tidyverse")   
 install.packages("ggtree")
-install.packages("treeio")
-nstall.packages("ape")
+install.packages("ape")
 install.packages("colorspace")
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("treeio")
+BiocManager::install("ggtree")
+
+
 ```
 
 Full tutorials for more comprehensive phylognetic analysis pipelines with interactives are descrived in great detail with pathogen-specific tutorials by the [Nextstrain Team](https://nextstrain.org/team).

@@ -8,3 +8,11 @@
 .Rhistory
 
 ./cv
+
+# do not publish
+
+posts/content/mutationmapping
+posts/content/baltic_singletree
+
+
+**/*.quarto_ipynb

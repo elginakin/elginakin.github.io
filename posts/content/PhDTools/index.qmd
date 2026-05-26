@@ -2,9 +2,13 @@
 title: Useful tools for my PhD
 description: | 
     A collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated **2025-10-14**.
-Catagories:
-    - Tools
-author: Elgin Akin
+catagories:
+    - tools
+author:
+    - name: "Elgin Akin"
+      orcid: "0000-0001-8824-8809"
+      affiliations: 
+        - name: Johns Hopkins University
 date: "04/18/2024"
 image: 'blog_top_image.png'
 ---
@@ -27,7 +31,11 @@ For literature and coursework:
 Each of these have integration with common web browsers
 
 -   [Zotero](https://www.zotero.org/): free and open source
-    -   My favorite add on's: [zotero action tags](https://github.com/windingwind/zotero-actions-tags), [Better BibTex](https://retorque.re/zotero-better-bibtex/), [ZotFile](https://zotfile.com/), [Zotero PDF Preview](https://github.com/windingwind/zotero-pdf-preview)
+    -   My favorite add on's: 
+        - [zotero action tags](https://github.com/windingwind/zotero-actions-tags)
+        - [Better BibTex](https://retorque.re/zotero-better-bibtex/)
+        - [ZotFile](https://zotfile.com/) [no longer compatible with Zotero 7](https://forums.zotero.org/discussion/116679/zotero-7-and-zotfile). Alternative for Z7 is [zotmoov](https://github.com/wileyyugioh/zotmoov)
+        - [Zotero PDF Preview](https://github.com/windingwind/zotero-pdf-preview). [no longer compatible with Zotero 7](https://forums.zotero.org/discussion/116679/zotero-7-and-zotfile).
 -   [Mendely](https://www.mendeley.com/): free, not open source
 -   [PaperPile](https://paperpile.com/): paid after 30 days
 
@@ -54,7 +62,7 @@ Each of these have integration with common web browsers
 +-----------------------------------------------------------------------------------------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | [Microsoft Office OneNote](https://www.bioinformatics.babraham.ac.uk/training/OneNote%20manual.pdf) | Free with Microsoft Subscription | Simple UI, integrates all Office products, cloud backup, descent search.                                                               | Clunky UI. Limited to 1 template per folder. No automation options. | Yes               |                                                                                                                                                                                                |
 +-----------------------------------------------------------------------------------------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| [AnyType](https://anytype.io/)                                                                      | Free                             | Encypted, similar to Notion UX/UI and is "offline" (with included web sync service). Integrated back-linking similar to Obsidian       | Newer software, "Blackboxy" file types                              | Some              |                                                                                                                                                                                                |
+| [AnyType](https://anytype.io/)                                                                      | Free                             | similar to Notion UX/UI and is "offline" (with included web sync service). Integrated back-linking similar to Obsidian       | Newer software, "Blackboxy" file types                              | Some              |                                                                                                                                                                                                |
 +-----------------------------------------------------------------------------------------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ## 💭 Experimental Data Organization Phiolosophy
@@ -74,7 +82,7 @@ In the age of -omics, advanced microscopy, and other large data platforms, PhDs 
 -   [Github Co Pilot](https://github.com/features/copilot): Nice AI assistant and can be integrated in VS Code. Free Education license available.
 -   [Warp](https://www.warp.dev/) (MacOS Only as of Feb 2024): A fancy shmancy command line utility terminal with integrated features such as autocomplete, pipelines, its own AI etc.
 
-# 🧬 General sequence data type utilities
+# 🧬 General sequence data utilities
 
 -   [Seqkit](https://bioinf.shenwei.me/seqkit/): Literal gold. Used on a daily basis. An extremely powerful FASTA/Q toolkit for file manipulation, searching, motif scanning, extraction, statistics, etc. Written in [go](https://go.dev/) for an extremely lightweight experience.
 -   [BigSeqKit](https://github.com/citiususc/BigSeqKit): A toolkit designed for processing and analyzing large-scale biological sequence data. It offers efficient algorithms and data structures tailored for handling big sequence datasets, enabling researchers to perform tasks such as sequence alignment, similarity search, and sequence manipulation at scale.
@@ -91,6 +99,16 @@ In the age of -omics, advanced microscopy, and other large data platforms, PhDs 
 -   BLAST and BLAST+: No introduction needed
     -   A nice [introduction](https://vinuesa.github.io/TIB-filoinfo/sesion3_BLAST/) to using BLAST+ CLI.
 -   [NCBI C++ Toolkit](https://www.ncbi.nlm.nih.gov/toolkit): Public domain of portable libraries for sequencing-class data (and others).
+
+## SNP calling from multi-FASTA 
+
+This is a somewhat niche use case for bacterial and small viral genomes but I have found myself needing to call SNPs from multi-FASTA files of consensus sequences. Ironically, I experienced a bit of a learning curve when calling SNPs from consensus contigs/cds sequences as opposed to FASTQ.  
+
+- [snp-sites](https://github.com/sanger-pathogens/snp-sites)
+  - Ingests a sequence alignment and reference genbank for variant calling. Outputs a VCF file or pseudo-aligned SNPs.
+- [snippy](https://github.com/tseemann/snippy/tree/master): Snippy can in fact ingest a multi-FASTA file using the `--contigs` flag. 
+  > "allows you to call SNPs from contigs rather than reads. It shreds the contigs into synthetic reads, as to put the calls on even footing with other read samples in a multi-sample analysis."
+
 
 ## 🧬 Sequence Motif and Similarity Searches
 
@@ -173,11 +191,13 @@ Genomics really deserves its own post but a nice integration of all the tools I 
 
 -   [UseGalaxy](https://usegalaxy.org/): an online platform for conducting bioinformatics analyses. It provides a user-friendly interface for accessing a wide range of bioinformatics tools and workflows, including those for sequence analysis, genome assembly, and phylogenetics. Users can upload their data, select analysis tools, and visualize results within the platform.
 -   [BV-BRC](https://www.bv-brc.org/): A bioinformatics resource center focused on providing tools and data for research in biodefense and public health. It offers a variety of resources, including databases of genomic sequences, analysis tools for studying pathogens, and educational materials for researchers in the field.
--   [MAFFT](https://mafft.cbrc.jp/alignment/server/index.html): a software tool for multiple sequence alignment of biological sequences. It is widely used for aligning DNA, RNA, and protein sequences, and it offers several algorithms optimized for different types of sequences and alignment tasks. MAFFT can handle large datasets efficiently and is available both as a standalone program and through a web server interface.
+-   [MAFFT](https://mafft.cbrc.jp/alignment/server/index.html): Align big datasets for free in 'the cloud'! MAFFT is widely used for aligning DNA, RNA, and protein sequences, and it offers several algorithms optimized for different types of sequences and alignment tasks. MAFFT can handle large datasets efficiently and is available both as a standalone program and through a web server interface.
 
-# 💻 R and Python Libraries for statistical interrogation and visualization
+# 💻 Computer Resources for statistical interrogation and visualization
 
-For statistics and visualization, I am more biased to solutions in R. The following are some of my favorites visualization libraries in R and Python. This list is not even close to exhaustive but these cover my basics.
+For statistics and visualization, I am more biased to solutions in R due to its simplicity and ease of reproducibility between users and machines. To me, this is expecially important when publishing scripts during the manuscript publication process. 
+
+### Resources for approaching data visualization heuristics
 
 -   \[Eric Fletcher\] has an excellent R learning resource list which helped me ease my way into hypotehsis testing and visualization in R with his [awesome-r-learning-resources](https://github.com/iamericfletcher/awesome-r-learning-resources) page.
 
@@ -187,7 +207,7 @@ For statistics and visualization, I am more biased to solutions in R. The follow
 
 ## Data and color
 
-It is especially critical to consider color when generating figures for your audience. Here are a couple of great tools I have referenced which can assess common and custom pallets across major color populations including Deuteranomaly, Protanomaly, Protanopia, and Deuteranopia:
+It is especially critical to consider color when generating figures for your audience. Here are a few tools I have referenced which can assess common and custom pallets across major color populations including Deuteranomaly, Protanomaly, Protanopia, and Deuteranopia:
 
 -   [Viz Pallette](https://projects.susielu.com/viz-palette?colors=%5B%22#ffd700%22,%22%23ffb14e%22,%22%23fa8775%22,%22%23ea5f94%22,%22%23cd34b5%22,%22%239d02d7%22,%22%230000ff%22%5D&backgroundColor=%22white%22&fontColor=%22black%22&mode=%22normal%22)by Elijah Meeks and Susie Lu.
 
@@ -196,10 +216,12 @@ It is especially critical to consider color when generating figures for your aud
     -   [Python Color Palette Finder](https://python-graph-gallery.com/color-palette-finder/)
     -   [R Color Palette Finder](https://r-graph-gallery.com/color-palette-finder)
 
-## R
+## Data Visualization
 
--   🖼️ [ggplot2 extension gallery](https://exts.ggplot2.tidyverse.org/gallery/)
--   🖼️ [The `R` graph Gallery](https://r-graph-gallery.com/) - A reproducible collection of charts using `R`. This gallery is an incredible resouce for not only expanding the flexability of your plots, but also for choosing the most appropriate visualization for your data.
+The following are some of my favorites visualization libraries in R and Python. This list is not even close to exhaustive but these cover my basics.
+
+-   For simple and elegant scientific plots, I have started using [tidyplots](https://tidyplots.org/). Built around [ggplot2](https://ggplot2.tidyverse.org/index.html), tidyplots offers simplified syntax for publication-ready plots. It has saved me so much time in the figure-making process. 
+    - Read the [publication](https://onlinelibrary.wiley.com/doi/10.1002/imt2.70018)
 -   [ggstatsplot](https://indrajeetpatil.github.io/ggstatsplot/index.html)
 -   [ggpubr](https://rpkgs.datanovia.com/ggpubr/)
 -   [smplot2](https://github.com/smin95/smplot2)
@@ -210,9 +232,6 @@ It is especially critical to consider color when generating figures for your aud
 -   [ggvenndiagram](https://cran.r-project.org/web/packages/ggVennDiagram/readme/README.html) - if you must...
 -   [ggmsa](https://github.com/YuLab-SMU/ggmsa): MSA viewer appropriate for visualization of short aa or nt alignments. Preloaded with different tracks showing consensus, stacked composition, motif highlighting, etc.
 -   [seqvisR](https://github.com/vragh/seqvisr)
-
-### Fun packages for ✨aesthetics✨ and publication-quality figures
-
 -   [themepark](https://matthewbjane.com/ThemePark/) - a pop culture ggplot theme library
 -   [ggprism](https://csdaw.github.io/ggprism/) - iykyk
 -   [patchwork](https://patchwork.data-imaginist.com/)
@@ -230,7 +249,7 @@ I primarily use python to build tools that do not exist in `R` or as a standalon
 -   [Treetime API](https://github.com/neherlab/treetime)
 -   [polars](https://github.com/abstractqqq/polars_ds_extension)
 
-## Honorable metions
+## Honorable mentions
 
 -   The [awesome-datascience](https://github.com/academic/awesome-datascience)
 -   An Rshiny for calculating statistical power and sample size: https://pwrss.shinyapps.io/index/

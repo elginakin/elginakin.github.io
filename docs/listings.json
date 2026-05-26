@@ -9,6 +9,7 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/content/mutationmapping/index.html",
       "/posts/content/flutree_tutorial/index.html",
       "/posts/content/PhDTools/index.html"
     ]
@@ -29,8 +30,8 @@
   {
     "listing": "/publications/index.html",
     "items": [
-      "/publications/content/ibv20to24_fitness/index.html",
       "/publications/content/ibvc3/index.html",
+      "/publications/content/ibv20to24_fitness/index.html",
       "/publications/content/werner-et-al/index.html",
       "/publications/content/scv2_immunocompromised/index.html",
       "/publications/content/vicyam_characterization/index.html",

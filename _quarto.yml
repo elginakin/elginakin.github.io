@@ -16,7 +16,6 @@ website:
         href: publications/index.qmd
       - text: posts
         href: posts/index.qmd
-      - text: cv
     tools:
       - icon: github
         href: https://github.com/elginakin/
@@ -39,6 +38,7 @@ format:
     mainfont: Nunito
     sidebar: false
     toc: true
+    highlight-style: github
 
     
 
