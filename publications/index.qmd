@@ -17,7 +17,5 @@ search: true
 
 orcid{{< fa brands fa-orcid >}}: [0000-0001-8824-8809](https://orcid.org/0000-0001-8824-8809)
 
-I have tagged manuscripts I have authored or co-authored as "First Author" 
 
-- First Author  – Research I led, executed, analyzed, and wrote as part of my thesis work on Influenza B virus.
-- Contributions – Porojects led by my wnderful colleagues where I provided supporting contributions. 
+
