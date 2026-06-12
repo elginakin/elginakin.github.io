@@ -2,8 +2,10 @@
 title: In-vitro characterization of 2019-24 Influenza B Viruses reveals increased temperature-dependent fitness in later timepoints independent of antigenic drift
 description: |
   Preprint Akin et al., 2025
-Catagories:
-  - influenzab
+categories:
+    - Thesis
+    - First Author
+    - Influenza B
 date: "10/31/2025"
 format: 
   html:

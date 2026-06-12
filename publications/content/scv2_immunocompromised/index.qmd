@@ -2,7 +2,8 @@
 title: SARS-CoV-2 Variants from Long-Term, Persistently Infected Immunocompromised Patients Have Altered Syncytia Formation, Temperature-Dependent Replication, and Serum Neutralizing Antibody Escape
 description: |
   Wouters et al. Viruses 2024, 16(9), 1436
-Catagories:
+categories:
+    - contributor
     - SARS-CoV-2
 date: "05/19/2024"
 format: 

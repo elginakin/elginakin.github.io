@@ -1,0 +1,23 @@
+---
+title: DNA damage drives antigen diversification in Trypanosoma brucei
+description: |
+  Nature. Smith et al., 2026
+Catagories:
+  - T. brucei
+date: "04/08/2026"
+format: 
+  html:
+    highlight-style: pygments
+    code-overflow: wrap
+    code-line-numbers: true
+image: 'thumbnail.png'
+---
+
+Jaclyn E. Smith, Kevin J. Wang, Erin M. Kennedy, Jane C. Munday, Lulu Singer, Jill M. C. Hakim, Jaime So, Alexander K. Beaver, Aishwarya Magesh, Shane D. Gilligan-Steinberg, Jessica Zheng, Bailin Zhang, Dharani Narayan Moorthy, Zachary E. Brown, **Elgin Henry Akin**, Lusajo Mwakibete, Richard McCulloch & Monica R. Mugnier 
+
+Link:  {{< fa external-link-alt size=1x >}}: [DOI](https://www.nature.com/articles/s41586-026-10337-6#citeas)
+
+
+### Abstract
+
+Antigenic variation, using large genomic repertoires of antigen-encoding genes, allows pathogens to evade host antibody. Many pathogens, including the African trypanosome Trypanosoma brucei, extend their antigenic repertoire through genomic diversification. Although evidence suggests that T. brucei depends on the generation of new variant surface glycoprotein (VSG) genes to maintain a chronic infection1,2,3,4, a lack of experimentally tractable tools for studying this process has obscured its underlying mechanisms. Here we present a highly sensitive targeted sequencing approach for measuring VSG diversification. Using this method, we demonstrate that a Cas9-induced DNA double-strand break within the VSG coding sequence can induce RAD51- and BRCA2-dependent VSG recombination with patterns identical to those observed during infection. These newly generated VSGs are antigenically distinct from parental clones and thus capable of facilitating immune evasion. Together, these results provide insight into the mechanisms of VSG diversification and an experimental framework for studying the evolution of antigen repertoires in pathogenic microorganisms.

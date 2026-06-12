@@ -1,10 +1,11 @@
 ---
 title: The Influenza B Virus Victoria and Yamagata Lineages Display Distinct Cell Tropism and Infection-Induced Host Gene Expression in Human Nasal Epithelial Cell Cultures
+categories:
+    - Thesis
+    - First Author
+    - Influenza B
 description: |
   Wilson & Akin et al. 2023. Viruses
-Catagories:
-    - Influenza B
-    - Nasal Epithelium
 date: "09/20/2023"
 format: 
   html:

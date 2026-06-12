@@ -2,8 +2,11 @@
 title: Emergence of an Antigenically Drifted and Reassorted Influenza B Virus at the end of the 2024-25 Influenza Season
 description: |
   Preprint Akin et al., 2026
-Catagories:
-  - influenzab
+categories:
+    - Thesis
+    - First Author
+    - Influenza B
+    - Phylogenetics
 date: "05/24/2026"
 format: 
   html:
@@ -14,7 +17,6 @@ image: 'thumbnail.png'
 ---
 
 **Elgin Akin**, David A. Villafuertea, Anne P. Werner, Matthew Pinsley, Corinne Pierce, Amary Fall, Omar Abdullah, Julie M. Norton, Richard E. Rothman, Katherine Z.J. Fenstermacher, Yu-Nong Gong Eili Klein, Heba H. Mostafa, **Andrew Pekosz**
-
 
 Preprint Link {{< fa external-link-alt size=1x >}}: [updated biorxiv](https://www.biorxiv.org/content/10.1101/2025.07.24.666632v2)
 

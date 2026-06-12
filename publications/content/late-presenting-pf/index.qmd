@@ -2,9 +2,9 @@
 title: Late-presenting Plasmodium falciparum Malaria in a Non-Endemic Setting During COVID-19 Travel Restrictions
 description: | 
   Robben et al. 2021. Millitary Medicine
-Catagories:
-    - Plasmodium falciparun
-    - Case Report 
+categories:
+    - contributor
+    - Plasmodium falciparum
 date: "09/24/2021"
 format: 
   html:
