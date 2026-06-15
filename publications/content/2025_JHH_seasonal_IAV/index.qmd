@@ -1,0 +1,50 @@
+---
+title: "Genomic Evolution of Influenza A Virus During the 2024–2025 Season, the Johns Hopkins Health System: Antigenic Drift Reduces Serum Neutralization"
+description: |
+  Villafuerte et al., 2025. JID
+categories:
+    - contributor
+    - Influenza A
+    - Phylogenetics
+    - Serology
+date: "02/04/2026"
+format: 
+  html:
+    highlight-style: pygments
+    code-overflow: wrap
+    code-line-numbers: true
+image: 'thumbnail.png'
+---
+
+David Villafuerte , Amary Fall , **Elgin Akin** , Anne P Werner , Matthew Pinsley , Yee Vue , Omar Abdullah , Ting Xuan Zhuang , Julie M Norton , Richard E Rothman , Katherine Z J Fenstermacher , C Paul Morris , Eili Klein , Andrew Pekosz , Heba H Mostafa
+
+DOI{{< fa external-link-alt size=1x >}}: [10.1093/infdis/jiag069](https://doi.org/10.1093/infdis/jiag069)
+
+PDF {{< fa file-pdf size=1x >}}: [jiag069.pdf](jiag069.pdf)  
+
+#### Interactive Data Resources
+
+- Interactive Phylogenies:
+  - [2024-25 H1N1pdm09](https://nextstrain.org/groups/PekoszLab-Public/mostafa/iav24-25/h1n1/ha)
+  - [2024-25 H3N2](https://nextstrain.org/groups/PekoszLab-Public/mostafa/iav24-25/h1n1/ha)
+
+- Nextstrain Github {{< fa brands github size=1x >}}: [Pekosz-Lab/nextstrain](https://github.com/Pekosz-Lab/nextstrain)
+
+### Abstract
+
+#### Background
+
+Seasonal influenza causes significant global morbidity, mortality, and economic burden. Ongoing viral evolution can lead to vaccine mismatch and the emergence of antiviral resistance, highlighting the importance of genomic surveillance. The 2024–2025 influenza season was characterized by high incidence and increased hospitalizations.
+
+#### Methods
+
+We analyzed influenza A virus (IAV) genomes and clinical characteristics from the 2024–2025 season. Whole-genome sequencing was performed on 648 influenza A–positive clinical specimens collected between October 2024 and April 2025.
+
+#### Results
+
+Hemagglutinin (HA) sequences were recovered from 74.23% (481/648) of samples and used for subtyping and phylogenetic analysis. A(H1N1)pdm09 and A(H3N2) viruses cocirculated, representing 55.5% and 44.5% of cases, respectively. Among A(H1N1)pdm09 viruses, the HA1 substitution T120A, located near the Sa antigenic site, increased more than 2-fold compared with the prior season. Circulating A(H3N2) viruses belonged to multiple HA subclades and exhibited distinct amino acid substitutions at key antigenic sites. Neutralization assays using sera from individuals vaccinated with the 2024–2025 seasonal influenza vaccine demonstrated reduced neutralization of 3 dominant A(H1N1)pdm09 isolates and 2 A(H3N2) isolates compared with vaccine strains, consistent with antigenic drift. In addition, the neuraminidase substitution S247N, previously associated with reduced oseltamivir susceptibility, was detected in 13.9% of A(H1N1)pdm09 samples.
+
+#### Conclusions
+
+These findings demonstrate ongoing antigenic drift and the presence of antiviral resistance–associated mutations during the 2024–2025 influenza season, underscoring the need for continued genomic surveillance to guide vaccine and antiviral strategies.
+

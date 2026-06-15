@@ -4,6 +4,10 @@ categories:
     - Thesis
     - First Author
     - Influenza B
+    - Phylogenetics
+    - Innate Host Response
+    - Serology
+    - Cell Tropism
 description: |
   Wilson & Akin et al. 2023. Viruses
 date: "09/20/2023"

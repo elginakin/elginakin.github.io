@@ -6,6 +6,8 @@ categories:
     - Thesis
     - First Author
     - Influenza B
+    - Serology
+    - in vitro fitness
 date: "10/31/2025"
 format: 
   html:

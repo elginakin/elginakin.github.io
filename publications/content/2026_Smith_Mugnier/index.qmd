@@ -16,7 +16,7 @@ image: 'thumbnail.png'
 
 Jaclyn E. Smith, Kevin J. Wang, Erin M. Kennedy, Jane C. Munday, Lulu Singer, Jill M. C. Hakim, Jaime So, Alexander K. Beaver, Aishwarya Magesh, Shane D. Gilligan-Steinberg, Jessica Zheng, Bailin Zhang, Dharani Narayan Moorthy, Zachary E. Brown, **Elgin Henry Akin**, Lusajo Mwakibete, Richard McCulloch & Monica R. Mugnier 
 
-Link  {{< fa external-link-alt size=1x >}}: [DOI](https://doi.org/10.1038/s41586-026-10337-6)
+Link  {{< fa external-link-alt size=1x >}}: [DOI](https://doi.org/10.1038/s41586-026-10337-6) Nature.
 
 PDF {{< fa file-pdf size=1x >}}: [s41586-026-10337-6.pdf](publications/content/2026_Smith_Mugnier/s41586-026-10337-6.pdf)
 

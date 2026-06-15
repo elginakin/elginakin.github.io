@@ -4,6 +4,7 @@ categories:
     - contributor
     - Influenza A
     - Bovine H5N1
+    - Serology
 description: |
   Werner et al., 2025. mBio
 date: "07/17/2025"
