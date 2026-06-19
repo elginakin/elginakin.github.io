@@ -16,6 +16,8 @@ website:
         href: publications/index.qmd
       - text: posts
         href: posts/index.qmd
+      - text: cv
+        href: AkinE_CV_20260519.pdf
     tools:
       - icon: github
         href: https://github.com/elginakin/
