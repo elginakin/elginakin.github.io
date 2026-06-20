@@ -1,9 +1,9 @@
 ---
 title: Useful tools for my PhD
+categories:
+    - resources
 description: | 
     A collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated **2025-10-14**.
-catagories:
-    - tools
 author:
     - name: "Elgin Akin"
       orcid: "0000-0001-8824-8809"

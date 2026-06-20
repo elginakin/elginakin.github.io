@@ -1,9 +1,9 @@
 ---
 title: Consutrction and assembly of time-resolved phylogenetic trees, A tutorial
+categories:
+    - tutorial
 description: | 
     A basic tutorial for building and visualizing time-resolved phylogenetic trees 
-catagories:
-    - tutorial
 author:
     - name: "Elgin Akin"
       orcid: "0000-0001-8824-8809"

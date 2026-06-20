@@ -18,7 +18,7 @@
     "href": "posts/index.html",
     "title": "posts",
     "section": "",
-    "text": "Mapping Amino Acid Mutations on Structures using Protein Imager\n\n\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nElgin Akin\n\n\n\n\n\n\n\n\n\n\n\n\nConsutrction and assembly of time-resolved phylogenetic trees, A tutorial\n\n\nA basic tutorial for building and visualizing time-resolved phylogenetic trees\n\n\n\n\n\nJun 9, 2024\n\n\nElgin Akin\n\n\n\n\n\n\n\n\n\n\n\n\nUseful tools for my PhD\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated 2025-10-14.\n\n\n\n\n\nApr 18, 2024\n\n\nElgin Akin\n\n\n\n\n\nNo matching items"
+    "text": "Reference Tables for Influenza HA and NA Antigenic Sites\n\n\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nElgin Akin\n\n\n\n\n\n\n\n\n\n\n\n\nConsutrction and assembly of time-resolved phylogenetic trees, A tutorial\n\n\n\ntutorial\n\n\n\nA basic tutorial for building and visualizing time-resolved phylogenetic trees\n\n\n\n\n\nJun 9, 2024\n\n\nElgin Akin\n\n\n\n\n\n\n\n\n\n\n\n\nUseful tools for my PhD\n\n\n\nresources\n\n\n\nA collection of Tools I frequently use for my PhD studies in Molecular Virology. Updated 2025-10-14.\n\n\n\n\n\nApr 18, 2024\n\n\nElgin Akin\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/content/flutree_tutorial/config/nextclade/flu_h3n2_ha/CHANGELOG.html",
@@ -417,7 +417,7 @@
     "href": "posts/content/PhDTools/index.html#notebooks-i-recommend",
     "title": "Useful tools for my PhD",
     "section": "Notebook’s I recommend:",
-    "text": "Notebook’s I recommend:\n\n\n\nNotebook\nPaid/Free\nPros ✅\nCons ❌\nCommunity Support\nTemplates\n\n\n\n\nObsidian\nFree, open source\nExtremely Flexible superior note backlinking capabilities , .md (plain text) file type\nSteep learning curve\nYes\nElgin’s Obsidian Lab Notebook Template\nELN Blog Post\n\n\nBenchling\nFree + Paid Plans\nDeveloped for Laboratory Scientists\nFor now, all data is stored completely Online\nYes\n\n\n\nNotion\nFree to Students\nFlexible, huge community, database ready (great for literature reviews)\nRequires a stable internet connection, non-local\nYes\nNotion Templates, Case Study\n\n\nMicrosoft Office OneNote\nFree with Microsoft Subscription\nSimple UI, integrates all Office products, cloud backup, descent search.\nClunky UI. Limited to 1 template per folder. No automation options.\nYes\n\n\n\nAnyType\nFree\nEncypted, similar to Notion UX/UI and is “offline” (with included web sync service). Integrated back-linking similar to Obsidian\nNewer software, “Blackboxy” file types\nSome"
+    "text": "Notebook’s I recommend:\n\n\n\n\n\n\n\n\n\n\n\nNotebook\nPaid/Free\nPros ✅\nCons ❌\nCommunity Support\nTemplates\n\n\n\n\nObsidian\nFree, open source\nExtremely Flexible superior note backlinking capabilities , .md (plain text) file type\nSteep learning curve\nYes\nElgin’s Obsidian Lab Notebook Template\nELN Blog Post\n\n\nBenchling\nFree + Paid Plans\nDeveloped for Laboratory Scientists\nFor now, all data is stored completely Online\nYes\n\n\n\nNotion\nFree to Students\nFlexible, huge community, database ready (great for literature reviews)\nRequires a stable internet connection, non-local\nYes\nNotion Templates, Case Study\n\n\nMicrosoft Office OneNote\nFree with Microsoft Subscription\nSimple UI, integrates all Office products, cloud backup, descent search.\nClunky UI. Limited to 1 template per folder. No automation options.\nYes\n\n\n\nAnyType\nFree\nsimilar to Notion UX/UI and is “offline” (with included web sync service). Integrated back-linking similar to Obsidian | Newer software, “Blackboxy” file types | Some | |"
   },
   {
     "objectID": "posts/content/PhDTools/index.html#experimental-data-organization-phiolosophy",
@@ -464,9 +464,9 @@
   {
     "objectID": "posts/content/mutationmapping/index.html",
     "href": "posts/content/mutationmapping/index.html",
-    "title": "Mapping Amino Acid Mutations on Structures using Protein Imager",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
     "section": "",
-    "text": "PDB: 4FQM B/Brisbane/60/2008 Influenza Hemagglutinin Starting Motif DRICT (D=residue #1 in the numbering schema)\n120 loop 150 loop 160 loop 190 helix 240 loop"
+    "text": "This page compiles reference structures, strains, numbering schema anchors, and antigenic site definitions for influenza hemagglutinin (HA) and neuraminidase (NA). The goal is to provide a standardized reference page that is easy to use for annotation.\nFor each protein, the tables below report:\n\nType/subtype\nPDB reference structure\nReference strain\nStarting motif or head-domain start\nAntigenic site name\nEpitope type\nResidue ranges or positions\nReference source"
   },
   {
     "objectID": "posts/content/mutationmapping/index.html#influenza-b-hemagglutinin-ha",
@@ -572,5 +572,131 @@
     "title": "Genomic Evolution of Influenza A Virus During the 2024–2025 Season, the Johns Hopkins Health System: Antigenic Drift Reduces Serum Neutralization",
     "section": "",
     "text": "David Villafuerte , Amary Fall , Elgin Akin , Anne P Werner , Matthew Pinsley , Yee Vue , Omar Abdullah , Ting Xuan Zhuang , Julie M Norton , Richard E Rothman , Katherine Z J Fenstermacher , C Paul Morris , Eili Klein , Andrew Pekosz , Heba H Mostafa\nDOI: 10.1093/infdis/jiag069\nPDF : jiag069.pdf\n\nInteractive Data Resources\n\nInteractive Phylogenies:\n\n2024-25 H1N1pdm09\n2024-25 H3N2\n\nNextstrain Github : Pekosz-Lab/nextstrain\n\n\n\nAbstract\n\nBackground\nSeasonal influenza causes significant global morbidity, mortality, and economic burden. Ongoing viral evolution can lead to vaccine mismatch and the emergence of antiviral resistance, highlighting the importance of genomic surveillance. The 2024–2025 influenza season was characterized by high incidence and increased hospitalizations.\n\n\nMethods\nWe analyzed influenza A virus (IAV) genomes and clinical characteristics from the 2024–2025 season. Whole-genome sequencing was performed on 648 influenza A–positive clinical specimens collected between October 2024 and April 2025.\n\n\nResults\nHemagglutinin (HA) sequences were recovered from 74.23% (481/648) of samples and used for subtyping and phylogenetic analysis. A(H1N1)pdm09 and A(H3N2) viruses cocirculated, representing 55.5% and 44.5% of cases, respectively. Among A(H1N1)pdm09 viruses, the HA1 substitution T120A, located near the Sa antigenic site, increased more than 2-fold compared with the prior season. Circulating A(H3N2) viruses belonged to multiple HA subclades and exhibited distinct amino acid substitutions at key antigenic sites. Neutralization assays using sera from individuals vaccinated with the 2024–2025 seasonal influenza vaccine demonstrated reduced neutralization of 3 dominant A(H1N1)pdm09 isolates and 2 A(H3N2) isolates compared with vaccine strains, consistent with antigenic drift. In addition, the neuraminidase substitution S247N, previously associated with reduced oseltamivir susceptibility, was detected in 13.9% of A(H1N1)pdm09 samples.\n\n\nConclusions\nThese findings demonstrate ongoing antigenic drift and the presence of antiviral resistance–associated mutations during the 2024–2025 influenza season, underscoring the need for continued genomic surveillance to guide vaccine and antiviral strategies."
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#overview",
+    "href": "posts/content/mutationmapping/index.html#overview",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
+    "section": "",
+    "text": "This page compiles reference structures, strains, numbering schema anchors, and antigenic site definitions for influenza hemagglutinin (HA) and neuraminidase (NA). The goal is to provide a standardized reference page that is easy to use for annotation.\nFor each protein, the tables below report:\n\nType/subtype\nPDB reference structure\nReference strain\nStarting motif or head-domain start\nAntigenic site name\nEpitope type\nResidue ranges or positions\nReference source"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#how-to-read-this-reference",
+    "href": "posts/content/mutationmapping/index.html#how-to-read-this-reference",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "",
+    "text": "Each protein section includes:\n\n\n\n\n\n\n\nField\nMeaning\n\n\n\n\nType or subtype\nInfluenza lineage, subtype, or protein class being annotated\n\n\nReference structure\nPDB structure used as the structural reference\n\n\nReference strain\nVirus strain corresponding to, or closely associated with, the reference structure\n\n\nStarting motif\nAmino-acid motif used to anchor the numbering scheme, where available\n\n\nNumbering schema\nThe residue numbering system used for antigenic-site definitions\n\n\nAntigenic sites\nNamed epitopes or regions associated with antibody recognition\n\n\n\n\n\nResidue numbering in influenza proteins can vary depending on whether the signal peptide, mature protein, HA1/HA2 cleavage products, or subtype-specific conventions are used. For this reason, the numbering scheme should always be stated explicitly.\nIn this post:\n\nHA sites are reported in the numbering convention associated with their respective reference structures and literature.\nNA sites are reported in subtype-specific NA numbering, with N1 and N2 sites listed separately.\nFor NA, the head-domain start is included because stalk length and numbering can vary, especially in nonhuman or divergent influenza viruses."
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-bvictoria-like-ha",
+    "href": "posts/content/mutationmapping/index.html#influenza-bvictoria-like-ha",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "2.1 Influenza B/Victoria-like HA",
+    "text": "2.1 Influenza B/Victoria-like HA\n\n2.1.1 Reference information\n\n\n\nField\nValue\n\n\n\n\nType/subtype\nInfluenza B HA, B/Victoria-like\n\n\nProtein\nHemagglutinin, HA\n\n\nReference structure\nPDB: 4FQM\n\n\nReference strain\nB/Brisbane/60/2008\n\n\nStarting motif\nDRICT\n\n\nNumbering schema\nThe aspartic acid, D, in the starting motif DRICT is residue 1\n\n\nPrimary references\nWang et al., 2018; Burton et al., 1985\n\n\n\n\n\n2.1.2 Antigenic-site map\n\n\n\n\n\n\n\n\n\nSite\nEpitope type\nResidues\nNotes/reference\n\n\n\n\n120 loop\nLinear\n116–137\nWang et al., 2018; Burton et al., 1985\n\n\n150 loop\nLinear\n142–149\nWang et al., 2018; Burton et al., 1985\n\n\n160 loop\nLinear\n161–170\nWang et al., 2018; Burton et al., 1985\n\n\n190 helix\nLinear\n194–202\nWang et al., 2018; Burton et al., 1985\n\n\n240 loop\nLinear\n235–240\nWang et al., 2018\n\n\n\n\n\n2.1.3 Interpretation\nThe B/Victoria-like HA antigenic sites are commonly described as surface loops or helices on the HA globular head. These regions are useful for mapping sequence substitutions that may affect antibody binding, especially when comparing contemporary B/Victoria-like viruses to vaccine strains.\nThe site names, such as the 120 loop or 190 helix, describe approximate structural locations rather than always matching the exact residue bounds. For example, the 120 loop spans residues 116–137 in this numbering scheme."
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-ah1-ha",
+    "href": "posts/content/mutationmapping/index.html#influenza-ah1-ha",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "2.2 Influenza A/H1 HA",
+    "text": "2.2 Influenza A/H1 HA\n\n2.2.1 Reference information\n\n\n\nField\nValue\n\n\n\n\nType/subtype\nInfluenza A/H1\n\n\nProtein\nHemagglutinin, HA\n\n\nReference structure\nPDB: 3LZG\n\n\nReference strain\nA/California/04/2009\n\n\nStarting motif\nDTLC\n\n\nNumbering schema\nH1 HA numbering associated with the A/California/04/2009 reference structure\n\n\nPrimary references\nClassical H1 antigenic-site nomenclature; see Caton-like H1 site definitions and subsequent H1pdm09 applications\n\n\n\n\n\n2.2.2 Antigenic-site map\n\n\n\nSite\nEpitope type\nResidues\n\n\n\n\nSa\nConformational\n124–125, 153–157, 159–164\n\n\nSb\nConformational\n184–195\n\n\nCa1\nConformational\n166–170, 203–205, 235–237\n\n\nCa2\nConformational\n137–142, 221–222\n\n\nCb\nConformational\n70–75\n\n\n\n\n\n2.2.3 Interpretation\nThe H1 HA antigenic sites are usually described using the classical Sa, Sb, Ca1, Ca2, and Cb nomenclature. These sites are conformational, meaning that residues distant in linear sequence may be adjacent in the folded HA structure.\nBroadly:\n\n\n\n\n\n\n\nSite\nGeneral location\n\n\n\n\nSa\nNear the top of the HA head, close to the receptor-binding region\n\n\nSb\nNear the receptor-binding region and adjacent head surface\n\n\nCa1/Ca2\nMore lateral or lower head regions relative to Sa/Sb\n\n\nCb\nLower head region\n\n\n\nThese definitions are especially useful for tracking antigenic drift in H1N1pdm09 viruses, but care should be taken when transferring annotations across distant H1 lineages."
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-ah3-ha",
+    "href": "posts/content/mutationmapping/index.html#influenza-ah3-ha",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "2.3 Influenza A/H3 HA",
+    "text": "2.3 Influenza A/H3 HA\n\n2.3.1 Reference information\n\n\n\nField\nValue\n\n\n\n\nType/subtype\nInfluenza A/H3\n\n\nProtein\nHemagglutinin, HA\n\n\nReference structure\nPDB: 4O5N\n\n\nReference strain\nA/Victoria/361/2011\n\n\nStarting motif\nQDLP\n\n\nNumbering schema\nH3 HA numbering associated with the A/Victoria/361/2011 reference structure\n\n\nPrimary reference\nPalese et al., 2018\n\n\n\n\n\n2.3.2 Antigenic-site map\n\n\n\nSite\nEpitope type\nResidues\nReference\n\n\n\n\nA\nLinear\n122–146\nPalese et al., 2018\n\n\nB\nConformational\n155–160, 186–198\nPalese et al., 2018\n\n\nC\nConformational\n44–54, 273–280\nPalese et al., 2018\n\n\nD\nLinear\n201–219\nPalese et al., 2018\n\n\nE\nConformational\n62–65, 78–94, 260–265\nPalese et al., 2018\n\n\n\n\n\n2.3.3 Receptor-binding domain annotations\nThe receptor-binding domain, or RBD, overlaps several antigenically important H3 HA regions.\n\n\n\nRBD component\nResidues\n\n\n\n\n190 helix\n183–196\n\n\n220 loop\n219–228\n\n\n130 loop\n131–140\n\n\nAdditional RBD-associated residues\n98, 144–146, 153–159\n\n\n\n\n\n2.3.4 Interpretation\nH3 HA antigenic sites are commonly labeled A through E. Sites A and B are especially important in many discussions of H3N2 antigenic drift because they are located near the receptor-binding domain on the membrane-distal head of HA.\nThe H3 receptor-binding region includes the 130 loop, 190 helix, and 220 loop. Mutations in or near these regions can alter receptor avidity, antibody recognition, egg adaptation, and antigenic phenotype. Because antigenic and receptor-binding functions are spatially intertwined, changes in H3 HA often need to be interpreted structurally rather than as isolated sequence substitutions."
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-an1-na",
+    "href": "posts/content/mutationmapping/index.html#influenza-an1-na",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "3.1 Influenza A/N1 NA",
+    "text": "3.1 Influenza A/N1 NA\n\n3.1.1 Reference information\n\n\n\nField\nValue\n\n\n\n\nType/subtype\nInfluenza A/N1\n\n\nProtein\nNeuraminidase, NA\n\n\nReference structure\nPDB: 9CYE\n\n\nReference strain\nA/California/07/2009, A/H1N1pdm09-like\n\n\nGenBank accession\nACQ63272.1\n\n\nHead-domain start\nPosition 85\n\n\nNumbering schema\nN1 numbering\n\n\nPrimary references\nStadlbauer et al., 2020; Colman, Varghese, & Laver, 1983\n\n\n\n\n\n3.1.2 Antigenic-site map\n\n\n\n\n\n\n\n\n\n\nSite\nAlternative name\nEpitope type\nResidues, N1 numbering\nReference\n\n\n\n\nActive site\nCatalytic/functional site\nConformational\n118, 119, 151, 152, 222, 224, 276, 277, 371, 406\nStadlbauer et al., 2020\n\n\nFamily I\n—\nLinear\n328–335\nColman, Varghese, & Laver, 1983\n\n\nFamily II\n—\nLinear\n336–344\nColman, Varghese, & Laver, 1983\n\n\nFamily III\n370 loop\nLinear\n364–367\nColman, Varghese, & Laver, 1983\n\n\nFamily IV\n400 loop\nLinear\n396–399\nColman, Varghese, & Laver, 1983\n\n\nFamily V\n430 loop\nLinear\n431–434\nColman, Varghese, & Laver, 1983\n\n\nFamily VI\n—\nLinear\n198–200\nColman, Varghese, & Laver, 1983\n\n\nFamily VII\n—\nSingle residue\n153\nColman, Varghese, & Laver, 1983\n\n\n\n\n\n3.1.3 Interpretation\nThe N1 NA antigenic families are located on the NA head domain and include several exposed loops. Some sites are close to the enzymatic active site, while others occupy peripheral surfaces of the NA head.\nThe active site is listed separately because it is not simply an antigenic loop. It is a conserved functional region required for sialidase activity. Antibodies that bind near or over the active site may inhibit NA enzymatic activity, while antibodies binding more distal sites may act through other mechanisms.\nFor N1, the reference head domain begins at position 85, but this may differ in nonhuman N1 sequences or viruses with different stalk lengths."
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-an2-na",
+    "href": "posts/content/mutationmapping/index.html#influenza-an2-na",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "3.2 Influenza A/N2 NA",
+    "text": "3.2 Influenza A/N2 NA\n\n3.2.1 Reference information\n\n\n\nField\nValue\n\n\n\n\nType/subtype\nInfluenza A/N2\n\n\nProtein\nNeuraminidase, NA\n\n\nReference structure\nPDB: 8G40\n\n\nReference strain\nA/Hong Kong/2671/2019, A/H3N2-like\n\n\nGenBank accession\nWMW30926.1\n\n\nHead-domain start\nPosition 83\n\n\nNumbering schema\nN2 numbering\n\n\nPrimary references\nStadlbauer et al., 2020; Colman, Varghese, & Laver, 1983\n\n\n\n\n\n3.2.2 Antigenic-site map\n\n\n\n\n\n\n\n\n\n\nSite\nAlternative name\nEpitope type\nResidues, N2 numbering\nReference\n\n\n\n\nActive site\nCatalytic/functional site\nConformational\n118, 119, 151, 152, 222, 224, 276, 277, 371, 406\nStadlbauer et al., 2020\n\n\nFamily I\n—\nLinear\n328–336\nColman, Varghese, & Laver, 1983\n\n\nFamily II\n—\nLinear\n339–347\nColman, Varghese, & Laver, 1983\n\n\nFamily III\n370 loop\nLinear\n367–370\nColman, Varghese, & Laver, 1983\n\n\nFamily IV\n400 loop\nLinear\n400–403\nColman, Varghese, & Laver, 1983\n\n\nFamily V\n430 loop\nLinear\n431–434\nColman, Varghese, & Laver, 1983\n\n\nFamily VI\n—\nLinear\n197–199\nColman, Varghese, & Laver, 1983\n\n\nFamily VII\n—\nSingle residue\n153\nColman, Varghese, & Laver, 1983\n\n\n\n\n\n3.2.3 Interpretation\nThe N2 NA antigenic families broadly parallel the N1 family naming system, but the exact residue ranges differ. These differences reflect subtype-specific numbering and structural variation.\nThe N2 active site residues listed here match the canonical NA catalytic and framework region commonly used to describe the conserved enzymatic pocket. Because NA inhibitors and some inhibitory antibodies target this region, it is useful to annotate the active site separately from antibody-defined antigenic families.\nFor N2, the reference head domain begins at position 83, but this may vary across strains or when using different NA constructs."
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#summary-of-reference-structures",
+    "href": "posts/content/mutationmapping/index.html#summary-of-reference-structures",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "4.1 Summary of reference structures",
+    "text": "4.1 Summary of reference structures\n\n\n\nProtein\nType/subtype\nReference structure\nReference strain\nNumbering anchor\n\n\n\n\nHA\nInfluenza B/Victoria-like\n4FQM\nB/Brisbane/60/2008\nDRICT, D = residue 1\n\n\nHA\nInfluenza A/H1\n3LZG\nA/California/04/2009\nDTLC\n\n\nHA\nInfluenza A/H3\n4O5N\nA/Victoria/361/2011\nQDLP\n\n\nNA\nInfluenza A/N1\n9CYE\nA/California/07/2009\nN1 numbering; head starts at 85\n\n\nNA\nInfluenza A/N2\n8G40\nA/Hong Kong/2671/2019\nN2 numbering; head starts at 83"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#conceptual-comparison-of-site-nomenclature",
+    "href": "posts/content/mutationmapping/index.html#conceptual-comparison-of-site-nomenclature",
+    "title": "Reference Guide to Influenza HA and NA Antigenic Sites",
+    "section": "4.2 Conceptual comparison of site nomenclature",
+    "text": "4.2 Conceptual comparison of site nomenclature\n\n\n\n\n\n\n\n\n\nProtein\nNaming style\nExample sites\nMain caution\n\n\n\n\nInfluenza B HA\nStructural-loop based\n120 loop, 150 loop, 190 helix\nSite name approximates structural location, not always exact residue range\n\n\nH1 HA\nClassical antigenic sites\nSa, Sb, Ca1, Ca2, Cb\nMostly conformational; residues may be noncontiguous\n\n\nH3 HA\nLettered antigenic sites\nA, B, C, D, E\nStrong overlap with receptor-binding region\n\n\nN1 NA\nFamily/loop based\nFamilies I–VII, 370 loop, 400 loop\nUse N1 numbering; head-domain start may vary\n\n\nN2 NA\nFamily/loop based\nFamilies I–VII, 370 loop, 400 loop\nUse N2 numbering; residue ranges differ from N1"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-b-ha",
+    "href": "posts/content/mutationmapping/index.html#influenza-b-ha",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
+    "section": "Influenza B HA",
+    "text": "Influenza B HA\n\nReference information\n\n\n\nType / subtype\nPDB reference structure\nReference strain\nStarting motif\nNumbering schema note\n\n\n\n\nInfluenza B HA\n4FQM\nB/Brisbane/60/2008 Influenza Hemagglutinin\nDRICT\nD = residue #1 in the numbering schema\n\n\n\n\n\nAntigenic sites\n\n\n\n\n\n\n\n\n\n\nType / subtype\nSite\nEpitope type\nResidue(s)\nReference\n\n\n\n\nInfluenza B HA\n120 loop\nLinear\n116–137\nWang et al., 2018; Burton et al., 1985\n\n\nInfluenza B HA\n150 loop\nLinear\n142–149\nWang et al., 2018; Burton et al., 1985\n\n\nInfluenza B HA\n160 loop\nLinear\n161–170\nWang et al., 2018; Burton et al., 1985\n\n\nInfluenza B HA\n190 helix\nLinear\n194–202\nWang et al., 2018; Burton et al., 1985\n\n\nInfluenza B HA\n240 loop\nLinear\n235–240\nWang et al., 2018"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-a-h1-ha",
+    "href": "posts/content/mutationmapping/index.html#influenza-a-h1-ha",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
+    "section": "Influenza A H1 HA",
+    "text": "Influenza A H1 HA\n\nReference information\n\n\n\n\n\n\n\n\n\n\nType / subtype\nPDB reference structure\nReference strain\nStarting motif\nNumbering schema note\n\n\n\n\nInfluenza A H1 HA\n3LZG\nA/California/04/2009\nDTLC\nD = residue #1 in the numbering schema\n\n\n\n\n\nAntigenic sites\n\n\n\n\n\n\n\n\n\n\nType / subtype\nSite\nEpitope type\nResidue(s)\nReference\n\n\n\n\nInfluenza A H1 HA\nSa\nConformational\n124–125, 153–157, 159–164\n—\n\n\nInfluenza A H1 HA\nSb\nConformational\n184–195\n—\n\n\nInfluenza A H1 HA\nCa1\nConformational\n166–170, 203–205, 235–237\n—\n\n\nInfluenza A H1 HA\nCa2\nConformational\n137–142, 221–222\n—\n\n\nInfluenza A H1 HA\nCb\nConformational\n70–75\n—"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-a-h3-ha",
+    "href": "posts/content/mutationmapping/index.html#influenza-a-h3-ha",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
+    "section": "Influenza A H3 HA",
+    "text": "Influenza A H3 HA\n\nReference information\n\n\n\n\n\n\n\n\n\n\nType / subtype\nPDB reference structure\nReference strain\nStarting motif\nNumbering schema note\n\n\n\n\nInfluenza A H3 HA\n4O5N\nA/Victoria/361/2011\nQDLP\nQ = residue #1 in the numbering schema\n\n\n\n\n\nAntigenic sites\n\n\n\n\n\n\n\n\n\n\nType / subtype\nSite\nEpitope type\nResidue(s)\nReference\n\n\n\n\nInfluenza A H3 HA\nA\nLinear\n122–146\nPalese et al., 2018\n\n\nInfluenza A H3 HA\nB\nConformational\n155–160, 186–198\nPalese et al., 2018\n\n\nInfluenza A H3 HA\nC\nConformational\n44–54, 273–280\nPalese et al., 2018\n\n\nInfluenza A H3 HA\nD\nLinear\n201–219\nPalese et al., 2018\n\n\nInfluenza A H3 HA\nE\nConformational\n62–65, 78–94, 260–265\nPalese et al., 2018\n\n\nInfluenza A H3 HA\nRBD\nConformational\n190-helix: 183–196; 220-loop: 219–228; 130-loop: 131–140; extra: 98, 144–146, 153–159\nPalese et al., 2018"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-a-n1-na",
+    "href": "posts/content/mutationmapping/index.html#influenza-a-n1-na",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
+    "section": "Influenza A N1 NA",
+    "text": "Influenza A N1 NA\n\nReference information\n\n\n\nType / subtype\nPDB reference structure\nReference strain\nHead domain start\nNumbering schema note\n\n\n\n\nInfluenza A N1 NA\n9CYE\nA/California/07/2009 (A/H1N1pdm09-like), GenBank: ACQ63272.1\nPosition 85\nMay differ for nonhuman N1s\n\n\n\n\n\nAntigenic sites\n\n\n\n\n\n\n\n\n\n\nType / subtype\nSite\nEpitope type\nResidue(s) (N1 numbering)\nReference\n\n\n\n\nInfluenza A N1 NA\nActive site\nConformational\n118, 119, 151, 152, 222, 224, 276, 277, 371, 406\nStadlbauer et al., 2020\n\n\nInfluenza A N1 NA\nFamily I\nLinear\n328–335\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N1 NA\nFamily II\nLinear\n336–344\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N1 NA\nFamily III (aka 370 loop)\nLinear\n364–367\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N1 NA\nFamily IV (aka 400 loop)\nLinear\n396–399\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N1 NA\nFamily V (aka 430 loop)\nLinear\n431–434\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N1 NA\nFamily VI\nLinear\n198–200\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N1 NA\nFamily VII\nSingle residue\n153\nColman, Varghese, & Laver, 1983"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#influenza-a-n2-na",
+    "href": "posts/content/mutationmapping/index.html#influenza-a-n2-na",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
+    "section": "Influenza A N2 NA",
+    "text": "Influenza A N2 NA\n\nReference information\n\n\n\nType / subtype\nPDB reference structure\nReference strain\nHead domain start\nNumbering schema note\n\n\n\n\nInfluenza A N2 NA\n8G40\nA/Hong Kong/2671/2019 (A/H3N2-like), GenBank: WMW30926.1\nPosition 83\nMay differ for nonhuman N2s\n\n\n\n\n\nAntigenic sites\n\n\n\n\n\n\n\n\n\n\nType / subtype\nSite\nEpitope type\nResidue(s) (N2 numbering)\nReference\n\n\n\n\nInfluenza A N2 NA\nActive site\nConformational\n118, 119, 151, 152, 222, 224, 276, 277, 371, 406\nStadlbauer et al., 2020\n\n\nInfluenza A N2 NA\nFamily I\nLinear\n328–336\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N2 NA\nFamily II\nLinear\n339–347\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N2 NA\nFamily III (aka 370 loop)\nLinear\n367–370\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N2 NA\nFamily IV (aka 400 loop)\nLinear\n400–403\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N2 NA\nFamily V (aka 430 loop)\nLinear\n431–434\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N2 NA\nFamily VI\nLinear\n197–199\nColman, Varghese, & Laver, 1983\n\n\nInfluenza A N2 NA\nFamily VII\nSingle residue\n153\nColman, Varghese, & Laver, 1983"
+  },
+  {
+    "objectID": "posts/content/mutationmapping/index.html#notes-on-standardization",
+    "href": "posts/content/mutationmapping/index.html#notes-on-standardization",
+    "title": "Reference Tables for Influenza HA and NA Antigenic Sites",
+    "section": "Notes on standardization",
+    "text": "Notes on standardization\n\nResidue positions are reported exactly as provided in the source material.\nThe numbering anchor is defined by the stated starting motif for each HA reference structure.\nFor NA, the reported numbering corresponds to the stated head domain start and the subtype-specific NA numbering used in the source tables.\n“Linear,” “conformational,” and “single residue” are retained as provided."
+  },
+  {
+    "objectID": "posts/content/PhDTools/index.html#snp-calling-from-multi-fasta",
+    "href": "posts/content/PhDTools/index.html#snp-calling-from-multi-fasta",
+    "title": "Useful tools for my PhD",
+    "section": "SNP calling from multi-FASTA",
+    "text": "SNP calling from multi-FASTA\nThis is a somewhat niche use case for bacterial and small viral genomes but I have found myself needing to call SNPs from multi-FASTA files of consensus sequences. Ironically, I experienced a bit of a learning curve when calling SNPs from consensus contigs/cds sequences as opposed to FASTQ.\n\nsnp-sites\n\nIngests a sequence alignment and reference genbank for variant calling. Outputs a VCF file or pseudo-aligned SNPs.\n\nsnippy: Snippy can in fact ingest a multi-FASTA file using the --contigs flag. &gt; “allows you to call SNPs from contigs rather than reads. It shreds the contigs into synthetic reads, as to put the calls on even footing with other read samples in a multi-sample analysis.”"
+  },
+  {
+    "objectID": "posts/content/PhDTools/index.html#data-visualization",
+    "href": "posts/content/PhDTools/index.html#data-visualization",
+    "title": "Useful tools for my PhD",
+    "section": "Data Visualization",
+    "text": "Data Visualization\nThe following are some of my favorites visualization libraries in R and Python. This list is not even close to exhaustive but these cover my basics.\n\nFor simple and elegant scientific plots, I have started using tidyplots. Built around ggplot2, tidyplots offers simplified syntax for publication-ready plots. It has saved me so much time in the figure-making process.\n\nRead the publication\n\nggstatsplot\nggpubr\nsmplot2\nggforce\nggdist\ntidytables\nggupset\nggvenndiagram - if you must…\nggmsa: MSA viewer appropriate for visualization of short aa or nt alignments. Preloaded with different tracks showing consensus, stacked composition, motif highlighting, etc.\nseqvisR\nthemepark - a pop culture ggplot theme library\nggprism - iykyk\npatchwork\ncowplot\ngridExtra"
+  },
+  {
+    "objectID": "posts/content/PhDTools/index.html#honorable-mentions",
+    "href": "posts/content/PhDTools/index.html#honorable-mentions",
+    "title": "Useful tools for my PhD",
+    "section": "Honorable mentions",
+    "text": "Honorable mentions\n\nThe awesome-datascience\nAn Rshiny for calculating statistical power and sample size: https://pwrss.shinyapps.io/index/\n\nCommon Databases I use that have been lifesavers for large-volume data projects:\n\nDuckDB\n\nR API👀\n\nSQLite: Lightweight RDBMS! Great for smaller sequencing projects.\n\nMongoDB: Well-supported NoSQL Database.\n\nHigh-level Languages which mesh incredibly well with sequencing-based bioinformatics - RUST: 🫠 - Go 🏃🏻‍♂️💨 - C++: Of course."
   }
 ]
