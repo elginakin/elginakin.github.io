@@ -26,7 +26,11 @@ image: 'thumbnail.png'
 
 #### Interactive Phylogenies
 
-- Nextstrain builds: https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/genome
+- Nextstrain builds: 
+  - [concatenated genome](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/genome)
+  - Surface proteins: [ha](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/ha), [na](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/na)
+  - Internal segments: [pb2](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/pb2), [pb1](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/pb1), [pa](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/pa), [np](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/np), [mp](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/mp), [ns](https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/ns)
+
 - Github {{< fa brands github size=1x >}}: [influenzabc3](https://github.com/elginakin/influenzab_c.3)
 
 ### Abstract
