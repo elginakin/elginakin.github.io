@@ -19,13 +19,15 @@ image: 'thumbnail.png'
 
 **Elgin Akin**, David A. Villafuertea, Anne P. Werner, Matthew Pinsley, Corinne Pierce, Amary Fall, Omar Abdullah, Julie M. Norton, Richard E. Rothman, Katherine Z.J. Fenstermacher, Yu-Nong Gong Eili Klein, Heba H. Mostafa, **Andrew Pekosz**
 
-Preprint Link {{< fa external-link-alt size=1x >}}: [updated biorxiv](https://www.biorxiv.org/content/10.1101/2025.07.24.666632v2)
+- Preprint Link {{< fa external-link-alt size=1x >}}: [updated biorxiv](https://www.biorxiv.org/content/10.1101/2025.07.24.666632v2)
 
-Preprint PDF Version 1 {{< fa file-pdf size=1x >}}: [PDF](2025.07.24.666632v2.full.pdf)
+- Preprint PDF Version 1 {{< fa file-pdf size=1x >}}: [PDF](2025.07.24.666632v2.full.pdf)
+- Preprint PDF Version 2 {{< fa file-pdf size=1x >}}: [PDF](2025.07.24.666632v1.full.pdf)  
 
-Preprint PDF Version 2{{< fa file-pdf size=1x >}}: [PDF](2025.07.24.666632v1.full.pdf)  
+#### Interactive Phylogenies
 
-Github {{< fa brands github size=1x >}}: [influenzabc3](https://github.com/elginakin/influenzab_c.3)
+- Nextstrain builds: https://nextstrain.org/groups/PekoszLab-Public/akine/ibvc3/vic/genome
+- Github {{< fa brands github size=1x >}}: [influenzabc3](https://github.com/elginakin/influenzab_c.3)
 
 ### Abstract
 
