@@ -1,0 +1,33 @@
+---
+title: A tutorial for the Pekosz Lab Nextstrain Influenza Builds
+categories:
+    - tutorial
+author:
+    - name: "Elgin Akin"
+      orcid: "0000-0001-8824-8809"
+      affiliations: 
+        - name: Johns Hopkins University
+date: "08/03/2026"
+image: 'image.png'
+---
+
+This tutorial is based on the Pekosz Lab [Nextstrain README documentation](https://github.com/Pekosz-Lab/nextstrain/blob/main/README.md)
+
+<iframe
+  src="slides/nextstrain_tutorial.html"
+  width="150%"
+  height="700"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+
+This tutorial is based on the Pekosz Lab [Nextstrain README documentation](https://github.com/Pekosz-Lab/nextstrain/blob/main/README.md)
+
+
+### Beyond this tutorial: 
+
+- The Pekosz lab Nextstrain Github: [https://github.com/Pekosz-Lab/nextstrain](https://github.com/Pekosz-Lab/nextstrain)
+- The Pekosz lab Nextstrain Builds: 
+    - Privately Hosted: [https://nextstrain.org/groups/PekoszLab](https://nextstrain.org/groups/PekoszLab)
+    - Publically Hosted: [https://nextstrain.org/groups/PekoszLab](https://nextstrain.org/groups/PekoszLab-Public)
