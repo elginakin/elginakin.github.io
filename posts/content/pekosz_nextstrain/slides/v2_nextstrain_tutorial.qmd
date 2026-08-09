@@ -22,15 +22,26 @@ execute:
 ## A couple of notes 
 
 ::: {.callout-note} 
-
 This tutorial is optimized to run on machines running MacOS. Users who desire to run this pipeline on Windows must refer to the [WSL installation documentation](https://docs.nextstrain.org/en/latest/install.html) provided by Nextstrain. 
-
 ::: 
+
+::: {.callout-warning} 
+A little bit of systems and linux terminal navigation knowledge is expected before starting this tutorial. 
+::: 
+
+- This tutorial will be a bit easier if you know how to do the following in a command-line interface:
+  - make a directory
+  - move in/out of directories
+  - check your current location
+- Some knowledge of git/github is expected but not necessary. 
+
+
 
 ## What you will accomplish
 
 By the end of this tutorial, you will:
 
+- learn how to clone a github repository
 - run the Pekosz Lab influenza Nextstrain workflow on a small teaching dataset;
 - build eight segment phylogenies and one concatenated whole genome phylongeny for each subtype;
 - create **27 Nextstrain builds** across H1N1, H3N2, and B/Victoria; and
@@ -58,6 +69,10 @@ flowchart LR
   - vaccines.fasta
   - sequences.fasta
   - metadata.fasta
+
+:::{.callout-note}
+For this tutorial, all three files are supplied in the [tutorial](https://github.com/Pekosz-Lab/nextstrain/tree/main/tutorial) folder
+:::
 
 :::{.callout-warning}
 You **must** run every command from the repository's top-level `nextstrain/` directory.
