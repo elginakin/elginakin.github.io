@@ -13,6 +13,7 @@
 
 posts/content/mutationmapping
 posts/content/baltic_singletree
+posts/content/flu-clade-explorer
 
 
 **/*.quarto_ipynb

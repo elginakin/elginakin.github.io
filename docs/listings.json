@@ -9,6 +9,8 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/content/flu-clade-explorer/index.html",
+      "/posts/content/pekosz_nextstrain/index.html",
       "/posts/content/mutationmapping/index.html",
       "/posts/content/flutree_tutorial/index.html",
       "/posts/content/PhDTools/index.html"
@@ -17,6 +19,11 @@
   {
     "listing": "/papers/index.html",
     "items": [
+      "/papers/content/ibvc3/index.html",
+      "/papers/content/2026_Smith_Mugnier/index.html",
+      "/papers/content/2025_JHH_seasonal_IAV/index.html",
+      "/papers/content/ibv20to24_fitness/index.html",
+      "/papers/content/werner-et-al/index.html",
       "/papers/content/scv2_immunocompromised/index.html",
       "/papers/content/vicyam_characterization/index.html",
       "/papers/content/scv2_pregnant_mice/index.html",

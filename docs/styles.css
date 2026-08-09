@@ -1,1 +1,39 @@
 /* css styles */
+/* Apply Helvetica globally to the entire website */
+body, 
+p, 
+span, 
+a, 
+li, 
+ol, 
+ul, 
+td, 
+th, 
+div:not(.sourceCode, .cell-output, code) {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* Apply Helvetica to all heading levels */
+h1, h2, h3, h4, h5, h6,
+.title, .subtitle, .description {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700; /* Bold headings */
+}
+
+/* Optional: Keep code blocks highly readable using a clean monospace fallback */
+code, 
+pre, 
+.sourceCode, 
+.cell-output {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Increase font size for navigation links */
+.navbar .navbar-nav .nav-link {
+  font-size: 1.5rem; /* Adjust this value to your preference */
+}
+
+/* Increase font size for the navbar title */
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+}

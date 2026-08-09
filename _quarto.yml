@@ -5,27 +5,30 @@ project:
 website:
   site-url: https://www.elginakin.github.io/
   favicon: "images/logos/IMG_0926.PNG"
+  repo-url: https://github.com/elginakin/elginakin.github.io
+  repo-actions: [edit, source, issue]
   navbar:
     logo: "images/logos/IMG_0926.PNG"
+    left: 
+      - text: elgin akin
+        href: index.qmd
     right:
-      - href: index.qmd
-        text: home
       - text: research
         href: research/index.qmd
       - text: papers
-        href: publications/index.qmd
+        href: papers/index.qmd
       - text: posts
         href: posts/index.qmd
       - text: cv
-        href: AkinE_CV_20260519.pdf
+        href: cv/AkinE_CV_20260519.pdf
     tools:
       - icon: github
-        href: https://github.com/elginakin/
+        href: https://github.com/elginakin/elginakin.github.io
       - icon: twitter
         href: https://twitter.com/cxclgin
         text: Twitter
       - icon: envelope
-        href: eakin1@jhmi.edu
+        href: mailto:eakin1@jhmi.edu
   
   page-footer:
     background: light
@@ -37,7 +40,7 @@ format:
     theme: Litera
     monobackgroundcolor: '#D3CABA'
     css: styles.css
-    mainfont: Nunito
+    mainfont: Helvetica
     sidebar: false
     toc: true
     highlight-style: github
