@@ -12,6 +12,11 @@ date: "08/09/2026"
 image: 'image.png'
 ---
 
+Nextstrain is a powerful platform for building, hosting, and interacting with phylogenies. The [Pekosz Lab](https://pekoszlab.com/) leverages this platform to facilitate discussions sorrounding emerging Influenza A and B variants during genomic surveillance each influenza season.  
+
+Pekosz lab Nextstrain Builds are freely hosted by the Nextstrain team at the following locations: 
+- A private website for internal surveillance meetings: https://nextstrain.org/groups/PekoszLab (contact apekosz1@jh.edu for access)
+- A publically hosted website for publications: https://nextstrain.org/groups/PekoszLab-Public
 
 ::: {.callout-note} 
 
@@ -23,4 +28,5 @@ This tutorial is optimized to run on machines running MacOS. Users who desire to
 
 - If you would prefer to read the tutorial, a version has been written to supplement parallel execution of the builds. [Click here](tutorial.qmd) for a reading friendly version.
 
-- All code necessary to run both this tutorial and the pipline with "real world" data from the Mostafa lab can be found a [https://github.com/Pekosz-Lab/nextstrain/tree/main](https://github.com/Pekosz-Lab/nextstrain/tree/main)
+- All code necessary to run both this tutorial and the pipline with "real world" data from the Mostafa lab can be found at [https://github.com/Pekosz-Lab/nextstrain/tree/main](https://github.com/Pekosz-Lab/nextstrain/tree/main)
+

@@ -66,9 +66,9 @@ flowchart LR
 ```
 
 - This pipeline requires only 3 input files to run: 
-  - vaccines.fasta
-  - sequences.fasta
-  - metadata.fasta
+  - vaccines.fasta - (see [tutorial: add vaccine strains from GISAID](https://github.com/Pekosz-Lab/nextstrain/tree/main#tutorial-add-vaccine-strains-from-gisaid))
+  - sequences.fasta – sequences from the Johns Hopkins Hospital, manually concatenated runs
+  - metadata.fasta – metadata with one line per unique sample ID (exclusing the segment) and associated metadata
 
 :::{.callout-note}
 For this tutorial, all three files are supplied in the [tutorial](https://github.com/Pekosz-Lab/nextstrain/tree/main/tutorial) folder
