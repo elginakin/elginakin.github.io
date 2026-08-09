@@ -9,9 +9,6 @@ website:
   repo-actions: [edit, source, issue]
   navbar:
     logo: "images/logos/IMG_0926.PNG"
-    left: 
-      - text: elgin akin
-        href: index.qmd
     right:
       - text: research
         href: research/index.qmd
