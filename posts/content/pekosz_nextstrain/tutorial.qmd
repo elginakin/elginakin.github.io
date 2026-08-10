@@ -1,5 +1,5 @@
 ---
-title: Tutorial
+title: Part 1 
 author:
     - name: "Elgin Akin"
       orcid: "0000-0001-8824-8809"

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Nextstrain Phylogenies for seasonal H1N1, H3N2 and B/Victoria Viruses"
-subtitle: "8 gene-level and 1 concatenated genome phylognies per type/subtype"
+subtitle: "Part 1: Downloading dependencies, building your environment, and running the tutorial dataset"
 author: "Elgin Akin"
 date: 2026-08-09
 format:
@@ -12,7 +12,7 @@ format:
     controls: true
     progress: true
     center: false
-    footer: "| Pekosz Lab Nextstrain | H1N1 · H3N2 · B/Victoria" 
+    footer: "Pekosz Lab Nextstrain | H1N1 · H3N2 · B/Victoria Builds" 
     width: 1600
     height: 900
 execute:
@@ -34,7 +34,6 @@ A little bit of systems and linux terminal navigation knowledge is expected befo
   - move in/out of directories
   - check your current location
 - Some knowledge of git/github is expected but not necessary. 
-
 
 
 ## What you will accomplish
@@ -432,4 +431,4 @@ Start with a dry run, then let Snakemake build all 27 influenza views.
     - **Privately** Hosted for internal meetings: [https://nextstrain.org/groups/PekoszLab](https://nextstrain.org/groups/PekoszLab)
     - **Publically** Hosted for publications: [https://nextstrain.org/groups/PekoszLab-Public](https://nextstrain.org/groups/PekoszLab-Public)
 
-[Back to the blog post](https://elginakin.github.io/posts/content/pekosz_nextstrain/)
+[Back to the post](https://elginakin.github.io/posts/content/pekosz_nextstrain/)

@@ -1,0 +1,334 @@
+---
+title: "Tutorial: Nextstrain Phylogenies for seasonal H1N1, H3N2 and B/Victoria Viruses"
+subtitle: "Part 2: Safely preparing the three Pekosz Lab input files"
+author: "Elgin Akin"
+date: 2026-08-10
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: slide
+    code-overflow: wrap
+    controls: true
+    progress: true
+    center: false
+    footer: "| Pekosz Lab Nextstrain | Input preparation"
+    width: 1600
+    height: 900
+execute:
+  echo: true
+---
+
+## The build begins with exactly three inputs
+
+By the end of this tutorial, you will be able to prepare:
+
+1. `sequences.fasta` — all JHH influenza segment sequences;
+2. `metadata.txt` — one tab-delimited row per sequenced strain; and
+3. `vaccines.fasta` — authorized vaccine/reference sequences from GISAID.
+
+For the current production workflow, place them in `source/` using these names:
+
+```text
+source/JHH_sequences.fasta
+source/JHH_metadata.tsv
+source/vaccines.fasta
+```
+
+This tutorial covers input preparation only—not running or uploading a build.
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain#2-access-genome-and-metadata-files-from-jhh-and-gisaid
+:::
+
+## Protect regulated data before you begin
+
+::: {.callout-warning}
+Use only data you are authorized to access. JHH sequences that have not been
+released on GISAID are private. GISAID credentials and downloaded data must
+not be shared publicly.
+:::
+
+- Work in an approved, access-controlled location.
+- Do not commit these inputs to a public repository.
+- Do not paste real sequences or identifiers into public issues or support posts.
+- Use synthetic identifiers, such as `JH00001`, in screenshots and teaching notes.
+- Keep the previous known-good input until the replacement passes validation.
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain#2-access-genome-and-metadata-files-from-jhh-and-gisaid
+- https://github.com/Pekosz-Lab/nextstrain#tutorial-add-vaccine-strains-from-gisaid
+:::
+
+## Concatenate every contributing run into `sequences.fasta`
+
+Run files follow the pattern `IV25Run1.fasta`:
+
+- `IV` = influenza virus
+- `25` = year
+- `Run1` = run number within that year
+
+When Run 3 arrives, go back to the original run files and rebuild from Runs 1–3:
+
+```{.bash code-line-numbers="false"}
+cat IV25Run1.fasta IV25Run2.fasta IV25Run3.fasta > sequences.fasta
+```
+
+Use the complete, ordered list of original runs every time. Do **not** use `>>`
+to append a new run to an old concatenated file.
+
+Record the run filenames in the lab build record and retain the original files.
+
+## Clinical FASTA headers connect sequences to metadata
+
+Every record begins with `>` and uses:
+
+```text
+>sequence_ID_segmentNumber
+```
+
+Synthetic example:
+
+```text
+>JH00001_4
+ATGGAGAGAATAAAAGAGCTAAGAGACCTAATGTCGCAGTCCC...
+```
+
+`JH00001` must match `sequence_ID` in the metadata. The final number is 1–8.
+
+| Segment | Influenza A | Influenza B |
+|---:|:---|:---|
+| 1 | PB2 | PB1 |
+| 2 | PB1 | PB2 |
+| 3–8 | PA, HA, NP, NA, MP, NS | PA, HA, NP, NA, MP, NS |
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain#source-file-descriptions
+:::
+
+## Review the concatenated FASTA manually
+
+Open `sequences.fasta` in a plain-text editor and carefully confirm:
+
+- the file begins with a FASTA header, not sequence text;
+- headers begin with `>` and end in `_1` through `_8`;
+- sequence lines remain directly below their correct headers;
+- all intended run files were included once, in the recorded order; and
+- no unrelated FASTA file was included.
+
+Keep the previous known-good file until this review and the metadata review are
+complete. Then place the final file at:
+
+```text
+source/JHH_sequences.fasta
+```
+
+## Extract a one-column strain list for Excel
+
+The repository includes
+[`scripts/jhh_unique_strains.py`](https://github.com/Pekosz-Lab/nextstrain/blob/main/scripts/jhh_unique_strains.py).
+It removes the trailing segment number, deduplicates the strain IDs, and writes
+a one-column TSV headed `sequence_ID`.
+
+From the repository's top-level `nextstrain/` directory, run:
+
+```{.bash code-line-numbers="false"}
+python scripts/jhh_unique_strains.py \
+  --input sequences.fasta \
+  --output unique_sequence_IDs.tsv
+```
+
+The printed **Final unique strains** count is the expected number of metadata
+rows, excluding the header.
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain/blob/main/scripts/jhh_unique_strains.py
+:::
+
+## Build `metadata.txt` manually in Excel
+
+Open `unique_sequence_IDs.tsv` in Excel. Do not edit the extracted ID list until
+you save a working `.xlsx` copy in the approved location.
+
+Add the remaining four column names so the columns appear in this exact order:
+
+| Required column | What to enter |
+|:---|:---|
+| `sequence_ID` | Already supplied by the extraction script |
+| `sample_ID` | Sample ID; often the same as `sequence_ID` |
+| `sequencing_run` | Run ID, such as `IV25Run3` |
+| `date` | Sequencing run date in `YYYY-MM-DD` format |
+| `passage_history` | Use `vtm` for original sequencing material |
+
+```text
+sequence_ID sample_ID sequencing_run date       passage_history
+JH00001     JH00001   IV25Run3      2025-11-13 vtm
+```
+
+The displayed spacing is illustrative; the exported file must contain tabs.
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain#source-file-descriptions
+:::
+
+## Enter every metadata row carefully
+
+Complete the four added fields **manually**, one strain at a time:
+
+1. Confirm `sequence_ID` matches the strain name without its segment suffix.
+2. Enter the correct `sample_ID` from the laboratory record.
+3. Enter the originating run as `IV##Run#`—for example, `IV25Run3`.
+4. Enter the sequencing run date, not the date Excel assumes.
+5. Enter the passage history; use `vtm` for original sequencing material.
+
+::: {.callout-warning}
+Do not fill a column by guessing from neighboring rows. Verify each value against
+the run sheet or approved laboratory record.
+:::
+
+Each row represents one strain with at least one sequence in `sequences.fasta`—
+not one row per influenza segment.
+
+## Make Excel preserve the required date format
+
+Before entering dates:
+
+1. Select the entire `date` column.
+2. Open **Format Cells**.
+3. Choose **Custom**.
+4. Enter `yyyy-mm-dd` as the format.
+5. Enter dates and visually confirm every displayed value follows that pattern.
+
+Keep `sequence_ID`, `sample_ID`, `sequencing_run`, and `passage_history` formatted
+as **Text** so Excel does not reinterpret identifiers.
+
+::: {.callout-important}
+Displaying `YYYY-MM-DD` is not enough if the value was entered incorrectly.
+Check each date against the approved run record.
+:::
+
+## Review the worksheet before exporting
+
+In Excel, carefully perform these manual checks:
+
+- Select the `sequence_ID` cells and confirm the count matches the script's
+  **Final unique strains** count.
+- Filter every column and investigate every blank cell.
+- Use **Conditional Formatting → Duplicate Values** on `sequence_ID`; resolve
+  every highlighted duplicate.
+- Confirm every `sequencing_run` follows `IV##Run#` and every date displays as
+  `YYYY-MM-DD`.
+- Spot-check rows against each contributing run sheet.
+
+Have a second reviewer inspect the workbook when possible. Save the reviewed
+`.xlsx` file before creating the pipeline copy.
+
+## Export the reviewed worksheet as `metadata.txt`
+
+1. Make the reviewed metadata worksheet the active sheet.
+2. Select **Save As** and choose **Tab Delimited Text (.txt)**.
+3. Name the exported file `metadata.txt`.
+4. If Excel warns about multiple sheets or formatting, export the active sheet
+   and keep the reviewed `.xlsx` file as the master copy.
+5. Reopen `metadata.txt` in a plain-text editor.
+6. Visually confirm the five-column header, tab-separated fields, complete rows,
+   and `YYYY-MM-DD` dates.
+
+Only after this manual review should the file become:
+
+```text
+source/JHH_metadata.tsv
+```
+
+## Update `vaccines.fasta` only through authorized GISAID access
+
+Using your individual GISAID account, follow the
+[full Pekosz Lab GISAID tutorial](https://github.com/Pekosz-Lab/nextstrain#tutorial-add-vaccine-strains-from-gisaid) while you:
+
+1. Open **Vaccine Reference Sequences**.
+2. Create or update the workset `seasonal influenza vaccine strains`.
+3. Add all available segments for every required vaccine strain.
+4. Confirm the expected strains and segments, then download the FASTA.
+5. Manually reformat every header before pipeline use.
+
+::: {.callout-important}
+Do not merge clinical headers into this file. Vaccine headers use a different,
+seven-field format required by the vaccine ingest script.
+:::
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain#tutorial-add-vaccine-strains-from-gisaid
+:::
+
+## Vaccine headers must contain seven ordered fields
+
+```text
+>Isolate name-Passage history | Isolate ID | Collection date |
+ Passage history | Segment number | Type | Lineage
+```
+
+Synthetic example:
+
+```text
+>A/Example/01/2025-E2/E3 | EPI_ISL_XXXXXXXX | 2025-03-15 | E2/E3 | 4 | A | H1N1
+ATG...TAA
+```
+
+Passage history appears **twice**: appended to the isolate name in field 1 and
+again as field 4.
+
+Manually review every header and confirm:
+
+- exactly seven fields appear in the required order;
+- pipe characters separate the fields;
+- segment number, type, and lineage are present; and
+- passage history appears in both required positions.
+
+Save the validated result as `source/vaccines.fasta`.
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain#required-vaccine-fasta-header-format
+- https://github.com/Pekosz-Lab/nextstrain#important-notes-about-vaccine-headers
+:::
+
+## Hand off only the validated three-file set
+
+```text
+nextstrain/
+└── source/
+    ├── JHH_sequences.fasta
+    ├── JHH_metadata.tsv
+    └── vaccines.fasta
+```
+
+Before the build:
+
+- `JHH_sequences.fasta` was rebuilt from the complete ordered run list.
+- The only command-line preparation of that FASTA was concatenation.
+- `JHH_metadata.tsv` was manually curated and reviewed in Excel.
+- Its row count matches the unique-strain count and its dates use `YYYY-MM-DD`.
+- Every vaccine header was manually checked for seven ordered fields.
+- All three files remain in approved storage and outside public version control.
+
+Only after every check passes should the three files replace the previous
+known-good inputs.
+
+::: {.notes}
+[Sources]
+
+- https://github.com/Pekosz-Lab/nextstrain#2-access-genome-and-metadata-files-from-jhh-and-gisaid
+:::
